@@ -1,0 +1,102 @@
+{
+  "date": "2026-01-18",
+  "games": [
+    {
+      "away_score": 80,
+      "away_team": "Washington St.",
+      "game_id": "2026_01_18_washington_st_san_francisco",
+      "home_score": 85,
+      "home_team": "San Francisco",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "North Texas",
+      "game_id": "2026_01_18_north_texas_tulane",
+      "home_score": 63,
+      "home_team": "Tulane",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "American",
+      "game_id": "2026_01_18_american_army",
+      "home_score": 67,
+      "home_team": "Army",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Milwaukee",
+      "game_id": "2026_01_18_milwaukee_purdue_fort_wayne",
+      "home_score": 100,
+      "home_team": "Purdue Fort Wayne",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 99,
+      "away_team": "Tulsa",
+      "game_id": "2026_01_18_tulsa_uab",
+      "home_score": 77,
+      "home_team": "UAB",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Florida Atlantic",
+      "game_id": "2026_01_18_florida_atlantic_temple",
+      "home_score": 73,
+      "home_team": "Temple",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "UTSA",
+      "game_id": "2026_01_18_utsa_memphis",
+      "home_score": 95,
+      "home_team": "Memphis",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 88,
+      "away_team": "Oakland",
+      "game_id": "2026_01_18_oakland_green_bay",
+      "home_score": 63,
+      "home_team": "Green Bay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Charlotte",
+      "game_id": "2026_01_18_charlotte_east_carolina",
+      "home_score": 70,
+      "home_team": "East Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Arizona St.",
+      "game_id": "2026_01_18_arizona_st_houston",
+      "home_score": 103,
+      "home_team": "Houston",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Penn St.",
+      "game_id": "2026_01_18_penn_st_maryland",
+      "home_score": 96,
+      "home_team": "Maryland",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Wichita St.",
+      "game_id": "2026_01_18_wichita_st_south_florida",
+      "home_score": 85,
+      "home_team": "South Florida",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-21T23:15:27.628220Z"
+}

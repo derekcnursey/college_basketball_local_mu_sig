@@ -138,13 +138,25 @@ a {
   color: var(--muted);
 }
 
+.page-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
 .pill {
   background: var(--accent);
   color: #fff;
   border-radius: 999px;
-  padding: 8px 16px;
+  padding: 8px 12px;
   font-weight: 600;
   align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .controls {
@@ -292,17 +304,19 @@ thead th {
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
+  gap: 12px;
 }
 
 .metric-card {
   background: var(--paper);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 16px;
+  padding: 14px 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
+  text-align: center;
   box-shadow: var(--shadow);
 }
 

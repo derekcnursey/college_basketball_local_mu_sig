@@ -51,8 +51,10 @@ with open('bart_files/'+str(year)+'_super_sked.csv') as file_obj:
     # file using reader object
     i=0
     for row in reader_obj:
-
-        if row[24] == '':
+        if any("unnamed" in str(x).lower() for x in row):
+            i+=1
+            continue
+        if row[24] == '' or row[25] == '' :
             i+=1
             continue
         if row[6] == '99' or row[6]==99:
