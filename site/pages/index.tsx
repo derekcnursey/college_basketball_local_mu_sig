@@ -1,13 +1,7 @@
 import { GetServerSideProps } from "next";
 import { useMemo, useState } from "react";
 import Layout from "../components/Layout";
-import {
-  PredictionRow,
-  getEdgeValue,
-  getPickProbEdge,
-  getTeams,
-  pickColumns
-} from "../lib/data";
+import { PredictionRow, getEdgeValue, getPickProbEdge, pickColumns } from "../lib/data";
 import {
   getLatestPredictionFile,
   getPredictionRowsByFilename,
@@ -114,7 +108,9 @@ function getSortValue(row: PredictionRow, key: string): string | number {
 
 export default function Home({ date, rows, columns, availableDates }: HomeProps) {
   const [search, setSearch] = useState("");
-  const [team, setTeam] = useState("all");
+  const [minProbEdge, setMinProbEdge] = useState(0);
+  const [minPointEdge, setMinPointEdge] = useState(0);
+  const [useAndFilter, setUseAndFilter] = useState(true);
   const [sort, setSort] = useState<SortState>({
     key: "pick_prob_edge",
     direction: "desc",
@@ -123,27 +119,36 @@ export default function Home({ date, rows, columns, availableDates }: HomeProps)
     secondaryUseAbs: true
   });
 
-  const teams = useMemo(() => {
-    const set = new Set<string>();
-    rows.forEach((row) => {
-      const { home, away } = getTeams(row);
-      if (home) {
-        set.add(home);
-      }
-      if (away) {
-        set.add(away);
-      }
-    });
-    return Array.from(set).sort();
+  const maxProbEdge = useMemo(() => {
+    if (!rows.length) {
+      return 1;
+    }
+    const maxValue = Math.max(
+      ...rows.map((row) => Math.abs(getPickProbEdge(row)))
+    );
+    return roundTo(maxValue, 2);
+  }, [rows]);
+
+  const maxPointEdge = useMemo(() => {
+    if (!rows.length) {
+      return 10;
+    }
+    const maxValue = Math.max(...rows.map((row) => Math.abs(getEdgeValue(row))));
+    return roundTo(maxValue, 1);
   }, [rows]);
 
   const filteredRows = useMemo(() => {
     return rows.filter((row) => {
-      const { home, away } = getTeams(row);
-      if (team !== "all") {
-        if (home !== team && away !== team) {
+      const probEdge = Math.abs(getPickProbEdge(row));
+      const pointEdge = Math.abs(getEdgeValue(row));
+      const probPass = probEdge >= minProbEdge;
+      const pointPass = pointEdge >= minPointEdge;
+      if (useAndFilter) {
+        if (!probPass || !pointPass) {
           return false;
         }
+      } else if (!probPass && !pointPass) {
+        return false;
       }
       if (!search.trim()) {
         return true;
@@ -151,7 +156,7 @@ export default function Home({ date, rows, columns, availableDates }: HomeProps)
       const haystack = JSON.stringify(row).toLowerCase();
       return haystack.includes(search.trim().toLowerCase());
     });
-  }, [rows, team, search]);
+  }, [rows, minProbEdge, minPointEdge, search, useAndFilter]);
 
   const sortedRows = useMemo(() => sortRows(filteredRows, sort), [filteredRows, sort]);
 
@@ -180,73 +185,92 @@ export default function Home({ date, rows, columns, availableDates }: HomeProps)
     <Layout>
       <section className="hero">
         <div>
-          <p className="eyebrow">Latest file</p>
-          <h1>Predictions {date ? `(${date})` : ""}</h1>
-          <p className="muted">
-            Sorted by absolute pick prob edge, then edge points by default.
-          </p>
+          <h1>{date ? `${formatDateTitle(date)} Predictions` : "Predictions"}</h1>
         </div>
-        <div className="pill">{availableDates.length} dates on disk</div>
-      </section>
-
-      <section className="controls">
-        <label className="control">
-          <span>Search</span>
-          <input
-            type="search"
-            placeholder="Team, matchup, or metric"
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-          />
-        </label>
-        <label className="control">
-          <span>Team</span>
-          <select value={team} onChange={(event) => setTeam(event.target.value)}>
-            <option value="all">All teams</option>
-            {teams.map((teamName) => (
-              <option key={teamName} value={teamName}>
-                {teamName}
-              </option>
-            ))}
-          </select>
-        </label>
       </section>
 
       {!rows.length ? (
         <div className="empty">Drop prediction JSON files into public/data.</div>
       ) : (
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                {columns.map((column) => (
-                  <th key={column}>
-                    <button
-                      type="button"
-                      onClick={() => handleSort(column)}
-                      className={sort.key === column ? "active" : ""}
-                    >
-                      {columnLabels[column] ?? column}
-                      {sort.key === column ? (
-                        <span className="sort">
-                          {sort.direction === "asc" ? "↑" : "↓"}
-                        </span>
-                      ) : null}
-                    </button>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {sortedRows.map((row, index) => (
-                <tr key={index}>
+        <div className="data-panel">
+          <section className="controls">
+            <label className="control">
+              <span>Search</span>
+              <input
+                type="search"
+                placeholder="Team, matchup, or metric"
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+              />
+            </label>
+            <div className="edge-filters">
+              <label className="control">
+                <span>Prob Edge Min ({minProbEdge.toFixed(2)})</span>
+                <input
+                  type="number"
+                  min={0}
+                  max={maxProbEdge}
+                  step={0.01}
+                  value={Number.isFinite(minProbEdge) ? minProbEdge : 0}
+                  onChange={(event) => setMinProbEdge(Number(event.target.value))}
+                />
+              </label>
+              <label className="control inline-control">
+                <label className="checkbox-inline">
+                  <input
+                    type="checkbox"
+                    checked={useAndFilter}
+                    onChange={(event) => setUseAndFilter(event.target.checked)}
+                  />
+                  {useAndFilter ? "AND" : "OR"}
+                </label>
+              </label>
+              <label className="control">
+                <span>Point Edge Min ({minPointEdge.toFixed(1)})</span>
+                <input
+                  type="number"
+                  min={0}
+                  max={maxPointEdge}
+                  step={0.1}
+                  value={Number.isFinite(minPointEdge) ? minPointEdge : 0}
+                  onChange={(event) => setMinPointEdge(Number(event.target.value))}
+                />
+              </label>
+            </div>
+          </section>
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
                   {columns.map((column) => (
-                    <td key={column}>{formatCell(row[column], column)}</td>
+                    <th key={column}>
+                      <button
+                        type="button"
+                        onClick={() => handleSort(column)}
+                        className={sort.key === column ? "active" : ""}
+                      >
+                        {columnLabels[column] ?? column}
+                        {sort.key === column ? (
+                          <span className="sort">
+                            {sort.direction === "asc" ? "↑" : "↓"}
+                          </span>
+                        ) : null}
+                      </button>
+                    </th>
                   ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sortedRows.map((row, index) => (
+                  <tr key={index}>
+                    {columns.map((column) => (
+                      <td key={column}>{formatCell(row[column], column)}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
     </Layout>
@@ -286,6 +310,24 @@ function formatNumberByColumn(value: number, column?: string): string {
     return `+${formatted}`;
   }
   return formatted;
+}
+
+function formatDateTitle(value: string): string {
+  const parts = value.split("-");
+  if (parts.length !== 3) {
+    return value;
+  }
+  const [year, month, day] = parts;
+  const monthNum = Number(month);
+  const dayNum = Number(day);
+  const monthText = Number.isNaN(monthNum) ? month : String(monthNum);
+  const dayText = Number.isNaN(dayNum) ? day : String(dayNum);
+  return `${monthText}/${dayText}/${year}`;
+}
+
+function roundTo(value: number, decimals: number): number {
+  const factor = 10 ** decimals;
+  return Math.ceil(value * factor) / factor;
 }
 
 const columnLabels: Record<string, string> = {

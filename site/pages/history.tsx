@@ -60,23 +60,6 @@ export default function History({ date, rows, columns, availableDates }: History
         <div className="pill">{availableDates.length} dates on disk</div>
       </section>
 
-      <section className="controls">
-        <label className="control">
-          <span>Date</span>
-          <input
-            type="date"
-            value={date ?? ""}
-            onChange={(event) => handleDateChange(event.target.value)}
-            list="available-dates"
-          />
-          <datalist id="available-dates">
-            {availableDates.map((value) => (
-              <option key={value} value={value} />
-            ))}
-          </datalist>
-        </label>
-      </section>
-
       {!date ? (
         <div className="empty">No prediction files found.</div>
       ) : !availableSet.has(date) ? (
@@ -84,25 +67,43 @@ export default function History({ date, rows, columns, availableDates }: History
       ) : !rows.length ? (
         <div className="empty">File is empty for {date}.</div>
       ) : (
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                {columns.map((column) => (
-                  <th key={column}>{columnLabels[column] ?? column}</th>
+        <div className="data-panel">
+          <section className="controls">
+            <label className="control">
+              <span>Date</span>
+              <input
+                type="date"
+                value={date ?? ""}
+                onChange={(event) => handleDateChange(event.target.value)}
+                list="available-dates"
+              />
+              <datalist id="available-dates">
+                {availableDates.map((value) => (
+                  <option key={value} value={value} />
                 ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, index) => (
-                <tr key={index}>
+              </datalist>
+            </label>
+          </section>
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
                   {columns.map((column) => (
-                    <td key={column}>{formatCell(row[column], column)}</td>
+                    <th key={column}>{columnLabels[column] ?? column}</th>
                   ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {rows.map((row, index) => (
+                  <tr key={index}>
+                    {columns.map((column) => (
+                      <td key={column}>{formatCell(row[column], column)}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
     </Layout>

@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
 
 :root {
-  --bg: #f6f2ea;
-  --paper: #fffaf3;
-  --ink: #1d1b16;
-  --muted: #6b6257;
-  --accent: #c4581b;
-  --accent-2: #175873;
-  --border: #e2d7c8;
-  --shadow: 0 20px 50px rgba(25, 18, 8, 0.08);
+  --bg: #f2f4f7;
+  --paper: #ffffff;
+  --ink: #0b0f19;
+  --muted: #5f6675;
+  --accent: #d62828;
+  --accent-2: #111827;
+  --accent-3: #1f2937;
+  --border: #d6dde7;
+  --shadow: 0 20px 52px rgba(11, 15, 25, 0.08);
   --radius: 16px;
   --max: 1200px;
 }
@@ -19,9 +20,20 @@
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   color: var(--ink);
-  background: radial-gradient(circle at top left, #fff8ea, var(--bg)) fixed;
+  background: linear-gradient(155deg, #ffffff 0%, var(--bg) 55%, #e9edf3 100%) fixed;
+  background-image:
+    radial-gradient(circle at 8% 12%, rgba(214, 40, 40, 0.18), transparent 42%),
+    radial-gradient(circle at 90% 0%, rgba(17, 24, 39, 0.16), transparent 45%),
+    radial-gradient(circle at 86% 88%, rgba(31, 41, 55, 0.12), transparent 48%),
+    repeating-linear-gradient(
+      140deg,
+      rgba(11, 15, 25, 0.02),
+      rgba(11, 15, 25, 0.02) 2px,
+      transparent 2px,
+      transparent 60px
+    );
 }
 
 a {
@@ -37,11 +49,11 @@ a {
 .site-header {
   max-width: var(--max);
   margin: 0 auto 32px;
-  padding: 20px 24px;
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  padding: 8px 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
   display: flex;
   gap: 24px;
   align-items: center;
@@ -52,33 +64,37 @@ a {
 .brand {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .brand-title {
-  font-size: 22px;
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: 0.3px;
 }
 
 .brand-subtitle {
-  font-size: 13px;
-  color: var(--muted);
+  font-size: 15px;
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 1.4px;
 }
 
 .nav {
   display: flex;
-  gap: 16px;
+  gap: 18px;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .nav a {
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: all 0.2s ease;
+  padding: 2px 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav a.active {
+  border-color: var(--accent);
 }
 
 .nav a:hover {
@@ -100,11 +116,13 @@ a {
   gap: 24px;
   align-items: flex-start;
   flex-wrap: wrap;
+  animation: rise-in 0.4s ease both;
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 32px;
   margin: 0 0 8px;
+  color: var(--ink);
 }
 
 .eyebrow {
@@ -131,19 +149,23 @@ a {
 
 .controls {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   flex-wrap: wrap;
-  background: var(--paper);
-  padding: 16px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+  padding: 0 0 12px;
+  animation: rise-in 0.45s ease both;
 }
 
 .control {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  min-width: 220px;
+  min-width: 0;
+}
+
+.inline-control {
+  min-width: auto;
+  align-self: flex-end;
+  margin: 0;
 }
 
 .control span {
@@ -159,26 +181,61 @@ select {
   border-radius: 10px;
   border: 1px solid var(--border);
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="range"] {
+  width: 220px;
+}
+
+input[type="number"] {
+  width: 100%;
+}
+
+.edge-filters {
+  display: grid;
+  grid-template-columns: 220px auto 220px;
+  column-gap: 8px;
+  align-items: end;
+}
+
+.checkbox-inline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.checkbox-inline input {
+  width: 18px;
+  height: 18px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(240, 90, 40, 0.16);
 }
 
 .table-wrap {
   overflow-x: auto;
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px;
+  padding: 0 12px 12px;
+  animation: rise-in 0.5s ease both;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
 }
 
 th,
 td {
-  text-align: left;
+  text-align: center;
   padding: 10px 12px;
   border-bottom: 1px solid var(--border);
   white-space: nowrap;
@@ -194,6 +251,7 @@ th button {
   gap: 6px;
   align-items: center;
   white-space: nowrap;
+  margin: 0 auto;
 }
 
 th button.active {
@@ -206,6 +264,21 @@ th button.active {
 
 tr:last-child td {
   border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(15, 23, 42, 0.02);
+}
+
+tbody tr:hover {
+  background: rgba(19, 181, 123, 0.08);
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 1;
 }
 
 .empty {
@@ -230,10 +303,31 @@ tr:last-child td {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-shadow: var(--shadow);
 }
 
 .metric-card strong {
   font-size: 24px;
+}
+
+.data-panel {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 16px 6px;
+  box-shadow: var(--shadow);
+  animation: rise-in 0.5s ease both;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 720px) {
