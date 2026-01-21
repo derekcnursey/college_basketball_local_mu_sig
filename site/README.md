@@ -56,3 +56,5 @@ git push
 3. Set the **Root Directory** to `site`.
 4. Keep the default build settings (`npm run build`).
 5. Deploy.
+
+Last deploy test: 2026-01-21 16:27:48
