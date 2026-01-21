@@ -1,0 +1,9 @@
+{
+  "hidden": 3072,
+  "hidden2": 128,
+  "dropout": 0.05,
+  "lr": 0.0020782400894199964,
+  "epochs": 91,
+  "batch_size": 16384,
+  "num_workers": 10
+}

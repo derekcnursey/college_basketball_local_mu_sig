@@ -1,0 +1,13 @@
+[project]
+name = "college_bball"
+version = "0.0.1"
+description = "College basketball spread & win-probability model"
+requires-python = ">=3.9"
+dependencies = ["python-dotenv>=1.0"]  # we install runtime deps via requirements.txt
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["bball"]

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+.venv/
+venv/
+.env
+.env.*
+
+# Data / artifacts
+*.db
+*.sqlite
+*.log
+log_output.txt
+*.csv
+*.parquet
+*.pkl
+*.joblib
+*.pt
+*.ckpt
+*.h5
+*.npy
+*.npz
+artifacts/
+checkpoints/
+
+# OS
+.DS_Store
+*.pem
+
+# Node / Next
+node_modules/
+.next/
+out/
+
+# Vercel
+.vercel/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.idea/
+.vscode/
