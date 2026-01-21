@@ -1,0 +1,27 @@
+Session Summary (2026-01-21 17:24:09)
+
+Work completed
+- Built and iterated a Next.js (TypeScript) site in /site with pages: /, /history, /metrics.
+- Data pipeline: scripts/csv_to_json.py converts CSV to predictions_YYYY-MM-DD.json; scripts/publish_daily.sh writes to both site/public/data and predictions/json and defaults to newest CSV in predictions/csv.
+- Table: sortable, searchable, centered columns; numeric formatting with plus signs for positive spreads; absolute point edge display; “No Data” for missing book spread.
+- Filters: search + numeric inputs for Prob Edge Min and Point Edge Min with AND/OR toggle between them.
+- UI styling: Times New Roman, pro broadcast palette, stronger header typography, active nav underline, single white panel combining controls + table, and tuned background pattern.
+- Git: initialized repo, added .gitignore (including *.pem and log_output.txt), committed, and pushed to GitHub.
+- Vercel: created and deployed project hoops-edge; added site/vercel.json for Next.js detection; verified auto‑deploy from GitHub; URLs:
+  - https://hoops-edge.vercel.app
+  - https://hoops-edge-git-main-dnursey23.vercel.app
+
+Key files
+- site/pages/index.tsx, site/pages/history.tsx, site/pages/metrics.tsx
+- site/lib/data.ts, site/lib/server-data.ts
+- site/styles/globals.css
+- scripts/csv_to_json.py, scripts/publish_daily.sh
+- site/vercel.json
+
+Notes
+- CSV date inference supports YYYY-M-D in filename and date column; output JSON includes date, generated_at, games[] and game_id.
+- GitHub integration was reconnected; new pushes to main should trigger Vercel deploys.
+
+Next steps (if needed)
+- Keep publishing via: bash scripts/publish_daily.sh /path/to/preds.csv
+- Commit and push new data files under site/public/data to update the live site.
