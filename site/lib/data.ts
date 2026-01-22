@@ -38,7 +38,6 @@ export function pickColumns(rows: PredictionRow[]): string[] {
     "model_mu_home",
     "market_spread_home",
     "pred_sigma",
-    "pick_ev_per_1",
     "neutral_site"
   ];
   return preferred;

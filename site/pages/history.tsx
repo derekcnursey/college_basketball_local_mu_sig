@@ -2,7 +2,12 @@ import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 import Layout from "../components/Layout";
-import { PredictionRow, getTeams, normalizeTeam, pickColumns } from "../lib/data";
+import {
+  PredictionRow,
+  getTeams,
+  normalizeTeam,
+  pickColumns
+} from "../lib/data";
 import {
   getLatestPredictionFile,
   getPredictionRowsByDate,
@@ -40,6 +45,9 @@ export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
   if (!columns.includes("final_score")) {
     columns.splice(2, 0, "final_score");
   }
+  if (!columns.includes("model_error")) {
+    columns.splice(3, 0, "model_error");
+  }
 
   return {
     props: {
@@ -54,6 +62,7 @@ export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
 export default function History({ date, rows, columns, availableDates }: HistoryProps) {
   const router = useRouter();
   const availableSet = useMemo(() => new Set(availableDates), [availableDates]);
+  const summary = useMemo(() => buildDailySummary(rows), [rows]);
 
   function handleDateChange(nextDate: string) {
     if (!nextDate) {
@@ -75,12 +84,15 @@ export default function History({ date, rows, columns, availableDates }: History
           <section className="controls">
             <label className="control">
               <span>Date</span>
-              <input
-                type="date"
-                value={date ?? ""}
-                onChange={(event) => handleDateChange(event.target.value)}
-                list="available-dates"
-              />
+              <div className="date-row">
+                <input
+                  type="date"
+                  value={date ?? ""}
+                  onChange={(event) => handleDateChange(event.target.value)}
+                  list="available-dates"
+                />
+                <span className="date-summary">{rows.length} games</span>
+              </div>
               <datalist id="available-dates">
                 {availableDates.map((value) => (
                   <option key={value} value={value} />
@@ -88,6 +100,22 @@ export default function History({ date, rows, columns, availableDates }: History
               </datalist>
             </label>
           </section>
+          {summary && (
+            <section className="metrics-grid">
+              <div className="metric-card">
+                <span className="label">ATS Record</span>
+                <span className="value">{summary.atsCount}</span>
+              </div>
+              <div className="metric-card">
+                <span className="label">MAE</span>
+                <span className="value">{summary.mae}</span>
+              </div>
+              <div className="metric-card">
+                <span className="label">MSE</span>
+                <span className="value">{summary.mse}</span>
+              </div>
+            </section>
+          )}
           <div className="table-wrap">
             <table>
               <thead>
@@ -101,7 +129,9 @@ export default function History({ date, rows, columns, availableDates }: History
                 {rows.map((row, index) => (
                   <tr key={index}>
                     {columns.map((column) => (
-                      <td key={column}>{formatCell(row[column], column)}</td>
+                      <td key={column} className={getCellClass(row, column)}>
+                        {formatCell(row[column], column)}
+                      </td>
                     ))}
                   </tr>
                 ))}
@@ -140,6 +170,9 @@ function formatCell(value: unknown, column?: string): string {
 function formatNumberByColumn(value: number, column?: string): string {
   const showPlus = column === "model_mu_home" || column === "market_spread_home";
   const adjusted = column === "edge_home_points" ? Math.abs(value) : value;
+  if (column === "model_error") {
+    return adjusted.toFixed(2);
+  }
   const formatted = Number.isInteger(adjusted)
     ? adjusted.toString()
     : adjusted.toFixed(2);
@@ -153,6 +186,7 @@ const columnLabels: Record<string, string> = {
   away_team: "Away",
   home_team: "Home",
   final_score: "Final",
+  model_error: "Error",
   pick_prob_edge: "Prob Edge",
   model_mu_home: "Model Spread (Home)",
   market_spread_home: "Book Spread (Home)",
@@ -183,15 +217,21 @@ function attachFinalScores(
     if (!finalRow) {
       return row;
     }
-    const awayScore = finalRow.away_score ?? finalRow.score_away;
-    const homeScore = finalRow.home_score ?? finalRow.score_home;
+    const awayScore = parseNumeric(finalRow.away_score ?? finalRow.score_away);
+    const homeScore = parseNumeric(finalRow.home_score ?? finalRow.score_home);
     const scoreText =
-      typeof awayScore === "number" && typeof homeScore === "number"
-        ? `${awayScore}-${homeScore}`
-        : typeof awayScore === "string" && typeof homeScore === "string"
-          ? `${awayScore}-${homeScore}`
-          : null;
-    return { ...row, final_score: scoreText };
+      awayScore !== null && homeScore !== null ? `${awayScore}-${homeScore}` : null;
+    const modelError =
+      awayScore !== null && homeScore !== null
+        ? getModelError(row, homeScore, awayScore)
+        : null;
+    return {
+      ...row,
+      final_score: scoreText,
+      away_score: awayScore,
+      home_score: homeScore,
+      model_error: modelError
+    };
   });
 }
 
@@ -228,6 +268,143 @@ function getTeamKey(row: PredictionRow): string | null {
     return null;
   }
   return `${normalizeTeam(teams.home)}__${normalizeTeam(teams.away)}`;
+}
+
+function getCellClass(row: PredictionRow, column: string): string {
+  if (column !== "final_score") {
+    return "";
+  }
+  const ats = getAtsResult(row);
+  if (ats === "win") {
+    return "final-score final-score--win";
+  }
+  if (ats === "loss") {
+    return "final-score final-score--loss";
+  }
+  return "final-score";
+}
+
+function buildDailySummary(rows: PredictionRow[]): {
+  atsCount: string;
+  mae: string;
+  mse: string;
+} | null {
+  if (!rows.length) {
+    return null;
+  }
+
+  let atsWins = 0;
+  let atsLosses = 0;
+  let atsPushes = 0;
+  let errorCount = 0;
+  let absErrorSum = 0;
+  let sqErrorSum = 0;
+
+  for (const row of rows) {
+    const ats = getAtsResult(row);
+    if (ats === "win") {
+      atsWins += 1;
+    } else if (ats === "loss") {
+      atsLosses += 1;
+    } else if (ats === "push") {
+      atsPushes += 1;
+    }
+
+    const actualSpread = getActualSpreadFromRow(row);
+    const modelSpread = getModelSpreadFromRow(row);
+    if (actualSpread !== null && modelSpread !== null) {
+      const err = modelSpread - actualSpread;
+      absErrorSum += Math.abs(err);
+      sqErrorSum += err * err;
+      errorCount += 1;
+    }
+  }
+
+  const atsTotal = atsWins + atsLosses;
+  const atsCount = atsTotal > 0 ? `${atsWins}-${atsLosses}` : "No ATS";
+
+  const mae = errorCount > 0 ? (absErrorSum / errorCount).toFixed(2) : "—";
+  const mse = errorCount > 0 ? (sqErrorSum / errorCount).toFixed(2) : "—";
+
+  return {
+    atsCount,
+    mae,
+    mse
+  };
+}
+
+function getAtsResult(row: PredictionRow): "win" | "loss" | "push" | null {
+  const actualSpread = getActualSpreadFromRow(row);
+  const margin = actualSpread === null ? null : -actualSpread;
+  const spread = parseNumeric(row.market_spread_home ?? row.home_spread_num);
+  const pickSideRaw = row.pick_side ?? row.pickSide;
+  if (margin === null || spread === null || typeof pickSideRaw !== "string") {
+    return null;
+  }
+
+  const pickSide = pickSideRaw.trim().toUpperCase();
+  if (pickSide !== "HOME" && pickSide !== "AWAY") {
+    return null;
+  }
+
+  const cover = margin + spread;
+  if (cover === 0) {
+    return "push";
+  }
+  const coverSide = cover > 0 ? "HOME" : "AWAY";
+  return pickSide === coverSide ? "win" : "loss";
+}
+
+function getModelError(
+  row: PredictionRow,
+  homeScore: number,
+  awayScore: number
+): number | null {
+  const modelSpread = getModelSpreadFromRow(row);
+  if (modelSpread === null) {
+    return null;
+  }
+  const actualSpread = awayScore - homeScore;
+  return modelSpread - actualSpread;
+}
+
+function getModelSpreadFromRow(row: PredictionRow): number | null {
+  const candidates = [row.model_mu_home, row.model_home_spread];
+  for (const value of candidates) {
+    const parsed = parseNumeric(value);
+    if (parsed !== null) {
+      return Number(parsed.toFixed(2));
+    }
+  }
+  return null;
+}
+
+function getActualSpreadFromRow(row: PredictionRow): number | null {
+  const homeScore = parseNumeric(
+    row.home_score ?? row.score_home ?? row.homeScore ?? row.scoreHome
+  );
+  const awayScore = parseNumeric(
+    row.away_score ?? row.score_away ?? row.awayScore ?? row.scoreAway
+  );
+  if (homeScore === null || awayScore === null) {
+    return null;
+  }
+  return awayScore - homeScore;
+}
+
+function parseNumeric(value: unknown): number | null {
+  if (typeof value === "number") {
+    return Number.isFinite(value) ? value : null;
+  }
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    if (trimmed === "") {
+      return null;
+    }
+    const parsed = Number(trimmed);
+    return Number.isNaN(parsed) ? null : parsed;
+  }
+  return null;
 }
 
 function formatDate(value: Date): string {

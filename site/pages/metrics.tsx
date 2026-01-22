@@ -71,36 +71,30 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
     const dateAtsEdgeResults: number[] = [];
 
     for (const row of rows) {
-      const predicted = getPredictedMargin(row);
-      if (predicted === null) {
+      const modelSpread = getModelSpread(row);
+      if (modelSpread === null) {
         continue;
       }
       const resultRow = findResultRow(row, resultLookup);
       if (!resultRow) {
         continue;
       }
-      const actual = getActualMargin(resultRow);
-      if (actual === null) {
+      const actualSpread = getActualSpread(resultRow);
+      if (actualSpread === null) {
         continue;
       }
-      const error = predicted - actual;
+      const error = modelSpread - actualSpread;
       dateErrors.push(error);
       dateSquaredErrors.push(error * error);
       dateAbsErrors.push(Math.abs(error));
 
-      const marketSpread = getMarketSpreadHome(row);
-      if (marketSpread !== null) {
-        const predictedEdge = getPickSide(row)
-          ? pickSideToEdge(getPickSide(row) as string)
-          : predicted - marketSpread;
-        const actualEdge = actual - marketSpread;
-        if (predictedEdge !== 0 && actualEdge !== 0) {
-          const atsWin = Math.sign(predictedEdge) === Math.sign(actualEdge) ? 1 : 0;
-          dateAtsResults.push(atsWin);
-          const probEdge = getPickProbEdge(row);
-          if (probEdge !== null && probEdge > 0.1) {
-            dateAtsEdgeResults.push(atsWin);
-          }
+      const ats = getAtsResult(row, -actualSpread);
+      if (ats && ats !== "push") {
+        const atsWin = ats === "win" ? 1 : 0;
+        dateAtsResults.push(atsWin);
+        const probEdge = getPickProbEdge(row);
+        if (probEdge !== null && probEdge > 0.1) {
+          dateAtsEdgeResults.push(atsWin);
         }
       }
     }
@@ -217,25 +211,31 @@ function formatPercent(value: number | null): string {
   return `${(value * 100).toFixed(1)}%`;
 }
 
-function getPredictedMargin(row: PredictionRow): number | null {
-  const modelValue = row.model_mu_home ?? row.modelMuHome;
+function getModelSpread(row: PredictionRow): number | null {
+  const modelValue = row.model_mu_home ?? row.modelMuHome ?? row.model_home_spread;
   if (typeof modelValue === "number") {
-    return -modelValue;
+    return Number(modelValue.toFixed(2));
   }
   if (typeof modelValue === "string" && modelValue.trim() !== "") {
     const parsed = Number(modelValue);
     if (!Number.isNaN(parsed)) {
-      return -parsed;
+      return Number(parsed.toFixed(2));
     }
   }
-  const fallback = row.pred_margin;
-  if (typeof fallback === "number") {
-    return fallback;
+  return null;
+}
+
+function getActualSpread(row: PredictionRow): number | null {
+  const homeScore = row.score_home ?? row.home_score ?? row.homeScore ?? row.scoreHome;
+  const awayScore = row.score_away ?? row.away_score ?? row.scoreAway ?? row.awayScore;
+  if (typeof homeScore === "number" && typeof awayScore === "number") {
+    return awayScore - homeScore;
   }
-  if (typeof fallback === "string" && fallback.trim() !== "") {
-    const parsed = Number(fallback);
-    if (!Number.isNaN(parsed)) {
-      return parsed;
+  if (typeof homeScore === "string" && typeof awayScore === "string") {
+    const home = Number(homeScore);
+    const away = Number(awayScore);
+    if (!Number.isNaN(home) && !Number.isNaN(away)) {
+      return away - home;
     }
   }
   return null;
@@ -277,14 +277,22 @@ function getPickProbEdge(row: PredictionRow): number | null {
   return null;
 }
 
-function pickSideToEdge(value: string): number {
-  if (value === "HOME") {
-    return 1;
+function getAtsResult(
+  row: PredictionRow,
+  actualMargin: number
+): "win" | "loss" | "push" | null {
+  const pickSide = getPickSide(row);
+  const marketSpread = getMarketSpreadHome(row);
+  if (!pickSide || marketSpread === null) {
+    return null;
   }
-  if (value === "AWAY") {
-    return -1;
+
+  const cover = actualMargin + marketSpread;
+  if (cover === 0) {
+    return "push";
   }
-  return 0;
+  const coverSide = cover > 0 ? "HOME" : "AWAY";
+  return pickSide === coverSide ? "win" : "loss";
 }
 
 function buildResultLookup(rows: PredictionRow[]): Map<string, PredictionRow> {

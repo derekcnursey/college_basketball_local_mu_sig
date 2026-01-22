@@ -286,6 +286,20 @@ tbody tr:hover {
   background: rgba(19, 181, 123, 0.08);
 }
 
+td.final-score {
+  font-weight: 600;
+}
+
+td.final-score--win {
+  color: #0f7b50;
+  background: rgba(15, 123, 80, 0.12);
+}
+
+td.final-score--loss {
+  color: #b42318;
+  background: rgba(180, 35, 24, 0.12);
+}
+
 thead th {
   position: sticky;
   top: 0;
@@ -305,6 +319,20 @@ thead th {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
+  margin-bottom: 8px;
+}
+
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-summary {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-2);
+  white-space: nowrap;
 }
 
 .metric-card {
