@@ -15,7 +15,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.36181506418967835,
+      "pred_home_win_prob": 0.3618150641896783,
       "pred_sigma": 11.038166
     },
     {
@@ -138,5 +138,5 @@
       "pred_sigma": 9.647604
     }
   ],
-  "generated_at": "2026-01-22T16:44:55.169014Z"
+  "generated_at": "2026-01-22T18:39:35.380183Z"
 }

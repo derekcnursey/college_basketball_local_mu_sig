@@ -32,7 +32,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9440511697493301,
+      "pred_home_win_prob": 0.94405116974933,
       "pred_sigma": 12.515388
     },
     {
@@ -66,7 +66,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.40068718892355726,
+      "pred_home_win_prob": 0.4006871889235572,
       "pred_sigma": 11.437503
     },
     {
@@ -151,7 +151,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9488541050278665,
+      "pred_home_win_prob": 0.9488541050278664,
       "pred_sigma": 13.777712
     },
     {
@@ -202,7 +202,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.18738402424566025,
+      "pred_home_win_prob": 0.1873840242456602,
       "pred_sigma": 10.057615
     },
     {
@@ -304,7 +304,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9361042518952739,
+      "pred_home_win_prob": 0.936104251895274,
       "pred_sigma": 13.184498
     },
     {
@@ -355,7 +355,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.45119522852552274,
+      "pred_home_win_prob": 0.4511952285255227,
       "pred_sigma": 9.053039
     },
     {
@@ -372,7 +372,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.46154347238350685,
+      "pred_home_win_prob": 0.4615434723835068,
       "pred_sigma": 9.411204
     },
     {
@@ -440,7 +440,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9221034055757509,
+      "pred_home_win_prob": 0.9221034055757508,
       "pred_sigma": 11.721459
     },
     {
@@ -491,7 +491,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9707205041790191,
+      "pred_home_win_prob": 0.9707205041790192,
       "pred_sigma": 13.866632
     },
     {
@@ -508,7 +508,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9123793808730973,
+      "pred_home_win_prob": 0.9123793808730972,
       "pred_sigma": 9.837399
     },
     {
@@ -525,7 +525,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9157984285717311,
+      "pred_home_win_prob": 0.9157984285717312,
       "pred_sigma": 9.95804
     },
     {
@@ -576,7 +576,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.26494176042290246,
+      "pred_home_win_prob": 0.2649417604229024,
       "pred_sigma": 10.844314
     },
     {
@@ -610,7 +610,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.33372327182433625,
+      "pred_home_win_prob": 0.3337232718243362,
       "pred_sigma": 11.304661
     },
     {
@@ -678,7 +678,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9215194604543299,
+      "pred_home_win_prob": 0.92151946045433,
       "pred_sigma": 9.730677
     },
     {
@@ -712,7 +712,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.28857892914778394,
+      "pred_home_win_prob": 0.2885789291477839,
       "pred_sigma": 12.002432
     },
     {
@@ -763,9 +763,9 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9766394045775665,
+      "pred_home_win_prob": 0.9766394045775664,
       "pred_sigma": 15.252062
     }
   ],
-  "generated_at": "2026-01-22T15:47:58.642788Z"
+  "generated_at": "2026-01-22T18:39:28.055244Z"
 }

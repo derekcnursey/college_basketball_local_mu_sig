@@ -32,7 +32,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9775333699679057,
+      "pred_home_win_prob": 0.9775333699679056,
       "pred_sigma": 14.70717
     },
     {
@@ -49,7 +49,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.49790080384719404,
+      "pred_home_win_prob": 0.497900803847194,
       "pred_sigma": 12.008934
     },
     {
@@ -236,7 +236,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9336556850643123,
+      "pred_home_win_prob": 0.9336556850643124,
       "pred_sigma": 12.453486
     },
     {
@@ -287,7 +287,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9406469812892249,
+      "pred_home_win_prob": 0.9406469812892247,
       "pred_sigma": 11.206644
     },
     {
@@ -304,7 +304,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9538671898549447,
+      "pred_home_win_prob": 0.9538671898549448,
       "pred_sigma": 12.662068
     },
     {
@@ -338,7 +338,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9286703947752735,
+      "pred_home_win_prob": 0.9286703947752736,
       "pred_sigma": 10.079965
     },
     {
@@ -406,7 +406,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9566880671176127,
+      "pred_home_win_prob": 0.9566880671176128,
       "pred_sigma": 16.322248
     },
     {
@@ -423,7 +423,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9754279045718353,
+      "pred_home_win_prob": 0.9754279045718351,
       "pred_sigma": 12.287262
     },
     {
@@ -444,5 +444,5 @@
       "pred_sigma": 23.110657
     }
   ],
-  "generated_at": "2026-01-22T15:39:18.683960Z"
+  "generated_at": "2026-01-22T18:39:27.040640Z"
 }

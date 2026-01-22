@@ -215,16 +215,59 @@ def get_stats_past(row_df):
     away_team_home = False
     return pd.Series([away_adj_oe, away_BARTHAG, away_adj_de, away_adj_pace, home_adj_oe, home_adj_de, home_adj_pace, home_BARTHAG, home_team_home, away_team_home])
 
-def get_todays_lines(away_team_name, home_team_name):
-    sql = """
-    SELECT max(Time) from sports.hard_rock_lines
-    """
-    result = mycursor.execute(sql)
-    max_date_time = mycursor.fetchall()[0][0]
+def _format_sql_time(dt_value: _dt.datetime) -> str:
+    return dt_value.strftime("%y/%m/%d %H:%M:%S")
+
+
+def _coerce_date(value: object) -> _dt.date:
+    if isinstance(value, _dt.datetime):
+        return value.date()
+    if isinstance(value, _dt.date):
+        return value
+    if isinstance(value, str):
+        return _dt.datetime.strptime(value, "%Y-%m-%d").date()
+    raise ValueError("target_date must be a date/datetime or YYYY-MM-DD string")
+
+
+def _empty_hard_rock_row() -> pd.Series:
+    mycursor.execute("SELECT * from sports.hard_rock_lines LIMIT 0")
+    mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame([{col: None for col in field_names}])
+    if {"Time", "away_team_name", "home_team_name"}.issubset(df.columns):
+        df = df.drop(["Time", "away_team_name", "home_team_name"], axis=1)
+    df = _ensure_row_df(df)
+    return df.iloc[0]
+
+
+def get_todays_lines(away_team_name, home_team_name, target_date: object | None = None):
+    if target_date is None:
+        sql = """
+        SELECT max(Time) from sports.hard_rock_lines
+        """
+        result = mycursor.execute(sql)
+        max_date_time = mycursor.fetchall()[0][0]
+        lower_bound = yesterday
+        if max_date_time is None:
+            return _empty_hard_rock_row()
+    else:
+        target = _coerce_date(target_date)
+        day_start = _dt.datetime(target.year, target.month, target.day)
+        day_end = day_start + timedelta(days=1)
+        sql = """
+        SELECT max(Time) from sports.hard_rock_lines
+        where Time >= \'""" + _format_sql_time(day_start) + """\'
+        and Time < \'""" + _format_sql_time(day_end) + """\'
+        """
+        result = mycursor.execute(sql)
+        max_date_time = mycursor.fetchall()[0][0]
+        if max_date_time is None:
+            return _empty_hard_rock_row()
+        lower_bound = day_start
 
     sql = """
     SELECT * from sports.hard_rock_lines
-    where Time = \'""" + max_date_time.strftime("%y/%m/%d %H:%M:%S") + """\'
+    where Time = \'""" + _format_sql_time(max_date_time) + """\'
     and away_team_name =\'""" + hard_rock_converter.convert_name(away_team_name).replace('\'','\'\'') + """\'
     and home_team_name =\'""" + hard_rock_converter.convert_name(home_team_name).replace('\'','\'\'') + """\';
     """
@@ -236,8 +279,8 @@ def get_todays_lines(away_team_name, home_team_name):
         SELECT * from sports.hard_rock_lines
         where away_team_name =\'""" + hard_rock_converter.convert_name(away_team_name).replace('\'','\'\'') + """\'
         and home_team_name =\'""" + hard_rock_converter.convert_name(home_team_name).replace('\'','\'\'') + """\'
-        and Time < \'""" + max_date_time.strftime("%y/%m/%d %H:%M:%S") + """\'
-        and Time > \'""" + yesterday.strftime("%y/%m/%d")+ """\'
+        and Time < \'""" + _format_sql_time(max_date_time) + """\'
+        and Time >= \'""" + _format_sql_time(lower_bound) + """\'
         order by Time desc
         LIMIT 1;
         """
@@ -247,7 +290,7 @@ def get_todays_lines(away_team_name, home_team_name):
     if df.empty:
         sql = """
         SELECT * from sports.hard_rock_lines
-        where Time = \'""" + max_date_time.strftime("%y/%m/%d %H:%M:%S") + """\'
+        where Time = \'""" + _format_sql_time(max_date_time) + """\'
         and away_team_name =\'""" + hard_rock_converter.convert_name(home_team_name).replace('\'','\'\'') + """\'
         and home_team_name =\'""" + hard_rock_converter.convert_name(away_team_name).replace('\'','\'\'') + """\';
         """
@@ -270,8 +313,8 @@ def get_todays_lines(away_team_name, home_team_name):
         SELECT * from sports.hard_rock_lines
         where away_team_name =\'""" + hard_rock_converter.convert_name(home_team_name).replace('\'','\'\'') + """\'
         and home_team_name =\'""" + hard_rock_converter.convert_name(away_team_name).replace('\'','\'\'') + """\'
-        and Time < \'""" + max_date_time.strftime("%y/%m/%d %H:%M:%S") + """\'
-        and Time > \'""" + yesterday.strftime("%y/%m/%d")+ """\'
+        and Time < \'""" + _format_sql_time(max_date_time) + """\'
+        and Time >= \'""" + _format_sql_time(lower_bound) + """\'
         order by Time desc
         LIMIT 1;
         """
@@ -290,7 +333,7 @@ def get_todays_lines(away_team_name, home_team_name):
             home_ml = df[12]
             df = pd.concat([time, home_team, away_team,home_spread, away_spread, over_unders, home_ml, away_ml], axis=1)
     if df.empty:
-        df = pd.concat([pd.Series([None]) for _ in range(13)], axis=1)
+        return _empty_hard_rock_row()
     field_names = [i[0] for i in mycursor.description]
     df.columns = field_names
     df = df.drop(['Time', 'away_team_name', 'home_team_name'], axis =1)
@@ -623,7 +666,11 @@ def get_games_for_today(season_year: int, bart_dir: str = "bart_data") -> pd.Dat
 
     return todays_games
 
-def attach_hard_rock_lines(df: pd.DataFrame, pred_col: str = "pred_margin") -> pd.DataFrame:
+def attach_hard_rock_lines(
+    df: pd.DataFrame,
+    pred_col: str = "pred_margin",
+    target_date: object | None = None,
+) -> pd.DataFrame:
     """
     Given a DataFrame with at least:
         - away_team_name
@@ -641,7 +688,11 @@ def attach_hard_rock_lines(df: pd.DataFrame, pred_col: str = "pred_margin") -> p
 
     # 1️⃣ Pull lines for each game using your existing SQL logic
     def _fetch_lines(row):
-        return get_todays_lines(row["away_team_name"], row["home_team_name"])
+        return get_todays_lines(
+            row["away_team_name"],
+            row["home_team_name"],
+            target_date=target_date,
+        )
 
     lines_df = df.apply(_fetch_lines, axis=1).reset_index(drop=True)
 

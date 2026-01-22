@@ -32,7 +32,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.41609868373371584,
+      "pred_home_win_prob": 0.4160986837337158,
       "pred_sigma": 10.629571
     },
     {
@@ -49,7 +49,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.19791780091860145,
+      "pred_home_win_prob": 0.1979178009186014,
       "pred_sigma": 9.563025
     },
     {
@@ -185,7 +185,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9797306240287201,
+      "pred_home_win_prob": 0.97973062402872,
       "pred_sigma": 16.336533
     },
     {
@@ -287,7 +287,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.16230302589133228,
+      "pred_home_win_prob": 0.1623030258913322,
       "pred_sigma": 9.502126
     },
     {
@@ -304,7 +304,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9581884873456283,
+      "pred_home_win_prob": 0.9581884873456284,
       "pred_sigma": 10.774169
     },
     {
@@ -321,7 +321,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.46614108476469135,
+      "pred_home_win_prob": 0.4661410847646913,
       "pred_sigma": 10.388518
     },
     {
@@ -610,7 +610,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.22190756635427222,
+      "pred_home_win_prob": 0.2219075663542722,
       "pred_sigma": 11.557663
     },
     {
@@ -661,9 +661,9 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.46161778978926526,
+      "pred_home_win_prob": 0.4616177897892652,
       "pred_sigma": 9.985172
     }
   ],
-  "generated_at": "2026-01-22T16:41:08.135779Z"
+  "generated_at": "2026-01-22T18:39:42.559470Z"
 }

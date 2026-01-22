@@ -288,7 +288,7 @@ def predict_season(season_year: int, out: str):
     df_out["pred_home_win_prob"] = p_home
 
     # 6️⃣ Attach lines + edges (optional)
-    df_out = attach_hard_rock_lines(df_out, pred_col="pred_margin")
+    df_out = attach_hard_rock_lines(df_out, pred_col="pred_margin", target_date=target_date)
 
     # 7️⃣  persist
     Path(out).parent.mkdir(exist_ok=True)

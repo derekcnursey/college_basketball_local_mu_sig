@@ -15,7 +15,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9679150983045707,
+      "pred_home_win_prob": 0.9679150983045708,
       "pred_sigma": 14.789562
     },
     {
@@ -202,7 +202,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9475779410620719,
+      "pred_home_win_prob": 0.947577941062072,
       "pred_sigma": 12.451032
     },
     {
@@ -240,5 +240,5 @@
       "pred_sigma": 14.49405
     }
   ],
-  "generated_at": "2026-01-22T15:27:17.325638Z"
+  "generated_at": "2026-01-22T18:39:33.751564Z"
 }

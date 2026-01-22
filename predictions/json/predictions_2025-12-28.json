@@ -3,19 +3,19 @@
   "games": [
     {
       "away_team": "Gonzaga",
-      "edge_home_points": 8.265960693359375,
+      "edge_home_points": null,
       "game_id": "2025_12_28_gonzaga_pepperdine",
       "home_team": "Pepperdine",
-      "market_spread_home": 28.5,
+      "market_spread_home": null,
       "model_mu_home": 20.23404,
       "neutral_site": 0,
-      "pick_cover_prob": 0.7234400992344879,
-      "pick_ev_per_1": 0.41243066993400024,
-      "pick_fair_odds": -261.5853192136751,
-      "pick_prob_edge": 0.2112449772832684,
-      "pick_side": "HOME",
-      "pick_spread_odds": -105.0,
-      "pred_home_win_prob": 0.07327661782408063,
+      "pick_cover_prob": null,
+      "pick_ev_per_1": null,
+      "pick_fair_odds": null,
+      "pick_prob_edge": null,
+      "pick_side": "AWAY",
+      "pick_spread_odds": null,
+      "pred_home_win_prob": 0.0732766178240806,
       "pred_sigma": 13.937071
     },
     {
@@ -134,7 +134,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9013786622578859,
+      "pred_home_win_prob": 0.901378662257886,
       "pred_sigma": 10.212629
     },
     {
@@ -151,7 +151,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.34433987794514626,
+      "pred_home_win_prob": 0.3443398779451462,
       "pred_sigma": 9.045874
     },
     {
@@ -168,7 +168,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.18928708127362576,
+      "pred_home_win_prob": 0.1892870812736257,
       "pred_sigma": 10.851963
     },
     {
@@ -236,7 +236,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9372160158711453,
+      "pred_home_win_prob": 0.9372160158711452,
       "pred_sigma": 11.711557
     },
     {
@@ -253,7 +253,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.9696357414150857,
+      "pred_home_win_prob": 0.9696357414150856,
       "pred_sigma": 15.45055
     },
     {
@@ -287,7 +287,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.18054101867804495,
+      "pred_home_win_prob": 0.1805410186780449,
       "pred_sigma": 12.773053
     },
     {
@@ -304,7 +304,7 @@
       "pick_prob_edge": null,
       "pick_side": "AWAY",
       "pick_spread_odds": null,
-      "pred_home_win_prob": 0.37109700607968066,
+      "pred_home_win_prob": 0.3710970060796806,
       "pred_sigma": 9.941458
     },
     {
@@ -342,5 +342,5 @@
       "pred_sigma": 9.118805
     }
   ],
-  "generated_at": "2026-01-22T17:08:02.965240Z"
+  "generated_at": "2026-01-22T18:39:39.012436Z"
 }
