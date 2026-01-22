@@ -1,0 +1,70 @@
+{
+  "date": "2025-12-12",
+  "games": [
+    {
+      "away_score": 88,
+      "away_team": "Cal Baptist",
+      "game_id": "2025_12_12_cal_baptist_eastern_washington",
+      "home_score": 83,
+      "home_team": "Eastern Washington",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Army",
+      "game_id": "2025_12_12_army_umbc",
+      "home_score": 60,
+      "home_team": "UMBC",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Missouri St.",
+      "game_id": "2025_12_12_missouri_st_xavier",
+      "home_score": 75,
+      "home_team": "Xavier",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "South Carolina St.",
+      "game_id": "2025_12_12_south_carolina_st_queens",
+      "home_score": 102,
+      "home_team": "Queens",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "East Tennessee St.",
+      "game_id": "2025_12_12_east_tennessee_st_austin_peay",
+      "home_score": 76,
+      "home_team": "Austin Peay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "East Texas A&M",
+      "game_id": "2025_12_12_east_texas_a_m_mcneese_st",
+      "home_score": 102,
+      "home_team": "McNeese St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Maryland Eastern Shore",
+      "game_id": "2025_12_12_maryland_eastern_shore_north_carolina_a_t",
+      "home_score": 82,
+      "home_team": "North Carolina A&T",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Texas",
+      "game_id": "2025_12_12_texas_connecticut",
+      "home_score": 71,
+      "home_team": "Connecticut",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.880228Z"
+}

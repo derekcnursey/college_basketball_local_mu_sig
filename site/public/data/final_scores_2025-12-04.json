@@ -1,0 +1,78 @@
+{
+  "date": "2025-12-04",
+  "games": [
+    {
+      "away_score": 60,
+      "away_team": "UC Riverside",
+      "game_id": "2025_12_04_uc_riverside_uc_irvine",
+      "home_score": 73,
+      "home_team": "UC Irvine",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Rider",
+      "game_id": "2025_12_04_rider_merrimack",
+      "home_score": 68,
+      "home_team": "Merrimack",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Robert Morris",
+      "game_id": "2025_12_04_robert_morris_green_bay",
+      "home_score": 78,
+      "home_team": "Green Bay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 94,
+      "away_team": "Cal Poly",
+      "game_id": "2025_12_04_cal_poly_cal_st_fullerton",
+      "home_score": 91,
+      "home_team": "Cal St. Fullerton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "UC Davis",
+      "game_id": "2025_12_04_uc_davis_hawaii",
+      "home_score": 75,
+      "home_team": "Hawaii",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Long Beach St.",
+      "game_id": "2025_12_04_long_beach_st_uc_santa_barbara",
+      "home_score": 84,
+      "home_team": "UC Santa Barbara",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "The Citadel",
+      "game_id": "2025_12_04_the_citadel_davidson",
+      "home_score": 79,
+      "home_team": "Davidson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Utah St.",
+      "game_id": "2025_12_04_utah_st_south_florida",
+      "home_score": 74,
+      "home_team": "South Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Cal St. Bakersfield",
+      "game_id": "2025_12_04_cal_st_bakersfield_cal_st_northridge",
+      "home_score": 87,
+      "home_team": "Cal St. Northridge",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.845018Z"
+}

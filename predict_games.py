@@ -65,6 +65,11 @@ yesterday = _now - timedelta(days=1)  # needed by get_todays_lines
 # ---------------------------------------------------------------------------
 # COPY YOUR EXISTING STAT FUNCTIONS HERE
 # ---------------------------------------------------------------------------
+def _ensure_row_df(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return pd.DataFrame([{col: None for col in df.columns}])
+    return df
+
 #
 def get_all_stats(row_df):
     #print(row_df)
@@ -79,11 +84,11 @@ def get_all_stats(row_df):
     """
     print(sql)
 
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
-    away_off_df = df
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
+    away_off_df = _ensure_row_df(df)
 
     sql = """SELECT def_eff_fg_pct as away_def_eff_fg_pct, def_ft_rate as away_def_ft_rate, def_3pt_rate as away_def_3pt_rate, def_3p_pct as away_def_3p_pct, def_off_rebound_pct as away_def_off_rebound_pct,def_def_rebound_pct as away_def_def_rebound_pct
     FROM sports.sub_defensive_averages
@@ -93,11 +98,11 @@ def get_all_stats(row_df):
     LIMIT 1
     """
     print(sql)
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
-    away_def_df = df
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
+    away_def_df = _ensure_row_df(df)
 
     sql = """SELECT eff_fg_pct as home_eff_fg_pct, ft_pct as home_ft_pct, ft_rate as home_ft_rate, 3pt_rate as home_3pt_rate, 3p_pct as home_3p_pct, off_rebound_pct as home_off_rebound_pct,def_rebound_pct as home_def_rebound_pct
     FROM sports.sub_offensive_averages
@@ -108,11 +113,11 @@ def get_all_stats(row_df):
     """
     print(sql)
 
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
-    home_off_df = df
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
+    home_off_df = _ensure_row_df(df)
 
     sql = """SELECT def_eff_fg_pct as home_def_eff_fg_pct, def_ft_rate as home_def_ft_rate, def_3pt_rate as home_def_3pt_rate, def_3p_pct as home_def_3p_pct, def_off_rebound_pct as home_def_off_rebound_pct,def_def_rebound_pct as home_def_def_rebound_pct
     FROM sports.sub_defensive_averages
@@ -123,16 +128,16 @@ def get_all_stats(row_df):
     """
     print(sql)
 
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
-    home_def_df = df
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
+    home_def_df = _ensure_row_df(df)
     with open("log_output.txt", "a") as f:  # Append mode
         f.write(f"Processing: {row_df}\n")
     #print('hell yeah')
     #print(pd.concat([away_off_df.iloc[0], away_def_df.iloc[0],home_off_df.iloc[0],home_def_df.iloc[0]]))
-    return pd.concat([away_off_df.iloc[0], away_def_df.iloc[0],home_off_df.iloc[0],home_def_df.iloc[0]])
+    return pd.concat([away_off_df.iloc[0], away_def_df.iloc[0], home_off_df.iloc[0], home_def_df.iloc[0]])
 #
 def get_stats(row_df):
     team_name = row_df['away_team_name']
@@ -143,10 +148,10 @@ def get_stats(row_df):
     where team_name = \'""" + team_name + """\'
     and date >= \'""" + str(CURR_YEAR) + """-""" + str(CURR_MONTH) + """-""" + str(CURR_DAY) + """\';"""
     print(sql)
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
     away_adj_oe = df['adj_oe'][0]
     away_adj_de = df['adj_de'][0]
     away_BARTHAG = df['BARTHAG'][0]
@@ -159,10 +164,10 @@ def get_stats(row_df):
     where team_name = \'""" + team_name + """\'
     and date >= \'""" + str(CURR_YEAR) + """-""" + str(CURR_MONTH) + """-""" + str(CURR_DAY) + """\';"""
     print(sql)
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
     home_adj_oe = df['adj_oe'][0]
     home_adj_de = df['adj_de'][0]
     home_BARTHAG = df['BARTHAG'][0]
@@ -181,10 +186,10 @@ def get_stats_past(row_df):
     ORDER BY date desc
     LIMIT 1"""
     print(sql)
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
     away_adj_oe = df['adj_oe'][0]
     away_adj_de = df['adj_de'][0]
     away_BARTHAG = df['BARTHAG'][0]
@@ -198,10 +203,10 @@ def get_stats_past(row_df):
     ORDER BY date desc
     LIMIT 1"""
     print(sql)
-    result = mycursor.execute(sql)
-    df = pd.DataFrame(mycursor.fetchall())
-    field_names = [i[0] for i in mycursor.description]
-    df.columns = field_names
+    mycursor.execute(sql)
+    rows = mycursor.fetchall()
+    field_names = [i[0] for i in mycursor.description] if mycursor.description else []
+    df = pd.DataFrame(rows, columns=field_names)
     home_adj_oe = df['adj_oe'][0]
     home_adj_de = df['adj_de'][0]
     home_BARTHAG = df['BARTHAG'][0]
@@ -289,22 +294,41 @@ def get_todays_lines(away_team_name, home_team_name):
     field_names = [i[0] for i in mycursor.description]
     df.columns = field_names
     df = df.drop(['Time', 'away_team_name', 'home_team_name'], axis =1)
-    return(df.iloc[0])
+    df = _ensure_row_df(df)
+    return df.iloc[0]
 
 def get_diffs(df_row):
-    spread_diff = df_row['spread_home'] - df_row['home_spread_num']
-    if df_row['away_winner_odds'] > 0 and df_row['away_win_odds'] < 0:
-        away_winner_diff = (df_row['away_winner_odds']-100) + (100+df_row['away_win_odds'])
-    elif df_row['away_winner_odds'] < 0 and df_row['away_win_odds'] > 0:
-        away_winner_diff = (df_row['away_winner_odds']+100) + (df_row['away_win_odds']-100)
+    def _is_missing(value):
+        return pd.isna(value)
+
+    spread_home = df_row['spread_home']
+    home_spread_num = df_row['home_spread_num']
+    if _is_missing(spread_home) or _is_missing(home_spread_num):
+        spread_diff = np.nan
     else:
-        away_winner_diff = df_row['away_winner_odds'] - df_row['away_win_odds']
-    if df_row['home_winner_odds'] > 0 and df_row['home_win_odds'] < 0:
-        home_winner_diff = (df_row['home_winner_odds']-100) + (100+df_row['home_win_odds'])
-    elif df_row['home_winner_odds'] < 0 and df_row['home_win_odds'] > 0:
-        home_winner_diff = (df_row['home_winner_odds']+100) + (df_row['home_win_odds']-100)
+        spread_diff = spread_home - home_spread_num
+
+    away_winner_odds = df_row['away_winner_odds']
+    away_win_odds = df_row['away_win_odds']
+    if _is_missing(away_winner_odds) or _is_missing(away_win_odds):
+        away_winner_diff = np.nan
+    elif away_winner_odds > 0 and away_win_odds < 0:
+        away_winner_diff = (away_winner_odds - 100) + (100 + away_win_odds)
+    elif away_winner_odds < 0 and away_win_odds > 0:
+        away_winner_diff = (away_winner_odds + 100) + (away_win_odds - 100)
     else:
-        home_winner_diff = df_row['home_winner_odds'] - df_row['home_win_odds']
+        away_winner_diff = away_winner_odds - away_win_odds
+
+    home_winner_odds = df_row['home_winner_odds']
+    home_win_odds = df_row['home_win_odds']
+    if _is_missing(home_winner_odds) or _is_missing(home_win_odds):
+        home_winner_diff = np.nan
+    elif home_winner_odds > 0 and home_win_odds < 0:
+        home_winner_diff = (home_winner_odds - 100) + (100 + home_win_odds)
+    elif home_winner_odds < 0 and home_win_odds > 0:
+        home_winner_diff = (home_winner_odds + 100) + (home_win_odds - 100)
+    else:
+        home_winner_diff = home_winner_odds - home_win_odds
 
     return(pd.Series([spread_diff, away_winner_diff, home_winner_diff]))
 

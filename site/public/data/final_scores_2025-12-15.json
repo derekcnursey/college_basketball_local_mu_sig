@@ -1,0 +1,62 @@
+{
+  "date": "2025-12-15",
+  "games": [
+    {
+      "away_score": 58,
+      "away_team": "Niagara",
+      "game_id": "2025_12_15_niagara_vcu",
+      "home_score": 84,
+      "home_team": "VCU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Wofford",
+      "game_id": "2025_12_15_wofford_gardner_webb",
+      "home_score": 57,
+      "home_team": "Gardner Webb",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "East Texas A&M",
+      "game_id": "2025_12_15_east_texas_a_m_southeastern_louisiana",
+      "home_score": 69,
+      "home_team": "Southeastern Louisiana",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "South Dakota St.",
+      "game_id": "2025_12_15_south_dakota_st_wyoming",
+      "home_score": 87,
+      "home_team": "Wyoming",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 60,
+      "away_team": "North Alabama",
+      "game_id": "2025_12_15_north_alabama_alabama_a_m",
+      "home_score": 68,
+      "home_team": "Alabama A&M",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Incarnate Word",
+      "game_id": "2025_12_15_incarnate_word_tcu",
+      "home_score": 69,
+      "home_team": "TCU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "McNeese St.",
+      "game_id": "2025_12_15_mcneese_st_houston_christian",
+      "home_score": 68,
+      "home_team": "Houston Christian",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.893293Z"
+}

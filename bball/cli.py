@@ -6,6 +6,7 @@ import math
 import click
 import numpy as np
 import pandas as pd
+import datetime as _dt
 import subprocess
 import sys
 from pathlib import Path
@@ -15,6 +16,7 @@ from bball.data.loaders import load_season_data, load_training_dataframe, train_
 from bball.models.infer import load_regressor, predict_margin_dist
 from bball.models.trainer import fit_classifier, fit_regressor
 from bball.models.tuner import tune
+import predict_games as predict_games_mod
 from predict_games import attach_hard_rock_lines, build_today_feature_frame
 
 load_dotenv()
@@ -114,6 +116,39 @@ def prob_to_american(p: np.ndarray) -> np.ndarray:
 def run_repo_script(script_name: str) -> None:
     script_path = REPO_ROOT / script_name
     subprocess.run([sys.executable, str(script_path)], check=True, cwd=REPO_ROOT)
+
+
+def _coerce_date(value: object) -> _dt.date:
+    if isinstance(value, _dt.datetime):
+        return value.date()
+    if isinstance(value, _dt.date):
+        return value
+    if isinstance(value, str):
+        return _dt.datetime.strptime(value, "%Y-%m-%d").date()
+    raise ValueError("date must be a date/datetime or YYYY-MM-DD string")
+
+
+def build_feature_frame_for_date(
+    season_year: int,
+    target_date: object,
+):
+    target = _coerce_date(target_date)
+    old_year = predict_games_mod.CURR_YEAR
+    old_month = predict_games_mod.CURR_MONTH
+    old_day = predict_games_mod.CURR_DAY
+    old_yesterday = predict_games_mod.yesterday
+
+    try:
+        predict_games_mod.CURR_YEAR = target.year
+        predict_games_mod.CURR_MONTH = target.month
+        predict_games_mod.CURR_DAY = target.day
+        predict_games_mod.yesterday = _dt.datetime(target.year, target.month, target.day) - _dt.timedelta(days=1)
+        return build_today_feature_frame(season_year=season_year)
+    finally:
+        predict_games_mod.CURR_YEAR = old_year
+        predict_games_mod.CURR_MONTH = old_month
+        predict_games_mod.CURR_DAY = old_day
+        predict_games_mod.yesterday = old_yesterday
 
 
 @click.group()
@@ -261,7 +296,11 @@ def predict_season(season_year: int, out: str):
     print(f"✓ wrote {len(df_out):,} rows → {out}")
 
 
-def predict_today_impl(season_year: int, out: str | None):
+def predict_today_impl(
+    season_year: int,
+    out: str | None,
+    target_date: object | None = None,
+):
     """
     Generate model predictions for *today's* games only.
     """
@@ -269,8 +308,10 @@ def predict_today_impl(season_year: int, out: str | None):
     from pathlib import Path
     from datetime import datetime
 
-    # 1️⃣ Build today's feature frame
-    info_df, X_df = build_today_feature_frame(season_year=season_year)
+    # 1️⃣ Build feature frame for target date
+    if target_date is None:
+        target_date = _dt.date.today()
+    info_df, X_df = build_feature_frame_for_date(season_year=season_year, target_date=target_date)
 
     if X_df.empty:
         print("No eligible D1 games found for today in the super sked.")
@@ -421,7 +462,7 @@ def predict_today_impl(season_year: int, out: str | None):
 
     # Default output path: repo_root/predictions/csv/preds_YYYY_M_D_edge.csv
     if out is None or str(out).strip() == "":
-        today = datetime.now().date()
+        today = _coerce_date(target_date)
         out_path = Path("predictions") / "csv" / f"preds_{today.year}_{today.month}_{today.day}_edge.csv"
     else:
         out_path = Path(out)
@@ -474,6 +515,73 @@ def daily_run(season_year: int, out: str | None):
     run_repo_script("more_stats.py")
     predict_today_impl(season_year=season_year, out=out)
     subprocess.run(["bash", str(REPO_ROOT / "scripts" / "publish_daily.sh")], check=True, cwd=REPO_ROOT)
+
+
+@cli.command("backfill-season")
+@click.option(
+    "--season",
+    "season_year",
+    default=2026,
+    show_default=True,
+    help="Torvik season key, e.g., 2026 for 2025–26 season",
+)
+@click.option(
+    "--start-date",
+    default="2025-11-01",
+    show_default=True,
+    help="Start date (YYYY-MM-DD) for backfill",
+)
+@click.option(
+    "--end-date",
+    default=None,
+    show_default=False,
+    help="End date (YYYY-MM-DD). Defaults to yesterday.",
+)
+@click.option(
+    "--skip-existing/--no-skip-existing",
+    default=True,
+    show_default=True,
+    help="Skip dates where predictions CSV already exists.",
+)
+def backfill_season(
+    season_year: int,
+    start_date: str,
+    end_date: str | None,
+    skip_existing: bool,
+):
+    """
+    Backfill predictions and JSON outputs for a date range.
+    """
+    start = _coerce_date(start_date)
+    end = _coerce_date(end_date) if end_date else (_dt.date.today() - _dt.timedelta(days=1))
+    if end < start:
+        raise click.BadParameter("end-date must be on/after start-date")
+
+    day = start
+    while day <= end:
+        out_path = Path("predictions") / "csv" / f"preds_{day.year}_{day.month}_{day.day}_edge.csv"
+        if skip_existing and out_path.exists():
+            day += _dt.timedelta(days=1)
+            continue
+        predict_today_impl(season_year=season_year, out=str(out_path), target_date=day)
+        if out_path.exists():
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "csv_to_json.py"),
+                    str(out_path),
+                    day.strftime("%Y-%m-%d"),
+                ],
+                check=True,
+                cwd=REPO_ROOT,
+            )
+        day += _dt.timedelta(days=1)
+
+    subprocess.run(
+        [sys.executable, str(REPO_ROOT / "scripts" / "bart_finals_to_json.py")],
+        check=True,
+        cwd=REPO_ROOT,
+    )
 
 
 

@@ -1,0 +1,94 @@
+{
+  "date": "2025-12-01",
+  "games": [
+    {
+      "away_score": 72,
+      "away_team": "Portland",
+      "game_id": "2025_12_01_portland_stanford",
+      "home_score": 94,
+      "home_team": "Stanford",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 89,
+      "away_team": "Iona",
+      "game_id": "2025_12_01_iona_delaware",
+      "home_score": 66,
+      "home_team": "Delaware",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "West Georgia",
+      "game_id": "2025_12_01_west_georgia_troy",
+      "home_score": 89,
+      "home_team": "Troy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "North Alabama",
+      "game_id": "2025_12_01_north_alabama_jacksonville_st",
+      "home_score": 66,
+      "home_team": "Jacksonville St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "Tarleton St.",
+      "game_id": "2025_12_01_tarleton_st_cincinnati",
+      "home_score": 76,
+      "home_team": "Cincinnati",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "McNeese St.",
+      "game_id": "2025_12_01_mcneese_st_incarnate_word",
+      "home_score": 71,
+      "home_team": "Incarnate Word",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Bowling Green",
+      "game_id": "2025_12_01_bowling_green_kansas_st",
+      "home_score": 66,
+      "home_team": "Kansas St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Cal Baptist",
+      "game_id": "2025_12_01_cal_baptist_colorado",
+      "home_score": 78,
+      "home_team": "Colorado",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "UAB",
+      "game_id": "2025_12_01_uab_middle_tennessee",
+      "home_score": 76,
+      "home_team": "Middle Tennessee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Temple",
+      "game_id": "2025_12_01_temple_villanova",
+      "home_score": 74,
+      "home_team": "Villanova",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Saint Francis",
+      "game_id": "2025_12_01_saint_francis_xavier",
+      "home_score": 96,
+      "home_team": "Xavier",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.830588Z"
+}

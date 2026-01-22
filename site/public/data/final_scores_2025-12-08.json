@@ -1,0 +1,54 @@
+{
+  "date": "2025-12-08",
+  "games": [
+    {
+      "away_score": 72,
+      "away_team": "Lafayette",
+      "game_id": "2025_12_08_lafayette_penn",
+      "home_score": 74,
+      "home_team": "Penn",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 44,
+      "away_team": "South Carolina St.",
+      "game_id": "2025_12_08_south_carolina_st_charleston_southern",
+      "home_score": 84,
+      "home_team": "Charleston Southern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Southern",
+      "game_id": "2025_12_08_southern_texas",
+      "home_score": 95,
+      "home_team": "Texas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Grambling St.",
+      "game_id": "2025_12_08_grambling_st_southern_miss",
+      "home_score": 68,
+      "home_team": "Southern Miss",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Incarnate Word",
+      "game_id": "2025_12_08_incarnate_word_new_orleans",
+      "home_score": 84,
+      "home_team": "New Orleans",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Mississippi Valley St.",
+      "game_id": "2025_12_08_mississippi_valley_st_kansas_st",
+      "home_score": 108,
+      "home_team": "Kansas St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.869340Z"
+}

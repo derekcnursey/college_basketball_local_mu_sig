@@ -1,0 +1,526 @@
+{
+  "date": "2025-11-11",
+  "games": [
+    {
+      "away_score": 71,
+      "away_team": "Loyola Marymount",
+      "game_id": "2025_11_11_loyola_marymount_utep",
+      "home_score": 58,
+      "home_team": "UTEP",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 114,
+      "away_team": "Duke",
+      "game_id": "2025_11_11_duke_army",
+      "home_score": 59,
+      "home_team": "Army",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Florida A&M",
+      "game_id": "2025_11_11_florida_a_m_ucf",
+      "home_score": 97,
+      "home_team": "UCF",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "William & Mary",
+      "game_id": "2025_11_11_william_mary_richmond",
+      "home_score": 90,
+      "home_team": "Richmond",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "Stephen F. Austin",
+      "game_id": "2025_11_11_stephen_f_austin_rice",
+      "home_score": 69,
+      "home_team": "Rice",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Morehead St.",
+      "game_id": "2025_11_11_morehead_st_clemson",
+      "home_score": 83,
+      "home_team": "Clemson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 88,
+      "away_team": "Kentucky",
+      "game_id": "2025_11_11_kentucky_louisville",
+      "home_score": 96,
+      "home_team": "Louisville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Florida St.",
+      "game_id": "2025_11_11_florida_st_florida",
+      "home_score": 78,
+      "home_team": "Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 97,
+      "away_team": "Yale",
+      "game_id": "2025_11_11_yale_quinnipiac",
+      "home_score": 60,
+      "home_team": "Quinnipiac",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Arkansas St.",
+      "game_id": "2025_11_11_arkansas_st_missouri_st",
+      "home_score": 85,
+      "home_team": "Missouri St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Wofford",
+      "game_id": "2025_11_11_wofford_auburn",
+      "home_score": 93,
+      "home_team": "Auburn",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Central Arkansas",
+      "game_id": "2025_11_11_central_arkansas_arkansas",
+      "home_score": 93,
+      "home_team": "Arkansas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "Eastern Illinois",
+      "game_id": "2025_11_11_eastern_illinois_notre_dame",
+      "home_score": 78,
+      "home_team": "Notre Dame",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "NJIT",
+      "game_id": "2025_11_11_njit_loyola_md",
+      "home_score": 64,
+      "home_team": "Loyola MD",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Dayton",
+      "game_id": "2025_11_11_dayton_cincinnati",
+      "home_score": 74,
+      "home_team": "Cincinnati",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Delaware",
+      "game_id": "2025_11_11_delaware_byu",
+      "home_score": 85,
+      "home_team": "BYU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Sacred Heart",
+      "game_id": "2025_11_11_sacred_heart_villanova",
+      "home_score": 94,
+      "home_team": "Villanova",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 95,
+      "away_team": "Georgia Southern",
+      "game_id": "2025_11_11_georgia_southern_florida_gulf_coast",
+      "home_score": 94,
+      "home_team": "Florida Gulf Coast",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 46,
+      "away_team": "Texas A&M Corpus Chris",
+      "game_id": "2025_11_11_texas_a_m_corpus_chris_kansas",
+      "home_score": 77,
+      "home_team": "Kansas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Norfolk St.",
+      "game_id": "2025_11_11_norfolk_st_old_dominion",
+      "home_score": 60,
+      "home_team": "Old Dominion",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Chicago St.",
+      "game_id": "2025_11_11_chicago_st_butler",
+      "home_score": 98,
+      "home_team": "Butler",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "LIU",
+      "game_id": "2025_11_11_liu_air_force",
+      "home_score": 72,
+      "home_team": "Air Force",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 53,
+      "away_team": "Hampton",
+      "game_id": "2025_11_11_hampton_virginia",
+      "home_score": 91,
+      "home_team": "Virginia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Radford",
+      "game_id": "2025_11_11_radford_north_carolina",
+      "home_score": 89,
+      "home_team": "North Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Texas Tech",
+      "game_id": "2025_11_11_texas_tech_illinois",
+      "home_score": 81,
+      "home_team": "Illinois",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "Western Illinois",
+      "game_id": "2025_11_11_western_illinois_cal_st_bakersfield",
+      "home_score": 74,
+      "home_team": "Cal St. Bakersfield",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Lipscomb",
+      "game_id": "2025_11_11_lipscomb_unc_asheville",
+      "home_score": 69,
+      "home_team": "UNC Asheville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Northern Arizona",
+      "game_id": "2025_11_11_northern_arizona_arizona",
+      "home_score": 84,
+      "home_team": "Arizona",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Mount St. Mary's",
+      "game_id": "2025_11_11_mount_st_mary_s_saint_francis",
+      "home_score": 66,
+      "home_team": "Saint Francis",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "UMBC",
+      "game_id": "2025_11_11_umbc_morgan_st",
+      "home_score": 79,
+      "home_team": "Morgan St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "Toledo",
+      "game_id": "2025_11_11_toledo_wright_st",
+      "home_score": 71,
+      "home_team": "Wright St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Ohio",
+      "game_id": "2025_11_11_ohio_saint_mary_s",
+      "home_score": 90,
+      "home_team": "Saint Mary's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Cal St. Northridge",
+      "game_id": "2025_11_11_cal_st_northridge_north_dakota_st",
+      "home_score": 90,
+      "home_team": "North Dakota St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Memphis",
+      "game_id": "2025_11_11_memphis_mississippi",
+      "home_score": 83,
+      "home_team": "Mississippi",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Alcorn St.",
+      "game_id": "2025_11_11_alcorn_st_maryland",
+      "home_score": 84,
+      "home_team": "Maryland",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Wagner",
+      "game_id": "2025_11_11_wagner_fordham",
+      "home_score": 63,
+      "home_team": "Fordham",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Austin Peay",
+      "game_id": "2025_11_11_austin_peay_wyoming",
+      "home_score": 79,
+      "home_team": "Wyoming",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Merrimack",
+      "game_id": "2025_11_11_merrimack_tarleton_st",
+      "home_score": 76,
+      "home_team": "Tarleton St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 50,
+      "away_team": "Maryland Eastern Shore",
+      "game_id": "2025_11_11_maryland_eastern_shore_nebraska",
+      "home_score": 69,
+      "home_team": "Nebraska",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Arkansas Pine Bluff",
+      "game_id": "2025_11_11_arkansas_pine_bluff_oklahoma",
+      "home_score": 95,
+      "home_team": "Oklahoma",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 92,
+      "away_team": "UC Santa Barbara",
+      "game_id": "2025_11_11_uc_santa_barbara_sacramento_st",
+      "home_score": 87,
+      "home_team": "Sacramento St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Tulane",
+      "game_id": "2025_11_11_tulane_louisiana",
+      "home_score": 62,
+      "home_team": "Louisiana",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Northeastern",
+      "game_id": "2025_11_11_northeastern_harvard",
+      "home_score": 60,
+      "home_team": "Harvard",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "UT Rio Grande Valley",
+      "game_id": "2025_11_11_ut_rio_grande_valley_boise_st",
+      "home_score": 85,
+      "home_team": "Boise St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Central Connecticut",
+      "game_id": "2025_11_11_central_connecticut_boston_college",
+      "home_score": 59,
+      "home_team": "Boston College",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 55,
+      "away_team": "Ball St.",
+      "game_id": "2025_11_11_ball_st_wisconsin",
+      "home_score": 86,
+      "home_team": "Wisconsin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Buffalo",
+      "game_id": "2025_11_11_buffalo_depaul",
+      "home_score": 53,
+      "home_team": "DePaul",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "Queens",
+      "game_id": "2025_11_11_queens_duquesne",
+      "home_score": 87,
+      "home_team": "Duquesne",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Navy",
+      "game_id": "2025_11_11_navy_penn_st",
+      "home_score": 80,
+      "home_team": "Penn St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 105,
+      "away_team": "Iona",
+      "game_id": "2025_11_11_iona_umkc",
+      "home_score": 91,
+      "home_team": "UMKC",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "La Salle",
+      "game_id": "2025_11_11_la_salle_temple",
+      "home_score": 90,
+      "home_team": "Temple",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 102,
+      "away_team": "Montana",
+      "game_id": "2025_11_11_montana_unlv",
+      "home_score": 93,
+      "home_team": "UNLV",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "UC Riverside",
+      "game_id": "2025_11_11_uc_riverside_new_mexico",
+      "home_score": 82,
+      "home_team": "New Mexico",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Winthrop",
+      "game_id": "2025_11_11_winthrop_coastal_carolina",
+      "home_score": 72,
+      "home_team": "Coastal Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Creighton",
+      "game_id": "2025_11_11_creighton_gonzaga",
+      "home_score": 90,
+      "home_team": "Gonzaga",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Davidson",
+      "game_id": "2025_11_11_davidson_charlotte",
+      "home_score": 55,
+      "home_team": "Charlotte",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Northwestern St.",
+      "game_id": "2025_11_11_northwestern_st_north_alabama",
+      "home_score": 87,
+      "home_team": "North Alabama",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Alabama St.",
+      "game_id": "2025_11_11_alabama_st_uab",
+      "home_score": 74,
+      "home_team": "UAB",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 53,
+      "away_team": "Appalachian St.",
+      "game_id": "2025_11_11_appalachian_st_ohio_st",
+      "home_score": 75,
+      "home_team": "Ohio St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "Murray St.",
+      "game_id": "2025_11_11_murray_st_smu",
+      "home_score": 102,
+      "home_team": "SMU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Drexel",
+      "game_id": "2025_11_11_drexel_colgate",
+      "home_score": 90,
+      "home_team": "Colgate",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Bucknell",
+      "game_id": "2025_11_11_bucknell_princeton",
+      "home_score": 73,
+      "home_team": "Princeton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "Penn",
+      "game_id": "2025_11_11_penn_providence",
+      "home_score": 106,
+      "home_team": "Providence",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Jacksonville",
+      "game_id": "2025_11_11_jacksonville_high_point",
+      "home_score": 85,
+      "home_team": "High Point",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Michigan",
+      "game_id": "2025_11_11_michigan_wake_forest",
+      "home_score": 84,
+      "home_team": "Wake Forest",
+      "neutral_site": 1
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.738226Z"
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2025-12-11",
+  "games": [
+    {
+      "away_score": 58,
+      "away_team": "UT Arlington",
+      "game_id": "2025_12_11_ut_arlington_ut_rio_grande_valley",
+      "home_score": 50,
+      "home_team": "UT Rio Grande Valley",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "North Dakota St.",
+      "game_id": "2025_12_11_north_dakota_st_cal_st_bakersfield",
+      "home_score": 69,
+      "home_team": "Cal St. Bakersfield",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Saint Joseph's",
+      "game_id": "2025_12_11_saint_joseph_s_syracuse",
+      "home_score": 71,
+      "home_team": "Syracuse",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Green Bay",
+      "game_id": "2025_12_11_green_bay_iu_indy",
+      "home_score": 75,
+      "home_team": "IU Indy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Western Carolina",
+      "game_id": "2025_12_11_western_carolina_virginia_tech",
+      "home_score": 96,
+      "home_team": "Virginia Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Appalachian St.",
+      "game_id": "2025_12_11_appalachian_st_east_carolina",
+      "home_score": 54,
+      "home_team": "East Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Alabama St.",
+      "game_id": "2025_12_11_alabama_st_missouri",
+      "home_score": 85,
+      "home_team": "Missouri",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Iowa",
+      "game_id": "2025_12_11_iowa_iowa_st",
+      "home_score": 66,
+      "home_team": "Iowa St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.877576Z"
+}

@@ -1,0 +1,166 @@
+{
+  "date": "2025-11-04",
+  "games": [
+    {
+      "away_score": 54,
+      "away_team": "Mount St. Mary's",
+      "game_id": "2025_11_04_mount_st_mary_s_west_virginia",
+      "home_score": 70,
+      "home_team": "West Virginia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Eastern Illinois",
+      "game_id": "2025_11_04_eastern_illinois_valparaiso",
+      "home_score": 66,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Southern Utah",
+      "game_id": "2025_11_04_southern_utah_arizona_st",
+      "home_score": 81,
+      "home_team": "Arizona St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "North Carolina A&T",
+      "game_id": "2025_11_04_north_carolina_a_t_south_carolina",
+      "home_score": 91,
+      "home_team": "South Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 89,
+      "away_team": "Georgia Southern",
+      "game_id": "2025_11_04_georgia_southern_east_carolina",
+      "home_score": 92,
+      "home_team": "East Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Tennessee Martin",
+      "game_id": "2025_11_04_tennessee_martin_unlv",
+      "home_score": 81,
+      "home_team": "UNLV",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "UNC Asheville",
+      "game_id": "2025_11_04_unc_asheville_wichita_st",
+      "home_score": 75,
+      "home_team": "Wichita St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 51,
+      "away_team": "Evansville",
+      "game_id": "2025_11_04_evansville_purdue",
+      "home_score": 82,
+      "home_team": "Purdue",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Alcorn St.",
+      "game_id": "2025_11_04_alcorn_st_florida_st",
+      "home_score": 108,
+      "home_team": "Florida St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Lindenwood",
+      "game_id": "2025_11_04_lindenwood_texas_tech",
+      "home_score": 98,
+      "home_team": "Texas Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 51,
+      "away_team": "Nicholls St.",
+      "game_id": "2025_11_04_nicholls_st_kentucky",
+      "home_score": 77,
+      "home_team": "Kentucky",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 45,
+      "away_team": "Long Beach St.",
+      "game_id": "2025_11_04_long_beach_st_san_diego_st",
+      "home_score": 77,
+      "home_team": "San Diego St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "NJIT",
+      "game_id": "2025_11_04_njit_fordham",
+      "home_score": 61,
+      "home_team": "Fordham",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Duke",
+      "game_id": "2025_11_04_duke_texas",
+      "home_score": 60,
+      "home_team": "Texas",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 69,
+      "away_team": "Robert Morris",
+      "game_id": "2025_11_04_robert_morris_iowa",
+      "home_score": 101,
+      "home_team": "Iowa",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "UNC Greensboro",
+      "game_id": "2025_11_04_unc_greensboro_kansas_st",
+      "home_score": 93,
+      "home_team": "Kansas St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "Hawaii",
+      "game_id": "2025_11_04_hawaii_oregon",
+      "home_score": 60,
+      "home_team": "Oregon",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 50,
+      "away_team": "Louisiana Tech",
+      "game_id": "2025_11_04_louisiana_tech_nevada",
+      "home_score": 77,
+      "home_team": "Nevada",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Portland St.",
+      "game_id": "2025_11_04_portland_st_stanford",
+      "home_score": 89,
+      "home_team": "Stanford",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Oral Roberts",
+      "game_id": "2025_11_04_oral_roberts_oklahoma_st",
+      "home_score": 95,
+      "home_team": "Oklahoma St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.707944Z"
+}

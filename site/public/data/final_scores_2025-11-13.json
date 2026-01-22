@@ -1,0 +1,126 @@
+{
+  "date": "2025-11-13",
+  "games": [
+    {
+      "away_score": 87,
+      "away_team": "Purdue",
+      "game_id": "2025_11_13_purdue_alabama",
+      "home_score": 80,
+      "home_team": "Alabama",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "UMass Lowell",
+      "game_id": "2025_11_13_umass_lowell_columbia",
+      "home_score": 86,
+      "home_team": "Columbia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "FIU",
+      "game_id": "2025_11_13_fiu_lsu",
+      "home_score": 98,
+      "home_team": "LSU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Southern Miss",
+      "game_id": "2025_11_13_southern_miss_grambling_st",
+      "home_score": 75,
+      "home_team": "Grambling St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Loyola Chicago",
+      "game_id": "2025_11_13_loyola_chicago_wichita_st",
+      "home_score": 95,
+      "home_team": "Wichita St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Le Moyne",
+      "game_id": "2025_11_13_le_moyne_massachusetts",
+      "home_score": 94,
+      "home_team": "Massachusetts",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Louisiana Monroe",
+      "game_id": "2025_11_13_louisiana_monroe_houston_christian",
+      "home_score": 72,
+      "home_team": "Houston Christian",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 97,
+      "away_team": "Cornell",
+      "game_id": "2025_11_13_cornell_lafayette",
+      "home_score": 78,
+      "home_team": "Lafayette",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Charleston Southern",
+      "game_id": "2025_11_13_charleston_southern_alabama_a_m",
+      "home_score": 68,
+      "home_team": "Alabama A&M",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Alcorn St.",
+      "game_id": "2025_11_13_alcorn_st_howard",
+      "home_score": 72,
+      "home_team": "Howard",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Pittsburgh",
+      "game_id": "2025_11_13_pittsburgh_west_virginia",
+      "home_score": 71,
+      "home_team": "West Virginia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Green Bay",
+      "game_id": "2025_11_13_green_bay_st_thomas",
+      "home_score": 80,
+      "home_team": "St. Thomas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "Monmouth",
+      "game_id": "2025_11_13_monmouth_seton_hall",
+      "home_score": 70,
+      "home_team": "Seton Hall",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 96,
+      "away_team": "California",
+      "game_id": "2025_11_13_california_kansas_st",
+      "home_score": 99,
+      "home_team": "Kansas St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "San Jose St.",
+      "game_id": "2025_11_13_san_jose_st_michigan_st",
+      "home_score": 79,
+      "home_team": "Michigan St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T17:04:49.745780Z"
+}
