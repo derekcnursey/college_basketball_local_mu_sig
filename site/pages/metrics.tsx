@@ -28,8 +28,10 @@ type MetricsProps = {
 
 export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => {
   const finalFiles = listFinalScoreFiles();
-  const maxFinalDate = finalFiles.length
-    ? finalFiles.map((file) => file.date).sort().at(-1) ?? null
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const eligibleFinals = finalFiles.filter((file) => file.date < todayStr);
+  const maxFinalDate = eligibleFinals.length
+    ? eligibleFinals.map((file) => file.date).sort().at(-1) ?? null
     : null;
   const files = listPredictionFiles()
     .filter((file) => (maxFinalDate ? file.date <= maxFinalDate : true))
