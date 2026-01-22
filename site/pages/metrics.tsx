@@ -162,7 +162,7 @@ export default function Metrics({
           <strong>{formatPercent(atsWinPct)}</strong>
         </div>
         <div className="metric-card">
-          <span>ATS win % (Prob Edge &gt; 10)</span>
+          <span>ATS win % (Prob Edge &gt; 10%)</span>
           <strong>{formatPercent(atsWinPctEdge)}</strong>
         </div>
       </section>
