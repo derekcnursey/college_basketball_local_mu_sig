@@ -171,6 +171,12 @@ def main() -> int:
         print("No prediction JSON dates found.")
         return 1
 
+    today_str = datetime.now(timezone.utc).date().strftime("%Y-%m-%d")
+    date_strs = [d for d in date_strs if d < today_str]
+    if not date_strs:
+        print("No prediction dates before today; skipping finals.")
+        return 0
+
     bart_df = iter_bart_rows(date_strs)
     for date_str in date_strs:
         date_df = bart_df[bart_df["date_str"] == date_str]

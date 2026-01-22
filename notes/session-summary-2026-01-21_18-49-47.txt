@@ -1,0 +1,25 @@
+Session Summary (2026-01-21 18:49:47)
+
+Work completed
+- Generated final score JSONs per prediction date from bart_data/2026_super_sked.csv using a new script.
+- Added final score data to the History table and removed today from the date picker; removed the History hero block.
+- Updated Metrics page to compute MAE, MSE, mean error, and ATS win % using final_scores and predictions.
+- ATS win % now uses pick_side when available; model_mu_home sign adjusted (negative = home favored).
+- Metrics UI simplified (lifetime header added, table reduced to the four metrics + game count, dates sorted desc).
+- Fixed final score parsing to use boxscore data to avoid reversed scores.
+- Centered and tightened metric card spacing.
+- Committed and pushed all changes to main.
+
+Key files
+- scripts/bart_finals_to_json.py
+- site/pages/history.tsx
+- site/pages/metrics.tsx
+- site/lib/server-data.ts
+- site/styles/globals.css
+- predictions/json/final_scores_2026-01-16.json through 2026-01-21.json
+- site/public/data/final_scores_2026-01-16.json through 2026-01-21.json
+
+Notes
+- final_scores JSONs are written to both predictions/json and site/public/data.
+- getDataDir now falls back to site/public/data if public/data is missing.
+- commit: e3af7d4 ("Update metrics and final scores")

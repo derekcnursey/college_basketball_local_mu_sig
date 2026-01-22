@@ -25,3 +25,5 @@ if [[ -n "$DATE_ARG" ]]; then
 else
   python3 "$SCRIPT_DIR/csv_to_json.py" "$CSV_PATH"
 fi
+
+python3 "$SCRIPT_DIR/bart_finals_to_json.py"

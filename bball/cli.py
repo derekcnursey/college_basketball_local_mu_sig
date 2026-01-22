@@ -2,26 +2,19 @@
 Command-line entry points for daily batch jobs:
     ingest → build features → train → predict → evaluate
 """
+import math
 import click
-from dotenv import load_dotenv
-from bball.models.tuner import tune
-load_dotenv()
-
-from bball.data.loaders import (
-    load_training_dataframe,
-    train_val_split,
-)
-from bball.models.trainer import fit_regressor, fit_classifier
-from bball.models.infer import load_models, predict_margin, predict_home_win_prob
-import json, joblib
-from pathlib import Path
-from sklearn.preprocessing import StandardScaler
+import numpy as np
 import pandas as pd
-import json, joblib, pandas as pd, torch
-from pathlib import Path
-from bball.data.loaders import load_season_data            # your loader
-from bball.models.infer   import load_models, predict_margin, predict_home_win_prob
-from predict_games import build_today_feature_frame, attach_hard_rock_lines
+from dotenv import load_dotenv
+
+from bball.data.loaders import load_season_data, load_training_dataframe, train_val_split
+from bball.models.infer import load_regressor, predict_margin_dist
+from bball.models.trainer import fit_classifier, fit_regressor
+from bball.models.tuner import tune
+from predict_games import attach_hard_rock_lines, build_today_feature_frame
+
+load_dotenv()
 
 
 TARGET_REG = "spread_home"   # adjust to your column names
@@ -33,6 +26,84 @@ INFO_COLS = [
     "away_team_pts",
     "home_team_pts",
 ]
+
+
+def win_prob_from_mu_sigma(mu: np.ndarray, sigma: np.ndarray) -> np.ndarray:
+    """
+    Compute P(margin > 0) assuming Normal(mu, sigma).
+    Uses math.erf for compatibility (numpy erf not always available).
+    """
+    mu = np.asarray(mu, dtype=float)
+    sigma = np.asarray(sigma, dtype=float)
+    sigma = np.clip(sigma, 1e-6, None)
+
+    z = mu / sigma
+    erf_vec = np.vectorize(math.erf)
+    return 0.5 * (1.0 + erf_vec(z / math.sqrt(2.0)))
+
+
+def normal_cdf(z: np.ndarray) -> np.ndarray:
+    """
+    Standard normal CDF using math.erf (numpy erf may be missing).
+    """
+    z = np.asarray(z, dtype=float)
+    erf_vec = np.vectorize(math.erf)
+    return 0.5 * (1.0 + erf_vec(z / math.sqrt(2.0)))
+
+
+def american_to_breakeven_prob(odds: np.ndarray) -> np.ndarray:
+    """
+    Convert American odds to break-even probability (ignores vig structure; just bet-level break-even).
+    -110 -> 0.5238
+    +150 -> 0.4000
+    """
+    o = pd.to_numeric(odds, errors="coerce").to_numpy(dtype=float)
+    out = np.full_like(o, np.nan, dtype=float)
+
+    neg = o < 0
+    pos = o > 0
+
+    out[neg] = (-o[neg]) / ((-o[neg]) + 100.0)
+    out[pos] = 100.0 / (o[pos] + 100.0)
+
+    return out
+
+
+def american_profit_per_1_staked(odds: np.ndarray) -> np.ndarray:
+    """
+    Profit (not return) per $1 staked if the bet wins.
+    -110 -> 0.9091 profit
+    +150 -> 1.5 profit
+    """
+    o = pd.to_numeric(odds, errors="coerce").to_numpy(dtype=float)
+    out = np.full_like(o, np.nan, dtype=float)
+
+    neg = o < 0
+    pos = o > 0
+
+    out[neg] = 100.0 / (-o[neg])
+    out[pos] = o[pos] / 100.0
+
+    return out
+
+
+def prob_to_american(p: np.ndarray) -> np.ndarray:
+    """
+    Convert probability to "fair" American odds (no vig).
+    Returns float odds; you can round later.
+    """
+    p = np.asarray(p, dtype=float)
+    out = np.full_like(p, np.nan, dtype=float)
+
+    p = np.clip(p, 1e-9, 1 - 1e-9)
+
+    fav = p >= 0.5
+    dog = ~fav
+
+    out[fav] = -100.0 * (p[fav] / (1.0 - p[fav]))
+    out[dog] = 100.0 * ((1.0 - p[dog]) / p[dog])
+
+    return out
 
 @click.group()
 def cli():
@@ -132,8 +203,6 @@ def predict_season(season_year: int, out: str):
     Predict all eligible games in a season data frame.
     """
     import json, joblib
-    import numpy as np
-    import pandas as pd
     from pathlib import Path
 
     # 1️⃣ Load season data (features + info)
@@ -159,12 +228,12 @@ def predict_season(season_year: int, out: str):
     except FileNotFoundError:
         X_model = X_feats
 
-    # 3️⃣ Load models
-    reg, cls = load_models()
+    # 3️⃣ Load regressor only
+    reg, _feat_order = load_regressor(default_input_dim=len(feats_order))
 
-    # 4️⃣ Predict margin + sigma + win prob
-    mu, sigma = predict_margin(reg, X_model)
-    p_home = predict_home_win_prob(cls, X_model)
+    # 4️⃣ Predict margin + sigma + win prob (derived from regressor)
+    mu, sigma = predict_margin_dist(X_model, reg)
+    p_home = win_prob_from_mu_sigma(mu, sigma)
 
     # 5️⃣ Build output frame
     df_out = info_df.copy()
@@ -200,7 +269,6 @@ def predict_today(season_year: int, out: str | None):
     Generate model predictions for *today's* games only.
     """
     import json, joblib
-    import pandas as pd
     from pathlib import Path
     from datetime import datetime
 
@@ -225,12 +293,12 @@ def predict_today(season_year: int, out: str | None):
     except FileNotFoundError:
         X_model = X_feats
 
-    # 3️⃣ Load
-    reg, cls = load_models()
+    # 3️⃣ Load regressor only
+    reg, _feat_order = load_regressor(default_input_dim=len(feats_order))
 
     # 4️⃣ Predict
-    mu, sigma = predict_margin(reg, X_model)
-    p_home = predict_home_win_prob(cls, X_model)
+    mu, sigma = predict_margin_dist(X_model, reg)
+    p_home = win_prob_from_mu_sigma(mu, sigma)
 
     # 5️⃣ Build output frame
     df_out = info_df.copy()
@@ -251,66 +319,91 @@ def predict_today(season_year: int, out: str | None):
     #   > 0  => home covers more often than not
     #   < 0  => away covers more often than not
 
-    import numpy as np
-    from scipy.stats import norm
-
     if "home_spread_num" in df_out.columns and "pred_sigma" in df_out.columns and "pred_margin" in df_out.columns:
         mu_arr = df_out["pred_margin"].astype(float).to_numpy()
         sigma_safe = np.clip(df_out["pred_sigma"].astype(float).to_numpy(), 1e-6, None)
-        spread_num = df_out["home_spread_num"].astype(float).to_numpy()
 
-        # Edge in points (mu + spread)
-        edge_points = mu_arr + spread_num
+        home_spread = pd.to_numeric(df_out["home_spread_num"], errors="coerce").to_numpy()
+        away_spread = pd.to_numeric(df_out["away_spread_num"], errors="coerce").to_numpy()
+
+        edge_points = mu_arr + home_spread
         df_out["edge_points"] = edge_points
 
-        # P(home covers) = P(margin + spread > 0) = P(N(mu, sigma) > -spread)
-        z = (mu_arr + spread_num) / sigma_safe
-        p_home_covers = norm.cdf(z)
-        df_out["home_cover_prob"] = p_home_covers
-        df_out["away_cover_prob"] = 1.0 - p_home_covers
+        edge_z_home = edge_points / sigma_safe
+        df_out["edge_z_home"] = edge_z_home
+        df_out["edge_strength"] = np.abs(edge_z_home)
 
-        # Fair odds (decimal) for covering
-        # Avoid divide by zero
-        eps = 1e-9
-        df_out["home_cover_fair_odds"] = 1.0 / np.clip(p_home_covers, eps, 1.0)
-        df_out["away_cover_fair_odds"] = 1.0 / np.clip(1.0 - p_home_covers, eps, 1.0)
+        df_out["home_cover_prob"] = normal_cdf(edge_z_home)
+        df_out["away_cover_prob"] = 1.0 - df_out["home_cover_prob"]
 
-        # Pick side based on higher cover probability (equivalently sign of edge)
-        df_out["pick_side"] = np.where(edge_points >= 0, "home", "away")
-        df_out["pick_cover_prob"] = np.where(edge_points >= 0, p_home_covers, 1.0 - p_home_covers)
+        df_out["pick_side"] = np.where(df_out["edge_points"] >= 0, "HOME", "AWAY")
+        df_out["pick_cover_prob"] = np.where(
+            df_out["pick_side"] == "HOME",
+            df_out["home_cover_prob"],
+            df_out["away_cover_prob"],
+        )
 
-        # If we have odds for each side, compute EV per $1
-        # EV = p*(odds-1) - (1-p)
         if "home_spread_odds" in df_out.columns and "away_spread_odds" in df_out.columns:
-            home_odds = df_out["home_spread_odds"].astype(float).to_numpy()
-            away_odds = df_out["away_spread_odds"].astype(float).to_numpy()
+            pick_odds = np.where(
+                df_out["pick_side"] == "HOME",
+                pd.to_numeric(df_out["home_spread_odds"], errors="coerce").to_numpy(),
+                pd.to_numeric(df_out["away_spread_odds"], errors="coerce").to_numpy(),
+            )
+            df_out["pick_spread_odds"] = pick_odds
 
-            ev_home = p_home_covers * (home_odds - 1.0) - (1.0 - p_home_covers)
-            ev_away = (1.0 - p_home_covers) * (away_odds - 1.0) - p_home_covers
+            df_out["pick_breakeven_prob"] = american_to_breakeven_prob(df_out["pick_spread_odds"])
+            df_out["pick_prob_edge"] = df_out["pick_cover_prob"] - df_out["pick_breakeven_prob"]
 
-            df_out["home_ev_per_1"] = ev_home
-            df_out["away_ev_per_1"] = ev_away
+            profit_if_win = american_profit_per_1_staked(df_out["pick_spread_odds"])
+            p = df_out["pick_cover_prob"].to_numpy(dtype=float)
+            df_out["pick_ev_per_1"] = p * profit_if_win - (1.0 - p) * 1.0
 
-            df_out["pick_ev_per_1"] = np.where(edge_points >= 0, ev_home, ev_away)
-            df_out["pick_spread_odds"] = np.where(edge_points >= 0, home_odds, away_odds)
+            df_out["pick_fair_odds"] = prob_to_american(df_out["pick_cover_prob"].to_numpy(dtype=float))
+        else:
+            df_out["pick_spread_odds"] = np.nan
+            df_out["pick_breakeven_prob"] = np.nan
+            df_out["pick_prob_edge"] = np.nan
+            df_out["pick_ev_per_1"] = np.nan
+            df_out["pick_fair_odds"] = np.nan
 
-            # Pick "fair odds" for the chosen side
-            df_out["pick_fair_odds"] = np.where(edge_points >= 0, df_out["home_cover_fair_odds"], df_out["away_cover_fair_odds"])
-
-            # Probability edge (how much probability advantage vs implied probability)
-            # implied prob from offered odds = 1/odds
-            implied_home = 1.0 / np.clip(home_odds, eps, None)
-            implied_away = 1.0 / np.clip(away_odds, eps, None)
-            df_out["home_prob_edge"] = p_home_covers - implied_home
-            df_out["away_prob_edge"] = (1.0 - p_home_covers) - implied_away
-            df_out["pick_prob_edge"] = np.where(edge_points >= 0, df_out["home_prob_edge"], df_out["away_prob_edge"])
+        if "spread_diff" in df_out.columns:
+            df_out["spread_diff_old"] = df_out["spread_diff"]
+        df_out["spread_diff"] = df_out["edge_points"]
+    else:
+        df_out["edge_points"] = np.nan
+        df_out["edge_z_home"] = np.nan
+        df_out["edge_strength"] = np.nan
+        df_out["home_cover_prob"] = np.nan
+        df_out["away_cover_prob"] = np.nan
+        df_out["pick_side"] = np.nan
+        df_out["pick_cover_prob"] = np.nan
+        df_out["pick_spread_odds"] = np.nan
+        df_out["pick_breakeven_prob"] = np.nan
+        df_out["pick_prob_edge"] = np.nan
+        df_out["pick_ev_per_1"] = np.nan
+        df_out["pick_fair_odds"] = np.nan
 
     # =========================
     # Column ordering / display
     # =========================
+    if "pick_ev_per_1" in df_out.columns:
+        df_out = df_out.sort_values("pick_ev_per_1", ascending=False)
+
     edge_cols = [
-        "spread_home",
+        "pick_side",
+        "pick_cover_prob",
+        "pick_spread_odds",
+        "pick_breakeven_prob",
+        "pick_prob_edge",
+        "pick_ev_per_1",
+        "pick_fair_odds",
+        "edge_strength",
+        "edge_z_home",
+        "edge_points",
+        "home_cover_prob",
+        "away_cover_prob",
         "spread_diff",
+        "spread_diff_old",
         "model_home_spread",
         "home_spread_num",
         "home_spread_odds",
@@ -331,10 +424,10 @@ def predict_today(season_year: int, out: str | None):
     df_out = df_out[front_cols + rest_cols]
 
 
-    # Default output path: repo_root/predictions/preds_YYYY_M_D_edge.csv
+    # Default output path: repo_root/predictions/csv/preds_YYYY_M_D_edge.csv
     if out is None or str(out).strip() == "":
         today = datetime.now().date()
-        out_path = Path("predictions") / f"preds_{today.year}_{today.month}_{today.day}_edge.csv"
+        out_path = Path("predictions") / "csv" / f"preds_{today.year}_{today.month}_{today.day}_edge.csv"
     else:
         out_path = Path(out)
 
