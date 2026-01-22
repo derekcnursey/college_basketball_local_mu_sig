@@ -36,7 +36,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
     };
   }
   const rows = getPredictionRowsByFilename(latest.filename);
-  const columns = pickColumns(rows);
+  const columns = pickColumns(rows).filter((column) => column !== "neutral_site");
   const availableDates = listPredictionFiles().map((file) => file.date);
 
   return {
@@ -339,5 +339,4 @@ const columnLabels: Record<string, string> = {
   edge_home_points: "Point Edge",
   pred_sigma: "Sigma",
   pick_ev_per_1: "EV per $1",
-  neutral_site: "Neutral Site"
 };

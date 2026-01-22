@@ -34,7 +34,9 @@ export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
   const rows = date ? getPredictionRowsByDate(date) : [];
   const finalScores = date ? getFinalScoresByDate(date) : [];
   const rowsWithScores = attachFinalScores(rows, finalScores);
-  const columns = pickColumns(rowsWithScores);
+  const columns = pickColumns(rowsWithScores).filter(
+    (column) => column !== "neutral_site"
+  );
   if (!columns.includes("final_score")) {
     columns.splice(2, 0, "final_score");
   }
@@ -156,8 +158,7 @@ const columnLabels: Record<string, string> = {
   market_spread_home: "Book Spread (Home)",
   edge_home_points: "Point Edge",
   pred_sigma: "Sigma",
-  pick_ev_per_1: "EV per $1",
-  neutral_site: "Neutral Site"
+  pick_ev_per_1: "EV per $1"
 };
 
 function getFinalScoresByDate(date: string): PredictionRow[] {
