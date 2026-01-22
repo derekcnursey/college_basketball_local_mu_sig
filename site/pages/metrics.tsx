@@ -1,12 +1,6 @@
 import { GetServerSideProps } from "next";
 import Layout from "../components/Layout";
-import {
-  PredictionRow,
-  getActualMargin,
-  getTeams,
-  normalizeRows,
-  normalizeTeam
-} from "../lib/data";
+import { PredictionRow, getTeams, normalizeRows, normalizeTeam } from "../lib/data";
 import { listFinalScoreFiles, listPredictionFiles, readJsonFile } from "../lib/server-data";
 
 type DateSummary = {
@@ -15,7 +9,8 @@ type DateSummary = {
   mse: number | null;
   mae: number | null;
   meanError: number | null;
-  atsWinPct: number | null;
+  atsRecord: string | null;
+  atsRecordEdge: string | null;
 };
 
 type MetricsProps = {
@@ -24,6 +19,8 @@ type MetricsProps = {
   meanError: number | null;
   atsWinPct: number | null;
   atsWinPctEdge: number | null;
+  atsRecord: string | null;
+  atsRecordEdge: string | null;
   dateSummaries: DateSummary[];
 };
 
@@ -44,6 +41,10 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
   const allErrors: number[] = [];
   const allAtsResults: number[] = [];
   const allAtsEdgeResults: number[] = [];
+  let allAtsWins = 0;
+  let allAtsLosses = 0;
+  let allAtsEdgeWins = 0;
+  let allAtsEdgeLosses = 0;
 
   for (const file of files) {
     const payload = readJsonFile(file.filename);
@@ -59,7 +60,8 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
         mse: null,
         mae: null,
         meanError: null,
-        atsWinPct: null
+        atsRecord: null,
+        atsRecordEdge: null
       });
       continue;
     }
@@ -67,8 +69,10 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
     const dateSquaredErrors: number[] = [];
     const dateAbsErrors: number[] = [];
     const dateErrors: number[] = [];
-    const dateAtsResults: number[] = [];
-    const dateAtsEdgeResults: number[] = [];
+    let dateAtsWins = 0;
+    let dateAtsLosses = 0;
+    let dateAtsEdgeWins = 0;
+    let dateAtsEdgeLosses = 0;
 
     for (const row of rows) {
       const modelSpread = getModelSpread(row);
@@ -90,11 +94,26 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
 
       const ats = getAtsResult(row, -actualSpread);
       if (ats && ats !== "push") {
-        const atsWin = ats === "win" ? 1 : 0;
-        dateAtsResults.push(atsWin);
+        const isWin = ats === "win";
+        if (isWin) {
+          dateAtsWins += 1;
+        } else {
+          dateAtsLosses += 1;
+        }
         const probEdge = getPickProbEdge(row);
         if (probEdge !== null && probEdge > 0.1) {
-          dateAtsEdgeResults.push(atsWin);
+          if (isWin) {
+            dateAtsEdgeWins += 1;
+            allAtsEdgeWins += 1;
+          } else {
+            dateAtsEdgeLosses += 1;
+            allAtsEdgeLosses += 1;
+          }
+        }
+        if (isWin) {
+          allAtsWins += 1;
+        } else {
+          allAtsLosses += 1;
         }
       }
     }
@@ -102,8 +121,14 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
     dateSquaredErrors.forEach((value) => allSquaredErrors.push(value));
     dateAbsErrors.forEach((value) => allAbsErrors.push(value));
     dateErrors.forEach((value) => allErrors.push(value));
-    dateAtsResults.forEach((value) => allAtsResults.push(value));
-    dateAtsEdgeResults.forEach((value) => allAtsEdgeResults.push(value));
+    if (dateAtsWins + dateAtsLosses > 0) {
+      allAtsResults.push(dateAtsWins / (dateAtsWins + dateAtsLosses));
+    }
+    if (dateAtsEdgeWins + dateAtsEdgeLosses > 0) {
+      allAtsEdgeResults.push(
+        dateAtsEdgeWins / (dateAtsEdgeWins + dateAtsEdgeLosses)
+      );
+    }
 
     dateSummaries.push({
       date: file.date,
@@ -111,7 +136,14 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
       mse: dateSquaredErrors.length ? average(dateSquaredErrors) : null,
       mae: dateAbsErrors.length ? average(dateAbsErrors) : null,
       meanError: dateErrors.length ? average(dateErrors) : null,
-      atsWinPct: dateAtsResults.length ? average(dateAtsResults) : null
+      atsRecord:
+        dateAtsWins + dateAtsLosses > 0
+          ? `${dateAtsWins}-${dateAtsLosses}`
+          : null,
+      atsRecordEdge:
+        dateAtsEdgeWins + dateAtsEdgeLosses > 0
+          ? `${dateAtsEdgeWins}-${dateAtsEdgeLosses}`
+          : null
     });
   }
 
@@ -120,8 +152,20 @@ export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => 
       mse: allSquaredErrors.length ? average(allSquaredErrors) : null,
       mae: allAbsErrors.length ? average(allAbsErrors) : null,
       meanError: allErrors.length ? average(allErrors) : null,
-      atsWinPct: allAtsResults.length ? average(allAtsResults) : null,
-      atsWinPctEdge: allAtsEdgeResults.length ? average(allAtsEdgeResults) : null,
+      atsWinPct:
+        allAtsWins + allAtsLosses > 0
+          ? allAtsWins / (allAtsWins + allAtsLosses)
+          : null,
+      atsWinPctEdge:
+        allAtsEdgeWins + allAtsEdgeLosses > 0
+          ? allAtsEdgeWins / (allAtsEdgeWins + allAtsEdgeLosses)
+          : null,
+      atsRecord:
+        allAtsWins + allAtsLosses > 0 ? `${allAtsWins}-${allAtsLosses}` : null,
+      atsRecordEdge:
+        allAtsEdgeWins + allAtsEdgeLosses > 0
+          ? `${allAtsEdgeWins}-${allAtsEdgeLosses}`
+          : null,
       dateSummaries
     }
   };
@@ -133,6 +177,8 @@ export default function Metrics({
   meanError,
   atsWinPct,
   atsWinPctEdge,
+  atsRecord,
+  atsRecordEdge,
   dateSummaries
 }: MetricsProps) {
   return (
@@ -152,12 +198,12 @@ export default function Metrics({
           <strong>{formatNumber(meanError)}</strong>
         </div>
         <div className="metric-card">
-          <span>ATS win %</span>
-          <strong>{formatPercent(atsWinPct)}</strong>
+          <span>ATS</span>
+          <strong>{formatRecordWithPercent(atsRecord, atsWinPct)}</strong>
         </div>
         <div className="metric-card">
-          <span>ATS win % (Prob Edge &gt; 10%)</span>
-          <strong>{formatPercent(atsWinPctEdge)}</strong>
+          <span>ATS (Prob Edge &gt; 10%)</span>
+          <strong>{formatRecordWithPercent(atsRecordEdge, atsWinPctEdge)}</strong>
         </div>
       </section>
 
@@ -171,7 +217,8 @@ export default function Metrics({
                 <th>MAE</th>
                 <th>MSE</th>
                 <th>Mean error</th>
-                <th>ATS win %</th>
+                <th>ATS Record</th>
+                <th>ATS Record (Prob Edge &gt; 10%)</th>
               </tr>
             </thead>
             <tbody>
@@ -182,7 +229,8 @@ export default function Metrics({
                   <td>{formatNumber(summary.mae)}</td>
                   <td>{formatNumber(summary.mse)}</td>
                   <td>{formatNumber(summary.meanError)}</td>
-                  <td>{formatPercent(summary.atsWinPct)}</td>
+                  <td>{summary.atsRecord ?? "-"}</td>
+                  <td>{summary.atsRecordEdge ?? "-"}</td>
                 </tr>
               ))}
             </tbody>
@@ -209,6 +257,21 @@ function formatPercent(value: number | null): string {
     return "-";
   }
   return `${(value * 100).toFixed(1)}%`;
+}
+
+function formatRecordWithPercent(record: string | null, pct: number | null): string {
+  const recordText = record ?? "-";
+  const pctText = formatPercent(pct);
+  if (recordText === "-" && pctText === "-") {
+    return "-";
+  }
+  if (recordText === "-") {
+    return pctText;
+  }
+  if (pctText === "-") {
+    return recordText;
+  }
+  return `${recordText} (${pctText})`;
 }
 
 function getModelSpread(row: PredictionRow): number | null {
@@ -242,15 +305,13 @@ function getActualSpread(row: PredictionRow): number | null {
 }
 
 function getMarketSpreadHome(row: PredictionRow): number | null {
-  const value = row.market_spread_home ?? row.home_spread_num ?? row.spread_home;
-  if (typeof value === "number") {
-    return value;
+  const direct = parseNumeric(row.market_spread_home);
+  if (direct !== null) {
+    return direct;
   }
-  if (typeof value === "string" && value.trim() !== "") {
-    const parsed = Number(value);
-    if (!Number.isNaN(parsed)) {
-      return parsed;
-    }
+  const fallback = parseNumeric(row.home_spread_num ?? row.spread_home);
+  if (fallback !== null) {
+    return fallback;
   }
   return null;
 }
@@ -264,15 +325,16 @@ function getPickSide(row: PredictionRow): string | null {
 }
 
 function getPickProbEdge(row: PredictionRow): number | null {
-  const value = row.pick_prob_edge ?? row.pickProbEdge;
-  if (typeof value === "number") {
-    return value;
+  const direct = parseNumeric(row.pick_prob_edge ?? row.pickProbEdge);
+  if (direct !== null) {
+    return direct;
   }
-  if (typeof value === "string" && value.trim() !== "") {
-    const parsed = Number(value);
-    if (!Number.isNaN(parsed)) {
-      return parsed;
-    }
+  const cover = parseNumeric(row.pick_cover_prob ?? row.pickCoverProb);
+  const breakeven = parseNumeric(
+    row.pick_breakeven_prob ?? row.pickBreakevenProb ?? row.pick_breakeven
+  );
+  if (cover !== null && breakeven !== null) {
+    return cover - breakeven;
   }
   return null;
 }
@@ -293,6 +355,17 @@ function getAtsResult(
   }
   const coverSide = cover > 0 ? "HOME" : "AWAY";
   return pickSide === coverSide ? "win" : "loss";
+}
+
+function parseNumeric(value: unknown): number | null {
+  if (typeof value === "number") {
+    return Number.isFinite(value) ? value : null;
+  }
+  if (typeof value === "string" && value.trim() !== "") {
+    const parsed = Number(value);
+    return Number.isNaN(parsed) ? null : parsed;
+  }
+  return null;
 }
 
 function buildResultLookup(rows: PredictionRow[]): Map<string, PredictionRow> {

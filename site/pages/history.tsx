@@ -107,6 +107,10 @@ export default function History({ date, rows, columns, availableDates }: History
                 <span className="value">{summary.atsCount}</span>
               </div>
               <div className="metric-card">
+                <span className="label">ATS Record (Prob Edge &gt; 10%)</span>
+                <span className="value">{summary.atsEdgeCount}</span>
+              </div>
+              <div className="metric-card">
                 <span className="label">MAE</span>
                 <span className="value">{summary.mae}</span>
               </div>
@@ -286,6 +290,7 @@ function getCellClass(row: PredictionRow, column: string): string {
 
 function buildDailySummary(rows: PredictionRow[]): {
   atsCount: string;
+  atsEdgeCount: string;
   mae: string;
   mse: string;
 } | null {
@@ -296,6 +301,8 @@ function buildDailySummary(rows: PredictionRow[]): {
   let atsWins = 0;
   let atsLosses = 0;
   let atsPushes = 0;
+  let atsEdgeWins = 0;
+  let atsEdgeLosses = 0;
   let errorCount = 0;
   let absErrorSum = 0;
   let sqErrorSum = 0;
@@ -308,6 +315,16 @@ function buildDailySummary(rows: PredictionRow[]): {
       atsLosses += 1;
     } else if (ats === "push") {
       atsPushes += 1;
+    }
+    if (ats === "win" || ats === "loss") {
+      const probEdge = parseNumeric(row.pick_prob_edge ?? row.pickProbEdge);
+      if (probEdge !== null && probEdge > 0.1) {
+        if (ats === "win") {
+          atsEdgeWins += 1;
+        } else {
+          atsEdgeLosses += 1;
+        }
+      }
     }
 
     const actualSpread = getActualSpreadFromRow(row);
@@ -322,12 +339,15 @@ function buildDailySummary(rows: PredictionRow[]): {
 
   const atsTotal = atsWins + atsLosses;
   const atsCount = atsTotal > 0 ? `${atsWins}-${atsLosses}` : "No ATS";
+  const atsEdgeTotal = atsEdgeWins + atsEdgeLosses;
+  const atsEdgeCount = atsEdgeTotal > 0 ? `${atsEdgeWins}-${atsEdgeLosses}` : "No ATS";
 
   const mae = errorCount > 0 ? (absErrorSum / errorCount).toFixed(2) : "—";
   const mse = errorCount > 0 ? (sqErrorSum / errorCount).toFixed(2) : "—";
 
   return {
     atsCount,
+    atsEdgeCount,
     mae,
     mse
   };
