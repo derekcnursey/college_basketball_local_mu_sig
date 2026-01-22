@@ -8,8 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <div className="page">
       <header className="site-header">
         <div className="brand">
-          <span className="brand-title">College Hoops Edge</span>
-          <span className="brand-subtitle">Predictions tracker</span>
+          <img className="site-logo" src="/logo.png" alt="College Hoops Edge" />
         </div>
         <nav className="nav">
           <Link href="/" className={router.pathname === "/" ? "active" : ""}>

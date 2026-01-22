@@ -43,28 +43,43 @@ a {
 
 .page {
   min-height: 100vh;
-  padding: 32px 24px 64px;
+  padding: 12px 24px 64px;
 }
 
 .site-header {
   max-width: var(--max);
-  margin: 0 auto 32px;
-  padding: 8px 0;
+  margin: 0 auto 8px;
+  padding: 0;
   background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: none;
   display: flex;
   gap: 24px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.site-logo {
+  width: 1200px;
+  height: 360px;
+  object-fit: contain;
+  object-position: left top;
+  display: block;
+  margin-left: -120px;
+  margin-top: -75px;
+  margin-bottom: -120px;
 }
 
 .brand {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: flex-start;
+  padding-left: 0;
 }
 
 .brand-title {
@@ -85,6 +100,10 @@ a {
   gap: 18px;
   font-weight: 600;
   font-size: 20px;
+  padding-right: 28px;
+  position: absolute;
+  top: 40px;
+  right: 0;
 }
 
 .nav a {
@@ -108,6 +127,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-top: 24px;
 }
 
 .hero {
