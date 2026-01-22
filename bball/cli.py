@@ -6,6 +6,9 @@ import math
 import click
 import numpy as np
 import pandas as pd
+import subprocess
+import sys
+from pathlib import Path
 from dotenv import load_dotenv
 
 from bball.data.loaders import load_season_data, load_training_dataframe, train_val_split
@@ -15,6 +18,8 @@ from bball.models.tuner import tune
 from predict_games import attach_hard_rock_lines, build_today_feature_frame
 
 load_dotenv()
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 TARGET_REG = "spread_home"   # adjust to your column names
@@ -104,6 +109,12 @@ def prob_to_american(p: np.ndarray) -> np.ndarray:
     out[dog] = 100.0 * ((1.0 - p[dog]) / p[dog])
 
     return out
+
+
+def run_repo_script(script_name: str) -> None:
+    script_path = REPO_ROOT / script_name
+    subprocess.run([sys.executable, str(script_path)], check=True, cwd=REPO_ROOT)
+
 
 @click.group()
 def cli():
@@ -250,21 +261,7 @@ def predict_season(season_year: int, out: str):
     print(f"✓ wrote {len(df_out):,} rows → {out}")
 
 
-@cli.command("predict-today")
-@click.option(
-    "--season",
-    "season_year",
-    default=2026,
-    show_default=True,
-    help="Torvik season key, e.g., 2026 for 2025–26 season",
-)
-@click.option(
-    "--out",
-    default=None,
-    show_default=False,
-    help="Where to save today's predictions (default: predictions/preds_YYYY_M_D_edge.csv)",
-)
-def predict_today(season_year: int, out: str | None):
+def predict_today_impl(season_year: int, out: str | None):
     """
     Generate model predictions for *today's* games only.
     """
@@ -308,7 +305,6 @@ def predict_today(season_year: int, out: str | None):
 
     # 6️⃣ Attach Hard Rock lines and compute edges
     df_out = attach_hard_rock_lines(df_out, pred_col="pred_margin")
-
 
     # ✅ Cover probabilities (only possible after lines are attached)
     # Home covers if (margin + home_spread_num) > 0
@@ -423,7 +419,6 @@ def predict_today(season_year: int, out: str | None):
     rest_cols = [c for c in df_out.columns if c not in front_cols]
     df_out = df_out[front_cols + rest_cols]
 
-
     # Default output path: repo_root/predictions/csv/preds_YYYY_M_D_edge.csv
     if out is None or str(out).strip() == "":
         today = datetime.now().date()
@@ -434,6 +429,51 @@ def predict_today(season_year: int, out: str | None):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     df_out.to_csv(out_path, index=False)
     print(f"✓ wrote {len(df_out):,} rows → {out_path}")
+
+
+@cli.command("predict-today")
+@click.option(
+    "--season",
+    "season_year",
+    default=2026,
+    show_default=True,
+    help="Torvik season key, e.g., 2026 for 2025–26 season",
+)
+@click.option(
+    "--out",
+    default=None,
+    show_default=False,
+    help="Where to save today's predictions (default: predictions/preds_YYYY_M_D_edge.csv)",
+)
+def predict_today(season_year: int, out: str | None):
+    """
+    Generate model predictions for *today's* games only.
+    """
+    predict_today_impl(season_year=season_year, out=out)
+
+
+@cli.command("daily-run")
+@click.option(
+    "--season",
+    "season_year",
+    default=2026,
+    show_default=True,
+    help="Torvik season key, e.g., 2026 for 2025–26 season",
+)
+@click.option(
+    "--out",
+    default=None,
+    show_default=False,
+    help="Where to save today's predictions (default: predictions/csv/preds_YYYY_M_D_edge.csv)",
+)
+def daily_run(season_year: int, out: str | None):
+    """
+    Update boxscores/data, refresh stats tables, then run predict-today.
+    """
+    run_repo_script("update_all_data.py")
+    run_repo_script("more_stats.py")
+    predict_today_impl(season_year=season_year, out=out)
+    subprocess.run(["bash", str(REPO_ROOT / "scripts" / "publish_daily.sh")], check=True, cwd=REPO_ROOT)
 
 
 

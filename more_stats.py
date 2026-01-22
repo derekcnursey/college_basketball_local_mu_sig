@@ -32,6 +32,59 @@ conn = mysql.connector.connect(
 )
 mycursor = conn.cursor()
 
+def fetch_max_date(table: str):
+    try:
+        mycursor.execute(f"SELECT MAX(Date) FROM {table}")
+        row = mycursor.fetchone()
+    except Exception:
+        return None
+    if not row or row[0] is None:
+        return None
+    value = row[0]
+    if isinstance(value, datetime.datetime):
+        return value.date()
+    if isinstance(value, datetime.date):
+        return value
+    try:
+        return datetime.datetime.strptime(str(value), "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def get_latest_stats_date():
+    offensive_date = fetch_max_date("offensive_averages")
+    defensive_date = fetch_max_date("defensive_averages")
+    if offensive_date and defensive_date:
+        return max(offensive_date, defensive_date)
+    return offensive_date or defensive_date
+
+
+def parse_start_date(value):
+    if value is None:
+        return None
+    if isinstance(value, datetime.date):
+        return value
+    if isinstance(value, int):
+        return datetime.date(value, 1, 20)
+    value_str = str(value).strip()
+    if value_str.isdigit() and len(value_str) == 4:
+        return datetime.date(int(value_str), 1, 20)
+    try:
+        return datetime.datetime.strptime(value_str, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def determine_start_date(value=None):
+    parsed = parse_start_date(value)
+    if parsed:
+        return parsed
+    latest = get_latest_stats_date()
+    if latest:
+        return latest + datetime.timedelta(days=1)
+    today = datetime.datetime.now().date()
+    return datetime.date(today.year, 1, 20)
+
 
 def get_ppp(pts, possessions):
     if possessions == 0:
@@ -193,18 +246,19 @@ def input_own_defensive_stats(full_df):
     #temp_df.to_csv('defensive_csv.csv')
     input_data(temp_df, 'defensive_averages')
 
-def do_that_shit(year):
-    year = int(year)
-    month = 1
-    day = 20
+def do_that_shit(start_value=None):
+    start_date = determine_start_date(start_value)
+    year = start_date.year
+    month = start_date.month
+    day = start_date.day
     datetime_temp = datetime.datetime(year, month, day)
 
-    min_year = year-1
+    min_year = year - 1
     if month == 12:
         min_num_games = 2
     year_max = year
-    if month<13 and month>7:
-        year_max +=1
+    if month < 13 and month > 7:
+        year_max += 1
     the_biggest_boy_df = pd.DataFrame()
     do_this =True
     min_num_games = 2
@@ -488,7 +542,8 @@ def do_that_shit(year):
         datetime_temp += datetime.timedelta(days=1)
 
 if __name__ == '__main__':
-    do_that_shit(sys.argv[1])
+    arg = sys.argv[1] if len(sys.argv) > 1 else None
+    do_that_shit(arg)
 
 
 

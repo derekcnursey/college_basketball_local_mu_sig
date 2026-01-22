@@ -5,6 +5,7 @@ import re
 import pandas as pd
 import numpy as np
 import datetime
+from pathlib import Path
 from input_data import *
 import csv
 from to_datetime import*
@@ -13,7 +14,8 @@ from to_datetime import*
 
 year = 2026
 url = 'https://barttorvik.com/' + str(year) + '_super_sked.csv'
-df = pd.read_csv(url)
+df = pd.read_csv(url, storage_options={"User-Agent": "Mozilla/5.0"})
+Path("bart_files").mkdir(parents=True, exist_ok=True)
 df.to_csv('bart_files/'+str(year)+'_super_sked.csv', index=False)
 
 
