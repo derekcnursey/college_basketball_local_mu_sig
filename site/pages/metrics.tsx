@@ -27,11 +27,13 @@ type MetricsProps = {
 };
 
 export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => {
-  const cutoffDate = "2026-01-20";
-  const files = listPredictionFiles()
-    .filter((file) => file.date <= cutoffDate)
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
   const finalFiles = listFinalScoreFiles();
+  const maxFinalDate = finalFiles.length
+    ? finalFiles.map((file) => file.date).sort().at(-1) ?? null
+    : null;
+  const files = listPredictionFiles()
+    .filter((file) => (maxFinalDate ? file.date <= maxFinalDate : true))
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
   const finalFilesByDate = new Map(finalFiles.map((file) => [file.date, file.filename]));
   const dateSummaries: DateSummary[] = [];
   const allSquaredErrors: number[] = [];
