@@ -1,0 +1,166 @@
+{
+  "date": "2025-12-28",
+  "games": [
+    {
+      "away_score": 102,
+      "away_team": "Santa Clara",
+      "game_id": "2025_12_28_santa_clara_oregon_st",
+      "home_score": 64,
+      "home_team": "Oregon St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Le Moyne",
+      "game_id": "2025_12_28_le_moyne_boston_college",
+      "home_score": 72,
+      "home_team": "Boston College",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Penn",
+      "game_id": "2025_12_28_penn_george_mason",
+      "home_score": 83,
+      "home_team": "George Mason",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Harvard",
+      "game_id": "2025_12_28_harvard_colgate",
+      "home_score": 69,
+      "home_team": "Colgate",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Cal St. Fullerton",
+      "game_id": "2025_12_28_cal_st_fullerton_smu",
+      "home_score": 110,
+      "home_team": "SMU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Washington St.",
+      "game_id": "2025_12_28_washington_st_portland",
+      "home_score": 62,
+      "home_team": "Portland",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Florida A&M",
+      "game_id": "2025_12_28_florida_a_m_georgia_tech",
+      "home_score": 89,
+      "home_team": "Georgia Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 54,
+      "away_team": "Pacific",
+      "game_id": "2025_12_28_pacific_san_diego",
+      "home_score": 66,
+      "home_team": "San Diego",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Saint Mary's",
+      "game_id": "2025_12_28_saint_mary_s_loyola_marymount",
+      "home_score": 73,
+      "home_team": "Loyola Marymount",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "San Francisco",
+      "game_id": "2025_12_28_san_francisco_seattle",
+      "home_score": 59,
+      "home_team": "Seattle",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 54,
+      "away_team": "Norfolk St.",
+      "game_id": "2025_12_28_norfolk_st_louisiana",
+      "home_score": 63,
+      "home_team": "Louisiana",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_28_northern_colorado_colorado",
+      "home_score": 81,
+      "home_team": "Colorado",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Nebraska Omaha",
+      "game_id": "2025_12_28_nebraska_omaha_oregon",
+      "home_score": 80,
+      "home_team": "Oregon",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Louisiana Monroe",
+      "game_id": "2025_12_28_louisiana_monroe_kansas_st",
+      "home_score": 94,
+      "home_team": "Kansas St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 96,
+      "away_team": "Gonzaga",
+      "game_id": "2025_12_28_gonzaga_pepperdine",
+      "home_score": 56,
+      "home_team": "Pepperdine",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Winthrop",
+      "game_id": "2025_12_28_winthrop_texas_tech",
+      "home_score": 87,
+      "home_team": "Texas Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Columbia",
+      "game_id": "2025_12_28_columbia_north_florida",
+      "home_score": 82,
+      "home_team": "North Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 97,
+      "away_team": "Liberty",
+      "game_id": "2025_12_28_liberty_fiu",
+      "home_score": 94,
+      "home_team": "FIU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Charleston Southern",
+      "game_id": "2025_12_28_charleston_southern_richmond",
+      "home_score": 72,
+      "home_team": "Richmond",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "Old Dominion",
+      "game_id": "2025_12_28_old_dominion_maryland",
+      "home_score": 73,
+      "home_team": "Maryland",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.605601Z"
+}

@@ -1,0 +1,94 @@
+{
+  "date": "2025-12-23",
+  "games": [
+    {
+      "away_score": 65,
+      "away_team": "UC Riverside",
+      "game_id": "2025_12_23_uc_riverside_ucla",
+      "home_score": 97,
+      "home_team": "UCLA",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "Harvard",
+      "game_id": "2025_12_23_harvard_st_john_s",
+      "home_score": 85,
+      "home_team": "St. John's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Green Bay",
+      "game_id": "2025_12_23_green_bay_campbell",
+      "home_score": 102,
+      "home_team": "Campbell",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Lindenwood",
+      "game_id": "2025_12_23_lindenwood_missouri_st",
+      "home_score": 70,
+      "home_team": "Missouri St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Grambling St.",
+      "game_id": "2025_12_23_grambling_st_ohio_st",
+      "home_score": 89,
+      "home_team": "Ohio St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Idaho",
+      "game_id": "2025_12_23_idaho_cal_st_bakersfield",
+      "home_score": 64,
+      "home_team": "Cal St. Bakersfield",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Morgan St.",
+      "game_id": "2025_12_23_morgan_st_loyola_marymount",
+      "home_score": 83,
+      "home_team": "Loyola Marymount",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Florida Atlantic",
+      "game_id": "2025_12_23_florida_atlantic_ucf",
+      "home_score": 85,
+      "home_team": "UCF",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 85,
+      "away_team": "Binghamton",
+      "game_id": "2025_12_23_binghamton_army",
+      "home_score": 95,
+      "home_team": "Army",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Villanova",
+      "game_id": "2025_12_23_villanova_seton_hall",
+      "home_score": 56,
+      "home_team": "Seton Hall",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Bellarmine",
+      "game_id": "2025_12_23_bellarmine_kentucky",
+      "home_score": 99,
+      "home_team": "Kentucky",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.602204Z"
+}

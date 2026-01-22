@@ -1,0 +1,390 @@
+{
+  "date": "2026-01-15",
+  "games": [
+    {
+      "away_score": 52,
+      "away_team": "Charleston",
+      "game_id": "2026_01_15_charleston_towson",
+      "home_score": 61,
+      "home_team": "Towson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Cal Baptist",
+      "game_id": "2026_01_15_cal_baptist_abilene_christian",
+      "home_score": 58,
+      "home_team": "Abilene Christian",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Maine",
+      "game_id": "2026_01_15_maine_vermont",
+      "home_score": 67,
+      "home_team": "Vermont",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Gonzaga",
+      "game_id": "2026_01_15_gonzaga_washington_st",
+      "home_score": 65,
+      "home_team": "Washington St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "UT Arlington",
+      "game_id": "2026_01_15_ut_arlington_utah_tech",
+      "home_score": 52,
+      "home_team": "Utah Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 105,
+      "away_team": "North Florida",
+      "game_id": "2026_01_15_north_florida_north_alabama",
+      "home_score": 91,
+      "home_team": "North Alabama",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Bellarmine",
+      "game_id": "2026_01_15_bellarmine_lipscomb",
+      "home_score": 81,
+      "home_team": "Lipscomb",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Youngstown St.",
+      "game_id": "2026_01_15_youngstown_st_wright_st",
+      "home_score": 93,
+      "home_team": "Wright St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Idaho",
+      "game_id": "2026_01_15_idaho_idaho_st",
+      "home_score": 76,
+      "home_team": "Idaho St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Elon",
+      "game_id": "2026_01_15_elon_northeastern",
+      "home_score": 85,
+      "home_team": "Northeastern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "Robert Morris",
+      "game_id": "2026_01_15_robert_morris_iu_indy",
+      "home_score": 96,
+      "home_team": "IU Indy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Mercer",
+      "game_id": "2026_01_15_mercer_vmi",
+      "home_score": 67,
+      "home_team": "VMI",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "NJIT",
+      "game_id": "2026_01_15_njit_umass_lowell",
+      "home_score": 64,
+      "home_team": "UMass Lowell",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Eastern Washington",
+      "game_id": "2026_01_15_eastern_washington_weber_st",
+      "home_score": 91,
+      "home_team": "Weber St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Cal St. Fullerton",
+      "game_id": "2026_01_15_cal_st_fullerton_uc_davis",
+      "home_score": 74,
+      "home_team": "UC Davis",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 100,
+      "away_team": "Morehead St.",
+      "game_id": "2026_01_15_morehead_st_tennessee_st",
+      "home_score": 105,
+      "home_team": "Tennessee St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Hawaii",
+      "game_id": "2026_01_15_hawaii_cal_poly",
+      "home_score": 66,
+      "home_team": "Cal Poly",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "UMBC",
+      "game_id": "2026_01_15_umbc_bryant",
+      "home_score": 79,
+      "home_team": "Bryant",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "St. Thomas",
+      "game_id": "2026_01_15_st_thomas_north_dakota",
+      "home_score": 80,
+      "home_team": "North Dakota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Drexel",
+      "game_id": "2026_01_15_drexel_monmouth",
+      "home_score": 51,
+      "home_team": "Monmouth",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "New Mexico St.",
+      "game_id": "2026_01_15_new_mexico_st_liberty",
+      "home_score": 73,
+      "home_team": "Liberty",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Eastern Illinois",
+      "game_id": "2026_01_15_eastern_illinois_little_rock",
+      "home_score": 74,
+      "home_team": "Little Rock",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Northern Arizona",
+      "game_id": "2026_01_15_northern_arizona_sacramento_st",
+      "home_score": 83,
+      "home_team": "Sacramento St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 105,
+      "away_team": "Tarleton St.",
+      "game_id": "2026_01_15_tarleton_st_southern_utah",
+      "home_score": 106,
+      "home_team": "Southern Utah",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Wichita St.",
+      "game_id": "2026_01_15_wichita_st_florida_atlantic",
+      "home_score": 85,
+      "home_team": "Florida Atlantic",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "UMKC",
+      "game_id": "2026_01_15_umkc_south_dakota",
+      "home_score": 99,
+      "home_team": "South Dakota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Northern Colorado",
+      "game_id": "2026_01_15_northern_colorado_portland_st",
+      "home_score": 76,
+      "home_team": "Portland St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "UTEP",
+      "game_id": "2026_01_15_utep_delaware",
+      "home_score": 69,
+      "home_team": "Delaware",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Queens",
+      "game_id": "2026_01_15_queens_florida_gulf_coast",
+      "home_score": 74,
+      "home_team": "Florida Gulf Coast",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "SIU Edwardsville",
+      "game_id": "2026_01_15_siu_edwardsville_tennessee_martin",
+      "home_score": 65,
+      "home_team": "Tennessee Martin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 89,
+      "away_team": "North Carolina A&T",
+      "game_id": "2026_01_15_north_carolina_a_t_william_mary",
+      "home_score": 97,
+      "home_team": "William & Mary",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Detroit Mercy",
+      "game_id": "2026_01_15_detroit_mercy_northern_kentucky",
+      "home_score": 96,
+      "home_team": "Northern Kentucky",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 53,
+      "away_team": "Binghamton",
+      "game_id": "2026_01_15_binghamton_albany",
+      "home_score": 69,
+      "home_team": "Albany",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Jacksonville",
+      "game_id": "2026_01_15_jacksonville_central_arkansas",
+      "home_score": 62,
+      "home_team": "Central Arkansas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 88,
+      "away_team": "Lindenwood",
+      "game_id": "2026_01_15_lindenwood_southeast_missouri_st",
+      "home_score": 76,
+      "home_team": "Southeast Missouri St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "The Citadel",
+      "game_id": "2026_01_15_the_citadel_unc_greensboro",
+      "home_score": 69,
+      "home_team": "UNC Greensboro",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "UC Santa Barbara",
+      "game_id": "2026_01_15_uc_santa_barbara_cal_st_bakersfield",
+      "home_score": 69,
+      "home_team": "Cal St. Bakersfield",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Cal St. Northridge",
+      "game_id": "2026_01_15_cal_st_northridge_uc_san_diego",
+      "home_score": 79,
+      "home_team": "UC San Diego",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "James Madison",
+      "game_id": "2026_01_15_james_madison_appalachian_st",
+      "home_score": 80,
+      "home_team": "Appalachian St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "San Diego",
+      "game_id": "2026_01_15_san_diego_seattle",
+      "home_score": 75,
+      "home_team": "Seattle",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Oakland",
+      "game_id": "2026_01_15_oakland_milwaukee",
+      "home_score": 60,
+      "home_team": "Milwaukee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "Eastern Kentucky",
+      "game_id": "2026_01_15_eastern_kentucky_austin_peay",
+      "home_score": 74,
+      "home_team": "Austin Peay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Hofstra",
+      "game_id": "2026_01_15_hofstra_stony_brook",
+      "home_score": 76,
+      "home_team": "Stony Brook",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 88,
+      "away_team": "Green Bay",
+      "game_id": "2026_01_15_green_bay_cleveland_st",
+      "home_score": 73,
+      "home_team": "Cleveland St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "West Georgia",
+      "game_id": "2026_01_15_west_georgia_stetson",
+      "home_score": 95,
+      "home_team": "Stetson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Old Dominion",
+      "game_id": "2026_01_15_old_dominion_georgia_southern",
+      "home_score": 87,
+      "home_team": "Georgia Southern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Southern Indiana",
+      "game_id": "2026_01_15_southern_indiana_tennessee_tech",
+      "home_score": 54,
+      "home_team": "Tennessee Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "UC Riverside",
+      "game_id": "2026_01_15_uc_riverside_long_beach_st",
+      "home_score": 88,
+      "home_team": "Long Beach St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.693061Z"
+}

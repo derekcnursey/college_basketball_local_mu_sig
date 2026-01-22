@@ -1,0 +1,166 @@
+{
+  "date": "2026-01-11",
+  "games": [
+    {
+      "away_score": 67,
+      "away_team": "North Texas",
+      "game_id": "2026_01_11_north_texas_wichita_st",
+      "home_score": 78,
+      "home_team": "Wichita St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Niagara",
+      "game_id": "2026_01_11_niagara_manhattan",
+      "home_score": 79,
+      "home_team": "Manhattan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "IU Indy",
+      "game_id": "2026_01_11_iu_indy_milwaukee",
+      "home_score": 95,
+      "home_team": "Milwaukee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Northern Kentucky",
+      "game_id": "2026_01_11_northern_kentucky_green_bay",
+      "home_score": 80,
+      "home_team": "Green Bay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Northwestern",
+      "game_id": "2026_01_11_northwestern_rutgers",
+      "home_score": 77,
+      "home_team": "Rutgers",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Illinois",
+      "game_id": "2026_01_11_illinois_iowa",
+      "home_score": 69,
+      "home_team": "Iowa",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Memphis",
+      "game_id": "2026_01_11_memphis_florida_atlantic",
+      "home_score": 89,
+      "home_team": "Florida Atlantic",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Cleveland St.",
+      "game_id": "2026_01_11_cleveland_st_detroit_mercy",
+      "home_score": 94,
+      "home_team": "Detroit Mercy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "UAB",
+      "game_id": "2026_01_11_uab_east_carolina",
+      "home_score": 85,
+      "home_team": "East Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Marist",
+      "game_id": "2026_01_11_marist_rider",
+      "home_score": 49,
+      "home_team": "Rider",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 48,
+      "away_team": "Canisius",
+      "game_id": "2026_01_11_canisius_iona",
+      "home_score": 74,
+      "home_team": "Iona",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Merrimack",
+      "game_id": "2026_01_11_merrimack_saint_peter_s",
+      "home_score": 76,
+      "home_team": "Saint Peter's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "Cincinnati",
+      "game_id": "2026_01_11_cincinnati_ucf",
+      "home_score": 73,
+      "home_team": "UCF",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Charlotte",
+      "game_id": "2026_01_11_charlotte_rice",
+      "home_score": 73,
+      "home_team": "Rice",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Ohio St.",
+      "game_id": "2026_01_11_ohio_st_washington",
+      "home_score": 81,
+      "home_team": "Washington",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Saint Joseph's",
+      "game_id": "2026_01_11_saint_joseph_s_richmond",
+      "home_score": 65,
+      "home_team": "Richmond",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 94,
+      "away_team": "Wright St.",
+      "game_id": "2026_01_11_wright_st_oakland",
+      "home_score": 84,
+      "home_team": "Oakland",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Purdue Fort Wayne",
+      "game_id": "2026_01_11_purdue_fort_wayne_robert_morris",
+      "home_score": 74,
+      "home_team": "Robert Morris",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Quinnipiac",
+      "game_id": "2026_01_11_quinnipiac_sacred_heart",
+      "home_score": 60,
+      "home_team": "Sacred Heart",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Siena",
+      "game_id": "2026_01_11_siena_mount_st_mary_s",
+      "home_score": 50,
+      "home_team": "Mount St. Mary's",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.675947Z"
+}

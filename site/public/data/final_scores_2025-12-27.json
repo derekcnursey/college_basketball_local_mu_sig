@@ -1,0 +1,14 @@
+{
+  "date": "2025-12-27",
+  "games": [
+    {
+      "away_score": 80,
+      "away_team": "Cal St. Northridge",
+      "game_id": "2025_12_27_cal_st_northridge_stanford",
+      "home_score": 88,
+      "home_team": "Stanford",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.603325Z"
+}

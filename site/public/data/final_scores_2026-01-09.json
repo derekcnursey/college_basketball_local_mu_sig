@@ -1,0 +1,118 @@
+{
+  "date": "2026-01-09",
+  "games": [
+    {
+      "away_score": 84,
+      "away_team": "Wright St.",
+      "game_id": "2026_01_09_wright_st_detroit_mercy",
+      "home_score": 82,
+      "home_team": "Detroit Mercy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Akron",
+      "game_id": "2026_01_09_akron_bowling_green",
+      "home_score": 67,
+      "home_team": "Bowling Green",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "USC",
+      "game_id": "2026_01_09_usc_minnesota",
+      "home_score": 69,
+      "home_team": "Minnesota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Northern Kentucky",
+      "game_id": "2026_01_09_northern_kentucky_milwaukee",
+      "home_score": 67,
+      "home_team": "Milwaukee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "IU Indy",
+      "game_id": "2026_01_09_iu_indy_green_bay",
+      "home_score": 75,
+      "home_team": "Green Bay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Canisius",
+      "game_id": "2026_01_09_canisius_manhattan",
+      "home_score": 64,
+      "home_team": "Manhattan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "Miami OH",
+      "game_id": "2026_01_09_miami_oh_toledo",
+      "home_score": 73,
+      "home_team": "Toledo",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Merrimack",
+      "game_id": "2026_01_09_merrimack_siena",
+      "home_score": 59,
+      "home_team": "Siena",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "UNLV",
+      "game_id": "2026_01_09_unlv_colorado_st",
+      "home_score": 70,
+      "home_team": "Colorado St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 53,
+      "away_team": "Niagara",
+      "game_id": "2026_01_09_niagara_iona",
+      "home_score": 71,
+      "home_team": "Iona",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Rider",
+      "game_id": "2026_01_09_rider_fairfield",
+      "home_score": 68,
+      "home_team": "Fairfield",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Cleveland St.",
+      "game_id": "2026_01_09_cleveland_st_oakland",
+      "home_score": 97,
+      "home_team": "Oakland",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Marist",
+      "game_id": "2026_01_09_marist_sacred_heart",
+      "home_score": 72,
+      "home_team": "Sacred Heart",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Saint Peter's",
+      "game_id": "2026_01_09_saint_peter_s_mount_st_mary_s",
+      "home_score": 70,
+      "home_team": "Mount St. Mary's",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.660311Z"
+}

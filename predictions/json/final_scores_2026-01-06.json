@@ -1,0 +1,238 @@
+{
+  "date": "2026-01-06",
+  "games": [
+    {
+      "away_score": 76,
+      "away_team": "UCF",
+      "game_id": "2026_01_06_ucf_oklahoma_st",
+      "home_score": 87,
+      "home_team": "Oklahoma St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Fresno St.",
+      "game_id": "2026_01_06_fresno_st_san_jose_st",
+      "home_score": 55,
+      "home_team": "San Jose St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "N.C. State",
+      "game_id": "2026_01_06_n_c_state_boston_college",
+      "home_score": 71,
+      "home_team": "Boston College",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Duke",
+      "game_id": "2026_01_06_duke_louisville",
+      "home_score": 73,
+      "home_team": "Louisville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Texas Tech",
+      "game_id": "2026_01_06_texas_tech_houston",
+      "home_score": 69,
+      "home_team": "Houston",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Western Michigan",
+      "game_id": "2026_01_06_western_michigan_miami_oh",
+      "home_score": 87,
+      "home_team": "Miami OH",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "George Washington",
+      "game_id": "2026_01_06_george_washington_dayton",
+      "home_score": 79,
+      "home_team": "Dayton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Central Michigan",
+      "game_id": "2026_01_06_central_michigan_akron",
+      "home_score": 82,
+      "home_team": "Akron",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "UNLV",
+      "game_id": "2026_01_06_unlv_wyoming",
+      "home_score": 98,
+      "home_team": "Wyoming",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "Bowling Green",
+      "game_id": "2026_01_06_bowling_green_kent_st",
+      "home_score": 96,
+      "home_team": "Kent St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 100,
+      "away_team": "TCU",
+      "game_id": "2026_01_06_tcu_kansas",
+      "home_score": 104,
+      "home_team": "Kansas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Iowa",
+      "game_id": "2026_01_06_iowa_minnesota",
+      "home_score": 70,
+      "home_team": "Minnesota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Syracuse",
+      "game_id": "2026_01_06_syracuse_georgia_tech",
+      "home_score": 72,
+      "home_team": "Georgia Tech",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Lindenwood",
+      "game_id": "2026_01_06_lindenwood_siu_edwardsville",
+      "home_score": 66,
+      "home_team": "SIU Edwardsville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Georgia",
+      "game_id": "2026_01_06_georgia_florida",
+      "home_score": 92,
+      "home_team": "Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Michigan",
+      "game_id": "2026_01_06_michigan_penn_st",
+      "home_score": 72,
+      "home_team": "Penn St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 50,
+      "away_team": "Georgetown",
+      "game_id": "2026_01_06_georgetown_depaul",
+      "home_score": 56,
+      "home_team": "DePaul",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Toledo",
+      "game_id": "2026_01_06_toledo_northern_illinois",
+      "home_score": 61,
+      "home_team": "Northern Illinois",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Massachusetts",
+      "game_id": "2026_01_06_massachusetts_ohio",
+      "home_score": 86,
+      "home_team": "Ohio",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "UCLA",
+      "game_id": "2026_01_06_ucla_wisconsin",
+      "home_score": 80,
+      "home_team": "Wisconsin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Texas A&M",
+      "game_id": "2026_01_06_texas_a_m_auburn",
+      "home_score": 88,
+      "home_team": "Auburn",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Eastern Michigan",
+      "game_id": "2026_01_06_eastern_michigan_ball_st",
+      "home_score": 52,
+      "home_team": "Ball St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "San Diego St.",
+      "game_id": "2026_01_06_san_diego_st_nevada",
+      "home_score": 68,
+      "home_team": "Nevada",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 99,
+      "away_team": "Utah St.",
+      "game_id": "2026_01_06_utah_st_air_force",
+      "home_score": 62,
+      "home_team": "Air Force",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Cincinnati",
+      "game_id": "2026_01_06_cincinnati_west_virginia",
+      "home_score": 62,
+      "home_team": "West Virginia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Texas",
+      "game_id": "2026_01_06_texas_tennessee",
+      "home_score": 85,
+      "home_team": "Tennessee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "St. John's",
+      "game_id": "2026_01_06_st_john_s_butler",
+      "home_score": 70,
+      "home_team": "Butler",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "New Mexico",
+      "game_id": "2026_01_06_new_mexico_colorado_st",
+      "home_score": 70,
+      "home_team": "Colorado St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "South Carolina",
+      "game_id": "2026_01_06_south_carolina_lsu",
+      "home_score": 68,
+      "home_team": "LSU",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-22T18:01:12.646503Z"
+}
