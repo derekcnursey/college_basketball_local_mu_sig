@@ -100,7 +100,7 @@ def load_prediction_games_by_date(date_str: str) -> set[tuple[str, str]]:
 
 
 def iter_bart_rows(date_strs: Iterable[str]) -> pd.DataFrame:
-    bart_path = Path("bart_data") / "2026_super_sked.csv"
+    bart_path = Path("bart_files") / "2026_super_sked.csv"
     df = pd.read_csv(bart_path, header=None)
     df[1] = pd.to_datetime(df[1], errors="coerce")
     df["date_str"] = df[1].dt.strftime("%Y-%m-%d")

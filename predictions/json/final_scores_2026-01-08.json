@@ -50,11 +50,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "Western Kentucky",
-      "game_id": "2026_01_08_western_kentucky_new_mexico_st",
-      "home_score": 80,
-      "home_team": "New Mexico St.",
+      "away_score": 78,
+      "away_team": "Central Arkansas",
+      "game_id": "2026_01_08_central_arkansas_bellarmine",
+      "home_score": 84,
+      "home_team": "Bellarmine",
       "neutral_site": 0
     },
     {
@@ -66,11 +66,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Central Arkansas",
-      "game_id": "2026_01_08_central_arkansas_bellarmine",
-      "home_score": 84,
-      "home_team": "Bellarmine",
+      "away_score": 64,
+      "away_team": "Western Kentucky",
+      "game_id": "2026_01_08_western_kentucky_new_mexico_st",
+      "home_score": 80,
+      "home_team": "New Mexico St.",
       "neutral_site": 0
     },
     {
@@ -79,6 +79,14 @@
       "game_id": "2026_01_08_unc_wilmington_northeastern",
       "home_score": 78,
       "home_team": "Northeastern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Elon",
+      "game_id": "2026_01_08_elon_north_carolina_a_t",
+      "home_score": 64,
+      "home_team": "North Carolina A&T",
       "neutral_site": 0
     },
     {
@@ -98,6 +106,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 55,
+      "away_team": "Seattle",
+      "game_id": "2026_01_08_seattle_oregon_st",
+      "home_score": 68,
+      "home_team": "Oregon St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Maine",
       "game_id": "2026_01_08_maine_umbc",
@@ -106,11 +122,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "North Alabama",
-      "game_id": "2026_01_08_north_alabama_eastern_kentucky",
-      "home_score": 88,
-      "home_team": "Eastern Kentucky",
+      "away_score": 63,
+      "away_team": "Chicago St.",
+      "game_id": "2026_01_08_chicago_st_fairleigh_dickinson",
+      "home_score": 70,
+      "home_team": "Fairleigh Dickinson",
       "neutral_site": 0
     },
     {
@@ -154,14 +170,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "Elon",
-      "game_id": "2026_01_08_elon_north_carolina_a_t",
-      "home_score": 64,
-      "home_team": "North Carolina A&T",
-      "neutral_site": 0
-    },
-    {
       "away_score": 72,
       "away_team": "Liberty",
       "game_id": "2026_01_08_liberty_louisiana_tech",
@@ -202,19 +210,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 84,
-      "away_team": "Abilene Christian",
-      "game_id": "2026_01_08_abilene_christian_tarleton_st",
-      "home_score": 80,
-      "home_team": "Tarleton St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Old Dominion",
       "game_id": "2026_01_08_old_dominion_coastal_carolina",
       "home_score": 66,
       "home_team": "Coastal Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Abilene Christian",
+      "game_id": "2026_01_08_abilene_christian_tarleton_st",
+      "home_score": 80,
+      "home_team": "Tarleton St.",
       "neutral_site": 0
     },
     {
@@ -386,19 +394,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 55,
-      "away_team": "Seattle",
-      "game_id": "2026_01_08_seattle_oregon_st",
-      "home_score": 68,
-      "home_team": "Oregon St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Chicago St.",
-      "game_id": "2026_01_08_chicago_st_fairleigh_dickinson",
-      "home_score": 70,
-      "home_team": "Fairleigh Dickinson",
+      "away_score": 80,
+      "away_team": "North Alabama",
+      "game_id": "2026_01_08_north_alabama_eastern_kentucky",
+      "home_score": 88,
+      "home_team": "Eastern Kentucky",
       "neutral_site": 0
     },
     {
@@ -450,5 +450,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-23T15:05:10.270619Z"
+  "generated_at": "2026-01-23T15:08:51.570958Z"
 }

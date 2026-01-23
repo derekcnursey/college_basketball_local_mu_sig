@@ -138,14 +138,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 79,
-      "away_team": "Northwestern",
-      "game_id": "2025_11_23_northwestern_south_carolina",
-      "home_score": 77,
-      "home_team": "South Carolina",
-      "neutral_site": 1
-    },
-    {
       "away_score": 97,
       "away_team": "Clemson",
       "game_id": "2025_11_23_clemson_georgia",
@@ -200,6 +192,14 @@
       "home_score": 75,
       "home_team": "Wyoming",
       "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Northwestern",
+      "game_id": "2025_11_23_northwestern_south_carolina",
+      "home_score": 77,
+      "home_team": "South Carolina",
+      "neutral_site": 1
     },
     {
       "away_score": 81,
@@ -282,6 +282,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 59,
+      "away_team": "Delaware",
+      "game_id": "2025_11_23_delaware_southern_illinois",
+      "home_score": 79,
+      "home_team": "Southern Illinois",
+      "neutral_site": 1
+    },
+    {
       "away_score": 63,
       "away_team": "Charleston",
       "game_id": "2025_11_23_charleston_yale",
@@ -328,15 +336,7 @@
       "home_score": 87,
       "home_team": "Murray St.",
       "neutral_site": 1
-    },
-    {
-      "away_score": 59,
-      "away_team": "Delaware",
-      "game_id": "2025_11_23_delaware_southern_illinois",
-      "home_score": 79,
-      "home_team": "Southern Illinois",
-      "neutral_site": 1
     }
   ],
-  "generated_at": "2026-01-23T15:05:10.095401Z"
+  "generated_at": "2026-01-23T15:08:51.392518Z"
 }

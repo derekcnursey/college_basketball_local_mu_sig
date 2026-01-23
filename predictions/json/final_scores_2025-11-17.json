@@ -50,14 +50,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 50,
-      "away_team": "Bucknell",
-      "game_id": "2025_11_17_bucknell_pittsburgh",
-      "home_score": 84,
-      "home_team": "Pittsburgh",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "Tulsa",
       "game_id": "2025_11_17_tulsa_kansas_st",
@@ -138,6 +130,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 50,
+      "away_team": "Bucknell",
+      "game_id": "2025_11_17_bucknell_pittsburgh",
+      "home_score": 84,
+      "home_team": "Pittsburgh",
+      "neutral_site": 0
+    },
+    {
       "away_score": 68,
       "away_team": "Niagara",
       "game_id": "2025_11_17_niagara_le_moyne",
@@ -194,5 +194,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-23T15:05:10.070813Z"
+  "generated_at": "2026-01-23T15:08:51.368193Z"
 }

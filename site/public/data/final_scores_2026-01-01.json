@@ -10,6 +10,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 95,
+      "away_team": "Portland St.",
+      "game_id": "2026_01_01_portland_st_weber_st",
+      "home_score": 90,
+      "home_team": "Weber St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 58,
       "away_team": "Tennessee Tech",
       "game_id": "2026_01_01_tennessee_tech_little_rock",
@@ -106,22 +114,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 95,
-      "away_team": "Portland St.",
-      "game_id": "2026_01_01_portland_st_weber_st",
-      "home_score": 90,
-      "home_team": "Weber St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 87,
-      "away_team": "Southern Miss",
-      "game_id": "2026_01_01_southern_miss_louisiana_monroe",
-      "home_score": 73,
-      "home_team": "Louisiana Monroe",
-      "neutral_site": 0
-    },
-    {
       "away_score": 78,
       "away_team": "Bradley",
       "game_id": "2026_01_01_bradley_belmont",
@@ -170,19 +162,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 83,
-      "away_team": "North Florida",
-      "game_id": "2026_01_01_north_florida_austin_peay",
-      "home_score": 102,
-      "home_team": "Austin Peay",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Valparaiso",
       "game_id": "2026_01_01_valparaiso_southern_illinois",
       "home_score": 75,
       "home_team": "Southern Illinois",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Nebraska Omaha",
+      "game_id": "2026_01_01_nebraska_omaha_south_dakota_st",
+      "home_score": 84,
+      "home_team": "South Dakota St.",
       "neutral_site": 0
     },
     {
@@ -199,6 +191,14 @@
       "game_id": "2026_01_01_utah_valley_tarleton_st",
       "home_score": 85,
       "home_team": "Tarleton St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "North Florida",
+      "game_id": "2026_01_01_north_florida_austin_peay",
+      "home_score": 102,
+      "home_team": "Austin Peay",
       "neutral_site": 0
     },
     {
@@ -298,13 +298,13 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "Nebraska Omaha",
-      "game_id": "2026_01_01_nebraska_omaha_south_dakota_st",
-      "home_score": 84,
-      "home_team": "South Dakota St.",
+      "away_score": 87,
+      "away_team": "Southern Miss",
+      "game_id": "2026_01_01_southern_miss_louisiana_monroe",
+      "home_score": 73,
+      "home_team": "Louisiana Monroe",
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-23T15:05:10.238512Z"
+  "generated_at": "2026-01-23T15:08:51.539002Z"
 }
