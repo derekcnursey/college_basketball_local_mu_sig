@@ -3,7 +3,6 @@ import re
 hr_name_dict = {
 'Boise St.': 'Boise State',
 'Penn St.': 'Penn State',
-'Connecticut': 'UConn',
 'Wichita St.': 'Wichita State',
 'Indiana St.': 'Indiana State',
 'Gardner Webb': 'Gardner-Webb',
@@ -24,7 +23,7 @@ hr_name_dict = {
 'Cal St. Bakersfield': 'CSU Bakersfield',
 'Jacksonville St.': 'Jacksonville State',
 'St. Thomas': 'St. Thomas (MN)',
-'Nebraska Omaha': 'Nebraska-Omaha',
+'Nebraska Omaha': 'Omaha',
 'Sam Houston St.': 'Sam Houston State',
 'Tennessee Martin': 'UT Martin',
 'Tarleton St.': 'Tarleton State',
@@ -61,7 +60,7 @@ hr_name_dict = {
 'Washington St.': 'Washington State',
 'Mississippi St.': 'Mississippi State',
 'Utah St.': 'Utah State',
-'San Diego St.': 'San Diego State',
+'San Diego St.': 'San Diego St',
 'Miami FL': 'Miami (FL)',
 'Kansas St.': 'Kansas State',
 'Oklahoma St.': 'Oklahoma State',
@@ -108,7 +107,7 @@ hr_name_dict = {
 'Texas A&M Commerce': 'East Texas A&M',
 'Mercyhurst': 'Mercyhurst Lakers',
 'Charleston': 'College of Charleston',
-'West Georgia': 'West Georgia Wolves'
+'West Georgia': 'West Georgia'
 }
 
 inv_convert = {v: k for k, v in hr_name_dict.items()}

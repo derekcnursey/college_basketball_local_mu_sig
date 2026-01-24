@@ -72,13 +72,16 @@ def _ensure_row_df(df: pd.DataFrame) -> pd.DataFrame:
 
 #
 def get_all_stats(row_df):
+    log_date = row_df["date"]
+    if isinstance(log_date, _dt.datetime):
+        log_date = log_date.date()
     #print(row_df)
     print(row_df['away_team_name'])
     print(row_df['home_team_name'])
     sql = """SELECT eff_fg_pct as away_eff_fg_pct, ft_pct as away_ft_pct, ft_rate as away_ft_rate, 3pt_rate as away_3pt_rate, 3p_pct as away_3p_pct, off_rebound_pct as away_off_rebound_pct,def_rebound_pct as away_def_rebound_pct
     FROM sports.sub_offensive_averages
     where TeamName = '""" + row_df['away_team_name'].replace('\'','\'\'') + """'
-    and Date < \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
+    and Date <= \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
     ORDER BY Date desc
     LIMIT 1
     """
@@ -93,7 +96,7 @@ def get_all_stats(row_df):
     sql = """SELECT def_eff_fg_pct as away_def_eff_fg_pct, def_ft_rate as away_def_ft_rate, def_3pt_rate as away_def_3pt_rate, def_3p_pct as away_def_3p_pct, def_off_rebound_pct as away_def_off_rebound_pct,def_def_rebound_pct as away_def_def_rebound_pct
     FROM sports.sub_defensive_averages
     where TeamName = '""" + row_df['away_team_name'].replace('\'','\'\'') + """'
-    and Date < \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
+    and Date <= \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
     ORDER BY Date desc
     LIMIT 1
     """
@@ -107,7 +110,7 @@ def get_all_stats(row_df):
     sql = """SELECT eff_fg_pct as home_eff_fg_pct, ft_pct as home_ft_pct, ft_rate as home_ft_rate, 3pt_rate as home_3pt_rate, 3p_pct as home_3p_pct, off_rebound_pct as home_off_rebound_pct,def_rebound_pct as home_def_rebound_pct
     FROM sports.sub_offensive_averages
     where TeamName = '""" + row_df['home_team_name'].replace('\'','\'\'') + """'
-    and Date < \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
+    and Date <= \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
     ORDER BY Date desc
     LIMIT 1
     """
@@ -122,7 +125,7 @@ def get_all_stats(row_df):
     sql = """SELECT def_eff_fg_pct as home_def_eff_fg_pct, def_ft_rate as home_def_ft_rate, def_3pt_rate as home_def_3pt_rate, def_3p_pct as home_def_3p_pct, def_off_rebound_pct as home_def_off_rebound_pct,def_def_rebound_pct as home_def_def_rebound_pct
     FROM sports.sub_defensive_averages
     where TeamName = '""" + row_df['home_team_name'].replace('\'','\'\'') + """'
-    and Date < \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
+    and Date <= \'""" + str(row_df['date'].year) + """-""" + str(row_df['date'].month) + """-""" + str(row_df['date'].day) + """\'
     ORDER BY Date desc
     LIMIT 1
     """
@@ -134,19 +137,29 @@ def get_all_stats(row_df):
     df = pd.DataFrame(rows, columns=field_names)
     home_def_df = _ensure_row_df(df)
     with open("log_output.txt", "a") as f:  # Append mode
-        f.write(f"Processing: {row_df}\n")
+        f.write(f"get_all_stats date={log_date} away={row_df['away_team_name']} home={row_df['home_team_name']}\n")
     #print('hell yeah')
     #print(pd.concat([away_off_df.iloc[0], away_def_df.iloc[0],home_off_df.iloc[0],home_def_df.iloc[0]]))
     return pd.concat([away_off_df.iloc[0], away_def_df.iloc[0], home_off_df.iloc[0], home_def_df.iloc[0]])
 #
 def get_stats(row_df):
+    target_date = row_df.get("date")
+    if isinstance(target_date, _dt.datetime):
+        target_date = target_date.date()
+    elif not isinstance(target_date, _dt.date):
+        target_date = _dt.datetime.strptime(str(target_date), "%Y-%m-%d").date()
+    date_str = f"{target_date.year}-{target_date.month}-{target_date.day}"
+    with open("log_output.txt", "a") as f:
+        f.write(f"get_stats date={date_str} away={row_df['away_team_name']} home={row_df['home_team_name']}\n")
     team_name = row_df['away_team_name']
     if '\'' in row_df['away_team_name']:
         team_name = row_df['away_team_name'].replace('\'', '\'\'')
     sql = """SELECT adj_oe, adj_de, BARTHAG, adj_pace
     from sports.daily_data
     where team_name = \'""" + team_name + """\'
-    and date >= \'""" + str(CURR_YEAR) + """-""" + str(CURR_MONTH) + """-""" + str(CURR_DAY) + """\';"""
+    and date <= \'""" + date_str + """\'
+    ORDER BY date desc
+    LIMIT 1"""
     print(sql)
     mycursor.execute(sql)
     rows = mycursor.fetchall()
@@ -162,7 +175,9 @@ def get_stats(row_df):
     sql = """SELECT adj_oe, adj_de, BARTHAG, adj_pace
     from sports.daily_data
     where team_name = \'""" + team_name + """\'
-    and date >= \'""" + str(CURR_YEAR) + """-""" + str(CURR_MONTH) + """-""" + str(CURR_DAY) + """\';"""
+    and date <= \'""" + date_str + """\'
+    ORDER BY date desc
+    LIMIT 1"""
     print(sql)
     mycursor.execute(sql)
     rows = mycursor.fetchall()

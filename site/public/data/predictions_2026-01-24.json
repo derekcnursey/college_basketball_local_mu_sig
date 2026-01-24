@@ -359,6 +359,23 @@
       "pred_sigma": 8.277374
     },
     {
+      "away_team": "San Diego St.",
+      "edge_home_points": 3.2389581203460693,
+      "game_id": "2026_01_24_san_diego_st_unlv",
+      "home_team": "UNLV",
+      "market_spread_home": 5.5,
+      "model_mu_home": 2.2610419,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.6382024946704576,
+      "pick_ev_per_1": 0.21838658073451,
+      "pick_fair_odds": -176.3977045914544,
+      "pick_prob_edge": 0.11439297086093381,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.40250029116436575,
+      "pred_sigma": 9.158441
+    },
+    {
       "away_team": "Oakland",
       "edge_home_points": 3.1765384674072266,
       "game_id": "2026_01_24_oakland_detroit_mercy",
@@ -510,6 +527,23 @@
       "pick_spread_odds": -105.0,
       "pred_home_win_prob": 0.8492641888225522,
       "pred_sigma": 9.714426
+    },
+    {
+      "away_team": "Villanova",
+      "edge_home_points": -2.325240135192871,
+      "game_id": "2026_01_24_villanova_connecticut",
+      "home_team": "Connecticut",
+      "market_spread_home": -10.5,
+      "model_mu_home": -8.17476,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.6026232843351077,
+      "pick_ev_per_1": 0.176550221797115,
+      "pick_fair_odds": -151.65037622468546,
+      "pick_prob_edge": 0.09042816238388818,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -105.0,
+      "pred_home_win_prob": 0.8197926591454441,
+      "pred_sigma": 8.9383135
     },
     {
       "away_team": "Richmond",
@@ -1158,6 +1192,23 @@
       "pred_sigma": 9.379679
     },
     {
+      "away_team": "Nebraska Omaha",
+      "edge_home_points": -1.9361224174499512,
+      "game_id": "2026_01_24_nebraska_omaha_umkc",
+      "home_team": "UMKC",
+      "market_spread_home": 3.5,
+      "model_mu_home": 5.4361224,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.579528125281499,
+      "pick_ev_per_1": 0.06246822968274818,
+      "pick_fair_odds": -137.82803562532774,
+      "pick_prob_edge": 0.03407357982695358,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -120.0,
+      "pred_home_win_prob": 0.28655581462409296,
+      "pred_sigma": 9.647499
+    },
+    {
       "away_team": "Alabama St.",
       "edge_home_points": -0.9600977897644043,
       "game_id": "2026_01_24_alabama_st_prairie_view_a_m",
@@ -1736,6 +1787,23 @@
       "pred_sigma": 11.608603
     },
     {
+      "away_team": "Queens",
+      "edge_home_points": 0.8624072074890137,
+      "game_id": "2026_01_24_queens_west_georgia",
+      "home_team": "West Georgia",
+      "market_spread_home": 7.5,
+      "model_mu_home": 6.637593,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5324278043105707,
+      "pick_ev_per_1": -0.004591496288933072,
+      "pick_fair_odds": -113.8707154144426,
+      "pick_prob_edge": -0.0024559166196618243,
+      "pick_side": "HOME",
+      "pick_spread_odds": -115.0,
+      "pred_home_win_prob": 0.2655579672045974,
+      "pred_sigma": 10.598046
+    },
+    {
       "away_team": "Cal St. Fullerton",
       "edge_home_points": 1.146333932876587,
       "game_id": "2026_01_24_cal_st_fullerton_cal_poly",
@@ -2178,23 +2246,6 @@
       "pred_sigma": 8.112513
     },
     {
-      "away_team": "Nebraska Omaha",
-      "edge_home_points": null,
-      "game_id": "2026_01_24_nebraska_omaha_umkc",
-      "home_team": "UMKC",
-      "market_spread_home": null,
-      "model_mu_home": 5.4361224,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": null,
-      "pred_home_win_prob": 0.28655581462409296,
-      "pred_sigma": 9.647499
-    },
-    {
       "away_team": "Illinois St.",
       "edge_home_points": null,
       "game_id": "2026_01_24_illinois_st_belmont",
@@ -2210,57 +2261,6 @@
       "pick_spread_odds": null,
       "pred_home_win_prob": 0.5763451604967751,
       "pred_sigma": 9.8843775
-    },
-    {
-      "away_team": "Queens",
-      "edge_home_points": null,
-      "game_id": "2026_01_24_queens_west_georgia",
-      "home_team": "West Georgia",
-      "market_spread_home": null,
-      "model_mu_home": 6.637593,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": null,
-      "pred_home_win_prob": 0.2655579672045974,
-      "pred_sigma": 10.598046
-    },
-    {
-      "away_team": "San Diego St.",
-      "edge_home_points": null,
-      "game_id": "2026_01_24_san_diego_st_unlv",
-      "home_team": "UNLV",
-      "market_spread_home": null,
-      "model_mu_home": 2.2610419,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": null,
-      "pred_home_win_prob": 0.40250029116436575,
-      "pred_sigma": 9.158441
-    },
-    {
-      "away_team": "Villanova",
-      "edge_home_points": null,
-      "game_id": "2026_01_24_villanova_connecticut",
-      "home_team": "Connecticut",
-      "market_spread_home": null,
-      "model_mu_home": -8.17476,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": null,
-      "pred_home_win_prob": 0.8197926591454441,
-      "pred_sigma": 8.9383135
     },
     {
       "away_team": "Tulsa",
@@ -2348,5 +2348,5 @@
       "pred_sigma": 8.727418
     }
   ],
-  "generated_at": "2026-01-24T13:28:59.421216Z"
+  "generated_at": "2026-01-24T15:41:40.860387Z"
 }
