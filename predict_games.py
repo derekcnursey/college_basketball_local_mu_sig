@@ -10,7 +10,7 @@ Assumptions
     * sub_defensive_averages
     * (whatever your existing get_all_stats / get_stats rely on)
 - You have a Bart Torvik super schedule CSV saved at:
-    bart_data/{season}_super_sked.csv
+    bart_files/{season}_super_sked.csv
   where `season = 2025` for the 2024–25 season, etc.
 - Your existing functions get_all_stats(row_df) and get_stats(row_df)
   work as before and produce the same features you used to build
@@ -380,16 +380,16 @@ def get_diffs(df_row):
 # New: pull today's games from Bart Torvik super sked
 # ---------------------------------------------------------------------------
 
-def get_games_for_today(season_year: int, bart_dir: str = "bart_data") -> pd.DataFrame:
+def get_games_for_today(season_year: int, bart_dir: str = "bart_files") -> pd.DataFrame:
     """
-    Read bart_data/{season_year}_super_sked.csv and return *today's* games,
+    Read bart_files/{season_year}_super_sked.csv and return *today's* games,
     excluding D2 games (where column 6 == 99).
     """
     csv_path = Path(bart_dir) / f"{season_year}_super_sked.csv"
     if not csv_path.exists():
         raise FileNotFoundError(
             f"Super sked not found at {csv_path}. "
-            "Make sure you’ve downloaded it into bart_data/."
+            "Make sure you’ve downloaded it into bart_files/."
         )
 
     games_df = pd.read_csv(csv_path, header=None)
@@ -745,7 +745,7 @@ FEATURE_ORDER_PATH = Path("artifacts") / "feature_order.json"
 
 def build_today_feature_frame(
     season_year: int,
-    bart_dir: str = "bart_data",
+    bart_dir: str = "bart_files",
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Build (info_df, X_df) for today's games.
