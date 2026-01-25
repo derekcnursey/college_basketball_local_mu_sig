@@ -50,14 +50,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 60,
-      "away_team": "Chicago St.",
-      "game_id": "2026_01_23_chicago_st_saint_francis",
-      "home_score": 81,
-      "home_team": "Saint Francis",
-      "neutral_site": 0
-    },
-    {
       "away_score": 89,
       "away_team": "Furman",
       "game_id": "2026_01_23_furman_unc_greensboro",
@@ -130,6 +122,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 60,
+      "away_team": "Chicago St.",
+      "game_id": "2026_01_23_chicago_st_saint_francis",
+      "home_score": 81,
+      "home_team": "Saint Francis",
+      "neutral_site": 0
+    },
+    {
       "away_score": 55,
       "away_team": "The Citadel",
       "game_id": "2026_01_23_the_citadel_east_tennessee_st",
@@ -154,5 +154,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-24T15:47:17.063568Z"
+  "generated_at": "2026-01-25T15:53:33.499784Z"
 }
