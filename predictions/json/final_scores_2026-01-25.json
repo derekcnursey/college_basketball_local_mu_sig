@@ -1,0 +1,38 @@
+{
+  "date": "2026-01-25",
+  "games": [
+    {
+      "away_score": 73,
+      "away_team": "USC",
+      "game_id": "2026_01_25_usc_wisconsin",
+      "home_score": 71,
+      "home_team": "Wisconsin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Oregon",
+      "game_id": "2026_01_25_oregon_washington",
+      "home_score": 72,
+      "home_team": "Washington",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Florida Atlantic",
+      "game_id": "2026_01_25_florida_atlantic_south_florida",
+      "home_score": 89,
+      "home_team": "South Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "Chicago St.",
+      "game_id": "2026_01_25_chicago_st_mercyhurst",
+      "home_score": 61,
+      "home_team": "Mercyhurst",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-26T14:34:39.280489Z"
+}

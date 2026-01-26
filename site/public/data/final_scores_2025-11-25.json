@@ -162,6 +162,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 74,
+      "away_team": "Bellarmine",
+      "game_id": "2025_11_25_bellarmine_houston_christian",
+      "home_score": 69,
+      "home_team": "Houston Christian",
+      "neutral_site": 1
+    },
+    {
       "away_score": 75,
       "away_team": "Old Dominion",
       "game_id": "2025_11_25_old_dominion_villanova",
@@ -242,6 +250,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 56,
+      "away_team": "East Carolina",
+      "game_id": "2025_11_25_east_carolina_michigan_st",
+      "home_score": 89,
+      "home_team": "Michigan St.",
+      "neutral_site": 1
+    },
+    {
       "away_score": 72,
       "away_team": "McNeese St.",
       "game_id": "2025_11_25_mcneese_st_middle_tennessee",
@@ -271,14 +287,6 @@
       "game_id": "2025_11_25_north_carolina_st_bonaventure",
       "home_score": 70,
       "home_team": "St. Bonaventure",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 56,
-      "away_team": "East Carolina",
-      "game_id": "2025_11_25_east_carolina_michigan_st",
-      "home_score": 89,
-      "home_team": "Michigan St.",
       "neutral_site": 1
     },
     {
@@ -378,14 +386,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 74,
-      "away_team": "Bellarmine",
-      "game_id": "2025_11_25_bellarmine_houston_christian",
-      "home_score": 69,
-      "home_team": "Houston Christian",
-      "neutral_site": 1
-    },
-    {
       "away_score": 60,
       "away_team": "Creighton",
       "game_id": "2025_11_25_creighton_iowa_st",
@@ -423,14 +423,6 @@
       "game_id": "2025_11_25_oregon_san_diego_st",
       "home_score": 97,
       "home_team": "San Diego St.",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 73,
-      "away_team": "Delaware",
-      "game_id": "2025_11_25_delaware_unc_greensboro",
-      "home_score": 60,
-      "home_team": "UNC Greensboro",
       "neutral_site": 1
     },
     {
@@ -490,6 +482,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 73,
+      "away_team": "Delaware",
+      "game_id": "2025_11_25_delaware_unc_greensboro",
+      "home_score": 60,
+      "home_team": "UNC Greensboro",
+      "neutral_site": 1
+    },
+    {
       "away_score": 69,
       "away_team": "Kansas St.",
       "game_id": "2025_11_25_kansas_st_indiana",
@@ -530,5 +530,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-01-25T15:53:33.291162Z"
+  "generated_at": "2026-01-26T14:34:39.052708Z"
 }

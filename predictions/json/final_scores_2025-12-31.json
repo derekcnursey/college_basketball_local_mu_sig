@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "Winthrop",
+      "game_id": "2025_12_31_winthrop_longwood",
+      "home_score": 82,
+      "home_team": "Longwood",
+      "neutral_site": 0
+    },
+    {
       "away_score": 61,
       "away_team": "NJIT",
       "game_id": "2025_12_31_njit_penn",
@@ -98,6 +106,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Bucknell",
+      "game_id": "2025_12_31_bucknell_holy_cross",
+      "home_score": 65,
+      "home_team": "Holy Cross",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "Tulane",
       "game_id": "2025_12_31_tulane_east_carolina",
@@ -111,14 +127,6 @@
       "game_id": "2025_12_31_north_texas_memphis",
       "home_score": 57,
       "home_team": "Memphis",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 70,
-      "away_team": "Winthrop",
-      "game_id": "2025_12_31_winthrop_longwood",
-      "home_score": 82,
-      "home_team": "Longwood",
       "neutral_site": 0
     },
     {
@@ -146,19 +154,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Bucknell",
-      "game_id": "2025_12_31_bucknell_holy_cross",
-      "home_score": 65,
-      "home_team": "Holy Cross",
-      "neutral_site": 0
-    },
-    {
       "away_score": 57,
       "away_team": "Stony Brook",
       "game_id": "2025_12_31_stony_brook_william_mary",
       "home_score": 76,
       "home_team": "William & Mary",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Wofford",
+      "game_id": "2025_12_31_wofford_western_carolina",
+      "home_score": 74,
+      "home_team": "Western Carolina",
       "neutral_site": 0
     },
     {
@@ -178,11 +186,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Georgia St.",
+      "game_id": "2025_12_31_georgia_st_marshall",
+      "home_score": 84,
+      "home_team": "Marshall",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "Nicholls St.",
       "game_id": "2025_12_31_nicholls_st_ut_rio_grande_valley",
       "home_score": 69,
       "home_team": "UT Rio Grande Valley",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Texas St.",
+      "game_id": "2025_12_31_texas_st_troy",
+      "home_score": 100,
+      "home_team": "Troy",
       "neutral_site": 0
     },
     {
@@ -215,22 +239,6 @@
       "game_id": "2025_12_31_loyola_chicago_rhode_island",
       "home_score": 57,
       "home_team": "Rhode Island",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 79,
-      "away_team": "Wofford",
-      "game_id": "2025_12_31_wofford_western_carolina",
-      "home_score": 74,
-      "home_team": "Western Carolina",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 80,
-      "away_team": "Texas St.",
-      "game_id": "2025_12_31_texas_st_troy",
-      "home_score": 100,
-      "home_team": "Troy",
       "neutral_site": 0
     },
     {
@@ -306,14 +314,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "Georgia St.",
-      "game_id": "2025_12_31_georgia_st_marshall",
-      "home_score": 84,
-      "home_team": "Marshall",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "New Orleans",
       "game_id": "2025_12_31_new_orleans_texas_a_m_corpus_chris",
@@ -370,5 +370,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-25T15:53:33.404755Z"
+  "generated_at": "2026-01-26T14:34:39.166977Z"
 }

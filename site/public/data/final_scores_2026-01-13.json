@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Central Michigan",
+      "game_id": "2026_01_13_central_michigan_miami_oh",
+      "home_score": 100,
+      "home_team": "Miami OH",
+      "neutral_site": 0
+    },
+    {
       "away_score": 97,
       "away_team": "Alabama",
       "game_id": "2026_01_13_alabama_mississippi_st",
@@ -103,14 +111,6 @@
       "game_id": "2026_01_13_saint_mary_s_san_francisco",
       "home_score": 68,
       "home_team": "San Francisco",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 71,
-      "away_team": "Maryland",
-      "game_id": "2026_01_13_maryland_usc",
-      "home_score": 88,
-      "home_team": "USC",
       "neutral_site": 0
     },
     {
@@ -242,11 +242,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 61,
-      "away_team": "Central Michigan",
-      "game_id": "2026_01_13_central_michigan_miami_oh",
-      "home_score": 100,
-      "home_team": "Miami OH",
+      "away_score": 71,
+      "away_team": "Maryland",
+      "game_id": "2026_01_13_maryland_usc",
+      "home_score": 88,
+      "home_team": "USC",
       "neutral_site": 0
     },
     {
@@ -282,5 +282,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-25T15:53:33.458989Z"
+  "generated_at": "2026-01-26T14:34:39.225653Z"
 }
