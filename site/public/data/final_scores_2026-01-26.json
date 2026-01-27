@@ -1,0 +1,78 @@
+{
+  "date": "2026-01-26",
+  "games": [
+    {
+      "away_score": 52,
+      "away_team": "Louisville",
+      "game_id": "2026_01_26_louisville_duke",
+      "home_score": 83,
+      "home_team": "Duke",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Penn St.",
+      "game_id": "2026_01_26_penn_st_ohio_st",
+      "home_score": 84,
+      "home_team": "Ohio St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Jackson St.",
+      "game_id": "2026_01_26_jackson_st_florida_a_m",
+      "home_score": 65,
+      "home_team": "Florida A&M",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Alcorn St.",
+      "game_id": "2026_01_26_alcorn_st_bethune_cookman",
+      "home_score": 82,
+      "home_team": "Bethune Cookman",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "UT Rio Grande Valley",
+      "game_id": "2026_01_26_ut_rio_grande_valley_texas_a_m_corpus_chris",
+      "home_score": 55,
+      "home_team": "Texas A&M Corpus Chris",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Delaware St.",
+      "game_id": "2026_01_26_delaware_st_south_carolina_st",
+      "home_score": 70,
+      "home_team": "South Carolina St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Morgan St.",
+      "game_id": "2026_01_26_morgan_st_norfolk_st",
+      "home_score": 78,
+      "home_team": "Norfolk St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "Le Moyne",
+      "game_id": "2026_01_26_le_moyne_fairleigh_dickinson",
+      "home_score": 74,
+      "home_team": "Fairleigh Dickinson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "Arizona",
+      "game_id": "2026_01_26_arizona_byu",
+      "home_score": 83,
+      "home_team": "BYU",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-27T13:55:46.014356Z"
+}
