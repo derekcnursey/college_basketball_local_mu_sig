@@ -58,19 +58,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 87,
-      "away_team": "UAB",
-      "game_id": "2026_01_11_uab_east_carolina",
-      "home_score": 85,
-      "home_team": "East Carolina",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Cleveland St.",
       "game_id": "2026_01_11_cleveland_st_detroit_mercy",
       "home_score": 94,
       "home_team": "Detroit Mercy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "UAB",
+      "game_id": "2026_01_11_uab_east_carolina",
+      "home_score": 85,
+      "home_team": "East Carolina",
       "neutral_site": 0
     },
     {
@@ -162,5 +162,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-27T13:55:45.926109Z"
+  "generated_at": "2026-01-28T14:36:35.734251Z"
 }

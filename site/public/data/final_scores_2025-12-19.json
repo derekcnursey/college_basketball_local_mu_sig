@@ -2,14 +2,6 @@
   "date": "2025-12-19",
   "games": [
     {
-      "away_score": 88,
-      "away_team": "Milwaukee",
-      "game_id": "2025_12_19_milwaukee_south_dakota_st",
-      "home_score": 87,
-      "home_team": "South Dakota St.",
-      "neutral_site": 1
-    },
-    {
       "away_score": 50,
       "away_team": "Morgan St.",
       "game_id": "2025_12_19_morgan_st_california",
@@ -34,19 +26,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 88,
+      "away_team": "Milwaukee",
+      "game_id": "2025_12_19_milwaukee_south_dakota_st",
+      "home_score": 87,
+      "home_team": "South Dakota St.",
+      "neutral_site": 1
+    },
+    {
       "away_score": 56,
       "away_team": "Alcorn St.",
       "game_id": "2025_12_19_alcorn_st_baylor",
       "home_score": 113,
       "home_team": "Baylor",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 82,
-      "away_team": "Tulsa",
-      "game_id": "2025_12_19_tulsa_western_kentucky",
-      "home_score": 81,
-      "home_team": "Western Kentucky",
       "neutral_site": 0
     },
     {
@@ -63,6 +55,14 @@
       "game_id": "2025_12_19_florida_atlantic_saint_mary_s",
       "home_score": 88,
       "home_team": "Saint Mary's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Tulsa",
+      "game_id": "2025_12_19_tulsa_western_kentucky",
+      "home_score": 81,
+      "home_team": "Western Kentucky",
       "neutral_site": 0
     },
     {
@@ -186,5 +186,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-27T13:55:45.827537Z"
+  "generated_at": "2026-01-28T14:36:35.608897Z"
 }

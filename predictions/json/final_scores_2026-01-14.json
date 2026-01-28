@@ -58,6 +58,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "Loyola Marymount",
+      "game_id": "2026_01_14_loyola_marymount_oregon_st",
+      "home_score": 76,
+      "home_team": "Oregon St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "San Diego St.",
       "game_id": "2026_01_14_san_diego_st_wyoming",
@@ -146,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 86,
-      "away_team": "FIU",
-      "game_id": "2026_01_14_fiu_kennesaw_st",
-      "home_score": 89,
-      "home_team": "Kennesaw St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 89,
       "away_team": "Illinois St.",
       "game_id": "2026_01_14_illinois_st_indiana_st",
@@ -178,11 +178,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 82,
+      "away_team": "Arizona St.",
+      "game_id": "2026_01_14_arizona_st_arizona",
+      "home_score": 89,
+      "home_team": "Arizona",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "Illinois",
       "game_id": "2026_01_14_illinois_northwestern",
       "home_score": 68,
       "home_team": "Northwestern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "FIU",
+      "game_id": "2026_01_14_fiu_kennesaw_st",
+      "home_score": 89,
+      "home_team": "Kennesaw St.",
       "neutral_site": 0
     },
     {
@@ -247,14 +263,6 @@
       "game_id": "2026_01_14_mississippi_georgia",
       "home_score": 95,
       "home_team": "Georgia",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 70,
-      "away_team": "Loyola Marymount",
-      "game_id": "2026_01_14_loyola_marymount_oregon_st",
-      "home_score": 76,
-      "home_team": "Oregon St.",
       "neutral_site": 0
     },
     {
@@ -338,14 +346,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 84,
-      "away_team": "VCU",
-      "game_id": "2026_01_14_vcu_rhode_island",
-      "home_score": 75,
-      "home_team": "Rhode Island",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Iona",
       "game_id": "2026_01_14_iona_rider",
@@ -370,6 +370,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Auburn",
+      "game_id": "2026_01_14_auburn_missouri",
+      "home_score": 84,
+      "home_team": "Missouri",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Manhattan",
       "game_id": "2026_01_14_manhattan_fairfield",
@@ -383,6 +391,14 @@
       "game_id": "2026_01_14_high_point_winthrop",
       "home_score": 92,
       "home_team": "Winthrop",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "VCU",
+      "game_id": "2026_01_14_vcu_rhode_island",
+      "home_score": 75,
+      "home_team": "Rhode Island",
       "neutral_site": 0
     },
     {
@@ -466,29 +482,13 @@
       "neutral_site": 0
     },
     {
-      "away_score": 82,
-      "away_team": "Arizona St.",
-      "game_id": "2026_01_14_arizona_st_arizona",
-      "home_score": 89,
-      "home_team": "Arizona",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "St. Bonaventure",
       "game_id": "2026_01_14_st_bonaventure_saint_joseph_s",
       "home_score": 68,
       "home_team": "Saint Joseph's",
       "neutral_site": 0
-    },
-    {
-      "away_score": 74,
-      "away_team": "Auburn",
-      "game_id": "2026_01_14_auburn_missouri",
-      "home_score": 84,
-      "home_team": "Missouri",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-27T13:55:45.936178Z"
+  "generated_at": "2026-01-28T14:36:35.746577Z"
 }

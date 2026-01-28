@@ -58,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Saint Francis",
-      "game_id": "2025_12_01_saint_francis_xavier",
-      "home_score": 96,
-      "home_team": "Xavier",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Cal Baptist",
       "game_id": "2025_12_01_cal_baptist_colorado",
@@ -88,7 +80,15 @@
       "home_score": 74,
       "home_team": "Villanova",
       "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Saint Francis",
+      "game_id": "2025_12_01_saint_francis_xavier",
+      "home_score": 96,
+      "home_team": "Xavier",
+      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-27T13:55:45.752172Z"
+  "generated_at": "2026-01-28T14:36:35.207372Z"
 }
