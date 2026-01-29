@@ -178,19 +178,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 82,
-      "away_team": "Arizona St.",
-      "game_id": "2026_01_14_arizona_st_arizona",
-      "home_score": 89,
-      "home_team": "Arizona",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Illinois",
       "game_id": "2026_01_14_illinois_northwestern",
       "home_score": 68,
       "home_team": "Northwestern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Arizona St.",
+      "game_id": "2026_01_14_arizona_st_arizona",
+      "home_score": 89,
+      "home_team": "Arizona",
       "neutral_site": 0
     },
     {
@@ -490,5 +490,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-28T14:36:35.746577Z"
+  "generated_at": "2026-01-29T12:55:07.807237Z"
 }

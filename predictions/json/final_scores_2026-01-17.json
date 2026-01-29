@@ -410,14 +410,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 84,
-      "away_team": "Arizona",
-      "game_id": "2026_01_17_arizona_ucf",
-      "home_score": 77,
-      "home_team": "UCF",
-      "neutral_site": 0
-    },
-    {
       "away_score": 87,
       "away_team": "Rutgers",
       "game_id": "2026_01_17_rutgers_wisconsin",
@@ -1074,6 +1066,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Arizona",
+      "game_id": "2026_01_17_arizona_ucf",
+      "home_score": 77,
+      "home_team": "UCF",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Utah St.",
       "game_id": "2026_01_17_utah_st_grand_canyon",
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-28T14:36:35.764871Z"
+  "generated_at": "2026-01-29T12:55:07.822319Z"
 }

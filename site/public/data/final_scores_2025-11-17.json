@@ -98,6 +98,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "North Alabama",
+      "game_id": "2025_11_17_north_alabama_clemson",
+      "home_score": 81,
+      "home_team": "Clemson",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Georgia St.",
       "game_id": "2025_11_17_georgia_st_arizona_st",
@@ -127,14 +135,6 @@
       "game_id": "2025_11_17_saint_joseph_s_penn",
       "home_score": 83,
       "home_team": "Penn",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "North Alabama",
-      "game_id": "2025_11_17_north_alabama_clemson",
-      "home_score": 81,
-      "home_team": "Clemson",
       "neutral_site": 0
     },
     {
@@ -194,5 +194,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-28T14:36:35.097459Z"
+  "generated_at": "2026-01-29T12:55:07.603740Z"
 }

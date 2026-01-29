@@ -90,14 +90,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 51,
-      "away_team": "Jackson St.",
-      "game_id": "2025_11_28_jackson_st_louisiana",
-      "home_score": 45,
-      "home_team": "Louisiana",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Hofstra",
       "game_id": "2025_11_28_hofstra_la_salle",
@@ -322,6 +314,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 51,
+      "away_team": "Jackson St.",
+      "game_id": "2025_11_28_jackson_st_louisiana",
+      "home_score": 45,
+      "home_team": "Louisiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 64,
       "away_team": "Chicago St.",
       "game_id": "2025_11_28_chicago_st_youngstown_st",
@@ -418,5 +418,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-28T14:36:35.190572Z"
+  "generated_at": "2026-01-29T12:55:07.651118Z"
 }

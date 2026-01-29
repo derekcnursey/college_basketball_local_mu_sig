@@ -666,14 +666,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "New Mexico St.",
-      "game_id": "2025_12_06_new_mexico_st_abilene_christian",
-      "home_score": 77,
-      "home_team": "Abilene Christian",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Evansville",
       "game_id": "2025_12_06_evansville_western_kentucky",
@@ -727,6 +719,14 @@
       "game_id": "2025_12_06_texas_a_m_corpus_chris_lamar",
       "home_score": 49,
       "home_team": "Lamar",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "New Mexico St.",
+      "game_id": "2025_12_06_new_mexico_st_abilene_christian",
+      "home_score": 77,
+      "home_team": "Abilene Christian",
       "neutral_site": 0
     },
     {
@@ -842,5 +842,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-28T14:36:35.539497Z"
+  "generated_at": "2026-01-29T12:55:07.680769Z"
 }
