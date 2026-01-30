@@ -106,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 85,
-      "away_team": "Louisiana Monroe",
-      "game_id": "2025_12_28_louisiana_monroe_kansas_st",
-      "home_score": 94,
-      "home_team": "Kansas St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 96,
       "away_team": "Gonzaga",
       "game_id": "2025_12_28_gonzaga_pepperdine",
@@ -122,19 +114,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "Winthrop",
-      "game_id": "2025_12_28_winthrop_texas_tech",
-      "home_score": 87,
-      "home_team": "Texas Tech",
-      "neutral_site": 0
-    },
-    {
       "away_score": 90,
       "away_team": "Columbia",
       "game_id": "2025_12_28_columbia_north_florida",
       "home_score": 82,
       "home_team": "North Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Winthrop",
+      "game_id": "2025_12_28_winthrop_texas_tech",
+      "home_score": 87,
+      "home_team": "Texas Tech",
       "neutral_site": 0
     },
     {
@@ -154,6 +146,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 85,
+      "away_team": "Louisiana Monroe",
+      "game_id": "2025_12_28_louisiana_monroe_kansas_st",
+      "home_score": 94,
+      "home_team": "Kansas St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 58,
       "away_team": "Old Dominion",
       "game_id": "2025_12_28_old_dominion_maryland",
@@ -162,5 +162,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-29T12:55:07.737037Z"
+  "generated_at": "2026-01-30T15:43:35.481327Z"
 }

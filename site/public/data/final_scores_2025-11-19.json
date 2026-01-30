@@ -34,14 +34,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Valparaiso",
-      "game_id": "2025_11_19_valparaiso_cleveland_st",
-      "home_score": 75,
-      "home_team": "Cleveland St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 78,
       "away_team": "Chattanooga",
       "game_id": "2025_11_19_chattanooga_south_carolina_st",
@@ -250,6 +242,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 90,
+      "away_team": "Valparaiso",
+      "game_id": "2025_11_19_valparaiso_cleveland_st",
+      "home_score": 75,
+      "home_team": "Cleveland St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 54,
       "away_team": "VMI",
       "game_id": "2025_11_19_vmi_richmond",
@@ -298,5 +298,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-29T12:55:07.612592Z"
+  "generated_at": "2026-01-30T15:43:35.345143Z"
 }

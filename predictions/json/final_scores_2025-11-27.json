@@ -2,22 +2,6 @@
   "date": "2025-11-27",
   "games": [
     {
-      "away_score": 97,
-      "away_team": "South Florida",
-      "game_id": "2025_11_27_south_florida_western_kentucky",
-      "home_score": 91,
-      "home_team": "Western Kentucky",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 76,
-      "away_team": "Colorado St.",
-      "game_id": "2025_11_27_colorado_st_wichita_st",
-      "home_score": 70,
-      "home_team": "Wichita St.",
-      "neutral_site": 1
-    },
-    {
       "away_score": 84,
       "away_team": "Dayton",
       "game_id": "2025_11_27_dayton_georgetown",
@@ -31,6 +15,22 @@
       "game_id": "2025_11_27_furman_richmond",
       "home_score": 72,
       "home_team": "Richmond",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 97,
+      "away_team": "South Florida",
+      "game_id": "2025_11_27_south_florida_western_kentucky",
+      "home_score": 91,
+      "home_team": "Western Kentucky",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 76,
+      "away_team": "Colorado St.",
+      "game_id": "2025_11_27_colorado_st_wichita_st",
+      "home_score": 70,
+      "home_team": "Wichita St.",
       "neutral_site": 1
     },
     {
@@ -162,5 +162,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-01-29T12:55:07.646982Z"
+  "generated_at": "2026-01-30T15:43:35.382697Z"
 }

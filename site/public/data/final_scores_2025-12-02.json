@@ -194,14 +194,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 72,
-      "away_team": "Central Michigan",
-      "game_id": "2025_12_02_central_michigan_loyola_chicago",
-      "home_score": 83,
-      "home_team": "Loyola Chicago",
-      "neutral_site": 0
-    },
-    {
       "away_score": 56,
       "away_team": "Charleston Southern",
       "game_id": "2025_12_02_charleston_southern_tennessee_martin",
@@ -242,14 +234,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 83,
-      "away_team": "Sam Houston St.",
-      "game_id": "2025_12_02_sam_houston_st_oklahoma_st",
-      "home_score": 93,
-      "home_team": "Oklahoma St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 82,
       "away_team": "Florida A&M",
       "game_id": "2025_12_02_florida_a_m_jacksonville",
@@ -263,6 +247,14 @@
       "game_id": "2025_12_02_stetson_grand_canyon",
       "home_score": 67,
       "home_team": "Grand Canyon",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Sam Houston St.",
+      "game_id": "2025_12_02_sam_houston_st_oklahoma_st",
+      "home_score": 93,
+      "home_team": "Oklahoma St.",
       "neutral_site": 0
     },
     {
@@ -319,6 +311,14 @@
       "game_id": "2025_12_02_campbell_penn_st",
       "home_score": 87,
       "home_team": "Penn St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "Central Michigan",
+      "game_id": "2025_12_02_central_michigan_loyola_chicago",
+      "home_score": 83,
+      "home_team": "Loyola Chicago",
       "neutral_site": 0
     },
     {
@@ -394,5 +394,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-29T12:55:07.664211Z"
+  "generated_at": "2026-01-30T15:43:35.402322Z"
 }

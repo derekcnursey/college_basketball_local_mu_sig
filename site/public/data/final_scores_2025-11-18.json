@@ -42,14 +42,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 91,
-      "away_team": "IU Indy",
-      "game_id": "2025_11_18_iu_indy_charleston_southern",
-      "home_score": 103,
-      "home_team": "Charleston Southern",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Georgia Southern",
       "game_id": "2025_11_18_georgia_southern_georgia_tech",
@@ -79,6 +71,14 @@
       "game_id": "2025_11_18_boston_university_columbia",
       "home_score": 54,
       "home_team": "Columbia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Maryland Eastern Shore",
+      "game_id": "2025_11_18_maryland_eastern_shore_longwood",
+      "home_score": 82,
+      "home_team": "Longwood",
       "neutral_site": 0
     },
     {
@@ -226,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 83,
-      "away_team": "Maryland Eastern Shore",
-      "game_id": "2025_11_18_maryland_eastern_shore_longwood",
-      "home_score": 82,
-      "home_team": "Longwood",
-      "neutral_site": 0
-    },
-    {
       "away_score": 49,
       "away_team": "Abilene Christian",
       "game_id": "2025_11_18_abilene_christian_texas_st",
@@ -264,6 +256,14 @@
       "home_score": 85,
       "home_team": "UNC Wilmington",
       "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Kentucky",
+      "game_id": "2025_11_18_kentucky_michigan_st",
+      "home_score": 83,
+      "home_team": "Michigan St.",
+      "neutral_site": 1
     },
     {
       "away_score": 81,
@@ -314,19 +314,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 49,
-      "away_team": "Holy Cross",
-      "game_id": "2025_11_18_holy_cross_brown",
-      "home_score": 68,
-      "home_team": "Brown",
-      "neutral_site": 0
-    },
-    {
       "away_score": 65,
       "away_team": "Rider",
       "game_id": "2025_11_18_rider_texas",
       "home_score": 99,
       "home_team": "Texas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Holy Cross",
+      "game_id": "2025_11_18_holy_cross_brown",
+      "home_score": 68,
+      "home_team": "Brown",
       "neutral_site": 0
     },
     {
@@ -338,27 +338,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "Jacksonville",
-      "game_id": "2025_11_18_jacksonville_george_mason",
-      "home_score": 79,
-      "home_team": "George Mason",
-      "neutral_site": 0
-    },
-    {
       "away_score": 52,
       "away_team": "Hampton",
       "game_id": "2025_11_18_hampton_boston_college",
       "home_score": 63,
       "home_team": "Boston College",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 70,
-      "away_team": "Saint Peter's",
-      "game_id": "2025_11_18_saint_peter_s_delaware",
-      "home_score": 81,
-      "home_team": "Delaware",
       "neutral_site": 0
     },
     {
@@ -375,6 +359,22 @@
       "game_id": "2025_11_18_presbyterian_california",
       "home_score": 67,
       "home_team": "California",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Jacksonville",
+      "game_id": "2025_11_18_jacksonville_george_mason",
+      "home_score": 79,
+      "home_team": "George Mason",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "IU Indy",
+      "game_id": "2025_11_18_iu_indy_charleston_southern",
+      "home_score": 103,
+      "home_team": "Charleston Southern",
       "neutral_site": 0
     },
     {
@@ -426,12 +426,12 @@
       "neutral_site": 0
     },
     {
-      "away_score": 66,
-      "away_team": "Kentucky",
-      "game_id": "2025_11_18_kentucky_michigan_st",
-      "home_score": 83,
-      "home_team": "Michigan St.",
-      "neutral_site": 1
+      "away_score": 70,
+      "away_team": "Saint Peter's",
+      "game_id": "2025_11_18_saint_peter_s_delaware",
+      "home_score": 81,
+      "home_team": "Delaware",
+      "neutral_site": 0
     },
     {
       "away_score": 48,
@@ -450,5 +450,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-29T12:55:07.608607Z"
+  "generated_at": "2026-01-30T15:43:35.340194Z"
 }
