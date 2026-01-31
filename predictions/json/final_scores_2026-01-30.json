@@ -1,0 +1,190 @@
+{
+  "date": "2026-01-30",
+  "games": [
+    {
+      "away_score": 68,
+      "away_team": "Dartmouth",
+      "game_id": "2026_01_30_dartmouth_yale",
+      "home_score": 83,
+      "home_team": "Yale",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Loyola Chicago",
+      "game_id": "2026_01_30_loyola_chicago_vcu",
+      "home_score": 89,
+      "home_team": "VCU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Harvard",
+      "game_id": "2026_01_30_harvard_brown",
+      "home_score": 59,
+      "home_team": "Brown",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "UNLV",
+      "game_id": "2026_01_30_unlv_nevada",
+      "home_score": 89,
+      "home_team": "Nevada",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "Michigan",
+      "game_id": "2026_01_30_michigan_michigan_st",
+      "home_score": 71,
+      "home_team": "Michigan St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Wright St.",
+      "game_id": "2026_01_30_wright_st_milwaukee",
+      "home_score": 69,
+      "home_team": "Milwaukee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Princeton",
+      "game_id": "2026_01_30_princeton_cornell",
+      "home_score": 87,
+      "home_team": "Cornell",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Fairfield",
+      "game_id": "2026_01_30_fairfield_iona",
+      "home_score": 70,
+      "home_team": "Iona",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 52,
+      "away_team": "Kent St.",
+      "game_id": "2026_01_30_kent_st_akron",
+      "home_score": 69,
+      "home_team": "Akron",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Georgia Southern",
+      "game_id": "2026_01_30_georgia_southern_louisiana_monroe",
+      "home_score": 76,
+      "home_team": "Louisiana Monroe",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 89,
+      "away_team": "Cleveland St.",
+      "game_id": "2026_01_30_cleveland_st_green_bay",
+      "home_score": 82,
+      "home_team": "Green Bay",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Rider",
+      "game_id": "2026_01_30_rider_manhattan",
+      "home_score": 95,
+      "home_team": "Manhattan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 88,
+      "away_team": "Marist",
+      "game_id": "2026_01_30_marist_canisius",
+      "home_score": 86,
+      "home_team": "Canisius",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Providence",
+      "game_id": "2026_01_30_providence_villanova",
+      "home_score": 87,
+      "home_team": "Villanova",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Siena",
+      "game_id": "2026_01_30_siena_niagara",
+      "home_score": 79,
+      "home_team": "Niagara",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Penn",
+      "game_id": "2026_01_30_penn_columbia",
+      "home_score": 72,
+      "home_team": "Columbia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Dayton",
+      "game_id": "2026_01_30_dayton_saint_louis",
+      "home_score": 102,
+      "home_team": "Saint Louis",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Rice",
+      "game_id": "2026_01_30_rice_charlotte",
+      "home_score": 80,
+      "home_team": "Charlotte",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "IU Indy",
+      "game_id": "2026_01_30_iu_indy_youngstown_st",
+      "home_score": 85,
+      "home_team": "Youngstown St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Northern Kentucky",
+      "game_id": "2026_01_30_northern_kentucky_detroit_mercy",
+      "home_score": 90,
+      "home_team": "Detroit Mercy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 98,
+      "away_team": "Sacred Heart",
+      "game_id": "2026_01_30_sacred_heart_quinnipiac",
+      "home_score": 91,
+      "home_team": "Quinnipiac",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Boise St.",
+      "game_id": "2026_01_30_boise_st_grand_canyon",
+      "home_score": 86,
+      "home_team": "Grand Canyon",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "Mount St. Mary's",
+      "game_id": "2026_01_30_mount_st_mary_s_saint_peter_s",
+      "home_score": 66,
+      "home_team": "Saint Peter's",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-01-31T15:11:16.908142Z"
+}

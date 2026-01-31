@@ -42,19 +42,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 60,
-      "away_team": "Wisconsin",
-      "game_id": "2025_12_10_wisconsin_nebraska",
-      "home_score": 90,
-      "home_team": "Nebraska",
-      "neutral_site": 0
-    },
-    {
       "away_score": 38,
       "away_team": "Jackson St.",
       "game_id": "2025_12_10_jackson_st_houston",
       "home_score": 80,
       "home_team": "Houston",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Wisconsin",
+      "game_id": "2025_12_10_wisconsin_nebraska",
+      "home_score": 90,
+      "home_team": "Nebraska",
       "neutral_site": 0
     },
     {
@@ -103,14 +103,6 @@
       "game_id": "2025_12_10_weber_st_umkc",
       "home_score": 60,
       "home_team": "UMKC",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 77,
-      "away_team": "Colgate",
-      "game_id": "2025_12_10_colgate_st_bonaventure",
-      "home_score": 85,
-      "home_team": "St. Bonaventure",
       "neutral_site": 0
     },
     {
@@ -226,6 +218,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Colgate",
+      "game_id": "2025_12_10_colgate_st_bonaventure",
+      "home_score": 85,
+      "home_team": "St. Bonaventure",
+      "neutral_site": 0
+    },
+    {
       "away_score": 83,
       "away_team": "Southern",
       "game_id": "2025_12_10_southern_texas_st",
@@ -234,5 +234,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-01-30T15:43:35.432503Z"
+  "generated_at": "2026-01-31T15:11:16.711898Z"
 }
