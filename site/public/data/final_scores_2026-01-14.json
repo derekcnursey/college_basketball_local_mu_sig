@@ -186,6 +186,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 82,
+      "away_team": "Arizona St.",
+      "game_id": "2026_01_14_arizona_st_arizona",
+      "home_score": 89,
+      "home_team": "Arizona",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Portland",
       "game_id": "2026_01_14_portland_pepperdine",
@@ -466,14 +474,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 82,
-      "away_team": "Arizona St.",
-      "game_id": "2026_01_14_arizona_st_arizona",
-      "home_score": 89,
-      "home_team": "Arizona",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "St. Bonaventure",
       "game_id": "2026_01_14_st_bonaventure_saint_joseph_s",
@@ -490,5 +490,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-01T14:30:56.261914Z"
+  "generated_at": "2026-02-02T14:28:06.991222Z"
 }
