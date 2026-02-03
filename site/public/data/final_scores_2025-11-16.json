@@ -50,6 +50,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 50,
+      "away_team": "Bryant",
+      "game_id": "2025_11_16_bryant_valparaiso",
+      "home_score": 68,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Notre Dame",
       "game_id": "2025_11_16_notre_dame_ohio_st",
@@ -154,14 +162,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 50,
-      "away_team": "Bryant",
-      "game_id": "2025_11_16_bryant_valparaiso",
-      "home_score": 68,
-      "home_team": "Valparaiso",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Quinnipiac",
       "game_id": "2025_11_16_quinnipiac_maine",
@@ -242,5 +242,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-02T14:28:06.761860Z"
+  "generated_at": "2026-02-03T14:57:09.169084Z"
 }

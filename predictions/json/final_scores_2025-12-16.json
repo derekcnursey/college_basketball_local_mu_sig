@@ -74,6 +74,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 90,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_16_northern_colorado_texas_tech",
+      "home_score": 101,
+      "home_team": "Texas Tech",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Oral Roberts",
       "game_id": "2025_12_16_oral_roberts_missouri_st",
@@ -258,14 +266,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Northern Colorado",
-      "game_id": "2025_12_16_northern_colorado_texas_tech",
-      "home_score": 101,
-      "home_team": "Texas Tech",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Howard",
       "game_id": "2025_12_16_howard_drexel",
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-02T14:28:06.880248Z"
+  "generated_at": "2026-02-03T14:57:09.334466Z"
 }

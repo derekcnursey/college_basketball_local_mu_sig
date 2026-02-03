@@ -74,14 +74,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 71,
-      "away_team": "Columbia",
-      "game_id": "2025_11_07_columbia_new_haven",
-      "home_score": 53,
-      "home_team": "New Haven",
-      "neutral_site": 0
-    },
-    {
       "away_score": 65,
       "away_team": "Arkansas St.",
       "game_id": "2025_11_07_arkansas_st_stephen_f_austin",
@@ -338,6 +330,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "Columbia",
+      "game_id": "2025_11_07_columbia_new_haven",
+      "home_score": 53,
+      "home_team": "New Haven",
+      "neutral_site": 0
+    },
+    {
       "away_score": 76,
       "away_team": "Green Bay",
       "game_id": "2025_11_07_green_bay_buffalo",
@@ -450,5 +450,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-02T14:28:06.720224Z"
+  "generated_at": "2026-02-03T14:57:09.087310Z"
 }

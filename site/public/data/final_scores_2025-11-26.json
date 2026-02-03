@@ -138,14 +138,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 59,
-      "away_team": "Denver",
-      "game_id": "2025_11_26_denver_wyoming",
-      "home_score": 101,
-      "home_team": "Wyoming",
-      "neutral_site": 0
-    },
-    {
       "away_score": 71,
       "away_team": "Bucknell",
       "game_id": "2025_11_26_bucknell_buffalo",
@@ -215,6 +207,14 @@
       "game_id": "2025_11_26_appalachian_st_mercer",
       "home_score": 75,
       "home_team": "Mercer",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "Denver",
+      "game_id": "2025_11_26_denver_wyoming",
+      "home_score": 101,
+      "home_team": "Wyoming",
       "neutral_site": 0
     },
     {
@@ -490,5 +490,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-02T14:28:06.808177Z"
+  "generated_at": "2026-02-03T14:57:09.242270Z"
 }
