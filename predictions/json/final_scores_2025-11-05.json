@@ -10,14 +10,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Eastern Washington",
-      "game_id": "2025_11_05_eastern_washington_loyola_marymount",
-      "home_score": 70,
-      "home_team": "Loyola Marymount",
-      "neutral_site": 0
-    },
-    {
       "away_score": 82,
       "away_team": "Southern",
       "game_id": "2025_11_05_southern_marquette",
@@ -90,6 +82,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Eastern Washington",
+      "game_id": "2025_11_05_eastern_washington_loyola_marymount",
+      "home_score": 70,
+      "home_team": "Loyola Marymount",
+      "neutral_site": 0
+    },
+    {
       "away_score": 60,
       "away_team": "Tarleton St.",
       "game_id": "2025_11_05_tarleton_st_lsu",
@@ -114,5 +114,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-03T14:57:09.074309Z"
+  "generated_at": "2026-02-04T14:34:25.412812Z"
 }

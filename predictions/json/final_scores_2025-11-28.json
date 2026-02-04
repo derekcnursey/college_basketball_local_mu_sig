@@ -34,14 +34,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Albany",
-      "game_id": "2025_11_28_albany_colgate",
-      "home_score": 69,
-      "home_team": "Colgate",
-      "neutral_site": 1
-    },
-    {
       "away_score": 65,
       "away_team": "Merrimack",
       "game_id": "2025_11_28_merrimack_penn",
@@ -55,6 +47,14 @@
       "game_id": "2025_11_28_longwood_siena",
       "home_score": 70,
       "home_team": "Siena",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 67,
+      "away_team": "Albany",
+      "game_id": "2025_11_28_albany_colgate",
+      "home_score": 69,
+      "home_team": "Colgate",
       "neutral_site": 1
     },
     {
@@ -88,14 +88,6 @@
       "home_score": 65,
       "home_team": "San Francisco",
       "neutral_site": 1
-    },
-    {
-      "away_score": 51,
-      "away_team": "Jackson St.",
-      "game_id": "2025_11_28_jackson_st_louisiana",
-      "home_score": 45,
-      "home_team": "Louisiana",
-      "neutral_site": 0
     },
     {
       "away_score": 63,
@@ -218,14 +210,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 87,
-      "away_team": "SMU",
-      "game_id": "2025_11_28_smu_mississippi_st",
-      "home_score": 81,
-      "home_team": "Mississippi St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 81,
       "away_team": "Alcorn St.",
       "game_id": "2025_11_28_alcorn_st_indiana_st",
@@ -250,11 +234,11 @@
       "neutral_site": 1
     },
     {
-      "away_score": 66,
-      "away_team": "Ohio St.",
-      "game_id": "2025_11_28_ohio_st_pittsburgh",
-      "home_score": 67,
-      "home_team": "Pittsburgh",
+      "away_score": 87,
+      "away_team": "SMU",
+      "game_id": "2025_11_28_smu_mississippi_st",
+      "home_score": 81,
+      "home_team": "Mississippi St.",
       "neutral_site": 0
     },
     {
@@ -290,6 +274,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 66,
+      "away_team": "Ohio St.",
+      "game_id": "2025_11_28_ohio_st_pittsburgh",
+      "home_score": 67,
+      "home_team": "Pittsburgh",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "North Carolina A&T",
       "game_id": "2025_11_28_north_carolina_a_t_davidson",
@@ -320,6 +312,14 @@
       "home_score": 96,
       "home_team": "Vanderbilt",
       "neutral_site": 1
+    },
+    {
+      "away_score": 51,
+      "away_team": "Jackson St.",
+      "game_id": "2025_11_28_jackson_st_louisiana",
+      "home_score": 45,
+      "home_team": "Louisiana",
+      "neutral_site": 0
     },
     {
       "away_score": 64,
@@ -418,5 +418,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-03T14:57:09.255950Z"
+  "generated_at": "2026-02-04T14:34:25.555607Z"
 }

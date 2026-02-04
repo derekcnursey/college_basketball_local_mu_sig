@@ -58,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "Notre Dame",
-      "game_id": "2025_11_16_notre_dame_ohio_st",
-      "home_score": 64,
-      "home_team": "Ohio St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 108,
       "away_team": "South Florida",
       "game_id": "2025_11_16_south_florida_kennesaw_st",
@@ -79,6 +71,14 @@
       "game_id": "2025_11_16_colorado_st_loyola_chicago",
       "home_score": 67,
       "home_team": "Loyola Chicago",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Notre Dame",
+      "game_id": "2025_11_16_notre_dame_ohio_st",
+      "home_score": 64,
+      "home_team": "Ohio St.",
       "neutral_site": 0
     },
     {
@@ -242,5 +242,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-03T14:57:09.169084Z"
+  "generated_at": "2026-02-04T14:34:25.481624Z"
 }

@@ -18,14 +18,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 73,
-      "away_team": "NJIT",
-      "game_id": "2026_01_15_njit_umass_lowell",
-      "home_score": 64,
-      "home_team": "UMass Lowell",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "Maine",
       "game_id": "2026_01_15_maine_vermont",
@@ -103,6 +95,14 @@
       "game_id": "2026_01_15_mercer_vmi",
       "home_score": 67,
       "home_team": "VMI",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "NJIT",
+      "game_id": "2026_01_15_njit_umass_lowell",
+      "home_score": 64,
+      "home_team": "UMass Lowell",
       "neutral_site": 0
     },
     {
@@ -282,27 +282,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "San Diego",
-      "game_id": "2026_01_15_san_diego_seattle",
-      "home_score": 75,
-      "home_team": "Seattle",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "The Citadel",
       "game_id": "2026_01_15_the_citadel_unc_greensboro",
       "home_score": 69,
       "home_team": "UNC Greensboro",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 71,
-      "away_team": "Southern Indiana",
-      "game_id": "2026_01_15_southern_indiana_tennessee_tech",
-      "home_score": 54,
-      "home_team": "Tennessee Tech",
       "neutral_site": 0
     },
     {
@@ -330,6 +314,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "San Diego",
+      "game_id": "2026_01_15_san_diego_seattle",
+      "home_score": 75,
+      "home_team": "Seattle",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Oakland",
       "game_id": "2026_01_15_oakland_milwaukee",
@@ -343,14 +335,6 @@
       "game_id": "2026_01_15_eastern_kentucky_austin_peay",
       "home_score": 74,
       "home_team": "Austin Peay",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 84,
-      "away_team": "Old Dominion",
-      "game_id": "2026_01_15_old_dominion_georgia_southern",
-      "home_score": 87,
-      "home_team": "Georgia Southern",
       "neutral_site": 0
     },
     {
@@ -378,6 +362,22 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Old Dominion",
+      "game_id": "2026_01_15_old_dominion_georgia_southern",
+      "home_score": 87,
+      "home_team": "Georgia Southern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Southern Indiana",
+      "game_id": "2026_01_15_southern_indiana_tennessee_tech",
+      "home_score": 54,
+      "home_team": "Tennessee Tech",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "UC Riverside",
       "game_id": "2026_01_15_uc_riverside_long_beach_st",
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-03T14:57:09.444102Z"
+  "generated_at": "2026-02-04T14:34:25.781821Z"
 }

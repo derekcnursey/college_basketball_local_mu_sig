@@ -34,6 +34,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 60,
+      "away_team": "Wisconsin",
+      "game_id": "2025_12_10_wisconsin_nebraska",
+      "home_score": 90,
+      "home_team": "Nebraska",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Bryant",
       "game_id": "2025_12_10_bryant_iona",
@@ -47,14 +55,6 @@
       "game_id": "2025_12_10_jackson_st_houston",
       "home_score": 80,
       "home_team": "Houston",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 60,
-      "away_team": "Wisconsin",
-      "game_id": "2025_12_10_wisconsin_nebraska",
-      "home_score": 90,
-      "home_team": "Nebraska",
       "neutral_site": 0
     },
     {
@@ -234,5 +234,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-03T14:57:09.314362Z"
+  "generated_at": "2026-02-04T14:34:25.609569Z"
 }

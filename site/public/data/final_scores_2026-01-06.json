@@ -162,6 +162,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 90,
+      "away_team": "Texas A&M",
+      "game_id": "2026_01_06_texas_a_m_auburn",
+      "home_score": 88,
+      "home_team": "Auburn",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Eastern Michigan",
       "game_id": "2026_01_06_eastern_michigan_ball_st",
@@ -224,15 +232,7 @@
       "home_score": 68,
       "home_team": "LSU",
       "neutral_site": 0
-    },
-    {
-      "away_score": 90,
-      "away_team": "Texas A&M",
-      "game_id": "2026_01_06_texas_a_m_auburn",
-      "home_score": 88,
-      "home_team": "Auburn",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-03T14:57:09.401651Z"
+  "generated_at": "2026-02-04T14:34:25.732569Z"
 }

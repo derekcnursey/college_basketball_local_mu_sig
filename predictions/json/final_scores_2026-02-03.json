@@ -1,0 +1,254 @@
+{
+  "date": "2026-02-03",
+  "games": [
+    {
+      "away_score": 75,
+      "away_team": "Indiana",
+      "game_id": "2026_02_03_indiana_usc",
+      "home_score": 81,
+      "home_team": "USC",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Canisius",
+      "game_id": "2026_02_03_canisius_niagara",
+      "home_score": 65,
+      "home_team": "Niagara",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "La Salle",
+      "game_id": "2026_02_03_la_salle_loyola_chicago",
+      "home_score": 71,
+      "home_team": "Loyola Chicago",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "N.C. State",
+      "game_id": "2026_02_03_n_c_state_smu",
+      "home_score": 83,
+      "home_team": "SMU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Indiana St.",
+      "game_id": "2026_02_03_indiana_st_evansville",
+      "home_score": 63,
+      "home_team": "Evansville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Illinois Chicago",
+      "game_id": "2026_02_03_illinois_chicago_murray_st",
+      "home_score": 81,
+      "home_team": "Murray St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "VCU",
+      "game_id": "2026_02_03_vcu_fordham",
+      "home_score": 59,
+      "home_team": "Fordham",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "South Carolina",
+      "game_id": "2026_02_03_south_carolina_texas",
+      "home_score": 84,
+      "home_team": "Texas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 54,
+      "away_team": "Southern Illinois",
+      "game_id": "2026_02_03_southern_illinois_illinois_st",
+      "home_score": 50,
+      "home_team": "Illinois St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Valparaiso",
+      "game_id": "2026_02_03_valparaiso_bradley",
+      "home_score": 72,
+      "home_team": "Bradley",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Rutgers",
+      "game_id": "2026_02_03_rutgers_ucla",
+      "home_score": 98,
+      "home_team": "UCLA",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Kent St.",
+      "game_id": "2026_02_03_kent_st_toledo",
+      "home_score": 72,
+      "home_team": "Toledo",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "St. Bonaventure",
+      "game_id": "2026_02_03_st_bonaventure_dayton",
+      "home_score": 72,
+      "home_team": "Dayton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 52,
+      "away_team": "Little Rock",
+      "game_id": "2026_02_03_little_rock_tennessee_martin",
+      "home_score": 55,
+      "home_team": "Tennessee Martin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Akron",
+      "game_id": "2026_02_03_akron_eastern_michigan",
+      "home_score": 64,
+      "home_team": "Eastern Michigan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "SIU Edwardsville",
+      "game_id": "2026_02_03_siu_edwardsville_lindenwood",
+      "home_score": 72,
+      "home_team": "Lindenwood",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Xavier",
+      "game_id": "2026_02_03_xavier_connecticut",
+      "home_score": 92,
+      "home_team": "Connecticut",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 96,
+      "away_team": "UNLV",
+      "game_id": "2026_02_03_unlv_fresno_st",
+      "home_score": 98,
+      "home_team": "Fresno St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 89,
+      "away_team": "Central Michigan",
+      "game_id": "2026_02_03_central_michigan_massachusetts",
+      "home_score": 95,
+      "home_team": "Massachusetts",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Wyoming",
+      "game_id": "2026_02_03_wyoming_san_diego_st",
+      "home_score": 72,
+      "home_team": "San Diego St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Boston College",
+      "game_id": "2026_02_03_boston_college_duke",
+      "home_score": 67,
+      "home_team": "Duke",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Miami OH",
+      "game_id": "2026_02_03_miami_oh_buffalo",
+      "home_score": 71,
+      "home_team": "Buffalo",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 47,
+      "away_team": "Pittsburgh",
+      "game_id": "2026_02_03_pittsburgh_virginia",
+      "home_score": 67,
+      "home_team": "Virginia",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Air Force",
+      "game_id": "2026_02_03_air_force_grand_canyon",
+      "home_score": 81,
+      "home_team": "Grand Canyon",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "Saint Louis",
+      "game_id": "2026_02_03_saint_louis_davidson",
+      "home_score": 82,
+      "home_team": "Davidson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 52,
+      "away_team": "Ball St.",
+      "game_id": "2026_02_03_ball_st_bowling_green",
+      "home_score": 77,
+      "home_team": "Bowling Green",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Mississippi",
+      "game_id": "2026_02_03_mississippi_tennessee",
+      "home_score": 84,
+      "home_team": "Tennessee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Drake",
+      "game_id": "2026_02_03_drake_belmont",
+      "home_score": 103,
+      "home_team": "Belmont",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Western Michigan",
+      "game_id": "2026_02_03_western_michigan_ohio",
+      "home_score": 91,
+      "home_team": "Ohio",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "St. John's",
+      "game_id": "2026_02_03_st_john_s_depaul",
+      "home_score": 56,
+      "home_team": "DePaul",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "Nevada",
+      "game_id": "2026_02_03_nevada_boise_st",
+      "home_score": 91,
+      "home_team": "Boise St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-02-04T14:34:25.879338Z"
+}
