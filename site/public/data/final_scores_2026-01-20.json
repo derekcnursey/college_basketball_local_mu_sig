@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 68,
+      "away_team": "Ball St.",
+      "game_id": "2026_01_20_ball_st_central_michigan",
+      "home_score": 67,
+      "home_team": "Central Michigan",
+      "neutral_site": 0
+    },
+    {
       "away_score": 80,
       "away_team": "N.C. State",
       "game_id": "2026_01_20_n_c_state_clemson",
@@ -47,14 +55,6 @@
       "game_id": "2026_01_20_unlv_utah_st",
       "home_score": 76,
       "home_team": "Utah St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 91,
-      "away_team": "SMU",
-      "game_id": "2026_01_20_smu_wake_forest",
-      "home_score": 79,
-      "home_team": "Wake Forest",
       "neutral_site": 0
     },
     {
@@ -127,6 +127,14 @@
       "game_id": "2026_01_20_georgia_missouri",
       "home_score": 72,
       "home_team": "Missouri",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "SMU",
+      "game_id": "2026_01_20_smu_wake_forest",
+      "home_score": 79,
+      "home_team": "Wake Forest",
       "neutral_site": 0
     },
     {
@@ -218,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Ball St.",
-      "game_id": "2026_01_20_ball_st_central_michigan",
-      "home_score": 67,
-      "home_team": "Central Michigan",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "DePaul",
       "game_id": "2026_01_20_depaul_butler",
@@ -274,5 +274,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.806617Z"
+  "generated_at": "2026-02-05T13:47:28.885033Z"
 }

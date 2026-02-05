@@ -10,14 +10,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 71,
-      "away_team": "Pacific",
-      "game_id": "2025_12_30_pacific_loyola_marymount",
-      "home_score": 80,
-      "home_team": "Loyola Marymount",
-      "neutral_site": 0
-    },
-    {
       "away_score": 81,
       "away_team": "San Diego St.",
       "game_id": "2025_12_30_san_diego_st_san_jose_st",
@@ -130,14 +122,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 79,
-      "away_team": "Seton Hall",
-      "game_id": "2025_12_30_seton_hall_marquette",
-      "home_score": 73,
-      "home_team": "Marquette",
-      "neutral_site": 0
-    },
-    {
       "away_score": 72,
       "away_team": "Utah St.",
       "game_id": "2025_12_30_utah_st_fresno_st",
@@ -151,6 +135,14 @@
       "game_id": "2025_12_30_new_hampshire_nebraska",
       "home_score": 86,
       "home_team": "Nebraska",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Pacific",
+      "game_id": "2025_12_30_pacific_loyola_marymount",
+      "home_score": 80,
+      "home_team": "Loyola Marymount",
       "neutral_site": 0
     },
     {
@@ -218,6 +210,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 79,
+      "away_team": "Seton Hall",
+      "game_id": "2025_12_30_seton_hall_marquette",
+      "home_score": 73,
+      "home_team": "Marquette",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "Pittsburgh",
       "game_id": "2025_12_30_pittsburgh_miami_fl",
@@ -258,5 +258,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.700982Z"
+  "generated_at": "2026-02-05T13:47:28.789711Z"
 }

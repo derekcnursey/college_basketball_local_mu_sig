@@ -66,6 +66,22 @@
       "neutral_site": 0
     },
     {
+      "away_score": 67,
+      "away_team": "Michigan",
+      "game_id": "2025_11_14_michigan_tcu",
+      "home_score": 63,
+      "home_team": "TCU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Albany",
+      "game_id": "2025_11_14_albany_rhode_island",
+      "home_score": 80,
+      "home_team": "Rhode Island",
+      "neutral_site": 0
+    },
+    {
       "away_score": 75,
       "away_team": "Samford",
       "game_id": "2025_11_14_samford_arkansas",
@@ -95,14 +111,6 @@
       "game_id": "2025_11_14_washington_washington_st",
       "home_score": 69,
       "home_team": "Washington St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Albany",
-      "game_id": "2025_11_14_albany_rhode_island",
-      "home_score": 80,
-      "home_team": "Rhode Island",
       "neutral_site": 0
     },
     {
@@ -330,14 +338,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Michigan",
-      "game_id": "2025_11_14_michigan_tcu",
-      "home_score": 63,
-      "home_team": "TCU",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "East Texas A&M",
       "game_id": "2025_11_14_east_texas_a_m_rice",
@@ -362,5 +362,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.468715Z"
+  "generated_at": "2026-02-05T13:47:28.621697Z"
 }

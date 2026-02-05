@@ -82,14 +82,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Marshall",
-      "game_id": "2025_11_03_marshall_massachusetts",
-      "home_score": 72,
-      "home_team": "Massachusetts",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Cal Poly",
       "game_id": "2025_11_03_cal_poly_usc",
@@ -194,6 +186,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Air Force",
+      "game_id": "2025_11_03_air_force_belmont",
+      "home_score": 79,
+      "home_team": "Belmont",
+      "neutral_site": 0
+    },
+    {
       "away_score": 75,
       "away_team": "San Jose St.",
       "game_id": "2025_11_03_san_jose_st_utah",
@@ -226,6 +226,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 88,
+      "away_team": "Missouri",
+      "game_id": "2025_11_03_missouri_howard",
+      "home_score": 67,
+      "home_team": "Howard",
+      "neutral_site": 0
+    },
+    {
       "away_score": 103,
       "away_team": "Troy",
       "game_id": "2025_11_03_troy_kent_st",
@@ -239,14 +247,6 @@
       "game_id": "2025_11_03_southern_arkansas",
       "home_score": 109,
       "home_team": "Arkansas",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 64,
-      "away_team": "Louisiana",
-      "game_id": "2025_11_03_louisiana_ball_st",
-      "home_score": 75,
-      "home_team": "Ball St.",
       "neutral_site": 0
     },
     {
@@ -306,11 +306,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 53,
+      "away_team": "Rider",
+      "game_id": "2025_11_03_rider_virginia",
+      "home_score": 87,
+      "home_team": "Virginia",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "Jacksonville",
       "game_id": "2025_11_03_jacksonville_miami_fl",
       "home_score": 86,
       "home_team": "Miami FL",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Louisiana",
+      "game_id": "2025_11_03_louisiana_ball_st",
+      "home_score": 75,
+      "home_team": "Ball St.",
       "neutral_site": 0
     },
     {
@@ -330,22 +346,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 53,
-      "away_team": "Rider",
-      "game_id": "2025_11_03_rider_virginia",
-      "home_score": 87,
-      "home_team": "Virginia",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 66,
-      "away_team": "Bryant",
-      "game_id": "2025_11_03_bryant_siena",
-      "home_score": 82,
-      "home_team": "Siena",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Southern Miss",
       "game_id": "2025_11_03_southern_miss_buffalo",
@@ -362,14 +362,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 46,
-      "away_team": "Wofford",
-      "game_id": "2025_11_03_wofford_george_mason",
-      "home_score": 70,
-      "home_team": "George Mason",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "Denver",
       "game_id": "2025_11_03_denver_seattle",
@@ -383,6 +375,14 @@
       "game_id": "2025_11_03_detroit_mercy_illinois_chicago",
       "home_score": 91,
       "home_team": "Illinois Chicago",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Bryant",
+      "game_id": "2025_11_03_bryant_siena",
+      "home_score": 82,
+      "home_team": "Siena",
       "neutral_site": 0
     },
     {
@@ -410,6 +410,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 78,
+      "away_team": "Marshall",
+      "game_id": "2025_11_03_marshall_massachusetts",
+      "home_score": 72,
+      "home_team": "Massachusetts",
+      "neutral_site": 0
+    },
+    {
       "away_score": 68,
       "away_team": "Fairfield",
       "game_id": "2025_11_03_fairfield_penn_st",
@@ -426,11 +434,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 50,
-      "away_team": "Arkansas Pine Bluff",
-      "game_id": "2025_11_03_arkansas_pine_bluff_washington",
-      "home_score": 94,
-      "home_team": "Washington",
+      "away_score": 46,
+      "away_team": "Wofford",
+      "game_id": "2025_11_03_wofford_george_mason",
+      "home_score": 70,
+      "home_team": "George Mason",
       "neutral_site": 0
     },
     {
@@ -578,14 +586,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 71,
-      "away_team": "James Madison",
-      "game_id": "2025_11_03_james_madison_akron",
-      "home_score": 85,
-      "home_team": "Akron",
-      "neutral_site": 0
-    },
-    {
       "away_score": 47,
       "away_team": "Mercyhurst",
       "game_id": "2025_11_03_mercyhurst_northwestern",
@@ -658,14 +658,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "Air Force",
-      "game_id": "2025_11_03_air_force_belmont",
-      "home_score": 79,
-      "home_team": "Belmont",
-      "neutral_site": 0
-    },
-    {
       "away_score": 59,
       "away_team": "Bellarmine",
       "game_id": "2025_11_03_bellarmine_georgia",
@@ -714,6 +706,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "James Madison",
+      "game_id": "2025_11_03_james_madison_akron",
+      "home_score": 85,
+      "home_team": "Akron",
+      "neutral_site": 0
+    },
+    {
       "away_score": 52,
       "away_team": "Maryland Eastern Shore",
       "game_id": "2025_11_03_maryland_eastern_shore_georgia_tech",
@@ -746,6 +746,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 50,
+      "away_team": "Arkansas Pine Bluff",
+      "game_id": "2025_11_03_arkansas_pine_bluff_washington",
+      "home_score": 94,
+      "home_team": "Washington",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Old Dominion",
       "game_id": "2025_11_03_old_dominion_miami_oh",
@@ -767,14 +775,6 @@
       "game_id": "2025_11_03_tarleton_st_smu",
       "home_score": 96,
       "home_team": "SMU",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 88,
-      "away_team": "Missouri",
-      "game_id": "2025_11_03_missouri_howard",
-      "home_score": 67,
-      "home_team": "Howard",
       "neutral_site": 0
     },
     {
@@ -858,5 +858,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.402548Z"
+  "generated_at": "2026-02-05T13:47:28.573919Z"
 }

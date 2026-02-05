@@ -10,27 +10,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Akron",
-      "game_id": "2026_01_09_akron_bowling_green",
-      "home_score": 67,
-      "home_team": "Bowling Green",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "USC",
       "game_id": "2026_01_09_usc_minnesota",
       "home_score": 69,
       "home_team": "Minnesota",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 85,
-      "away_team": "Northern Kentucky",
-      "game_id": "2026_01_09_northern_kentucky_milwaukee",
-      "home_score": 67,
-      "home_team": "Milwaukee",
       "neutral_site": 0
     },
     {
@@ -42,11 +26,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Canisius",
-      "game_id": "2026_01_09_canisius_manhattan",
-      "home_score": 64,
-      "home_team": "Manhattan",
+      "away_score": 85,
+      "away_team": "Northern Kentucky",
+      "game_id": "2026_01_09_northern_kentucky_milwaukee",
+      "home_score": 67,
+      "home_team": "Milwaukee",
       "neutral_site": 0
     },
     {
@@ -55,6 +39,14 @@
       "game_id": "2026_01_09_miami_oh_toledo",
       "home_score": 73,
       "home_team": "Toledo",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Canisius",
+      "game_id": "2026_01_09_canisius_manhattan",
+      "home_score": 64,
+      "home_team": "Manhattan",
       "neutral_site": 0
     },
     {
@@ -90,6 +82,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Akron",
+      "game_id": "2026_01_09_akron_bowling_green",
+      "home_score": 67,
+      "home_team": "Bowling Green",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Cleveland St.",
       "game_id": "2026_01_09_cleveland_st_oakland",
@@ -114,5 +114,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.745882Z"
+  "generated_at": "2026-02-05T13:47:28.831487Z"
 }

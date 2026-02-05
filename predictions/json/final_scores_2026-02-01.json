@@ -18,14 +18,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Illinois",
-      "game_id": "2026_02_01_illinois_nebraska",
-      "home_score": 69,
-      "home_team": "Nebraska",
-      "neutral_site": 0
-    },
-    {
       "away_score": 58,
       "away_team": "Marist",
       "game_id": "2026_02_01_marist_niagara",
@@ -39,6 +31,14 @@
       "game_id": "2026_02_01_alabama_florida",
       "home_score": 100,
       "home_team": "Florida",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Illinois",
+      "game_id": "2026_02_01_illinois_nebraska",
+      "home_score": 69,
+      "home_team": "Nebraska",
       "neutral_site": 0
     },
     {
@@ -202,5 +202,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.873026Z"
+  "generated_at": "2026-02-05T13:47:28.949800Z"
 }

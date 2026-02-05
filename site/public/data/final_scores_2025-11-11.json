@@ -83,6 +83,14 @@
     },
     {
       "away_score": 62,
+      "away_team": "Dayton",
+      "game_id": "2025_11_11_dayton_cincinnati",
+      "home_score": 74,
+      "home_team": "Cincinnati",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
       "away_team": "Wofford",
       "game_id": "2025_11_11_wofford_auburn",
       "home_score": 93,
@@ -111,14 +119,6 @@
       "game_id": "2025_11_11_njit_loyola_md",
       "home_score": 64,
       "home_team": "Loyola MD",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 62,
-      "away_team": "Dayton",
-      "game_id": "2025_11_11_dayton_cincinnati",
-      "home_score": 74,
-      "home_team": "Cincinnati",
       "neutral_site": 0
     },
     {
@@ -218,14 +218,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 49,
-      "away_team": "Northern Arizona",
-      "game_id": "2025_11_11_northern_arizona_arizona",
-      "home_score": 84,
-      "home_team": "Arizona",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Mount St. Mary's",
       "game_id": "2025_11_11_mount_st_mary_s_saint_francis",
@@ -279,14 +271,6 @@
       "game_id": "2025_11_11_alcorn_st_maryland",
       "home_score": 84,
       "home_team": "Maryland",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Wagner",
-      "game_id": "2025_11_11_wagner_fordham",
-      "home_score": 63,
-      "home_team": "Fordham",
       "neutral_site": 0
     },
     {
@@ -386,6 +370,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Bucknell",
+      "game_id": "2025_11_11_bucknell_princeton",
+      "home_score": 73,
+      "home_team": "Princeton",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "Navy",
       "game_id": "2025_11_11_navy_penn_st",
@@ -423,6 +415,14 @@
       "game_id": "2025_11_11_uc_riverside_new_mexico",
       "home_score": 82,
       "home_team": "New Mexico",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Wagner",
+      "game_id": "2025_11_11_wagner_fordham",
+      "home_score": 63,
+      "home_team": "Fordham",
       "neutral_site": 0
     },
     {
@@ -482,19 +482,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 49,
+      "away_team": "Northern Arizona",
+      "game_id": "2025_11_11_northern_arizona_arizona",
+      "home_score": 84,
+      "home_team": "Arizona",
+      "neutral_site": 0
+    },
+    {
       "away_score": 83,
       "away_team": "Drexel",
       "game_id": "2025_11_11_drexel_colgate",
       "home_score": 90,
       "home_team": "Colgate",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Bucknell",
-      "game_id": "2025_11_11_bucknell_princeton",
-      "home_score": 73,
-      "home_team": "Princeton",
       "neutral_site": 0
     },
     {
@@ -522,5 +522,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.451155Z"
+  "generated_at": "2026-02-05T13:47:28.610074Z"
 }

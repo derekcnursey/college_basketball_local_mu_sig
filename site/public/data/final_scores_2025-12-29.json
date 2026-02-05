@@ -26,14 +26,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Western Kentucky",
-      "game_id": "2025_12_29_western_kentucky_jacksonville_st",
-      "home_score": 78,
-      "home_team": "Jacksonville St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Southern Utah",
       "game_id": "2025_12_29_southern_utah_utah_tech",
@@ -71,6 +63,14 @@
       "game_id": "2025_12_29_alabama_st_mississippi_st",
       "home_score": 94,
       "home_team": "Mississippi St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Western Kentucky",
+      "game_id": "2025_12_29_western_kentucky_jacksonville_st",
+      "home_score": 78,
+      "home_team": "Jacksonville St.",
       "neutral_site": 0
     },
     {
@@ -290,6 +290,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Southern Miss",
+      "game_id": "2025_12_29_southern_miss_lsu",
+      "home_score": 90,
+      "home_team": "LSU",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "Saint Peter's",
       "game_id": "2025_12_29_saint_peter_s_fairfield",
@@ -362,11 +370,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 82,
-      "away_team": "Prairie View A&M",
-      "game_id": "2025_12_29_prairie_view_a_m_texas_a_m",
-      "home_score": 111,
-      "home_team": "Texas A&M",
+      "away_score": 58,
+      "away_team": "Marist",
+      "game_id": "2025_12_29_marist_quinnipiac",
+      "home_score": 64,
+      "home_team": "Quinnipiac",
       "neutral_site": 0
     },
     {
@@ -391,14 +399,6 @@
       "game_id": "2025_12_29_umass_lowell_iowa",
       "home_score": 90,
       "home_team": "Iowa",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 62,
-      "away_team": "Southern Miss",
-      "game_id": "2025_12_29_southern_miss_lsu",
-      "home_score": 90,
-      "home_team": "LSU",
       "neutral_site": 0
     },
     {
@@ -434,11 +434,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Marist",
-      "game_id": "2025_12_29_marist_quinnipiac",
-      "home_score": 64,
-      "home_team": "Quinnipiac",
+      "away_score": 82,
+      "away_team": "Prairie View A&M",
+      "game_id": "2025_12_29_prairie_view_a_m_texas_a_m",
+      "home_score": 111,
+      "home_team": "Texas A&M",
       "neutral_site": 0
     },
     {
@@ -466,5 +466,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-04T14:34:25.696840Z"
+  "generated_at": "2026-02-05T13:47:28.785844Z"
 }
