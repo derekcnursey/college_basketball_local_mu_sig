@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 89,
+      "away_team": "Dartmouth",
+      "game_id": "2025_12_16_dartmouth_holy_cross",
+      "home_score": 64,
+      "home_team": "Holy Cross",
+      "neutral_site": 0
+    },
+    {
       "away_score": 58,
       "away_team": "East Tennessee St.",
       "game_id": "2025_12_16_east_tennessee_st_north_carolina",
@@ -74,27 +82,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Northern Colorado",
-      "game_id": "2025_12_16_northern_colorado_texas_tech",
-      "home_score": 101,
-      "home_team": "Texas Tech",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "Oral Roberts",
       "game_id": "2025_12_16_oral_roberts_missouri_st",
       "home_score": 63,
       "home_team": "Missouri St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 89,
-      "away_team": "Dartmouth",
-      "game_id": "2025_12_16_dartmouth_holy_cross",
-      "home_score": 64,
-      "home_team": "Holy Cross",
       "neutral_site": 0
     },
     {
@@ -111,6 +103,14 @@
       "game_id": "2025_12_16_montana_st_cal_poly",
       "home_score": 80,
       "home_team": "Cal Poly",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 55,
+      "away_team": "Chicago St.",
+      "game_id": "2025_12_16_chicago_st_bowling_green",
+      "home_score": 76,
+      "home_team": "Bowling Green",
       "neutral_site": 0
     },
     {
@@ -226,6 +226,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 67,
+      "away_team": "UC San Diego",
+      "game_id": "2025_12_16_uc_san_diego_loyola_marymount",
+      "home_score": 57,
+      "home_team": "Loyola Marymount",
+      "neutral_site": 0
+    },
+    {
       "away_score": 78,
       "away_team": "USC Upstate",
       "game_id": "2025_12_16_usc_upstate_south_carolina_st",
@@ -242,14 +250,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 55,
-      "away_team": "Chicago St.",
-      "game_id": "2025_12_16_chicago_st_bowling_green",
-      "home_score": 76,
-      "home_team": "Bowling Green",
-      "neutral_site": 0
-    },
-    {
       "away_score": 57,
       "away_team": "Pacific",
       "game_id": "2025_12_16_pacific_byu",
@@ -258,11 +258,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "UC San Diego",
-      "game_id": "2025_12_16_uc_san_diego_loyola_marymount",
-      "home_score": 57,
-      "home_team": "Loyola Marymount",
+      "away_score": 90,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_16_northern_colorado_texas_tech",
+      "home_score": 101,
+      "home_team": "Texas Tech",
       "neutral_site": 0
     },
     {
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-05T13:47:28.747920Z"
+  "generated_at": "2026-02-06T15:28:31.036667Z"
 }

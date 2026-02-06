@@ -10,19 +10,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Akron",
+      "game_id": "2026_01_09_akron_bowling_green",
+      "home_score": 67,
+      "home_team": "Bowling Green",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "USC",
       "game_id": "2026_01_09_usc_minnesota",
       "home_score": 69,
       "home_team": "Minnesota",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 59,
-      "away_team": "IU Indy",
-      "game_id": "2026_01_09_iu_indy_green_bay",
-      "home_score": 75,
-      "home_team": "Green Bay",
       "neutral_site": 0
     },
     {
@@ -34,11 +34,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 87,
-      "away_team": "Miami OH",
-      "game_id": "2026_01_09_miami_oh_toledo",
-      "home_score": 73,
-      "home_team": "Toledo",
+      "away_score": 59,
+      "away_team": "IU Indy",
+      "game_id": "2026_01_09_iu_indy_green_bay",
+      "home_score": 75,
+      "home_team": "Green Bay",
       "neutral_site": 0
     },
     {
@@ -47,6 +47,14 @@
       "game_id": "2026_01_09_canisius_manhattan",
       "home_score": 64,
       "home_team": "Manhattan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "Miami OH",
+      "game_id": "2026_01_09_miami_oh_toledo",
+      "home_score": 73,
+      "home_team": "Toledo",
       "neutral_site": 0
     },
     {
@@ -82,14 +90,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Akron",
-      "game_id": "2026_01_09_akron_bowling_green",
-      "home_score": 67,
-      "home_team": "Bowling Green",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Cleveland St.",
       "game_id": "2026_01_09_cleveland_st_oakland",
@@ -114,5 +114,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-05T13:47:28.831487Z"
+  "generated_at": "2026-02-06T15:28:31.112942Z"
 }

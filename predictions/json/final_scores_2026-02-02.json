@@ -18,14 +18,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "Bethune Cookman",
-      "game_id": "2026_02_02_bethune_cookman_alabama_a_m",
-      "home_score": 62,
-      "home_team": "Alabama A&M",
-      "neutral_site": 0
-    },
-    {
       "away_score": 57,
       "away_team": "Houston Christian",
       "game_id": "2026_02_02_houston_christian_ut_rio_grande_valley",
@@ -58,11 +50,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Bethune Cookman",
+      "game_id": "2026_02_02_bethune_cookman_alabama_a_m",
+      "home_score": 62,
+      "home_team": "Alabama A&M",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Boston University",
       "game_id": "2026_02_02_boston_university_holy_cross",
       "home_score": 64,
       "home_team": "Holy Cross",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Weber St.",
+      "game_id": "2026_02_02_weber_st_sacramento_st",
+      "home_score": 104,
+      "home_team": "Sacramento St.",
       "neutral_site": 0
     },
     {
@@ -98,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Weber St.",
-      "game_id": "2026_02_02_weber_st_sacramento_st",
-      "home_score": 104,
-      "home_team": "Sacramento St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Kansas",
       "game_id": "2026_02_02_kansas_texas_tech",
@@ -138,5 +138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-05T13:47:28.952528Z"
+  "generated_at": "2026-02-06T15:28:31.219815Z"
 }

@@ -34,14 +34,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Albany",
-      "game_id": "2025_11_28_albany_colgate",
-      "home_score": 69,
-      "home_team": "Colgate",
-      "neutral_site": 1
-    },
-    {
       "away_score": 65,
       "away_team": "Merrimack",
       "game_id": "2025_11_28_merrimack_penn",
@@ -55,6 +47,14 @@
       "game_id": "2025_11_28_longwood_siena",
       "home_score": 70,
       "home_team": "Siena",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 67,
+      "away_team": "Albany",
+      "game_id": "2025_11_28_albany_colgate",
+      "home_score": 69,
+      "home_team": "Colgate",
       "neutral_site": 1
     },
     {
@@ -218,14 +218,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 87,
-      "away_team": "SMU",
-      "game_id": "2025_11_28_smu_mississippi_st",
-      "home_score": 81,
-      "home_team": "Mississippi St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 81,
       "away_team": "Alcorn St.",
       "game_id": "2025_11_28_alcorn_st_indiana_st",
@@ -250,11 +242,11 @@
       "neutral_site": 1
     },
     {
-      "away_score": 66,
-      "away_team": "Ohio St.",
-      "game_id": "2025_11_28_ohio_st_pittsburgh",
-      "home_score": 67,
-      "home_team": "Pittsburgh",
+      "away_score": 87,
+      "away_team": "SMU",
+      "game_id": "2025_11_28_smu_mississippi_st",
+      "home_score": 81,
+      "home_team": "Mississippi St.",
       "neutral_site": 0
     },
     {
@@ -288,6 +280,14 @@
       "home_score": 68,
       "home_team": "Virginia Tech",
       "neutral_site": 1
+    },
+    {
+      "away_score": 66,
+      "away_team": "Ohio St.",
+      "game_id": "2025_11_28_ohio_st_pittsburgh",
+      "home_score": 67,
+      "home_team": "Pittsburgh",
+      "neutral_site": 0
     },
     {
       "away_score": 74,
@@ -418,5 +418,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-05T13:47:28.682563Z"
+  "generated_at": "2026-02-06T15:28:30.972383Z"
 }
