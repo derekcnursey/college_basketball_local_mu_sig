@@ -26,14 +26,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Southern Miss",
-      "game_id": "2025_11_13_southern_miss_grambling_st",
-      "home_score": 75,
-      "home_team": "Grambling St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Loyola Chicago",
       "game_id": "2025_11_13_loyola_chicago_wichita_st",
@@ -120,7 +112,15 @@
       "home_score": 79,
       "home_team": "Michigan St.",
       "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Southern Miss",
+      "game_id": "2025_11_13_southern_miss_grambling_st",
+      "home_score": 75,
+      "home_team": "Grambling St.",
+      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-06T15:28:30.906599Z"
+  "generated_at": "2026-02-07T16:00:41.062512Z"
 }

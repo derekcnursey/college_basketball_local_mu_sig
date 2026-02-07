@@ -26,14 +26,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 96,
-      "away_team": "UNLV",
-      "game_id": "2026_02_03_unlv_fresno_st",
-      "home_score": 98,
-      "home_team": "Fresno St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "N.C. State",
       "game_id": "2026_02_03_n_c_state_smu",
@@ -50,19 +42,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "St. Bonaventure",
+      "game_id": "2026_02_03_st_bonaventure_dayton",
+      "home_score": 72,
+      "home_team": "Dayton",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Illinois Chicago",
       "game_id": "2026_02_03_illinois_chicago_murray_st",
       "home_score": 81,
       "home_team": "Murray St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "VCU",
-      "game_id": "2026_02_03_vcu_fordham",
-      "home_score": 59,
-      "home_team": "Fordham",
       "neutral_site": 0
     },
     {
@@ -103,14 +95,6 @@
       "game_id": "2026_02_03_kent_st_toledo",
       "home_score": 72,
       "home_team": "Toledo",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 70,
-      "away_team": "St. Bonaventure",
-      "game_id": "2026_02_03_st_bonaventure_dayton",
-      "home_score": 72,
-      "home_team": "Dayton",
       "neutral_site": 0
     },
     {
@@ -234,6 +218,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "VCU",
+      "game_id": "2026_02_03_vcu_fordham",
+      "home_score": 59,
+      "home_team": "Fordham",
+      "neutral_site": 0
+    },
+    {
       "away_score": 68,
       "away_team": "St. John's",
       "game_id": "2026_02_03_st_john_s_depaul",
@@ -248,7 +240,15 @@
       "home_score": 91,
       "home_team": "Boise St.",
       "neutral_site": 0
+    },
+    {
+      "away_score": 96,
+      "away_team": "UNLV",
+      "game_id": "2026_02_03_unlv_fresno_st",
+      "home_score": 98,
+      "home_team": "Fresno St.",
+      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-06T15:28:31.222708Z"
+  "generated_at": "2026-02-07T16:00:41.408417Z"
 }

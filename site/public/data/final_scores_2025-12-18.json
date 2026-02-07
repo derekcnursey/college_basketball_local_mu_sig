@@ -2,14 +2,6 @@
   "date": "2025-12-18",
   "games": [
     {
-      "away_score": 71,
-      "away_team": "Tennessee Martin",
-      "game_id": "2025_12_18_tennessee_martin_tennessee_st",
-      "home_score": 78,
-      "home_team": "Tennessee St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 82,
       "away_team": "Western Carolina",
       "game_id": "2025_12_18_western_carolina_georgia",
@@ -95,6 +87,14 @@
       "game_id": "2025_12_18_winthrop_north_dakota",
       "home_score": 90,
       "home_team": "North Dakota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Tennessee Martin",
+      "game_id": "2025_12_18_tennessee_martin_tennessee_st",
+      "home_score": 78,
+      "home_team": "Tennessee St.",
       "neutral_site": 0
     },
     {
@@ -218,5 +218,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-06T15:28:31.044315Z"
+  "generated_at": "2026-02-07T16:00:41.197262Z"
 }

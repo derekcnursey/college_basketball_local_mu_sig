@@ -1,0 +1,78 @@
+{
+  "date": "2026-02-06",
+  "games": [
+    {
+      "away_score": 63,
+      "away_team": "Evansville",
+      "game_id": "2026_02_06_evansville_valparaiso",
+      "home_score": 70,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "Connecticut",
+      "game_id": "2026_02_06_connecticut_st_john_s",
+      "home_score": 81,
+      "home_team": "St. John's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Loyola Chicago",
+      "game_id": "2026_02_06_loyola_chicago_davidson",
+      "home_score": 84,
+      "home_team": "Davidson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Belmont",
+      "game_id": "2026_02_06_belmont_illinois_chicago",
+      "home_score": 62,
+      "home_team": "Illinois Chicago",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Bradley",
+      "game_id": "2026_02_06_bradley_northern_iowa",
+      "home_score": 61,
+      "home_team": "Northern Iowa",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "Murray St.",
+      "game_id": "2026_02_06_murray_st_southern_illinois",
+      "home_score": 81,
+      "home_team": "Southern Illinois",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Dayton",
+      "game_id": "2026_02_06_dayton_vcu",
+      "home_score": 99,
+      "home_team": "VCU",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Drake",
+      "game_id": "2026_02_06_drake_illinois_st",
+      "home_score": 86,
+      "home_team": "Illinois St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Brown",
+      "game_id": "2026_02_06_brown_yale",
+      "home_score": 81,
+      "home_team": "Yale",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-02-07T16:00:41.422494Z"
+}

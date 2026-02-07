@@ -170,14 +170,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Stony Brook",
-      "game_id": "2025_12_06_stony_brook_duquesne",
-      "home_score": 84,
-      "home_team": "Duquesne",
-      "neutral_site": 0
-    },
-    {
       "away_score": 88,
       "away_team": "Akron",
       "game_id": "2025_12_06_akron_tulane",
@@ -210,14 +202,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Old Dominion",
-      "game_id": "2025_12_06_old_dominion_richmond",
-      "home_score": 86,
-      "home_team": "Richmond",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "UMKC",
       "game_id": "2025_12_06_umkc_eastern_washington",
@@ -247,6 +231,14 @@
       "game_id": "2025_12_06_wichita_st_northern_iowa",
       "home_score": 69,
       "home_team": "Northern Iowa",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "St. Bonaventure",
+      "game_id": "2025_12_06_st_bonaventure_buffalo",
+      "home_score": 69,
+      "home_team": "Buffalo",
       "neutral_site": 0
     },
     {
@@ -338,14 +330,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 53,
-      "away_team": "Chicago St.",
-      "game_id": "2025_12_06_chicago_st_illinois_st",
-      "home_score": 95,
-      "home_team": "Illinois St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Idaho",
       "game_id": "2025_12_06_idaho_south_dakota_st",
@@ -418,6 +402,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 60,
+      "away_team": "Nebraska Omaha",
+      "game_id": "2025_12_06_nebraska_omaha_portland_st",
+      "home_score": 55,
+      "home_team": "Portland St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Arkansas Pine Bluff",
       "game_id": "2025_12_06_arkansas_pine_bluff_depaul",
@@ -431,14 +423,6 @@
       "game_id": "2025_12_06_duke_michigan_st",
       "home_score": 60,
       "home_team": "Michigan St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 77,
-      "away_team": "St. Bonaventure",
-      "game_id": "2025_12_06_st_bonaventure_buffalo",
-      "home_score": 69,
-      "home_team": "Buffalo",
       "neutral_site": 0
     },
     {
@@ -490,6 +474,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 77,
+      "away_team": "Old Dominion",
+      "game_id": "2025_12_06_old_dominion_richmond",
+      "home_score": 86,
+      "home_team": "Richmond",
+      "neutral_site": 0
+    },
+    {
       "away_score": 82,
       "away_team": "Boston University",
       "game_id": "2025_12_06_boston_university_new_hampshire",
@@ -512,14 +504,6 @@
       "home_score": 62,
       "home_team": "Tennessee",
       "neutral_site": 1
-    },
-    {
-      "away_score": 60,
-      "away_team": "Nebraska Omaha",
-      "game_id": "2025_12_06_nebraska_omaha_portland_st",
-      "home_score": 55,
-      "home_team": "Portland St.",
-      "neutral_site": 0
     },
     {
       "away_score": 71,
@@ -610,6 +594,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Stony Brook",
+      "game_id": "2025_12_06_stony_brook_duquesne",
+      "home_score": 84,
+      "home_team": "Duquesne",
+      "neutral_site": 0
+    },
+    {
       "away_score": 78,
       "away_team": "Grand Canyon",
       "game_id": "2025_12_06_grand_canyon_oklahoma_st",
@@ -666,19 +658,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "New Mexico St.",
-      "game_id": "2025_12_06_new_mexico_st_abilene_christian",
-      "home_score": 77,
-      "home_team": "Abilene Christian",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Evansville",
       "game_id": "2025_12_06_evansville_western_kentucky",
       "home_score": 80,
       "home_team": "Western Kentucky",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 53,
+      "away_team": "Chicago St.",
+      "game_id": "2025_12_06_chicago_st_illinois_st",
+      "home_score": 95,
+      "home_team": "Illinois St.",
       "neutral_site": 0
     },
     {
@@ -722,11 +714,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 69,
+      "away_team": "New Mexico St.",
+      "game_id": "2025_12_06_new_mexico_st_abilene_christian",
+      "home_score": 77,
+      "home_team": "Abilene Christian",
+      "neutral_site": 0
+    },
+    {
       "away_score": 57,
       "away_team": "Texas A&M Corpus Chris",
       "game_id": "2025_12_06_texas_a_m_corpus_chris_lamar",
       "home_score": 49,
       "home_team": "Lamar",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 72,
+      "away_team": "Delaware",
+      "game_id": "2025_12_06_delaware_delaware_st",
+      "home_score": 75,
+      "home_team": "Delaware St.",
       "neutral_site": 0
     },
     {
@@ -802,11 +810,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 72,
-      "away_team": "Delaware",
-      "game_id": "2025_12_06_delaware_delaware_st",
-      "home_score": 75,
-      "home_team": "Delaware St.",
+      "away_score": 82,
+      "away_team": "Sam Houston St.",
+      "game_id": "2025_12_06_sam_houston_st_texas_southern",
+      "home_score": 70,
+      "home_team": "Texas Southern",
       "neutral_site": 0
     },
     {
@@ -832,15 +840,7 @@
       "home_score": 86,
       "home_team": "Virginia",
       "neutral_site": 1
-    },
-    {
-      "away_score": 82,
-      "away_team": "Sam Houston St.",
-      "game_id": "2025_12_06_sam_houston_st_texas_southern",
-      "home_score": 70,
-      "home_team": "Texas Southern",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-06T15:28:31.003486Z"
+  "generated_at": "2026-02-07T16:00:41.158784Z"
 }

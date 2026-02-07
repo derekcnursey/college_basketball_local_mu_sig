@@ -50,14 +50,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 58,
-      "away_team": "Southern Illinois",
-      "game_id": "2025_11_26_southern_illinois_memphis",
-      "home_score": 74,
-      "home_team": "Memphis",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Cal St. Northridge",
       "game_id": "2025_11_26_cal_st_northridge_idaho",
@@ -87,6 +79,14 @@
       "game_id": "2025_11_26_seton_hall_washington_st",
       "home_score": 61,
       "home_team": "Washington St.",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 51,
+      "away_team": "Gardner Webb",
+      "game_id": "2025_11_26_gardner_webb_navy",
+      "home_score": 84,
+      "home_team": "Navy",
       "neutral_site": 1
     },
     {
@@ -194,6 +194,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Southern Illinois",
+      "game_id": "2025_11_26_southern_illinois_memphis",
+      "home_score": 74,
+      "home_team": "Memphis",
+      "neutral_site": 0
+    },
+    {
       "away_score": 67,
       "away_team": "Appalachian St.",
       "game_id": "2025_11_26_appalachian_st_mercer",
@@ -224,22 +232,6 @@
       "home_score": 88,
       "home_team": "Robert Morris",
       "neutral_site": 0
-    },
-    {
-      "away_score": 87,
-      "away_team": "Belmont",
-      "game_id": "2025_11_26_belmont_toledo",
-      "home_score": 72,
-      "home_team": "Toledo",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 64,
-      "away_team": "Saint Francis",
-      "game_id": "2025_11_26_saint_francis_troy",
-      "home_score": 74,
-      "home_team": "Troy",
-      "neutral_site": 1
     },
     {
       "away_score": 90,
@@ -274,11 +266,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 51,
-      "away_team": "Gardner Webb",
-      "game_id": "2025_11_26_gardner_webb_navy",
-      "home_score": 84,
-      "home_team": "Navy",
+      "away_score": 87,
+      "away_team": "Belmont",
+      "game_id": "2025_11_26_belmont_toledo",
+      "home_score": 72,
+      "home_team": "Toledo",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 64,
+      "away_team": "Saint Francis",
+      "game_id": "2025_11_26_saint_francis_troy",
+      "home_score": 74,
+      "home_team": "Troy",
       "neutral_site": 1
     },
     {
@@ -490,5 +490,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-06T15:28:30.965096Z"
+  "generated_at": "2026-02-07T16:00:41.121224Z"
 }

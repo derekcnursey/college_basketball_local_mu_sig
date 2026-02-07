@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "San Jose St.",
+      "game_id": "2025_11_08_san_jose_st_uc_santa_barbara",
+      "home_score": 85,
+      "home_team": "UC Santa Barbara",
+      "neutral_site": 0
+    },
+    {
       "away_score": 103,
       "away_team": "Alabama",
       "game_id": "2025_11_08_alabama_st_john_s",
@@ -72,14 +80,6 @@
       "home_score": 95,
       "home_team": "South Florida",
       "neutral_site": 1
-    },
-    {
-      "away_score": 74,
-      "away_team": "San Jose St.",
-      "game_id": "2025_11_08_san_jose_st_uc_santa_barbara",
-      "home_score": 85,
-      "home_team": "UC Santa Barbara",
-      "neutral_site": 0
     },
     {
       "away_score": 89,
@@ -226,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 54,
-      "away_team": "Central Michigan",
-      "game_id": "2025_11_08_central_michigan_bradley",
-      "home_score": 85,
-      "home_team": "Bradley",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "Monmouth",
       "game_id": "2025_11_08_monmouth_la_salle",
@@ -263,14 +255,6 @@
       "game_id": "2025_11_08_albany_massachusetts",
       "home_score": 83,
       "home_team": "Massachusetts",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 69,
-      "away_team": "Chattanooga",
-      "game_id": "2025_11_08_chattanooga_unlv",
-      "home_score": 101,
-      "home_team": "UNLV",
       "neutral_site": 0
     },
     {
@@ -346,6 +330,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 68,
+      "away_team": "Oklahoma",
+      "game_id": "2025_11_08_oklahoma_gonzaga",
+      "home_score": 83,
+      "home_team": "Gonzaga",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Fairfield",
       "game_id": "2025_11_08_fairfield_njit",
@@ -402,14 +394,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Oklahoma",
-      "game_id": "2025_11_08_oklahoma_gonzaga",
-      "home_score": 83,
-      "home_team": "Gonzaga",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "Lafayette",
       "game_id": "2025_11_08_lafayette_texas",
@@ -423,6 +407,14 @@
       "game_id": "2025_11_08_niagara_binghamton",
       "home_score": 59,
       "home_team": "Binghamton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 54,
+      "away_team": "Central Michigan",
+      "game_id": "2025_11_08_central_michigan_bradley",
+      "home_score": 85,
+      "home_team": "Bradley",
       "neutral_site": 0
     },
     {
@@ -450,6 +442,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 69,
+      "away_team": "Chattanooga",
+      "game_id": "2025_11_08_chattanooga_unlv",
+      "home_score": 101,
+      "home_team": "UNLV",
+      "neutral_site": 0
+    },
+    {
       "away_score": 60,
       "away_team": "Maine",
       "game_id": "2025_11_08_maine_stony_brook",
@@ -474,5 +474,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-06T15:28:30.887877Z"
+  "generated_at": "2026-02-07T16:00:41.040808Z"
 }

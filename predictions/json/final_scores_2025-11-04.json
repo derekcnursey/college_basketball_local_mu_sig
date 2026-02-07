@@ -10,14 +10,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "Eastern Illinois",
-      "game_id": "2025_11_04_eastern_illinois_valparaiso",
-      "home_score": 66,
-      "home_team": "Valparaiso",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Southern Utah",
       "game_id": "2025_11_04_southern_utah_arizona_st",
@@ -98,6 +90,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Eastern Illinois",
+      "game_id": "2025_11_04_eastern_illinois_valparaiso",
+      "home_score": 66,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "NJIT",
       "game_id": "2025_11_04_njit_fordham",
@@ -162,5 +162,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-06T15:28:30.872582Z"
+  "generated_at": "2026-02-07T16:00:41.024019Z"
 }
