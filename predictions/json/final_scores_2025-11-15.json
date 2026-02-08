@@ -266,14 +266,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 50,
-      "away_team": "Drexel",
-      "game_id": "2025_11_15_drexel_syracuse",
-      "home_score": 80,
-      "home_team": "Syracuse",
-      "neutral_site": 1
-    },
-    {
       "away_score": 79,
       "away_team": "Nicholls St.",
       "game_id": "2025_11_15_nicholls_st_murray_st",
@@ -474,6 +466,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 50,
+      "away_team": "Drexel",
+      "game_id": "2025_11_15_drexel_syracuse",
+      "home_score": 80,
+      "home_team": "Syracuse",
+      "neutral_site": 1
+    },
+    {
       "away_score": 69,
       "away_team": "Austin Peay",
       "game_id": "2025_11_15_austin_peay_unc_greensboro",
@@ -570,5 +570,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-07T16:00:41.072705Z"
+  "generated_at": "2026-02-08T16:08:17.857930Z"
 }

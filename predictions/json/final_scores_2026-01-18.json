@@ -58,6 +58,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 88,
+      "away_team": "Oakland",
+      "game_id": "2026_01_18_oakland_green_bay",
+      "home_score": 63,
+      "home_team": "Green Bay",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Charlotte",
       "game_id": "2026_01_18_charlotte_east_carolina",
@@ -88,15 +96,7 @@
       "home_score": 85,
       "home_team": "South Florida",
       "neutral_site": 0
-    },
-    {
-      "away_score": 88,
-      "away_team": "Oakland",
-      "game_id": "2026_01_18_oakland_green_bay",
-      "home_score": 63,
-      "home_team": "Green Bay",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-07T16:00:41.324948Z"
+  "generated_at": "2026-02-08T16:08:18.114421Z"
 }

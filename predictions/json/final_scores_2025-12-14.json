@@ -2,14 +2,6 @@
   "date": "2025-12-14",
   "games": [
     {
-      "away_score": 86,
-      "away_team": "Troy",
-      "game_id": "2025_12_14_troy_uab",
-      "home_score": 85,
-      "home_team": "UAB",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Boise St.",
       "game_id": "2025_12_14_boise_st_saint_mary_s",
@@ -130,6 +122,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 86,
+      "away_team": "Troy",
+      "game_id": "2025_12_14_troy_uab",
+      "home_score": 85,
+      "home_team": "UAB",
+      "neutral_site": 0
+    },
+    {
       "away_score": 75,
       "away_team": "Jacksonville",
       "game_id": "2025_12_14_jacksonville_texas_a_m",
@@ -186,5 +186,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-07T16:00:41.184852Z"
+  "generated_at": "2026-02-08T16:08:17.970902Z"
 }
