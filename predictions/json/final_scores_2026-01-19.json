@@ -146,14 +146,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Drexel",
-      "game_id": "2026_01_19_drexel_towson",
-      "home_score": 59,
-      "home_team": "Towson",
-      "neutral_site": 0
-    },
-    {
       "away_score": 105,
       "away_team": "Sacred Heart",
       "game_id": "2026_01_19_sacred_heart_rider",
@@ -266,6 +258,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Drexel",
+      "game_id": "2026_01_19_drexel_towson",
+      "home_score": 59,
+      "home_team": "Towson",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Saint Joseph's",
       "game_id": "2026_01_19_saint_joseph_s_vcu",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:15:59.842000Z"
+  "generated_at": "2026-02-09T16:19:08.819639Z"
 }

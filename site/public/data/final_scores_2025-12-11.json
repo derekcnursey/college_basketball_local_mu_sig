@@ -10,6 +10,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Alabama St.",
+      "game_id": "2025_12_11_alabama_st_missouri",
+      "home_score": 85,
+      "home_team": "Missouri",
+      "neutral_site": 0
+    },
+    {
       "away_score": 80,
       "away_team": "North Dakota St.",
       "game_id": "2025_12_11_north_dakota_st_cal_st_bakersfield",
@@ -50,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Alabama St.",
-      "game_id": "2025_12_11_alabama_st_missouri",
-      "home_score": 85,
-      "home_team": "Missouri",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "Iowa",
       "game_id": "2025_12_11_iowa_iowa_st",
@@ -66,5 +66,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:15:59.652778Z"
+  "generated_at": "2026-02-09T16:19:08.686664Z"
 }

@@ -770,6 +770,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "William & Mary",
+      "game_id": "2026_01_10_william_mary_drexel",
+      "home_score": 64,
+      "home_team": "Drexel",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "Lipscomb",
       "game_id": "2026_01_10_lipscomb_florida_gulf_coast",
@@ -1122,14 +1130,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "William & Mary",
-      "game_id": "2026_01_10_william_mary_drexel",
-      "home_score": 64,
-      "home_team": "Drexel",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "Syracuse",
       "game_id": "2026_01_10_syracuse_pittsburgh",
@@ -1178,5 +1178,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:15:59.799062Z"
+  "generated_at": "2026-02-09T16:19:08.785023Z"
 }

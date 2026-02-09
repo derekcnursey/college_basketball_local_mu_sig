@@ -274,6 +274,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 45,
+      "away_team": "South Carolina St.",
+      "game_id": "2025_11_03_south_carolina_st_louisville",
+      "home_score": 104,
+      "home_team": "Louisville",
+      "neutral_site": 0
+    },
+    {
       "away_score": 61,
       "away_team": "Lipscomb",
       "game_id": "2025_11_03_lipscomb_vanderbilt",
@@ -810,14 +818,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 45,
-      "away_team": "South Carolina St.",
-      "game_id": "2025_11_03_south_carolina_st_louisville",
-      "home_score": 104,
-      "home_team": "Louisville",
-      "neutral_site": 0
-    },
-    {
       "away_score": 55,
       "away_team": "Jackson St.",
       "game_id": "2025_11_03_jackson_st_illinois",
@@ -858,5 +858,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:15:59.422336Z"
+  "generated_at": "2026-02-09T16:19:08.542013Z"
 }

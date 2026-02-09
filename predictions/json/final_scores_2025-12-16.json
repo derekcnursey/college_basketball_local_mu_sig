@@ -178,14 +178,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Northern Colorado",
-      "game_id": "2025_12_16_northern_colorado_texas_tech",
-      "home_score": 101,
-      "home_team": "Texas Tech",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "LIU",
       "game_id": "2025_12_16_liu_mississippi_st",
@@ -266,6 +258,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 90,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_16_northern_colorado_texas_tech",
+      "home_score": 101,
+      "home_team": "Texas Tech",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Howard",
       "game_id": "2025_12_16_howard_drexel",
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:15:59.672882Z"
+  "generated_at": "2026-02-09T16:19:08.702668Z"
 }
