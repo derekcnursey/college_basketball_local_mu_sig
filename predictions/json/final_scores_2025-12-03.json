@@ -314,14 +314,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Northern Colorado",
-      "game_id": "2025_12_03_northern_colorado_nebraska_omaha",
-      "home_score": 70,
-      "home_team": "Nebraska Omaha",
-      "neutral_site": 0
-    },
-    {
       "away_score": 59,
       "away_team": "Northeastern",
       "game_id": "2025_12_03_northeastern_holy_cross",
@@ -415,6 +407,14 @@
       "game_id": "2025_12_03_ball_st_evansville",
       "home_score": 64,
       "home_team": "Evansville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_03_northern_colorado_nebraska_omaha",
+      "home_score": 70,
+      "home_team": "Nebraska Omaha",
       "neutral_site": 0
     },
     {
@@ -554,5 +554,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:17.931687Z"
+  "generated_at": "2026-02-09T16:15:59.621716Z"
 }

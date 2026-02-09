@@ -338,6 +338,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 69,
+      "away_team": "Chattanooga",
+      "game_id": "2025_11_08_chattanooga_unlv",
+      "home_score": 101,
+      "home_team": "UNLV",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Fairfield",
       "game_id": "2025_11_08_fairfield_njit",
@@ -442,14 +450,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "Chattanooga",
-      "game_id": "2025_11_08_chattanooga_unlv",
-      "home_score": 101,
-      "home_team": "UNLV",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "Maine",
       "game_id": "2025_11_08_maine_stony_brook",
@@ -474,5 +474,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:17.827564Z"
+  "generated_at": "2026-02-09T16:15:59.446010Z"
 }

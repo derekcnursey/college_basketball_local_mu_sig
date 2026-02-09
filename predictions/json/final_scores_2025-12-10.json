@@ -146,6 +146,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Colgate",
+      "game_id": "2025_12_10_colgate_st_bonaventure",
+      "home_score": 85,
+      "home_team": "St. Bonaventure",
+      "neutral_site": 0
+    },
+    {
       "away_score": 65,
       "away_team": "Eastern Michigan",
       "game_id": "2025_12_10_eastern_michigan_purdue_fort_wayne",
@@ -218,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Colgate",
-      "game_id": "2025_12_10_colgate_st_bonaventure",
-      "home_score": 85,
-      "home_team": "St. Bonaventure",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "Southern",
       "game_id": "2025_12_10_southern_texas_st",
@@ -234,5 +234,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:17.956456Z"
+  "generated_at": "2026-02-09T16:15:59.650124Z"
 }

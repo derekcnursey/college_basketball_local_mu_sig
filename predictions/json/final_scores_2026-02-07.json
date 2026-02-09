@@ -570,14 +570,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "New Hampshire",
-      "game_id": "2026_02_07_new_hampshire_vermont",
-      "home_score": 80,
-      "home_team": "Vermont",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Binghamton",
       "game_id": "2026_02_07_binghamton_njit",
@@ -1154,6 +1146,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 57,
+      "away_team": "New Hampshire",
+      "game_id": "2026_02_07_new_hampshire_vermont",
+      "home_score": 80,
+      "home_team": "Vermont",
+      "neutral_site": 0
+    },
+    {
       "away_score": 96,
       "away_team": "Santa Clara",
       "game_id": "2026_02_07_santa_clara_washington_st",
@@ -1226,5 +1226,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:18.215682Z"
+  "generated_at": "2026-02-09T16:16:00.228977Z"
 }

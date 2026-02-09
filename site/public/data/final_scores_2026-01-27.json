@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Alabama A&M",
+      "game_id": "2026_01_27_alabama_a_m_prairie_view_a_m",
+      "home_score": 60,
+      "home_team": "Prairie View A&M",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Nebraska",
       "game_id": "2026_01_27_nebraska_michigan",
@@ -79,14 +87,6 @@
       "game_id": "2026_01_27_toledo_akron",
       "home_score": 91,
       "home_team": "Akron",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 80,
-      "away_team": "Alabama A&M",
-      "game_id": "2026_01_27_alabama_a_m_prairie_view_a_m",
-      "home_score": 60,
-      "home_team": "Prairie View A&M",
       "neutral_site": 0
     },
     {
@@ -282,5 +282,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:18.158211Z"
+  "generated_at": "2026-02-09T16:16:00.158767Z"
 }

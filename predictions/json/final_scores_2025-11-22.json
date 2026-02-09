@@ -195,14 +195,6 @@
     },
     {
       "away_score": 80,
-      "away_team": "Howard",
-      "game_id": "2025_11_22_howard_niagara",
-      "home_score": 70,
-      "home_team": "Niagara",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 80,
       "away_team": "Louisiana Monroe",
       "game_id": "2025_11_22_louisiana_monroe_morehead_st",
       "home_score": 83,
@@ -298,6 +290,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Howard",
+      "game_id": "2025_11_22_howard_niagara",
+      "home_score": 70,
+      "home_team": "Niagara",
+      "neutral_site": 1
+    },
+    {
       "away_score": 81,
       "away_team": "Nicholls St.",
       "game_id": "2025_11_22_nicholls_st_oklahoma_st",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:17.885949Z"
+  "generated_at": "2026-02-09T16:15:59.565069Z"
 }

@@ -258,14 +258,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Southeastern Louisiana",
-      "game_id": "2026_01_31_southeastern_louisiana_stephen_f_austin",
-      "home_score": 85,
-      "home_team": "Stephen F. Austin",
-      "neutral_site": 0
-    },
-    {
       "away_score": 89,
       "away_team": "Charleston",
       "game_id": "2026_01_31_charleston_northeastern",
@@ -319,6 +311,14 @@
       "game_id": "2026_01_31_murray_st_belmont",
       "home_score": 103,
       "home_team": "Belmont",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "UC Davis",
+      "game_id": "2026_01_31_uc_davis_cal_st_bakersfield",
+      "home_score": 72,
+      "home_team": "Cal St. Bakersfield",
       "neutral_site": 0
     },
     {
@@ -642,6 +642,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Southeastern Louisiana",
+      "game_id": "2026_01_31_southeastern_louisiana_stephen_f_austin",
+      "home_score": 85,
+      "home_team": "Stephen F. Austin",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "Idaho",
       "game_id": "2026_01_31_idaho_northern_arizona",
@@ -778,14 +786,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Colgate",
-      "game_id": "2026_01_31_colgate_lehigh",
-      "home_score": 77,
-      "home_team": "Lehigh",
-      "neutral_site": 0
-    },
-    {
       "away_score": 55,
       "away_team": "Evansville",
       "game_id": "2026_01_31_evansville_northern_iowa",
@@ -799,6 +799,14 @@
       "game_id": "2026_01_31_dartmouth_brown",
       "home_score": 70,
       "home_team": "Brown",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "California",
+      "game_id": "2026_01_31_california_miami_fl",
+      "home_score": 85,
+      "home_team": "Miami FL",
       "neutral_site": 0
     },
     {
@@ -922,14 +930,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 86,
-      "away_team": "California",
-      "game_id": "2026_01_31_california_miami_fl",
-      "home_score": 85,
-      "home_team": "Miami FL",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Portland",
       "game_id": "2026_01_31_portland_washington_st",
@@ -1034,14 +1034,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "UC Davis",
-      "game_id": "2026_01_31_uc_davis_cal_st_bakersfield",
-      "home_score": 72,
-      "home_team": "Cal St. Bakersfield",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Appalachian St.",
       "game_id": "2026_01_31_appalachian_st_troy",
@@ -1055,6 +1047,14 @@
       "game_id": "2026_01_31_florida_gulf_coast_jacksonville",
       "home_score": 49,
       "home_team": "Jacksonville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Colgate",
+      "game_id": "2026_01_31_colgate_lehigh",
+      "home_score": 77,
+      "home_team": "Lehigh",
       "neutral_site": 0
     },
     {
@@ -1090,5 +1090,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-08T16:08:18.181705Z"
+  "generated_at": "2026-02-09T16:16:00.190915Z"
 }
