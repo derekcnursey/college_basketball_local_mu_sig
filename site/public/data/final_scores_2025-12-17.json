@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 73,
+      "away_team": "Portland St.",
+      "game_id": "2025_12_17_portland_st_colorado",
+      "home_score": 84,
+      "home_team": "Colorado",
+      "neutral_site": 0
+    },
+    {
       "away_score": 77,
       "away_team": "Arizona St.",
       "game_id": "2025_12_17_arizona_st_ucla",
@@ -82,14 +90,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "James Madison",
-      "game_id": "2025_12_17_james_madison_old_dominion",
-      "home_score": 77,
-      "home_team": "Old Dominion",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "Cleveland St.",
       "game_id": "2025_12_17_cleveland_st_uab",
@@ -114,19 +114,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 79,
+      "away_team": "Seattle",
+      "game_id": "2025_12_17_seattle_uc_davis",
+      "home_score": 78,
+      "home_team": "UC Davis",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "Campbell",
       "game_id": "2025_12_17_campbell_gonzaga",
       "home_score": 98,
       "home_team": "Gonzaga",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 73,
-      "away_team": "Wofford",
-      "game_id": "2025_12_17_wofford_wichita_st",
-      "home_score": 84,
-      "home_team": "Wichita St.",
       "neutral_site": 0
     },
     {
@@ -178,19 +178,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 73,
-      "away_team": "Portland St.",
-      "game_id": "2025_12_17_portland_st_colorado",
-      "home_score": 84,
-      "home_team": "Colorado",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "Vanderbilt",
       "game_id": "2025_12_17_vanderbilt_memphis",
       "home_score": 70,
       "home_team": "Memphis",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "James Madison",
+      "game_id": "2025_12_17_james_madison_old_dominion",
+      "home_score": 77,
+      "home_team": "Old Dominion",
       "neutral_site": 0
     },
     {
@@ -202,11 +202,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 79,
-      "away_team": "Seattle",
-      "game_id": "2025_12_17_seattle_uc_davis",
-      "home_score": 78,
-      "home_team": "UC Davis",
+      "away_score": 73,
+      "away_team": "Wofford",
+      "game_id": "2025_12_17_wofford_wichita_st",
+      "home_score": 84,
+      "home_team": "Wichita St.",
       "neutral_site": 0
     },
     {
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:19:08.706878Z"
+  "generated_at": "2026-02-10T14:16:08.817739Z"
 }

@@ -74,14 +74,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 72,
-      "away_team": "Connecticut",
-      "game_id": "2025_12_21_connecticut_depaul",
-      "home_score": 54,
-      "home_team": "DePaul",
-      "neutral_site": 0
-    },
-    {
       "away_score": 76,
       "away_team": "Charleston Southern",
       "game_id": "2025_12_21_charleston_southern_furman",
@@ -122,6 +114,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 72,
+      "away_team": "Connecticut",
+      "game_id": "2025_12_21_connecticut_depaul",
+      "home_score": 54,
+      "home_team": "DePaul",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "New Hampshire",
       "game_id": "2025_12_21_new_hampshire_saint_louis",
@@ -143,6 +143,14 @@
       "game_id": "2025_12_21_idaho_cal_poly",
       "home_score": 80,
       "home_team": "Cal Poly",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Eastern Kentucky",
+      "game_id": "2025_12_21_eastern_kentucky_wichita_st",
+      "home_score": 88,
+      "home_team": "Wichita St.",
       "neutral_site": 0
     },
     {
@@ -194,11 +202,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "Eastern Kentucky",
-      "game_id": "2025_12_21_eastern_kentucky_wichita_st",
-      "home_score": 88,
-      "home_team": "Wichita St.",
+      "away_score": 62,
+      "away_team": "Lehigh",
+      "game_id": "2025_12_21_lehigh_monmouth",
+      "home_score": 76,
+      "home_team": "Monmouth",
       "neutral_site": 0
     },
     {
@@ -215,14 +223,6 @@
       "game_id": "2025_12_21_charleston_northern_kentucky",
       "home_score": 74,
       "home_team": "Northern Kentucky",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 72,
-      "away_team": "Purdue Fort Wayne",
-      "game_id": "2025_12_21_purdue_fort_wayne_notre_dame",
-      "home_score": 69,
-      "home_team": "Notre Dame",
       "neutral_site": 0
     },
     {
@@ -323,6 +323,14 @@
     },
     {
       "away_score": 76,
+      "away_team": "Illinois Chicago",
+      "game_id": "2025_12_21_illinois_chicago_charlotte",
+      "home_score": 88,
+      "home_team": "Charlotte",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
       "away_team": "UMass Lowell",
       "game_id": "2025_12_21_umass_lowell_boston_university",
       "home_score": 88,
@@ -338,11 +346,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Lehigh",
-      "game_id": "2025_12_21_lehigh_monmouth",
-      "home_score": 76,
-      "home_team": "Monmouth",
+      "away_score": 72,
+      "away_team": "Purdue Fort Wayne",
+      "game_id": "2025_12_21_purdue_fort_wayne_notre_dame",
+      "home_score": 69,
+      "home_team": "Notre Dame",
       "neutral_site": 0
     },
     {
@@ -394,14 +402,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Illinois Chicago",
-      "game_id": "2025_12_21_illinois_chicago_charlotte",
-      "home_score": 88,
-      "home_team": "Charlotte",
-      "neutral_site": 0
-    },
-    {
       "away_score": 56,
       "away_team": "Maine",
       "game_id": "2025_12_21_maine_drexel",
@@ -418,5 +418,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:19:08.721717Z"
+  "generated_at": "2026-02-10T14:16:08.834537Z"
 }

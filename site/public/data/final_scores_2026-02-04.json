@@ -138,6 +138,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 86,
+      "away_team": "Utah St.",
+      "game_id": "2026_02_04_utah_st_new_mexico",
+      "home_score": 66,
+      "home_team": "New Mexico",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "Lehigh",
       "game_id": "2026_02_04_lehigh_loyola_md",
@@ -402,14 +410,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 86,
-      "away_team": "Utah St.",
-      "game_id": "2026_02_04_utah_st_new_mexico",
-      "home_score": 66,
-      "home_team": "New Mexico",
-      "neutral_site": 0
-    },
-    {
       "away_score": 71,
       "away_team": "Duquesne",
       "game_id": "2026_02_04_duquesne_george_mason",
@@ -490,5 +490,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:19:08.892991Z"
+  "generated_at": "2026-02-10T14:16:09.019637Z"
 }

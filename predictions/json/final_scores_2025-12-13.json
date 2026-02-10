@@ -58,14 +58,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 65,
-      "away_team": "Sacred Heart",
-      "game_id": "2025_12_13_sacred_heart_njit",
-      "home_score": 49,
-      "home_team": "NJIT",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Northern Illinois",
       "game_id": "2025_12_13_northern_illinois_elon",
@@ -104,22 +96,6 @@
       "home_score": 73,
       "home_team": "George Mason",
       "neutral_site": 0
-    },
-    {
-      "away_score": 82,
-      "away_team": "Marist",
-      "game_id": "2025_12_13_marist_bryant",
-      "home_score": 74,
-      "home_team": "Bryant",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 75,
-      "away_team": "Alabama",
-      "game_id": "2025_12_13_alabama_arizona",
-      "home_score": 96,
-      "home_team": "Arizona",
-      "neutral_site": 1
     },
     {
       "away_score": 101,
@@ -234,14 +210,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 61,
-      "away_team": "DePaul",
-      "game_id": "2025_12_13_depaul_wichita_st",
-      "home_score": 58,
-      "home_team": "Wichita St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 59,
       "away_team": "Marquette",
       "game_id": "2025_12_13_marquette_purdue",
@@ -258,12 +226,20 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "UC Davis",
-      "game_id": "2025_12_13_uc_davis_oregon",
-      "home_score": 104,
-      "home_team": "Oregon",
+      "away_score": 65,
+      "away_team": "Sacred Heart",
+      "game_id": "2025_12_13_sacred_heart_njit",
+      "home_score": 49,
+      "home_team": "NJIT",
       "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "Mississippi",
+      "game_id": "2025_12_13_mississippi_southern_miss",
+      "home_score": 67,
+      "home_team": "Southern Miss",
+      "neutral_site": 1
     },
     {
       "away_score": 57,
@@ -338,6 +314,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 82,
+      "away_team": "Marist",
+      "game_id": "2025_12_13_marist_bryant",
+      "home_score": 74,
+      "home_team": "Bryant",
+      "neutral_site": 0
+    },
+    {
       "away_score": 80,
       "away_team": "Florida",
       "game_id": "2025_12_13_florida_george_washington",
@@ -370,14 +354,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 61,
-      "away_team": "Pittsburgh",
-      "game_id": "2025_12_13_pittsburgh_villanova",
-      "home_score": 79,
-      "home_team": "Villanova",
-      "neutral_site": 0
-    },
-    {
       "away_score": 76,
       "away_team": "Michigan St.",
       "game_id": "2025_12_13_michigan_st_penn_st",
@@ -400,6 +376,30 @@
       "home_score": 61,
       "home_team": "Howard",
       "neutral_site": 1
+    },
+    {
+      "away_score": 88,
+      "away_team": "Cal St. Northridge",
+      "game_id": "2025_12_13_cal_st_northridge_delaware",
+      "home_score": 66,
+      "home_team": "Delaware",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Prairie View A&M",
+      "game_id": "2025_12_13_prairie_view_a_m_south_dakota",
+      "home_score": 97,
+      "home_team": "South Dakota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "DePaul",
+      "game_id": "2025_12_13_depaul_wichita_st",
+      "home_score": 58,
+      "home_team": "Wichita St.",
+      "neutral_site": 0
     },
     {
       "away_score": 44,
@@ -442,19 +442,19 @@
       "neutral_site": 1
     },
     {
-      "away_score": 71,
-      "away_team": "Mississippi",
-      "game_id": "2025_12_13_mississippi_southern_miss",
-      "home_score": 67,
-      "home_team": "Southern Miss",
-      "neutral_site": 1
-    },
-    {
       "away_score": 72,
       "away_team": "Central Arkansas",
       "game_id": "2025_12_13_central_arkansas_vanderbilt",
       "home_score": 83,
       "home_team": "Vanderbilt",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Central Connecticut",
+      "game_id": "2025_12_13_central_connecticut_binghamton",
+      "home_score": 67,
+      "home_team": "Binghamton",
       "neutral_site": 0
     },
     {
@@ -466,28 +466,12 @@
       "neutral_site": 1
     },
     {
-      "away_score": 85,
-      "away_team": "Prairie View A&M",
-      "game_id": "2025_12_13_prairie_view_a_m_south_dakota",
-      "home_score": 97,
-      "home_team": "South Dakota",
-      "neutral_site": 0
-    },
-    {
       "away_score": 65,
       "away_team": "Cincinnati",
       "game_id": "2025_12_13_cincinnati_georgia",
       "home_score": 84,
       "home_team": "Georgia",
       "neutral_site": 1
-    },
-    {
-      "away_score": 53,
-      "away_team": "Manhattan",
-      "game_id": "2025_12_13_manhattan_fordham",
-      "home_score": 82,
-      "home_team": "Fordham",
-      "neutral_site": 0
     },
     {
       "away_score": 69,
@@ -522,12 +506,36 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "UC Davis",
+      "game_id": "2025_12_13_uc_davis_oregon",
+      "home_score": 104,
+      "home_team": "Oregon",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Memphis",
       "game_id": "2025_12_13_memphis_louisville",
       "home_score": 99,
       "home_team": "Louisville",
       "neutral_site": 0
+    },
+    {
+      "away_score": 47,
+      "away_team": "Mercyhurst",
+      "game_id": "2025_12_13_mercyhurst_davidson",
+      "home_score": 80,
+      "home_team": "Davidson",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Alabama",
+      "game_id": "2025_12_13_alabama_arizona",
+      "home_score": 96,
+      "home_team": "Arizona",
+      "neutral_site": 1
     },
     {
       "away_score": 61,
@@ -562,14 +570,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 88,
-      "away_team": "Cal St. Northridge",
-      "game_id": "2025_12_13_cal_st_northridge_delaware",
-      "home_score": 66,
-      "home_team": "Delaware",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Boston University",
       "game_id": "2025_12_13_boston_university_dartmouth",
@@ -594,11 +594,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 84,
-      "away_team": "Central Connecticut",
-      "game_id": "2025_12_13_central_connecticut_binghamton",
-      "home_score": 67,
-      "home_team": "Binghamton",
+      "away_score": 53,
+      "away_team": "Manhattan",
+      "game_id": "2025_12_13_manhattan_fordham",
+      "home_score": 82,
+      "home_team": "Fordham",
       "neutral_site": 0
     },
     {
@@ -616,14 +616,6 @@
       "home_score": 78,
       "home_team": "Chattanooga",
       "neutral_site": 1
-    },
-    {
-      "away_score": 47,
-      "away_team": "Mercyhurst",
-      "game_id": "2025_12_13_mercyhurst_davidson",
-      "home_score": 80,
-      "home_team": "Davidson",
-      "neutral_site": 0
     },
     {
       "away_score": 93,
@@ -658,6 +650,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Pittsburgh",
+      "game_id": "2025_12_13_pittsburgh_villanova",
+      "home_score": 79,
+      "home_team": "Villanova",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Oakland",
       "game_id": "2025_12_13_oakland_northern_iowa",
@@ -679,14 +679,6 @@
       "game_id": "2025_12_13_uc_riverside_byu",
       "home_score": 100,
       "home_team": "BYU",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 76,
-      "away_team": "Arkansas St.",
-      "game_id": "2025_12_13_arkansas_st_rice",
-      "home_score": 77,
-      "home_team": "Rice",
       "neutral_site": 0
     },
     {
@@ -738,6 +730,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 76,
+      "away_team": "Arkansas St.",
+      "game_id": "2025_12_13_arkansas_st_rice",
+      "home_score": 77,
+      "home_team": "Rice",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "Hofstra",
       "game_id": "2025_12_13_hofstra_syracuse",
@@ -746,5 +746,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:19:08.694943Z"
+  "generated_at": "2026-02-10T14:16:08.804849Z"
 }

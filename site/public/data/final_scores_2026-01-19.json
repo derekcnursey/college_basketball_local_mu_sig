@@ -130,11 +130,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "LIU",
-      "game_id": "2026_01_19_liu_le_moyne",
-      "home_score": 83,
-      "home_team": "Le Moyne",
+      "away_score": 55,
+      "away_team": "Bryant",
+      "game_id": "2026_01_19_bryant_njit",
+      "home_score": 79,
+      "home_team": "NJIT",
       "neutral_site": 0
     },
     {
@@ -167,6 +167,14 @@
       "game_id": "2026_01_19_manhattan_quinnipiac",
       "home_score": 98,
       "home_team": "Quinnipiac",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "LIU",
+      "game_id": "2026_01_19_liu_le_moyne",
+      "home_score": 83,
+      "home_team": "Le Moyne",
       "neutral_site": 0
     },
     {
@@ -234,20 +242,20 @@
       "neutral_site": 0
     },
     {
+      "away_score": 68,
+      "away_team": "Merrimack",
+      "game_id": "2026_01_19_merrimack_marist",
+      "home_score": 55,
+      "home_team": "Marist",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Alabama A&M",
       "game_id": "2026_01_19_alabama_a_m_alabama_st",
       "home_score": 69,
       "home_team": "Alabama St.",
       "neutral_site": 1
-    },
-    {
-      "away_score": 55,
-      "away_team": "Bryant",
-      "game_id": "2026_01_19_bryant_njit",
-      "home_score": 79,
-      "home_team": "NJIT",
-      "neutral_site": 0
     },
     {
       "away_score": 80,
@@ -282,14 +290,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Merrimack",
-      "game_id": "2026_01_19_merrimack_marist",
-      "home_score": 55,
-      "home_team": "Marist",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Stephen F. Austin",
       "game_id": "2026_01_19_stephen_f_austin_nicholls_st",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:19:08.819639Z"
+  "generated_at": "2026-02-10T14:16:08.944839Z"
 }

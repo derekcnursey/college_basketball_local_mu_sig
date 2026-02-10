@@ -2,6 +2,14 @@
   "date": "2025-11-07",
   "games": [
     {
+      "away_score": 73,
+      "away_team": "Illinois Chicago",
+      "game_id": "2025_11_07_illinois_chicago_oregon_st",
+      "home_score": 76,
+      "home_team": "Oregon St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "UAB",
       "game_id": "2025_11_07_uab_n_c_state",
@@ -26,14 +34,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "UMKC",
-      "game_id": "2025_11_07_umkc_southern_illinois",
-      "home_score": 101,
-      "home_team": "Southern Illinois",
-      "neutral_site": 0
-    },
-    {
       "away_score": 57,
       "away_team": "Nicholls St.",
       "game_id": "2025_11_07_nicholls_st_eastern_illinois",
@@ -55,14 +55,6 @@
       "game_id": "2025_11_07_north_carolina_central_virginia",
       "home_score": 81,
       "home_team": "Virginia",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 73,
-      "away_team": "Illinois Chicago",
-      "game_id": "2025_11_07_illinois_chicago_oregon_st",
-      "home_score": 76,
-      "home_team": "Oregon St.",
       "neutral_site": 0
     },
     {
@@ -95,6 +87,14 @@
       "game_id": "2025_11_07_arkansas_st_stephen_f_austin",
       "home_score": 90,
       "home_team": "Stephen F. Austin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "UMKC",
+      "game_id": "2025_11_07_umkc_southern_illinois",
+      "home_score": 101,
+      "home_team": "Southern Illinois",
       "neutral_site": 0
     },
     {
@@ -450,5 +450,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-09T16:19:08.556978Z"
+  "generated_at": "2026-02-10T14:16:08.650080Z"
 }
