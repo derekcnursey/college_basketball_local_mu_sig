@@ -322,6 +322,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_03_northern_colorado_nebraska_omaha",
+      "home_score": 70,
+      "home_team": "Nebraska Omaha",
+      "neutral_site": 0
+    },
+    {
       "away_score": 59,
       "away_team": "Northeastern",
       "game_id": "2025_12_03_northeastern_holy_cross",
@@ -514,14 +522,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Northern Colorado",
-      "game_id": "2025_12_03_northern_colorado_nebraska_omaha",
-      "home_score": 70,
-      "home_team": "Nebraska Omaha",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Cleveland St.",
       "game_id": "2025_12_03_cleveland_st_northern_kentucky",
@@ -554,5 +554,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-10T14:16:08.767475Z"
+  "generated_at": "2026-02-11T15:01:37.952733Z"
 }
