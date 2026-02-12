@@ -195,14 +195,6 @@
     },
     {
       "away_score": 77,
-      "away_team": "Oakland",
-      "game_id": "2025_11_07_oakland_purdue",
-      "home_score": 87,
-      "home_team": "Purdue",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 77,
       "away_team": "Sam Houston St.",
       "game_id": "2025_11_07_sam_houston_st_texas_tech",
       "home_score": 98,
@@ -287,6 +279,14 @@
       "game_id": "2025_11_07_siu_edwardsville_utsa",
       "home_score": 60,
       "home_team": "UTSA",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Oakland",
+      "game_id": "2025_11_07_oakland_purdue",
+      "home_score": 87,
+      "home_team": "Purdue",
       "neutral_site": 0
     },
     {
@@ -450,5 +450,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-11T15:01:37.816828Z"
+  "generated_at": "2026-02-12T15:13:18.028512Z"
 }

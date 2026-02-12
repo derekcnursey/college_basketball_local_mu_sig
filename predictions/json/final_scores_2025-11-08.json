@@ -98,14 +98,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 101,
-      "away_team": "Providence",
-      "game_id": "2025_11_08_providence_virginia_tech",
-      "home_score": 107,
-      "home_team": "Virginia Tech",
-      "neutral_site": 1
-    },
-    {
       "away_score": 66,
       "away_team": "Arkansas",
       "game_id": "2025_11_08_arkansas_michigan_st",
@@ -472,7 +464,15 @@
       "home_score": 90,
       "home_team": "UNC Greensboro",
       "neutral_site": 0
+    },
+    {
+      "away_score": 101,
+      "away_team": "Providence",
+      "game_id": "2025_11_08_providence_virginia_tech",
+      "home_score": 107,
+      "home_team": "Virginia Tech",
+      "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-11T15:01:37.823828Z"
+  "generated_at": "2026-02-12T15:13:18.033613Z"
 }

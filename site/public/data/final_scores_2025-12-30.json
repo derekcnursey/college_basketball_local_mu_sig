@@ -178,14 +178,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 99,
-      "away_team": "Gonzaga",
-      "game_id": "2025_12_30_gonzaga_san_diego",
-      "home_score": 93,
-      "home_team": "San Diego",
-      "neutral_site": 0
-    },
-    {
       "away_score": 67,
       "away_team": "Albany",
       "game_id": "2025_12_30_albany_south_carolina",
@@ -226,6 +218,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 99,
+      "away_team": "Gonzaga",
+      "game_id": "2025_12_30_gonzaga_san_diego",
+      "home_score": 93,
+      "home_team": "San Diego",
+      "neutral_site": 0
+    },
+    {
       "away_score": 90,
       "away_team": "Louisville",
       "game_id": "2025_12_30_louisville_california",
@@ -258,5 +258,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-11T15:01:38.050418Z"
+  "generated_at": "2026-02-12T15:13:18.216530Z"
 }
