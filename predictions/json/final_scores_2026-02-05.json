@@ -98,6 +98,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Cal St. Bakersfield",
+      "game_id": "2026_02_05_cal_st_bakersfield_uc_irvine",
+      "home_score": 78,
+      "home_team": "UC Irvine",
+      "neutral_site": 0
+    },
+    {
       "away_score": 82,
       "away_team": "Eastern Washington",
       "game_id": "2026_02_05_eastern_washington_montana",
@@ -378,14 +386,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Cal St. Bakersfield",
-      "game_id": "2026_02_05_cal_st_bakersfield_uc_irvine",
-      "home_score": 78,
-      "home_team": "UC Irvine",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Jacksonville",
       "game_id": "2026_02_05_jacksonville_queens",
@@ -402,5 +402,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-13T15:43:59.344214Z"
+  "generated_at": "2026-02-14T16:16:26.825007Z"
 }

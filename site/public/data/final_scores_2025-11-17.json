@@ -90,14 +90,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 61,
-      "away_team": "North Alabama",
-      "game_id": "2025_11_17_north_alabama_clemson",
-      "home_score": 81,
-      "home_team": "Clemson",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "Georgia St.",
       "game_id": "2025_11_17_georgia_st_arizona_st",
@@ -186,6 +178,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "North Alabama",
+      "game_id": "2025_11_17_north_alabama_clemson",
+      "home_score": 81,
+      "home_team": "Clemson",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "SIU Edwardsville",
       "game_id": "2025_11_17_siu_edwardsville_wisconsin",
@@ -194,5 +194,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-13T15:43:59.024078Z"
+  "generated_at": "2026-02-14T16:16:26.500069Z"
 }

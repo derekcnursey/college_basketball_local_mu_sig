@@ -58,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 96,
-      "away_team": "UNLV",
-      "game_id": "2026_02_03_unlv_fresno_st",
-      "home_score": 98,
-      "home_team": "Fresno St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 75,
       "away_team": "South Carolina",
       "game_id": "2026_02_03_south_carolina_texas",
@@ -248,7 +240,15 @@
       "home_score": 91,
       "home_team": "Boise St.",
       "neutral_site": 0
+    },
+    {
+      "away_score": 96,
+      "away_team": "UNLV",
+      "game_id": "2026_02_03_unlv_fresno_st",
+      "home_score": 98,
+      "home_team": "Fresno St.",
+      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-13T15:43:59.333486Z"
+  "generated_at": "2026-02-14T16:16:26.814548Z"
 }
