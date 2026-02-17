@@ -578,14 +578,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "William & Mary",
-      "game_id": "2026_01_10_william_mary_drexel",
-      "home_score": 64,
-      "home_team": "Drexel",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Buffalo",
       "game_id": "2026_01_10_buffalo_ohio",
@@ -767,6 +759,14 @@
       "game_id": "2026_01_10_ball_st_massachusetts",
       "home_score": 79,
       "home_team": "Massachusetts",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 58,
+      "away_team": "William & Mary",
+      "game_id": "2026_01_10_william_mary_drexel",
+      "home_score": 64,
+      "home_team": "Drexel",
       "neutral_site": 0
     },
     {
@@ -1178,5 +1178,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-16T15:13:56.758341Z"
+  "generated_at": "2026-02-17T15:37:30.865586Z"
 }
