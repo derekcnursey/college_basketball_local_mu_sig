@@ -394,14 +394,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 84,
-      "away_team": "Arizona",
-      "game_id": "2026_01_17_arizona_ucf",
-      "home_score": 77,
-      "home_team": "UCF",
-      "neutral_site": 0
-    },
-    {
       "away_score": 55,
       "away_team": "Lindenwood",
       "game_id": "2026_01_17_lindenwood_tennessee_martin",
@@ -423,6 +415,14 @@
       "game_id": "2026_01_17_winthrop_unc_asheville",
       "home_score": 67,
       "home_team": "UNC Asheville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Arizona",
+      "game_id": "2026_01_17_arizona_ucf",
+      "home_score": 77,
+      "home_team": "UCF",
       "neutral_site": 0
     },
     {
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-17T15:37:30.896130Z"
+  "generated_at": "2026-02-18T14:13:32.465082Z"
 }
