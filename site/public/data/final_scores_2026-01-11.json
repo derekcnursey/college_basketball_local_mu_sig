@@ -98,14 +98,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Quinnipiac",
-      "game_id": "2026_01_11_quinnipiac_sacred_heart",
-      "home_score": 60,
-      "home_team": "Sacred Heart",
-      "neutral_site": 0
-    },
-    {
       "away_score": 72,
       "away_team": "Cincinnati",
       "game_id": "2026_01_11_cincinnati_ucf",
@@ -154,6 +146,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "Quinnipiac",
+      "game_id": "2026_01_11_quinnipiac_sacred_heart",
+      "home_score": 60,
+      "home_team": "Sacred Heart",
+      "neutral_site": 0
+    },
+    {
       "away_score": 67,
       "away_team": "Siena",
       "game_id": "2026_01_11_siena_mount_st_mary_s",
@@ -162,5 +162,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-18T14:13:32.437223Z"
+  "generated_at": "2026-02-19T16:35:52.556374Z"
 }

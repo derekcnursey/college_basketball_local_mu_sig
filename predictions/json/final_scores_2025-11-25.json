@@ -338,14 +338,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 72,
-      "away_team": "Auburn",
-      "game_id": "2025_11_25_auburn_michigan",
-      "home_score": 102,
-      "home_team": "Michigan",
-      "neutral_site": 1
-    },
-    {
       "away_score": 75,
       "away_team": "UAB",
       "game_id": "2025_11_25_uab_utep",
@@ -466,6 +458,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 72,
+      "away_team": "Auburn",
+      "game_id": "2025_11_25_auburn_michigan",
+      "home_score": 102,
+      "home_team": "Michigan",
+      "neutral_site": 1
+    },
+    {
       "away_score": 66,
       "away_team": "South Carolina St.",
       "game_id": "2025_11_25_south_carolina_st_missouri",
@@ -530,5 +530,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-18T14:13:32.273278Z"
+  "generated_at": "2026-02-19T16:35:52.276365Z"
 }

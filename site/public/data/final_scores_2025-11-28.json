@@ -90,6 +90,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 51,
+      "away_team": "Jackson St.",
+      "game_id": "2025_11_28_jackson_st_louisiana",
+      "home_score": 45,
+      "home_team": "Louisiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Hofstra",
       "game_id": "2025_11_28_hofstra_la_salle",
@@ -354,14 +362,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 51,
-      "away_team": "Jackson St.",
-      "game_id": "2025_11_28_jackson_st_louisiana",
-      "home_score": 45,
-      "home_team": "Louisiana",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "Ball St.",
       "game_id": "2025_11_28_ball_st_monmouth",
@@ -418,5 +418,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-18T14:13:32.285785Z"
+  "generated_at": "2026-02-19T16:35:52.295168Z"
 }
