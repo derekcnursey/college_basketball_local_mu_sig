@@ -274,6 +274,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 45,
+      "away_team": "South Carolina St.",
+      "game_id": "2025_11_03_south_carolina_st_louisville",
+      "home_score": 104,
+      "home_team": "Louisville",
+      "neutral_site": 0
+    },
+    {
       "away_score": 61,
       "away_team": "Lipscomb",
       "game_id": "2025_11_03_lipscomb_vanderbilt",
@@ -527,14 +535,6 @@
       "game_id": "2025_11_03_bethune_cookman_auburn",
       "home_score": 95,
       "home_team": "Auburn",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 45,
-      "away_team": "South Carolina St.",
-      "game_id": "2025_11_03_south_carolina_st_louisville",
-      "home_score": 104,
-      "home_team": "Louisville",
       "neutral_site": 0
     },
     {
@@ -858,5 +858,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-19T16:35:52.099896Z"
+  "generated_at": "2026-02-20T15:32:54.629667Z"
 }

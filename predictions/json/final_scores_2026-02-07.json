@@ -554,14 +554,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "New Hampshire",
-      "game_id": "2026_02_07_new_hampshire_vermont",
-      "home_score": 80,
-      "home_team": "Vermont",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Binghamton",
       "game_id": "2026_02_07_binghamton_njit",
@@ -962,6 +954,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 57,
+      "away_team": "New Hampshire",
+      "game_id": "2026_02_07_new_hampshire_vermont",
+      "home_score": 80,
+      "home_team": "Vermont",
+      "neutral_site": 0
+    },
+    {
       "away_score": 85,
       "away_team": "Utah St.",
       "game_id": "2026_02_07_utah_st_wyoming",
@@ -1226,5 +1226,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-19T16:35:52.725499Z"
+  "generated_at": "2026-02-20T15:32:55.203999Z"
 }
