@@ -290,6 +290,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "Vermont",
+      "game_id": "2026_02_05_vermont_maine",
+      "home_score": 76,
+      "home_team": "Maine",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Iona",
       "game_id": "2026_02_05_iona_siena",
@@ -378,14 +386,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Vermont",
-      "game_id": "2026_02_05_vermont_maine",
-      "home_score": 76,
-      "home_team": "Maine",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Jacksonville",
       "game_id": "2026_02_05_jacksonville_queens",
@@ -402,5 +402,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-20T15:32:55.190534Z"
+  "generated_at": "2026-02-21T16:04:46.216104Z"
 }
