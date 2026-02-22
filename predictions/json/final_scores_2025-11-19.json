@@ -26,19 +26,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "Harvard",
-      "game_id": "2025_11_19_harvard_penn_st",
-      "home_score": 84,
-      "home_team": "Penn St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 90,
       "away_team": "Valparaiso",
       "game_id": "2025_11_19_valparaiso_cleveland_st",
       "home_score": 75,
       "home_team": "Cleveland St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Harvard",
+      "game_id": "2025_11_19_harvard_penn_st",
+      "home_score": 84,
+      "home_team": "Penn St.",
       "neutral_site": 0
     },
     {
@@ -298,5 +298,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-21T16:04:45.932611Z"
+  "generated_at": "2026-02-22T16:04:49.226683Z"
 }

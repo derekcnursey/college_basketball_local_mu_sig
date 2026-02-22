@@ -258,14 +258,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Georgetown",
-      "game_id": "2026_02_14_georgetown_connecticut",
-      "home_score": 79,
-      "home_team": "Connecticut",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "Liberty",
       "game_id": "2026_02_14_liberty_utep",
@@ -818,6 +810,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Georgetown",
+      "game_id": "2026_02_14_georgetown_connecticut",
+      "home_score": 79,
+      "home_team": "Connecticut",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "St. John's",
       "game_id": "2026_02_14_st_john_s_providence",
@@ -1034,5 +1034,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-21T16:04:46.255237Z"
+  "generated_at": "2026-02-22T16:04:49.648064Z"
 }

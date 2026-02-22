@@ -146,6 +146,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Drexel",
+      "game_id": "2026_01_19_drexel_towson",
+      "home_score": 59,
+      "home_team": "Towson",
+      "neutral_site": 0
+    },
+    {
       "away_score": 105,
       "away_team": "Sacred Heart",
       "game_id": "2026_01_19_sacred_heart_rider",
@@ -199,14 +207,6 @@
       "game_id": "2026_01_19_southeastern_louisiana_ut_rio_grande_valley",
       "home_score": 68,
       "home_team": "UT Rio Grande Valley",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 58,
-      "away_team": "Drexel",
-      "game_id": "2026_01_19_drexel_towson",
-      "home_score": 59,
-      "home_team": "Towson",
       "neutral_site": 0
     },
     {
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-21T16:04:46.146306Z"
+  "generated_at": "2026-02-22T16:04:49.527426Z"
 }

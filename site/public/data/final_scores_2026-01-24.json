@@ -1010,6 +1010,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Rider",
+      "game_id": "2026_01_24_rider_mount_st_mary_s",
+      "home_score": 71,
+      "home_team": "Mount St. Mary's",
+      "neutral_site": 0
+    },
+    {
       "away_score": 87,
       "away_team": "Tulsa",
       "game_id": "2026_01_24_tulsa_rice",
@@ -1064,15 +1072,7 @@
       "home_score": 91,
       "home_team": "Michigan St.",
       "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Rider",
-      "game_id": "2026_01_24_rider_mount_st_mary_s",
-      "home_score": 71,
-      "home_team": "Mount St. Mary's",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-21T16:04:46.170003Z"
+  "generated_at": "2026-02-22T16:04:49.553493Z"
 }

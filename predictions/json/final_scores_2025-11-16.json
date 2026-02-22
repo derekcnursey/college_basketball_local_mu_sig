@@ -50,14 +50,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 50,
-      "away_team": "Bryant",
-      "game_id": "2025_11_16_bryant_valparaiso",
-      "home_score": 68,
-      "home_team": "Valparaiso",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Notre Dame",
       "game_id": "2025_11_16_notre_dame_ohio_st",
@@ -79,6 +71,14 @@
       "game_id": "2025_11_16_colorado_st_loyola_chicago",
       "home_score": 67,
       "home_team": "Loyola Chicago",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 50,
+      "away_team": "Bryant",
+      "game_id": "2025_11_16_bryant_valparaiso",
+      "home_score": 68,
+      "home_team": "Valparaiso",
       "neutral_site": 0
     },
     {
@@ -242,5 +242,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-21T16:04:45.921286Z"
+  "generated_at": "2026-02-22T16:04:49.215335Z"
 }
