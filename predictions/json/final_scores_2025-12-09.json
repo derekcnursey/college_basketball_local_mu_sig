@@ -42,11 +42,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 83,
-      "away_team": "Buffalo",
-      "game_id": "2025_12_09_buffalo_umbc",
-      "home_score": 79,
-      "home_team": "UMBC",
+      "away_score": 55,
+      "away_team": "Dartmouth",
+      "game_id": "2025_12_09_dartmouth_colorado_st",
+      "home_score": 76,
+      "home_team": "Colorado St.",
       "neutral_site": 0
     },
     {
@@ -82,19 +82,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 83,
+      "away_team": "Buffalo",
+      "game_id": "2025_12_09_buffalo_umbc",
+      "home_score": 79,
+      "home_team": "UMBC",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Penn St.",
       "game_id": "2025_12_09_penn_st_indiana",
       "home_score": 113,
       "home_team": "Indiana",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 55,
-      "away_team": "Dartmouth",
-      "game_id": "2025_12_09_dartmouth_colorado_st",
-      "home_score": 76,
-      "home_team": "Colorado St.",
       "neutral_site": 0
     },
     {
@@ -186,5 +186,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.009448Z"
+  "generated_at": "2026-02-24T15:02:10.754461Z"
 }

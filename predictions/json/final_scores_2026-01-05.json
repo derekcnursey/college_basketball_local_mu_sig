@@ -10,14 +10,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Texas Southern",
-      "game_id": "2026_01_05_texas_southern_grambling_st",
-      "home_score": 84,
-      "home_team": "Grambling St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 71,
       "away_team": "Alabama A&M",
       "game_id": "2026_01_05_alabama_a_m_mississippi_valley_st",
@@ -90,6 +82,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 67,
+      "away_team": "Texas Southern",
+      "game_id": "2026_01_05_texas_southern_grambling_st",
+      "home_score": 84,
+      "home_team": "Grambling St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 104,
       "away_team": "Columbia",
       "game_id": "2026_01_05_columbia_cornell",
@@ -154,5 +154,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.098693Z"
+  "generated_at": "2026-02-24T15:02:10.840376Z"
 }

@@ -58,19 +58,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 87,
-      "away_team": "UAB",
-      "game_id": "2026_01_11_uab_east_carolina",
-      "home_score": 85,
-      "home_team": "East Carolina",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Cleveland St.",
       "game_id": "2026_01_11_cleveland_st_detroit_mercy",
       "home_score": 94,
       "home_team": "Detroit Mercy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "UAB",
+      "game_id": "2026_01_11_uab_east_carolina",
+      "home_score": 85,
+      "home_team": "East Carolina",
       "neutral_site": 0
     },
     {
@@ -95,6 +95,14 @@
       "game_id": "2026_01_11_merrimack_saint_peter_s",
       "home_score": 76,
       "home_team": "Saint Peter's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Quinnipiac",
+      "game_id": "2026_01_11_quinnipiac_sacred_heart",
+      "home_score": 60,
+      "home_team": "Sacred Heart",
       "neutral_site": 0
     },
     {
@@ -146,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Quinnipiac",
-      "game_id": "2026_01_11_quinnipiac_sacred_heart",
-      "home_score": 60,
-      "home_team": "Sacred Heart",
-      "neutral_site": 0
-    },
-    {
       "away_score": 67,
       "away_team": "Siena",
       "game_id": "2026_01_11_siena_mount_st_mary_s",
@@ -162,5 +162,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.128076Z"
+  "generated_at": "2026-02-24T15:02:10.868865Z"
 }

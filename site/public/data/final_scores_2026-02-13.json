@@ -18,6 +18,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 69,
+      "away_team": "Iona",
+      "game_id": "2026_02_13_iona_canisius",
+      "home_score": 63,
+      "home_team": "Canisius",
+      "neutral_site": 0
+    },
+    {
       "away_score": 53,
       "away_team": "Brown",
       "game_id": "2026_02_13_brown_harvard",
@@ -66,22 +74,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Ohio",
-      "game_id": "2026_02_13_ohio_miami_oh",
-      "home_score": 90,
-      "home_team": "Miami OH",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 69,
-      "away_team": "Iona",
-      "game_id": "2026_02_13_iona_canisius",
-      "home_score": 63,
-      "home_team": "Canisius",
-      "neutral_site": 0
-    },
-    {
       "away_score": 86,
       "away_team": "UNLV",
       "game_id": "2026_02_13_unlv_boise_st",
@@ -122,6 +114,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Ohio",
+      "game_id": "2026_02_13_ohio_miami_oh",
+      "home_score": 90,
+      "home_team": "Miami OH",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "Hampton",
       "game_id": "2026_02_13_hampton_north_carolina_a_t",
@@ -130,5 +130,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.271350Z"
+  "generated_at": "2026-02-24T15:02:11.013963Z"
 }

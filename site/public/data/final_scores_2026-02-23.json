@@ -1,0 +1,78 @@
+{
+  "date": "2026-02-23",
+  "games": [
+    {
+      "away_score": 53,
+      "away_team": "Nicholls St.",
+      "game_id": "2026_02_23_nicholls_st_lamar",
+      "home_score": 52,
+      "home_team": "Lamar",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Louisville",
+      "game_id": "2026_02_23_louisville_north_carolina",
+      "home_score": 77,
+      "home_team": "North Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Houston Christian",
+      "game_id": "2026_02_23_houston_christian_east_texas_a_m",
+      "home_score": 68,
+      "home_team": "East Texas A&M",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "New Orleans",
+      "game_id": "2026_02_23_new_orleans_stephen_f_austin",
+      "home_score": 73,
+      "home_team": "Stephen F. Austin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Mississippi Valley St.",
+      "game_id": "2026_02_23_mississippi_valley_st_grambling_st",
+      "home_score": 83,
+      "home_team": "Grambling St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Incarnate Word",
+      "game_id": "2026_02_23_incarnate_word_northwestern_st",
+      "home_score": 54,
+      "home_team": "Northwestern St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "UT Rio Grande Valley",
+      "game_id": "2026_02_23_ut_rio_grande_valley_mcneese_st",
+      "home_score": 75,
+      "home_team": "McNeese St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Houston",
+      "game_id": "2026_02_23_houston_kansas",
+      "home_score": 69,
+      "home_team": "Kansas",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 73,
+      "away_team": "Texas A&M Corpus Chris",
+      "game_id": "2026_02_23_texas_a_m_corpus_chris_southeastern_louisiana",
+      "home_score": 68,
+      "home_team": "Southeastern Louisiana",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-02-24T15:02:11.067382Z"
+}

@@ -50,6 +50,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 66,
+      "away_team": "Holy Cross",
+      "game_id": "2025_11_21_holy_cross_sacred_heart",
+      "home_score": 79,
+      "home_team": "Sacred Heart",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Northern Colorado",
       "game_id": "2025_11_21_northern_colorado_st_thomas",
@@ -258,14 +266,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 66,
-      "away_team": "Holy Cross",
-      "game_id": "2025_11_21_holy_cross_sacred_heart",
-      "home_score": 79,
-      "home_team": "Sacred Heart",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Manhattan",
       "game_id": "2025_11_21_manhattan_texas_a_m",
@@ -344,14 +344,6 @@
       "home_score": 100,
       "home_team": "Duke",
       "neutral_site": 0
-    },
-    {
-      "away_score": 78,
-      "away_team": "Mississippi St.",
-      "game_id": "2025_11_21_mississippi_st_new_mexico",
-      "home_score": 80,
-      "home_team": "New Mexico",
-      "neutral_site": 1
     },
     {
       "away_score": 61,
@@ -498,6 +490,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 78,
+      "away_team": "Mississippi St.",
+      "game_id": "2025_11_21_mississippi_st_new_mexico",
+      "home_score": 80,
+      "home_team": "New Mexico",
+      "neutral_site": 1
+    },
+    {
       "away_score": 67,
       "away_team": "Sacramento St.",
       "game_id": "2025_11_21_sacramento_st_california",
@@ -522,5 +522,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-23T15:18:36.936725Z"
+  "generated_at": "2026-02-24T15:02:10.684247Z"
 }

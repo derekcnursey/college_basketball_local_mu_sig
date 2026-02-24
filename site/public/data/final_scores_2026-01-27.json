@@ -42,22 +42,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Syracuse",
-      "game_id": "2026_01_27_syracuse_n_c_state",
-      "home_score": 88,
-      "home_team": "N.C. State",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 80,
-      "away_team": "Alabama A&M",
-      "game_id": "2026_01_27_alabama_a_m_prairie_view_a_m",
-      "home_score": 60,
-      "home_team": "Prairie View A&M",
-      "neutral_site": 0
-    },
-    {
       "away_score": 72,
       "away_team": "Nebraska",
       "game_id": "2026_01_27_nebraska_michigan",
@@ -74,6 +58,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 68,
+      "away_team": "Syracuse",
+      "game_id": "2026_01_27_syracuse_n_c_state",
+      "home_score": 88,
+      "home_team": "N.C. State",
+      "neutral_site": 0
+    },
+    {
       "away_score": 67,
       "away_team": "Northwestern St.",
       "game_id": "2026_01_27_northwestern_st_stephen_f_austin",
@@ -87,6 +79,14 @@
       "game_id": "2026_01_27_toledo_akron",
       "home_score": 91,
       "home_team": "Akron",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "Alabama A&M",
+      "game_id": "2026_01_27_alabama_a_m_prairie_view_a_m",
+      "home_score": 60,
+      "home_team": "Prairie View A&M",
       "neutral_site": 0
     },
     {
@@ -151,14 +151,6 @@
       "game_id": "2026_01_27_george_washington_saint_louis",
       "home_score": 79,
       "home_team": "Saint Louis",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "East Texas A&M",
-      "game_id": "2026_01_27_east_texas_a_m_lamar",
-      "home_score": 82,
-      "home_team": "Lamar",
       "neutral_site": 0
     },
     {
@@ -234,6 +226,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "East Texas A&M",
+      "game_id": "2026_01_27_east_texas_a_m_lamar",
+      "home_score": 82,
+      "home_team": "Lamar",
+      "neutral_site": 0
+    },
+    {
       "away_score": 100,
       "away_team": "Virginia",
       "game_id": "2026_01_27_virginia_notre_dame",
@@ -282,5 +282,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.194008Z"
+  "generated_at": "2026-02-24T15:02:10.934978Z"
 }

@@ -34,6 +34,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Lafayette",
+      "game_id": "2026_02_07_lafayette_army",
+      "home_score": 60,
+      "home_team": "Army",
+      "neutral_site": 0
+    },
+    {
       "away_score": 67,
       "away_team": "Lehigh",
       "game_id": "2026_02_07_lehigh_holy_cross",
@@ -194,6 +202,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 91,
+      "away_team": "Massachusetts",
+      "game_id": "2026_02_07_massachusetts_coastal_carolina",
+      "home_score": 94,
+      "home_team": "Coastal Carolina",
+      "neutral_site": 0
+    },
+    {
       "away_score": 57,
       "away_team": "San Jose St.",
       "game_id": "2026_02_07_san_jose_st_colorado_st",
@@ -226,14 +242,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Longwood",
-      "game_id": "2026_02_07_longwood_winthrop",
-      "home_score": 79,
-      "home_team": "Winthrop",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "Gardner Webb",
       "game_id": "2026_02_07_gardner_webb_presbyterian",
@@ -247,6 +255,14 @@
       "game_id": "2026_02_07_arizona_st_colorado",
       "home_score": 78,
       "home_team": "Colorado",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Houston",
+      "game_id": "2026_02_07_houston_byu",
+      "home_score": 66,
+      "home_team": "BYU",
       "neutral_site": 0
     },
     {
@@ -274,14 +290,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Richmond",
-      "game_id": "2026_02_07_richmond_rhode_island",
-      "home_score": 82,
-      "home_team": "Rhode Island",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Western Carolina",
       "game_id": "2026_02_07_western_carolina_wofford",
@@ -295,14 +303,6 @@
       "game_id": "2026_02_07_western_michigan_texas_st",
       "home_score": 77,
       "home_team": "Texas St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 78,
-      "away_team": "Missouri",
-      "game_id": "2026_02_07_missouri_south_carolina",
-      "home_score": 59,
-      "home_team": "South Carolina",
       "neutral_site": 0
     },
     {
@@ -335,14 +335,6 @@
       "game_id": "2026_02_07_mercer_samford",
       "home_score": 69,
       "home_team": "Samford",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 76,
-      "away_team": "Prairie View A&M",
-      "game_id": "2026_02_07_prairie_view_a_m_bethune_cookman",
-      "home_score": 82,
-      "home_team": "Bethune Cookman",
       "neutral_site": 0
     },
     {
@@ -391,14 +383,6 @@
       "game_id": "2026_02_07_north_florida_queens",
       "home_score": 91,
       "home_team": "Queens",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 49,
-      "away_team": "Towson",
-      "game_id": "2026_02_07_towson_hofstra",
-      "home_score": 71,
-      "home_team": "Hofstra",
       "neutral_site": 0
     },
     {
@@ -458,11 +442,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 76,
+      "away_team": "Prairie View A&M",
+      "game_id": "2026_02_07_prairie_view_a_m_bethune_cookman",
+      "home_score": 82,
+      "home_team": "Bethune Cookman",
+      "neutral_site": 0
+    },
+    {
       "away_score": 67,
       "away_team": "UC San Diego",
       "game_id": "2026_02_07_uc_san_diego_hawaii",
       "home_score": 72,
       "home_team": "Hawaii",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Longwood",
+      "game_id": "2026_02_07_longwood_winthrop",
+      "home_score": 79,
+      "home_team": "Winthrop",
       "neutral_site": 0
     },
     {
@@ -479,6 +479,14 @@
       "game_id": "2026_02_07_akron_troy",
       "home_score": 79,
       "home_team": "Troy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "St. Bonaventure",
+      "game_id": "2026_02_07_st_bonaventure_fordham",
+      "home_score": 67,
+      "home_team": "Fordham",
       "neutral_site": 0
     },
     {
@@ -506,6 +514,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Saint Francis",
+      "game_id": "2026_02_07_saint_francis_le_moyne",
+      "home_score": 86,
+      "home_team": "Le Moyne",
+      "neutral_site": 0
+    },
+    {
       "away_score": 80,
       "away_team": "Nebraska",
       "game_id": "2026_02_07_nebraska_rutgers",
@@ -514,11 +530,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Maine",
-      "game_id": "2026_02_07_maine_bryant",
-      "home_score": 73,
-      "home_team": "Bryant",
+      "away_score": 98,
+      "away_team": "Denver",
+      "game_id": "2026_02_07_denver_north_dakota",
+      "home_score": 79,
+      "home_team": "North Dakota",
       "neutral_site": 0
     },
     {
@@ -610,6 +626,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Richmond",
+      "game_id": "2026_02_07_richmond_rhode_island",
+      "home_score": 82,
+      "home_team": "Rhode Island",
+      "neutral_site": 0
+    },
+    {
       "away_score": 92,
       "away_team": "Pacific",
       "game_id": "2026_02_07_pacific_pepperdine",
@@ -674,11 +698,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Portland St.",
-      "game_id": "2026_02_07_portland_st_sacramento_st",
-      "home_score": 73,
-      "home_team": "Sacramento St.",
+      "away_score": 78,
+      "away_team": "Missouri",
+      "game_id": "2026_02_07_missouri_south_carolina",
+      "home_score": 59,
+      "home_team": "South Carolina",
       "neutral_site": 0
     },
     {
@@ -687,14 +711,6 @@
       "game_id": "2026_02_07_fresno_st_nevada",
       "home_score": 69,
       "home_team": "Nevada",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 84,
-      "away_team": "Saint Francis",
-      "game_id": "2026_02_07_saint_francis_le_moyne",
-      "home_score": 86,
-      "home_team": "Le Moyne",
       "neutral_site": 0
     },
     {
@@ -762,19 +778,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 91,
-      "away_team": "Massachusetts",
-      "game_id": "2026_02_07_massachusetts_coastal_carolina",
-      "home_score": 94,
-      "home_team": "Coastal Carolina",
-      "neutral_site": 0
-    },
-    {
       "away_score": 65,
       "away_team": "Kent St.",
       "game_id": "2026_02_07_kent_st_southern_miss",
       "home_score": 66,
       "home_team": "Southern Miss",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Towson",
+      "game_id": "2026_02_07_towson_hofstra",
+      "home_score": 71,
+      "home_team": "Hofstra",
       "neutral_site": 0
     },
     {
@@ -799,14 +815,6 @@
       "game_id": "2026_02_07_mount_st_mary_s_iona",
       "home_score": 76,
       "home_team": "Iona",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Lafayette",
-      "game_id": "2026_02_07_lafayette_army",
-      "home_score": 60,
-      "home_team": "Army",
       "neutral_site": 0
     },
     {
@@ -882,6 +890,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Portland St.",
+      "game_id": "2026_02_07_portland_st_sacramento_st",
+      "home_score": 73,
+      "home_team": "Sacramento St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 76,
       "away_team": "Missouri St.",
       "game_id": "2026_02_07_missouri_st_liberty",
@@ -951,6 +967,14 @@
       "game_id": "2026_02_07_clemson_california",
       "home_score": 55,
       "home_team": "California",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "New Hampshire",
+      "game_id": "2026_02_07_new_hampshire_vermont",
+      "home_score": 80,
+      "home_team": "Vermont",
       "neutral_site": 0
     },
     {
@@ -1026,14 +1050,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Houston",
-      "game_id": "2026_02_07_houston_byu",
-      "home_score": 66,
-      "home_team": "BYU",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Duke",
       "game_id": "2026_02_07_duke_north_carolina",
@@ -1090,14 +1106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "St. Bonaventure",
-      "game_id": "2026_02_07_st_bonaventure_fordham",
-      "home_score": 67,
-      "home_team": "Fordham",
-      "neutral_site": 0
-    },
-    {
       "away_score": 59,
       "away_team": "Syracuse",
       "game_id": "2026_02_07_syracuse_virginia",
@@ -1106,11 +1114,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 98,
-      "away_team": "Denver",
-      "game_id": "2026_02_07_denver_north_dakota",
-      "home_score": 79,
-      "home_team": "North Dakota",
+      "away_score": 67,
+      "away_team": "Maine",
+      "game_id": "2026_02_07_maine_bryant",
+      "home_score": 73,
+      "home_team": "Bryant",
       "neutral_site": 0
     },
     {
@@ -1146,11 +1154,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "New Hampshire",
-      "game_id": "2026_02_07_new_hampshire_vermont",
-      "home_score": 80,
-      "home_team": "Vermont",
+      "away_score": 96,
+      "away_team": "Santa Clara",
+      "game_id": "2026_02_07_santa_clara_washington_st",
+      "home_score": 92,
+      "home_team": "Washington St.",
       "neutral_site": 0
     },
     {
@@ -1216,15 +1224,7 @@
       "home_score": 76,
       "home_team": "Nicholls St.",
       "neutral_site": 0
-    },
-    {
-      "away_score": 96,
-      "away_team": "Santa Clara",
-      "game_id": "2026_02_07_santa_clara_washington_st",
-      "home_score": 92,
-      "home_team": "Washington St.",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.249930Z"
+  "generated_at": "2026-02-24T15:02:10.991206Z"
 }

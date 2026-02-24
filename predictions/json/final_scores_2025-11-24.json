@@ -2,6 +2,14 @@
   "date": "2025-11-24",
   "games": [
     {
+      "away_score": 73,
+      "away_team": "UT Rio Grande Valley",
+      "game_id": "2025_11_24_ut_rio_grande_valley_illinois",
+      "home_score": 87,
+      "home_team": "Illinois",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Radford",
       "game_id": "2025_11_24_radford_smu",
@@ -58,14 +66,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Florida Atlantic",
-      "game_id": "2025_11_24_florida_atlantic_loyola_marymount",
-      "home_score": 65,
-      "home_team": "Loyola Marymount",
-      "neutral_site": 1
-    },
-    {
       "away_score": 67,
       "away_team": "Boise St.",
       "game_id": "2025_11_24_boise_st_usc",
@@ -106,11 +106,27 @@
       "neutral_site": 1
     },
     {
-      "away_score": 73,
-      "away_team": "UT Rio Grande Valley",
-      "game_id": "2025_11_24_ut_rio_grande_valley_illinois",
-      "home_score": 87,
-      "home_team": "Illinois",
+      "away_score": 71,
+      "away_team": "Kansas",
+      "game_id": "2025_11_24_kansas_notre_dame",
+      "home_score": 61,
+      "home_team": "Notre Dame",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 78,
+      "away_team": "Buffalo",
+      "game_id": "2025_11_24_buffalo_vmi",
+      "home_score": 70,
+      "home_team": "VMI",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 56,
+      "away_team": "Louisiana",
+      "game_id": "2025_11_24_louisiana_uc_davis",
+      "home_score": 77,
+      "home_team": "UC Davis",
       "neutral_site": 0
     },
     {
@@ -154,22 +170,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 71,
-      "away_team": "Kansas",
-      "game_id": "2025_11_24_kansas_notre_dame",
-      "home_score": 61,
-      "home_team": "Notre Dame",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 78,
-      "away_team": "Buffalo",
-      "game_id": "2025_11_24_buffalo_vmi",
-      "home_score": 70,
-      "home_team": "VMI",
-      "neutral_site": 1
-    },
-    {
       "away_score": 80,
       "away_team": "Green Bay",
       "game_id": "2025_11_24_green_bay_iona",
@@ -200,6 +200,14 @@
       "home_score": 83,
       "home_team": "UC Riverside",
       "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Florida Atlantic",
+      "game_id": "2025_11_24_florida_atlantic_loyola_marymount",
+      "home_score": 65,
+      "home_team": "Loyola Marymount",
+      "neutral_site": 1
     },
     {
       "away_score": 92,
@@ -264,6 +272,14 @@
       "home_score": 67,
       "home_team": "Youngstown St.",
       "neutral_site": 1
+    },
+    {
+      "away_score": 70,
+      "away_team": "East Texas A&M",
+      "game_id": "2025_11_24_east_texas_a_m_fairleigh_dickinson",
+      "home_score": 65,
+      "home_team": "Fairleigh Dickinson",
+      "neutral_site": 0
     },
     {
       "away_score": 86,
@@ -402,14 +418,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 56,
-      "away_team": "Louisiana",
-      "game_id": "2025_11_24_louisiana_uc_davis",
-      "home_score": 77,
-      "home_team": "UC Davis",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "McNeese St.",
       "game_id": "2025_11_24_mcneese_st_murray_st",
@@ -424,14 +432,6 @@
       "home_score": 57,
       "home_team": "Saint Francis",
       "neutral_site": 1
-    },
-    {
-      "away_score": 70,
-      "away_team": "East Texas A&M",
-      "game_id": "2025_11_24_east_texas_a_m_fairleigh_dickinson",
-      "home_score": 65,
-      "home_team": "Fairleigh Dickinson",
-      "neutral_site": 0
     },
     {
       "away_score": 55,
@@ -450,5 +450,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-23T15:18:36.949105Z"
+  "generated_at": "2026-02-24T15:02:10.696771Z"
 }

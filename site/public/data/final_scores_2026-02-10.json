@@ -74,6 +74,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 68,
+      "away_team": "Fordham",
+      "game_id": "2026_02_10_fordham_saint_joseph_s",
+      "home_score": 64,
+      "home_team": "Saint Joseph's",
+      "neutral_site": 0
+    },
+    {
       "away_score": 61,
       "away_team": "Virginia",
       "game_id": "2026_02_10_virginia_florida_st",
@@ -162,14 +170,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Fordham",
-      "game_id": "2026_02_10_fordham_saint_joseph_s",
-      "home_score": 64,
-      "home_team": "Saint Joseph's",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Eastern Illinois",
       "game_id": "2026_02_10_eastern_illinois_western_illinois",
@@ -178,5 +178,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-23T15:18:37.258102Z"
+  "generated_at": "2026-02-24T15:02:11.000063Z"
 }
