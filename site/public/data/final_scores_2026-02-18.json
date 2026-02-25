@@ -82,6 +82,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Lipscomb",
+      "game_id": "2026_02_18_lipscomb_bellarmine",
+      "home_score": 72,
+      "home_team": "Bellarmine",
+      "neutral_site": 0
+    },
+    {
       "away_score": 81,
       "away_team": "Kansas",
       "game_id": "2026_02_18_kansas_oklahoma_st",
@@ -95,6 +103,14 @@
       "game_id": "2026_02_18_pacific_washington_st",
       "home_score": 87,
       "home_team": "Washington St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Middle Tennessee",
+      "game_id": "2026_02_18_middle_tennessee_sam_houston_st",
+      "home_score": 78,
+      "home_team": "Sam Houston St.",
       "neutral_site": 0
     },
     {
@@ -138,27 +154,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Troy",
-      "game_id": "2026_02_18_troy_louisiana_monroe",
-      "home_score": 76,
-      "home_team": "Louisiana Monroe",
-      "neutral_site": 0
-    },
-    {
       "away_score": 61,
       "away_team": "Murray St.",
       "game_id": "2026_02_18_murray_st_illinois_st",
       "home_score": 78,
       "home_team": "Illinois St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 70,
-      "away_team": "Middle Tennessee",
-      "game_id": "2026_02_18_middle_tennessee_sam_houston_st",
-      "home_score": 78,
-      "home_team": "Sam Houston St.",
       "neutral_site": 0
     },
     {
@@ -199,6 +199,14 @@
       "game_id": "2026_02_18_james_madison_coastal_carolina",
       "home_score": 65,
       "home_team": "Coastal Carolina",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Dayton",
+      "game_id": "2026_02_18_dayton_george_mason",
+      "home_score": 67,
+      "home_team": "George Mason",
       "neutral_site": 0
     },
     {
@@ -258,14 +266,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 82,
-      "away_team": "Dayton",
-      "game_id": "2026_02_18_dayton_george_mason",
-      "home_score": 67,
-      "home_team": "George Mason",
-      "neutral_site": 0
-    },
-    {
       "away_score": 71,
       "away_team": "Purdue Fort Wayne",
       "game_id": "2026_02_18_purdue_fort_wayne_northern_kentucky",
@@ -322,14 +322,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Lipscomb",
-      "game_id": "2026_02_18_lipscomb_bellarmine",
-      "home_score": 72,
-      "home_team": "Bellarmine",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Southern Illinois",
       "game_id": "2026_02_18_southern_illinois_drake",
@@ -367,6 +359,14 @@
       "game_id": "2026_02_18_st_john_s_marquette",
       "home_score": 70,
       "home_team": "Marquette",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Auburn",
+      "game_id": "2026_02_18_auburn_mississippi_st",
+      "home_score": 91,
+      "home_team": "Mississippi St.",
       "neutral_site": 0
     },
     {
@@ -426,6 +426,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Troy",
+      "game_id": "2026_02_18_troy_louisiana_monroe",
+      "home_score": 76,
+      "home_team": "Louisiana Monroe",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "DePaul",
       "game_id": "2026_02_18_depaul_seton_hall",
@@ -439,14 +447,6 @@
       "game_id": "2026_02_18_richmond_davidson",
       "home_score": 65,
       "home_team": "Davidson",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 85,
-      "away_team": "Auburn",
-      "game_id": "2026_02_18_auburn_mississippi_st",
-      "home_score": 91,
-      "home_team": "Mississippi St.",
       "neutral_site": 0
     },
     {
@@ -474,5 +474,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:11.042210Z"
+  "generated_at": "2026-02-25T19:14:47.342534Z"
 }

@@ -26,19 +26,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 83,
+      "away_team": "Texas Southern",
+      "game_id": "2026_02_19_texas_southern_arkansas_pine_bluff",
+      "home_score": 64,
+      "home_team": "Arkansas Pine Bluff",
+      "neutral_site": 0
+    },
+    {
       "away_score": 65,
       "away_team": "Tennessee Martin",
       "game_id": "2026_02_19_tennessee_martin_little_rock",
       "home_score": 67,
       "home_team": "Little Rock",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 77,
-      "away_team": "Tulane",
-      "game_id": "2026_02_19_tulane_north_texas",
-      "home_score": 71,
-      "home_team": "North Texas",
       "neutral_site": 0
     },
     {
@@ -63,14 +63,6 @@
       "game_id": "2026_02_19_southern_indiana_western_illinois",
       "home_score": 70,
       "home_team": "Western Illinois",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 67,
-      "away_team": "Idaho",
-      "game_id": "2026_02_19_idaho_portland_st",
-      "home_score": 77,
-      "home_team": "Portland St.",
       "neutral_site": 0
     },
     {
@@ -130,6 +122,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Tulane",
+      "game_id": "2026_02_19_tulane_north_texas",
+      "home_score": 71,
+      "home_team": "North Texas",
+      "neutral_site": 0
+    },
+    {
       "away_score": 66,
       "away_team": "Memphis",
       "game_id": "2026_02_19_memphis_south_florida",
@@ -170,14 +170,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Southern Utah",
-      "game_id": "2026_02_19_southern_utah_tarleton_st",
-      "home_score": 78,
-      "home_team": "Tarleton St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 94,
       "away_team": "Chattanooga",
       "game_id": "2026_02_19_chattanooga_mercer",
@@ -186,19 +178,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 67,
+      "away_team": "Idaho",
+      "game_id": "2026_02_19_idaho_portland_st",
+      "home_score": 77,
+      "home_team": "Portland St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 94,
+      "away_team": "Marshall",
+      "game_id": "2026_02_19_marshall_appalachian_st",
+      "home_score": 93,
+      "home_team": "Appalachian St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "UC Irvine",
       "game_id": "2026_02_19_uc_irvine_long_beach_st",
       "home_score": 58,
       "home_team": "Long Beach St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 83,
-      "away_team": "Texas Southern",
-      "game_id": "2026_02_19_texas_southern_arkansas_pine_bluff",
-      "home_score": 64,
-      "home_team": "Arkansas Pine Bluff",
       "neutral_site": 0
     },
     {
@@ -215,14 +215,6 @@
       "game_id": "2026_02_19_lindenwood_tennessee_st",
       "home_score": 89,
       "home_team": "Tennessee St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 65,
-      "away_team": "Cal St. Bakersfield",
-      "game_id": "2026_02_19_cal_st_bakersfield_uc_riverside",
-      "home_score": 93,
-      "home_team": "UC Riverside",
       "neutral_site": 0
     },
     {
@@ -322,6 +314,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Southern Utah",
+      "game_id": "2026_02_19_southern_utah_tarleton_st",
+      "home_score": 78,
+      "home_team": "Tarleton St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 89,
       "away_team": "FIU",
       "game_id": "2026_02_19_fiu_liberty",
@@ -343,14 +343,6 @@
       "game_id": "2026_02_19_montana_st_weber_st",
       "home_score": 82,
       "home_team": "Weber St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 94,
-      "away_team": "Marshall",
-      "game_id": "2026_02_19_marshall_appalachian_st",
-      "home_score": 93,
-      "home_team": "Appalachian St.",
       "neutral_site": 0
     },
     {
@@ -386,6 +378,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 65,
+      "away_team": "Cal St. Bakersfield",
+      "game_id": "2026_02_19_cal_st_bakersfield_uc_riverside",
+      "home_score": 93,
+      "home_team": "UC Riverside",
+      "neutral_site": 0
+    },
+    {
       "away_score": 86,
       "away_team": "Cal Poly",
       "game_id": "2026_02_19_cal_poly_hawaii",
@@ -410,5 +410,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:11.048103Z"
+  "generated_at": "2026-02-25T19:14:47.347074Z"
 }

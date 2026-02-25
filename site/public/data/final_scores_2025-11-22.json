@@ -2,6 +2,14 @@
   "date": "2025-11-22",
   "games": [
     {
+      "away_score": 67,
+      "away_team": "Gardner Webb",
+      "game_id": "2025_11_22_gardner_webb_richmond",
+      "home_score": 102,
+      "home_team": "Richmond",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Western Carolina",
       "game_id": "2025_11_22_western_carolina_lipscomb",
@@ -15,14 +23,6 @@
       "game_id": "2025_11_22_njit_navy",
       "home_score": 86,
       "home_team": "Navy",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 67,
-      "away_team": "Gardner Webb",
-      "game_id": "2025_11_22_gardner_webb_richmond",
-      "home_score": 102,
-      "home_team": "Richmond",
       "neutral_site": 0
     },
     {
@@ -58,19 +58,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 52,
-      "away_team": "Binghamton",
-      "game_id": "2025_11_22_binghamton_maryland_eastern_shore",
-      "home_score": 63,
-      "home_team": "Maryland Eastern Shore",
-      "neutral_site": 1
-    },
-    {
       "away_score": 86,
       "away_team": "Duquesne",
       "game_id": "2025_11_22_duquesne_northeastern",
       "home_score": 93,
       "home_team": "Northeastern",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 52,
+      "away_team": "Binghamton",
+      "game_id": "2025_11_22_binghamton_maryland_eastern_shore",
+      "home_score": 63,
+      "home_team": "Maryland Eastern Shore",
       "neutral_site": 1
     },
     {
@@ -82,19 +82,19 @@
       "neutral_site": 1
     },
     {
-      "away_score": 83,
-      "away_team": "North Florida",
-      "game_id": "2025_11_22_north_florida_southern_miss",
-      "home_score": 92,
-      "home_team": "Southern Miss",
-      "neutral_site": 1
-    },
-    {
       "away_score": 95,
       "away_team": "Mercer",
       "game_id": "2025_11_22_mercer_eastern_kentucky",
       "home_score": 83,
       "home_team": "Eastern Kentucky",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Wagner",
+      "game_id": "2025_11_22_wagner_georgetown",
+      "home_score": 92,
+      "home_team": "Georgetown",
       "neutral_site": 0
     },
     {
@@ -146,14 +146,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Wagner",
-      "game_id": "2025_11_22_wagner_georgetown",
-      "home_score": 92,
-      "home_team": "Georgetown",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "VMI",
       "game_id": "2025_11_22_vmi_stetson",
@@ -192,6 +184,14 @@
       "home_score": 98,
       "home_team": "Illinois",
       "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Illinois Chicago",
+      "game_id": "2025_11_22_illinois_chicago_southern_indiana",
+      "home_score": 73,
+      "home_team": "Southern Indiana",
+      "neutral_site": 1
     },
     {
       "away_score": 80,
@@ -242,6 +242,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 83,
+      "away_team": "North Florida",
+      "game_id": "2025_11_22_north_florida_southern_miss",
+      "home_score": 92,
+      "home_team": "Southern Miss",
+      "neutral_site": 1
+    },
+    {
       "away_score": 86,
       "away_team": "Northern Colorado",
       "game_id": "2025_11_22_northern_colorado_portland",
@@ -264,14 +272,6 @@
       "home_score": 74,
       "home_team": "Dayton",
       "neutral_site": 0
-    },
-    {
-      "away_score": 84,
-      "away_team": "Illinois Chicago",
-      "game_id": "2025_11_22_illinois_chicago_southern_indiana",
-      "home_score": 73,
-      "home_team": "Southern Indiana",
-      "neutral_site": 1
     },
     {
       "away_score": 91,
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:10.688453Z"
+  "generated_at": "2026-02-25T19:14:46.961721Z"
 }

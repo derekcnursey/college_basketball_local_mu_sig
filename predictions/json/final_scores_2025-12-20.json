@@ -170,27 +170,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Louisiana",
-      "game_id": "2025_12_20_louisiana_louisiana_monroe",
-      "home_score": 62,
-      "home_team": "Louisiana Monroe",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Robert Morris",
       "game_id": "2025_12_20_robert_morris_saint_francis",
       "home_score": 70,
       "home_team": "Saint Francis",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 81,
-      "away_team": "Elon",
-      "game_id": "2025_12_20_elon_virginia_tech",
-      "home_score": 82,
-      "home_team": "Virginia Tech",
       "neutral_site": 0
     },
     {
@@ -314,19 +298,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 66,
-      "away_team": "Boise St.",
-      "game_id": "2025_12_20_boise_st_nevada",
-      "home_score": 81,
-      "home_team": "Nevada",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Bowling Green",
       "game_id": "2025_12_20_bowling_green_ohio",
       "home_score": 58,
       "home_team": "Ohio",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Boise St.",
+      "game_id": "2025_12_20_boise_st_nevada",
+      "home_score": 81,
+      "home_team": "Nevada",
       "neutral_site": 0
     },
     {
@@ -343,14 +327,6 @@
       "game_id": "2025_12_20_le_moyne_st_bonaventure",
       "home_score": 92,
       "home_team": "St. Bonaventure",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 76,
-      "away_team": "South Dakota",
-      "game_id": "2025_12_20_south_dakota_kansas_st",
-      "home_score": 106,
-      "home_team": "Kansas St.",
       "neutral_site": 0
     },
     {
@@ -474,11 +450,35 @@
       "neutral_site": 1
     },
     {
+      "away_score": 76,
+      "away_team": "Louisiana",
+      "game_id": "2025_12_20_louisiana_louisiana_monroe",
+      "home_score": 62,
+      "home_team": "Louisiana Monroe",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "Elon",
+      "game_id": "2025_12_20_elon_virginia_tech",
+      "home_score": 82,
+      "home_team": "Virginia Tech",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Rice",
       "game_id": "2025_12_20_rice_pepperdine",
       "home_score": 84,
       "home_team": "Pepperdine",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "South Dakota",
+      "game_id": "2025_12_20_south_dakota_kansas_st",
+      "home_score": 106,
+      "home_team": "Kansas St.",
       "neutral_site": 0
     },
     {
@@ -506,5 +506,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:10.791373Z"
+  "generated_at": "2026-02-25T19:14:47.080166Z"
 }

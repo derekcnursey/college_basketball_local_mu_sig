@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Air Force",
+      "game_id": "2026_02_17_air_force_new_mexico",
+      "home_score": 98,
+      "home_team": "New Mexico",
+      "neutral_site": 0
+    },
+    {
       "away_score": 76,
       "away_team": "Saint Louis",
       "game_id": "2026_02_17_saint_louis_rhode_island",
@@ -63,14 +71,6 @@
       "game_id": "2026_02_17_gardner_webb_charleston_southern",
       "home_score": 75,
       "home_team": "Charleston Southern",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Air Force",
-      "game_id": "2026_02_17_air_force_new_mexico",
-      "home_score": 98,
-      "home_team": "New Mexico",
       "neutral_site": 0
     },
     {
@@ -242,5 +242,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:11.036857Z"
+  "generated_at": "2026-02-25T19:14:47.337673Z"
 }

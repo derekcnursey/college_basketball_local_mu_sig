@@ -58,19 +58,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 73,
+      "away_team": "Southern",
+      "game_id": "2026_02_16_southern_texas_southern",
+      "home_score": 74,
+      "home_team": "Texas Southern",
+      "neutral_site": 0
+    },
+    {
       "away_score": 75,
       "away_team": "McNeese St.",
       "game_id": "2026_02_16_mcneese_st_northwestern_st",
       "home_score": 64,
       "home_team": "Northwestern St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 65,
-      "away_team": "Lamar",
-      "game_id": "2026_02_16_lamar_ut_rio_grande_valley",
-      "home_score": 70,
-      "home_team": "UT Rio Grande Valley",
       "neutral_site": 0
     },
     {
@@ -103,6 +103,14 @@
       "game_id": "2026_02_16_bethune_cookman_jackson_st",
       "home_score": 91,
       "home_team": "Jackson St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Lamar",
+      "game_id": "2026_02_16_lamar_ut_rio_grande_valley",
+      "home_score": 70,
+      "home_team": "UT Rio Grande Valley",
       "neutral_site": 0
     },
     {
@@ -146,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 73,
-      "away_team": "Southern",
-      "game_id": "2026_02_16_southern_texas_southern",
-      "home_score": 74,
-      "home_team": "Texas Southern",
-      "neutral_site": 0
-    },
-    {
       "away_score": 76,
       "away_team": "Morgan St.",
       "game_id": "2026_02_16_morgan_st_north_carolina_central",
@@ -186,5 +186,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:11.031552Z"
+  "generated_at": "2026-02-25T19:14:47.334361Z"
 }

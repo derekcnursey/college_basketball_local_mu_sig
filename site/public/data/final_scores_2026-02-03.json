@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "St. Bonaventure",
+      "game_id": "2026_02_03_st_bonaventure_dayton",
+      "home_score": 72,
+      "home_team": "Dayton",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Illinois Chicago",
       "game_id": "2026_02_03_illinois_chicago_murray_st",
@@ -50,11 +58,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "VCU",
-      "game_id": "2026_02_03_vcu_fordham",
-      "home_score": 59,
-      "home_team": "Fordham",
+      "away_score": 96,
+      "away_team": "UNLV",
+      "game_id": "2026_02_03_unlv_fresno_st",
+      "home_score": 98,
+      "home_team": "Fresno St.",
       "neutral_site": 0
     },
     {
@@ -98,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "St. Bonaventure",
-      "game_id": "2026_02_03_st_bonaventure_dayton",
-      "home_score": 72,
-      "home_team": "Dayton",
-      "neutral_site": 0
-    },
-    {
       "away_score": 52,
       "away_team": "Little Rock",
       "game_id": "2026_02_03_little_rock_tennessee_martin",
@@ -135,14 +135,6 @@
       "game_id": "2026_02_03_xavier_connecticut",
       "home_score": 92,
       "home_team": "Connecticut",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 96,
-      "away_team": "UNLV",
-      "game_id": "2026_02_03_unlv_fresno_st",
-      "home_score": 98,
-      "home_team": "Fresno St.",
       "neutral_site": 0
     },
     {
@@ -234,6 +226,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "VCU",
+      "game_id": "2026_02_03_vcu_fordham",
+      "home_score": 59,
+      "home_team": "Fordham",
+      "neutral_site": 0
+    },
+    {
       "away_score": 68,
       "away_team": "St. John's",
       "game_id": "2026_02_03_st_john_s_depaul",
@@ -250,5 +250,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:10.967919Z"
+  "generated_at": "2026-02-25T19:14:47.275879Z"
 }

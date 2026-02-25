@@ -26,27 +26,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "American",
-      "game_id": "2025_11_12_american_george_washington",
-      "home_score": 107,
-      "home_team": "George Washington",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Presbyterian",
-      "game_id": "2025_11_12_presbyterian_south_carolina",
-      "home_score": 81,
-      "home_team": "South Carolina",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Nicholls St.",
-      "game_id": "2025_11_12_nicholls_st_valparaiso",
-      "home_score": 68,
-      "home_team": "Valparaiso",
+      "away_score": 64,
+      "away_team": "UNC Greensboro",
+      "game_id": "2025_11_12_unc_greensboro_n_c_state",
+      "home_score": 110,
+      "home_team": "N.C. State",
       "neutral_site": 0
     },
     {
@@ -58,11 +42,35 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Presbyterian",
+      "game_id": "2025_11_12_presbyterian_south_carolina",
+      "home_score": 81,
+      "home_team": "South Carolina",
+      "neutral_site": 0
+    },
+    {
       "away_score": 77,
       "away_team": "Middle Tennessee",
       "game_id": "2025_11_12_middle_tennessee_evansville",
       "home_score": 72,
       "home_team": "Evansville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Nicholls St.",
+      "game_id": "2025_11_12_nicholls_st_valparaiso",
+      "home_score": 68,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "American",
+      "game_id": "2025_11_12_american_george_washington",
+      "home_score": 107,
+      "home_team": "George Washington",
       "neutral_site": 0
     },
     {
@@ -154,6 +162,22 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Southern Indiana",
+      "game_id": "2025_11_12_southern_indiana_south_dakota",
+      "home_score": 89,
+      "home_team": "South Dakota",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Montana St.",
+      "game_id": "2025_11_12_montana_st_stanford",
+      "home_score": 77,
+      "home_team": "Stanford",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "James Madison",
       "game_id": "2025_11_12_james_madison_longwood",
@@ -183,14 +207,6 @@
       "game_id": "2025_11_12_northern_kentucky_east_tennessee_st",
       "home_score": 75,
       "home_team": "East Tennessee St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 68,
-      "away_team": "Montana St.",
-      "game_id": "2025_11_12_montana_st_stanford",
-      "home_score": 77,
-      "home_team": "Stanford",
       "neutral_site": 0
     },
     {
@@ -266,14 +282,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "UNC Greensboro",
-      "game_id": "2025_11_12_unc_greensboro_n_c_state",
-      "home_score": 110,
-      "home_team": "N.C. State",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "Brown",
       "game_id": "2025_11_12_brown_boston_university",
@@ -298,14 +306,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Southern Indiana",
-      "game_id": "2025_11_12_southern_indiana_south_dakota",
-      "home_score": 89,
-      "home_team": "South Dakota",
-      "neutral_site": 0
-    },
-    {
       "away_score": 78,
       "away_team": "Tennessee Martin",
       "game_id": "2025_11_12_tennessee_martin_bradley",
@@ -314,19 +314,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Prairie View A&M",
-      "game_id": "2025_11_12_prairie_view_a_m_oklahoma_st",
-      "home_score": 94,
-      "home_team": "Oklahoma St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 93,
       "away_team": "Samford",
       "game_id": "2025_11_12_samford_texas_southern",
       "home_score": 90,
       "home_team": "Texas Southern",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 67,
+      "away_team": "Prairie View A&M",
+      "game_id": "2025_11_12_prairie_view_a_m_oklahoma_st",
+      "home_score": 94,
+      "home_team": "Oklahoma St.",
       "neutral_site": 0
     },
     {
@@ -346,5 +346,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:10.648806Z"
+  "generated_at": "2026-02-25T19:14:46.919312Z"
 }

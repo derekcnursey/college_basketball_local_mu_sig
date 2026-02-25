@@ -162,22 +162,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 65,
-      "away_team": "Central Michigan",
-      "game_id": "2025_12_07_central_michigan_saint_louis",
-      "home_score": 107,
-      "home_team": "Saint Louis",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 65,
-      "away_team": "Weber St.",
-      "game_id": "2025_12_07_weber_st_st_thomas",
-      "home_score": 88,
-      "home_team": "St. Thomas",
-      "neutral_site": 0
-    },
-    {
       "away_score": 55,
       "away_team": "Southern Indiana",
       "game_id": "2025_12_07_southern_indiana_indiana_st",
@@ -258,12 +242,12 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "LSU",
-      "game_id": "2025_12_07_lsu_texas_tech",
-      "home_score": 82,
-      "home_team": "Texas Tech",
-      "neutral_site": 1
+      "away_score": 70,
+      "away_team": "Saint Mary's",
+      "game_id": "2025_12_07_saint_mary_s_davidson",
+      "home_score": 61,
+      "home_team": "Davidson",
+      "neutral_site": 0
     },
     {
       "away_score": 81,
@@ -282,12 +266,12 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Saint Mary's",
-      "game_id": "2025_12_07_saint_mary_s_davidson",
-      "home_score": 61,
-      "home_team": "Davidson",
-      "neutral_site": 0
+      "away_score": 58,
+      "away_team": "LSU",
+      "game_id": "2025_12_07_lsu_texas_tech",
+      "home_score": 82,
+      "home_team": "Texas Tech",
+      "neutral_site": 1
     },
     {
       "away_score": 56,
@@ -295,6 +279,22 @@
       "game_id": "2025_12_07_air_force_navy",
       "home_score": 61,
       "home_team": "Navy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Central Michigan",
+      "game_id": "2025_12_07_central_michigan_saint_louis",
+      "home_score": 107,
+      "home_team": "Saint Louis",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Weber St.",
+      "game_id": "2025_12_07_weber_st_st_thomas",
+      "home_score": 88,
+      "home_team": "St. Thomas",
       "neutral_site": 0
     },
     {
@@ -314,5 +314,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:10.750489Z"
+  "generated_at": "2026-02-25T19:14:47.032646Z"
 }

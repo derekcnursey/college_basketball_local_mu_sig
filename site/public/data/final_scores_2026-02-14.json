@@ -138,14 +138,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 49,
-      "away_team": "Northwestern",
-      "game_id": "2026_02_14_northwestern_nebraska",
-      "home_score": 68,
-      "home_team": "Nebraska",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Southeastern Louisiana",
       "game_id": "2026_02_14_southeastern_louisiana_northwestern_st",
@@ -159,14 +151,6 @@
       "game_id": "2026_02_14_columbia_princeton",
       "home_score": 65,
       "home_team": "Princeton",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 66,
-      "away_team": "Hofstra",
-      "game_id": "2026_02_14_hofstra_unc_wilmington",
-      "home_score": 70,
-      "home_team": "UNC Wilmington",
       "neutral_site": 0
     },
     {
@@ -199,6 +183,14 @@
       "game_id": "2026_02_14_texas_missouri",
       "home_score": 68,
       "home_team": "Missouri",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 49,
+      "away_team": "Northwestern",
+      "game_id": "2026_02_14_northwestern_nebraska",
+      "home_score": 68,
+      "home_team": "Nebraska",
       "neutral_site": 0
     },
     {
@@ -395,6 +387,14 @@
     },
     {
       "away_score": 65,
+      "away_team": "Troy",
+      "game_id": "2026_02_14_troy_southern_miss",
+      "home_score": 69,
+      "home_team": "Southern Miss",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
       "away_team": "Mississippi Valley St.",
       "game_id": "2026_02_14_mississippi_valley_st_alabama_a_m",
       "home_score": 72,
@@ -490,6 +490,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 87,
+      "away_team": "Southern",
+      "game_id": "2026_02_14_southern_prairie_view_a_m",
+      "home_score": 82,
+      "home_team": "Prairie View A&M",
+      "neutral_site": 0
+    },
+    {
       "away_score": 65,
       "away_team": "Cal St. Fullerton",
       "game_id": "2026_02_14_cal_st_fullerton_uc_irvine",
@@ -522,11 +530,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Western Michigan",
-      "game_id": "2026_02_14_western_michigan_eastern_michigan",
-      "home_score": 62,
-      "home_team": "Eastern Michigan",
+      "away_score": 63,
+      "away_team": "Bryant",
+      "game_id": "2026_02_14_bryant_vermont",
+      "home_score": 90,
+      "home_team": "Vermont",
       "neutral_site": 0
     },
     {
@@ -634,6 +642,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 66,
+      "away_team": "Hofstra",
+      "game_id": "2026_02_14_hofstra_unc_wilmington",
+      "home_score": 70,
+      "home_team": "UNC Wilmington",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Little Rock",
       "game_id": "2026_02_14_little_rock_eastern_illinois",
@@ -671,6 +687,14 @@
       "game_id": "2026_02_14_clemson_duke",
       "home_score": 67,
       "home_team": "Duke",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Western Michigan",
+      "game_id": "2026_02_14_western_michigan_eastern_michigan",
+      "home_score": 62,
+      "home_team": "Eastern Michigan",
       "neutral_site": 0
     },
     {
@@ -834,6 +858,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Auburn",
+      "game_id": "2026_02_14_auburn_arkansas",
+      "home_score": 88,
+      "home_team": "Arkansas",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "Brown",
       "game_id": "2026_02_14_brown_dartmouth",
@@ -914,35 +946,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 65,
-      "away_team": "Troy",
-      "game_id": "2026_02_14_troy_southern_miss",
-      "home_score": 69,
-      "home_team": "Southern Miss",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "New Orleans",
       "game_id": "2026_02_14_new_orleans_houston_christian",
       "home_score": 61,
       "home_team": "Houston Christian",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 87,
-      "away_team": "Southern",
-      "game_id": "2026_02_14_southern_prairie_view_a_m",
-      "home_score": 82,
-      "home_team": "Prairie View A&M",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Bryant",
-      "game_id": "2026_02_14_bryant_vermont",
-      "home_score": 90,
-      "home_team": "Vermont",
       "neutral_site": 0
     },
     {
@@ -994,11 +1002,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Auburn",
-      "game_id": "2026_02_14_auburn_arkansas",
-      "home_score": 88,
-      "home_team": "Arkansas",
+      "away_score": 84,
+      "away_team": "Navy",
+      "game_id": "2026_02_14_navy_colgate",
+      "home_score": 80,
+      "home_team": "Colgate",
       "neutral_site": 0
     },
     {
@@ -1024,15 +1032,7 @@
       "home_score": 83,
       "home_team": "Incarnate Word",
       "neutral_site": 0
-    },
-    {
-      "away_score": 84,
-      "away_team": "Navy",
-      "game_id": "2026_02_14_navy_colgate",
-      "home_score": 80,
-      "home_team": "Colgate",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-24T15:02:11.023116Z"
+  "generated_at": "2026-02-25T19:14:47.327547Z"
 }
