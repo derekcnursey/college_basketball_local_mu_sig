@@ -159,6 +159,10 @@ export default function Home({ date, rows }: HomeProps) {
     }
 
     list.sort((a, b) => {
+      const aHas = hasBook(a);
+      const bHas = hasBook(b);
+      if (aHas !== bHas) return aHas ? -1 : 1;
+
       const av = sortVal(a, sort.key);
       const bv = sortVal(b, sort.key);
       if (typeof av === "number" && typeof bv === "number") {
