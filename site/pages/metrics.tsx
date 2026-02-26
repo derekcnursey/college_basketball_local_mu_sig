@@ -1,428 +1,887 @@
 import { GetServerSideProps } from "next";
+import dynamic from "next/dynamic";
+import { CSSProperties, useMemo, useState } from "react";
 import Layout from "../components/Layout";
-import { PredictionRow, getTeams, normalizeRows, normalizeTeam } from "../lib/data";
-import { listFinalScoreFiles, listPredictionFiles, readJsonFile } from "../lib/server-data";
+import { normalizeRows } from "../lib/data";
+import {
+  listFinalScoreFiles,
+  listPredictionFiles,
+  readJsonFile
+} from "../lib/server-data";
 
-type DateSummary = {
+const CumulativeChart = dynamic(
+  () => import("../components/CumulativeChart"),
+  { ssr: false }
+);
+
+/* ── types ── */
+
+type GameResult = {
   date: string;
-  count: number;
-  mse: number | null;
-  mae: number | null;
-  meanError: number | null;
-  atsRecord: string | null;
-  atsRecordEdge: string | null;
+  week: string;
+  month: string;
+  monthSort: number;
+  edge: number;
+  result: "win" | "loss" | "push";
+  model_error: number;
+  sigma_z: number | null;
 };
 
-type MetricsProps = {
-  mse: number | null;
-  mae: number | null;
-  meanError: number | null;
-  atsWinPct: number | null;
-  atsWinPctEdge: number | null;
-  atsRecord: string | null;
-  atsRecordEdge: string | null;
-  dateSummaries: DateSummary[];
+type PerformanceProps = {
+  games: GameResult[];
+  seasonLabel: string;
 };
 
-export const getServerSideProps: GetServerSideProps<MetricsProps> = async () => {
+/* ── server ── */
+
+export const getServerSideProps: GetServerSideProps<
+  PerformanceProps
+> = async () => {
+  const predFiles = listPredictionFiles();
   const finalFiles = listFinalScoreFiles();
-  const todayStr = new Date().toISOString().slice(0, 10);
-  const eligibleFinals = finalFiles.filter((file) => file.date < todayStr);
-  const maxFinalDate = eligibleFinals.length
-    ? eligibleFinals.map((file) => file.date).sort().at(-1) ?? null
-    : null;
-  const files = listPredictionFiles()
-    .filter((file) => (maxFinalDate ? file.date <= maxFinalDate : true))
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
-  const finalFilesByDate = new Map(finalFiles.map((file) => [file.date, file.filename]));
-  const dateSummaries: DateSummary[] = [];
-  const allSquaredErrors: number[] = [];
-  const allAbsErrors: number[] = [];
-  const allErrors: number[] = [];
-  const allAtsResults: number[] = [];
-  const allAtsEdgeResults: number[] = [];
-  let allAtsWins = 0;
-  let allAtsLosses = 0;
-  let allAtsEdgeWins = 0;
-  let allAtsEdgeLosses = 0;
+  const finalByDate = new Map(
+    finalFiles.map((f) => [f.date, f.filename])
+  );
 
-  for (const file of files) {
-    const payload = readJsonFile(file.filename);
-    const rows = normalizeRows(payload);
-    const finalFilename = finalFilesByDate.get(file.date);
-    const finalRows = finalFilename ? normalizeRows(readJsonFile(finalFilename)) : [];
-    const resultLookup = buildResultLookup(finalRows);
+  const games: GameResult[] = [];
 
-    if (!rows.length) {
-      dateSummaries.push({
-        date: file.date,
-        count: 0,
-        mse: null,
-        mae: null,
-        meanError: null,
-        atsRecord: null,
-        atsRecordEdge: null
+  for (const pf of predFiles) {
+    const ff = finalByDate.get(pf.date);
+    if (!ff) continue;
+
+    const preds = normalizeRows(readJsonFile(pf.filename));
+    const finals = normalizeRows(readJsonFile(ff));
+
+    const fLookup = new Map<string, Record<string, unknown>>();
+    for (const r of finals) {
+      const gid = r.game_id;
+      if (typeof gid === "string") fLookup.set(gid, r);
+    }
+
+    for (const pred of preds) {
+      const gid = typeof pred.game_id === "string" ? pred.game_id : "";
+      const fin = fLookup.get(gid);
+      if (!fin) continue;
+
+      const msh = pn(pred.market_spread_home);
+      if (msh === null) continue;
+
+      const homeScore = pn(fin.home_score);
+      const awayScore = pn(fin.away_score);
+      if (homeScore === null || awayScore === null) continue;
+
+      const pickSide = ss(pred.pick_side).toUpperCase();
+      if (pickSide !== "HOME" && pickSide !== "AWAY") continue;
+
+      const ppe = pn(pred.pick_prob_edge) ?? 0;
+      const mmh = pn(pred.model_mu_home);
+      const sig = pn(pred.pred_sigma);
+
+      const actualMargin = homeScore - awayScore;
+      const cover = actualMargin + msh;
+
+      let result: "win" | "loss" | "push";
+      if (cover === 0) {
+        result = "push";
+      } else if (pickSide === "HOME") {
+        result = cover > 0 ? "win" : "loss";
+      } else {
+        result = cover < 0 ? "win" : "loss";
+      }
+
+      const model_error =
+        mmh !== null ? Math.abs(actualMargin - mmh) : 0;
+      const sigma_z = sig !== null && sig > 0 ? model_error / sig : null;
+
+      games.push({
+        date: pf.date,
+        week: weekLabel(pf.date),
+        month: monthName(pf.date),
+        monthSort: monthSortKey(pf.date),
+        edge: ppe * 100,
+        result,
+        model_error,
+        sigma_z
       });
-      continue;
     }
-
-    const dateSquaredErrors: number[] = [];
-    const dateAbsErrors: number[] = [];
-    const dateErrors: number[] = [];
-    let dateAtsWins = 0;
-    let dateAtsLosses = 0;
-    let dateAtsEdgeWins = 0;
-    let dateAtsEdgeLosses = 0;
-
-    for (const row of rows) {
-      const modelSpread = getModelSpread(row);
-      if (modelSpread === null) {
-        continue;
-      }
-      const resultRow = findResultRow(row, resultLookup);
-      if (!resultRow) {
-        continue;
-      }
-      const actualSpread = getActualSpread(resultRow);
-      if (actualSpread === null) {
-        continue;
-      }
-      const error = modelSpread - actualSpread;
-      dateErrors.push(error);
-      dateSquaredErrors.push(error * error);
-      dateAbsErrors.push(Math.abs(error));
-
-      const ats = getAtsResult(row, -actualSpread);
-      if (ats && ats !== "push") {
-        const isWin = ats === "win";
-        if (isWin) {
-          dateAtsWins += 1;
-        } else {
-          dateAtsLosses += 1;
-        }
-        const probEdge = getPickProbEdge(row);
-        if (probEdge !== null && probEdge > 0.1) {
-          if (isWin) {
-            dateAtsEdgeWins += 1;
-            allAtsEdgeWins += 1;
-          } else {
-            dateAtsEdgeLosses += 1;
-            allAtsEdgeLosses += 1;
-          }
-        }
-        if (isWin) {
-          allAtsWins += 1;
-        } else {
-          allAtsLosses += 1;
-        }
-      }
-    }
-
-    dateSquaredErrors.forEach((value) => allSquaredErrors.push(value));
-    dateAbsErrors.forEach((value) => allAbsErrors.push(value));
-    dateErrors.forEach((value) => allErrors.push(value));
-    if (dateAtsWins + dateAtsLosses > 0) {
-      allAtsResults.push(dateAtsWins / (dateAtsWins + dateAtsLosses));
-    }
-    if (dateAtsEdgeWins + dateAtsEdgeLosses > 0) {
-      allAtsEdgeResults.push(
-        dateAtsEdgeWins / (dateAtsEdgeWins + dateAtsEdgeLosses)
-      );
-    }
-
-    dateSummaries.push({
-      date: file.date,
-      count: rows.length,
-      mse: dateSquaredErrors.length ? average(dateSquaredErrors) : null,
-      mae: dateAbsErrors.length ? average(dateAbsErrors) : null,
-      meanError: dateErrors.length ? average(dateErrors) : null,
-      atsRecord:
-        dateAtsWins + dateAtsLosses > 0
-          ? `${dateAtsWins}-${dateAtsLosses}`
-          : null,
-      atsRecordEdge:
-        dateAtsEdgeWins + dateAtsEdgeLosses > 0
-          ? `${dateAtsEdgeWins}-${dateAtsEdgeLosses}`
-          : null
-    });
   }
 
-  return {
-    props: {
-      mse: allSquaredErrors.length ? average(allSquaredErrors) : null,
-      mae: allAbsErrors.length ? average(allAbsErrors) : null,
-      meanError: allErrors.length ? average(allErrors) : null,
-      atsWinPct:
-        allAtsWins + allAtsLosses > 0
-          ? allAtsWins / (allAtsWins + allAtsLosses)
-          : null,
-      atsWinPctEdge:
-        allAtsEdgeWins + allAtsEdgeLosses > 0
-          ? allAtsEdgeWins / (allAtsEdgeWins + allAtsEdgeLosses)
-          : null,
-      atsRecord:
-        allAtsWins + allAtsLosses > 0 ? `${allAtsWins}-${allAtsLosses}` : null,
-      atsRecordEdge:
-        allAtsEdgeWins + allAtsEdgeLosses > 0
-          ? `${allAtsEdgeWins}-${allAtsEdgeLosses}`
-          : null,
-      dateSummaries
-    }
-  };
+  games.sort((a, b) => (a.date < b.date ? -1 : 1));
+
+  const dates = games.map((g) => g.date);
+  const minYear = dates.length
+    ? Number(dates[0].slice(0, 4))
+    : new Date().getFullYear();
+  const maxYear = dates.length
+    ? Number(dates[dates.length - 1].slice(0, 4))
+    : minYear;
+  const seasonLabel =
+    minYear === maxYear
+      ? `${minYear} Season`
+      : `${minYear}\u2013${String(maxYear).slice(2)} Season`;
+
+  return { props: { games, seasonLabel } };
 };
 
-export default function Metrics({
-  mse,
-  mae,
-  meanError,
-  atsWinPct,
-  atsWinPctEdge,
-  atsRecord,
-  atsRecordEdge,
-  dateSummaries
-}: MetricsProps) {
+function ss(v: unknown): string {
+  return typeof v === "string" ? v : String(v ?? "");
+}
+
+function pn(v: unknown): number | null {
+  if (typeof v === "number" && Number.isFinite(v)) return v;
+  if (typeof v === "string" && v.trim()) {
+    const n = Number(v);
+    return Number.isNaN(n) ? null : n;
+  }
+  return null;
+}
+
+function weekLabel(dateStr: string): string {
+  const d = new Date(dateStr + "T12:00:00");
+  const day = d.getDay();
+  const diff = day === 0 ? -6 : 1 - day;
+  const monday = new Date(d);
+  monday.setDate(d.getDate() + diff);
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ];
+  return `${months[monday.getMonth()]} ${monday.getDate()}`;
+}
+
+function monthName(dateStr: string): string {
+  const mo = Number(dateStr.slice(5, 7));
+  return [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ][mo - 1];
+}
+
+function monthSortKey(dateStr: string): number {
+  const yr = Number(dateStr.slice(0, 4));
+  const mo = Number(dateStr.slice(5, 7));
+  return yr * 12 + mo;
+}
+
+/* ── helpers ── */
+
+const mono: CSSProperties = {
+  fontFamily: "'IBM Plex Mono', monospace"
+};
+
+/* ── component ── */
+
+export default function Performance({
+  games,
+  seasonLabel
+}: PerformanceProps) {
+  const [edgeMin, setEdgeMin] = useState(0);
+
+  const maxEdge = useMemo(() => {
+    if (!games.length) return 30;
+    return Math.ceil(Math.max(...games.map((g) => g.edge)));
+  }, [games]);
+
+  /* filtered games */
+  const filtered = useMemo(
+    () => games.filter((g) => g.edge >= edgeMin),
+    [games, edgeMin]
+  );
+
+  /* stats */
+  const stats = useMemo(() => {
+    const wins = filtered.filter((g) => g.result === "win").length;
+    const losses = filtered.filter((g) => g.result === "loss").length;
+    const bets = wins + losses;
+    const units = wins * 0.91 - losses;
+    const roi = bets > 0 ? (units / bets) * 100 : 0;
+    const mae =
+      filtered.length > 0
+        ? filtered.reduce((s, g) => s + g.model_error, 0) /
+          filtered.length
+        : null;
+    const szGames = filtered.filter((g) => g.sigma_z !== null);
+    const sigmaCal =
+      szGames.length > 0
+        ? szGames.reduce((s, g) => s + g.sigma_z!, 0) / szGames.length
+        : null;
+
+    return {
+      record: bets > 0 ? `${wins}-${losses}` : "—",
+      bets: String(bets || "—"),
+      units:
+        bets > 0
+          ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u`
+          : "—",
+      unitsNum: units,
+      roi:
+        bets > 0
+          ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%`
+          : "—",
+      roiNum: roi,
+      mae: mae !== null ? mae.toFixed(2) : "—",
+      sigmaCal: sigmaCal !== null ? sigmaCal.toFixed(2) : "—"
+    };
+  }, [filtered]);
+
+  /* chart data: cumulative units by week */
+  const chartData = useMemo(() => {
+    const allWeeks: string[] = [];
+    const seen = new Set<string>();
+    for (const g of games) {
+      if (!seen.has(g.week)) {
+        seen.add(g.week);
+        allWeeks.push(g.week);
+      }
+    }
+
+    let cum = 0;
+    return allWeeks.map((w) => {
+      const weekGames = filtered.filter((g) => g.week === w);
+      for (const g of weekGames) {
+        if (g.result === "win") cum += 0.91;
+        else if (g.result === "loss") cum -= 1;
+      }
+      return { week: w, units: Math.round(cum * 10) / 10 };
+    });
+  }, [games, filtered]);
+
+  /* monthly breakdown */
+  const months = useMemo(() => {
+    const map = new Map<
+      string,
+      {
+        month: string;
+        sort: number;
+        wins: number;
+        losses: number;
+        pushes: number;
+        errors: number[];
+        sigmaZs: number[];
+      }
+    >();
+
+    for (const g of filtered) {
+      let entry = map.get(g.month);
+      if (!entry) {
+        entry = {
+          month: g.month,
+          sort: g.monthSort,
+          wins: 0,
+          losses: 0,
+          pushes: 0,
+          errors: [],
+          sigmaZs: []
+        };
+        map.set(g.month, entry);
+      }
+      if (g.result === "win") entry.wins++;
+      else if (g.result === "loss") entry.losses++;
+      else entry.pushes++;
+      entry.errors.push(g.model_error);
+      if (g.sigma_z !== null) entry.sigmaZs.push(g.sigma_z);
+    }
+
+    return Array.from(map.values()).sort((a, b) => a.sort - b.sort);
+  }, [filtered]);
+
+  /* total row */
+  const total = useMemo(() => {
+    const wins = filtered.filter((g) => g.result === "win").length;
+    const losses = filtered.filter((g) => g.result === "loss").length;
+    const bets = wins + losses;
+    const units = wins * 0.91 - losses;
+    const roi = bets > 0 ? (units / bets) * 100 : 0;
+    const winPct = bets > 0 ? (wins / bets) * 100 : null;
+    const mae =
+      filtered.length > 0
+        ? filtered.reduce((s, g) => s + g.model_error, 0) /
+          filtered.length
+        : null;
+    const szGames = filtered.filter((g) => g.sigma_z !== null);
+    const sigmaCal =
+      szGames.length > 0
+        ? szGames.reduce((s, g) => s + g.sigma_z!, 0) / szGames.length
+        : null;
+    return { wins, losses, bets, units, roi, winPct, mae, sigmaCal };
+  }, [filtered]);
+
   return (
     <Layout>
-      <h1 className="page-title">Lifetime</h1>
-      <section className="metrics-grid">
-        <div className="metric-card">
-          <span>MAE</span>
-          <strong>{formatNumber(mae)}</strong>
-        </div>
-        <div className="metric-card">
-          <span>MSE</span>
-          <strong>{formatNumber(mse)}</strong>
-        </div>
-        <div className="metric-card">
-          <span>Mean error</span>
-          <strong>{formatNumber(meanError)}</strong>
-        </div>
-        <div className="metric-card">
-          <span>ATS</span>
-          <strong>{formatRecordWithPercent(atsRecord, atsWinPct)}</strong>
-        </div>
-        <div className="metric-card">
-          <span>ATS (Prob Edge &gt; 10%)</span>
-          <strong>{formatRecordWithPercent(atsRecordEdge, atsWinPctEdge)}</strong>
-        </div>
-      </section>
+      <div>
+        {/* ── Title + Edge Slider ── */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: 24,
+            flexWrap: "wrap",
+            gap: 12
+          }}
+        >
+          <div
+            style={{ display: "flex", alignItems: "baseline", gap: 12 }}
+          >
+            <h1
+              style={{
+                fontSize: 24,
+                fontWeight: 700,
+                letterSpacing: "-0.02em",
+                margin: 0,
+                color: "#0f172a"
+              }}
+            >
+              Performance
+            </h1>
+            <span style={{ ...mono, fontSize: 13, color: "#64748b" }}>
+              {seasonLabel}
+            </span>
+          </div>
 
-      <section>
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Games</th>
-                <th>MAE</th>
-                <th>MSE</th>
-                <th>Mean error</th>
-                <th>ATS Record</th>
-                <th>ATS Record (Prob Edge &gt; 10%)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {dateSummaries.map((summary) => (
-                <tr key={summary.date}>
-                  <td>{summary.date}</td>
-                  <td>{summary.count}</td>
-                  <td>{formatNumber(summary.mae)}</td>
-                  <td>{formatNumber(summary.mse)}</td>
-                  <td>{formatNumber(summary.meanError)}</td>
-                  <td>{summary.atsRecord ?? "-"}</td>
-                  <td>{summary.atsRecordEdge ?? "-"}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div
+            style={{ display: "flex", alignItems: "center", gap: 8 }}
+          >
+            <span
+              style={{
+                ...mono,
+                fontSize: 11,
+                fontWeight: 600,
+                color: "#64748b"
+              }}
+            >
+              EDGE
+            </span>
+            <input
+              type="range"
+              min={0}
+              max={maxEdge}
+              step={1}
+              value={edgeMin}
+              onChange={(e) => setEdgeMin(Number(e.target.value))}
+              style={{ width: 120, accentColor: "#0f172a" }}
+            />
+            <span
+              style={{
+                ...mono,
+                fontSize: 14,
+                fontWeight: 700,
+                color: "#0f172a",
+                minWidth: 30
+              }}
+            >
+              {edgeMin}%
+            </span>
+          </div>
         </div>
-      </section>
+
+        {/* ── Stats Grid 3x2 ── */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gap: 1,
+            background: "#e2e8f0",
+            borderRadius: 8,
+            overflow: "hidden",
+            marginBottom: 20
+          }}
+        >
+          {[
+            {
+              label: "RECORD",
+              value: stats.record,
+              color: "#0f172a"
+            },
+            {
+              label: "BETS",
+              value: stats.bets,
+              color: "#0f172a"
+            },
+            {
+              label: "UNITS",
+              value: stats.units,
+              color:
+                stats.unitsNum >= 0 ? "#16a34a" : "#dc2626"
+            },
+            {
+              label: "ROI",
+              value: stats.roi,
+              color: stats.roiNum >= 0 ? "#16a34a" : "#dc2626"
+            },
+            {
+              label: "MODEL MAE",
+              value: stats.mae,
+              color: "#0f172a"
+            },
+            {
+              label: "σ CALIBRATION",
+              value: stats.sigmaCal,
+              color: "#0f172a"
+            }
+          ].map((c) => (
+            <div
+              key={c.label}
+              style={{
+                background: "#fff",
+                padding: "18px 14px",
+                textAlign: "center"
+              }}
+            >
+              <div
+                style={{
+                  ...mono,
+                  fontSize: 10,
+                  fontWeight: 500,
+                  letterSpacing: "0.1em",
+                  color: "#64748b",
+                  marginBottom: 6
+                }}
+              >
+                {c.label}
+              </div>
+              <div
+                style={{
+                  ...mono,
+                  fontSize: 22,
+                  fontWeight: 700,
+                  lineHeight: 1,
+                  color: c.color
+                }}
+              >
+                {c.value}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Cumulative Units Chart ── */}
+        <div style={{ marginBottom: 24 }}>
+          <div
+            style={{
+              ...mono,
+              fontSize: 11,
+              fontWeight: 500,
+              letterSpacing: "0.08em",
+              color: "#64748b",
+              marginBottom: 10
+            }}
+          >
+            CUMULATIVE UNITS
+          </div>
+          <div
+            style={{
+              background: "#fff",
+              border: "1px solid #e2e8f0",
+              borderRadius: 10,
+              padding: "20px 16px 12px",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.04)"
+            }}
+          >
+            {chartData.length > 0 ? (
+              <CumulativeChart data={chartData} />
+            ) : (
+              <div
+                style={{
+                  height: 220,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#94a3b8",
+                  ...mono,
+                  fontSize: 13
+                }}
+              >
+                No data at this threshold
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ── Monthly Breakdown Table ── */}
+        <div>
+          <div
+            style={{
+              ...mono,
+              fontSize: 11,
+              fontWeight: 500,
+              letterSpacing: "0.08em",
+              color: "#64748b",
+              marginBottom: 10
+            }}
+          >
+            MONTHLY BREAKDOWN
+          </div>
+          <div
+            style={{
+              background: "#fff",
+              border: "1px solid #e2e8f0",
+              borderRadius: 10,
+              overflow: "hidden",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.04)"
+            }}
+          >
+            <div style={{ overflowX: "auto" }}>
+              <table
+                style={{
+                  width: "100%",
+                  borderCollapse: "collapse",
+                  fontVariantNumeric: "tabular-nums"
+                }}
+              >
+                <thead>
+                  <tr>
+                    {[
+                      { label: "MONTH", align: "left" as const },
+                      { label: "RECORD", align: "center" as const },
+                      { label: "BETS", align: "center" as const },
+                      { label: "WIN %", align: "center" as const },
+                      { label: "UNITS", align: "center" as const },
+                      { label: "ROI", align: "center" as const },
+                      { label: "MAE", align: "center" as const },
+                      { label: "σ CAL", align: "center" as const }
+                    ].map((h) => (
+                      <th
+                        key={h.label}
+                        style={{
+                          ...mono,
+                          fontSize: 10,
+                          fontWeight: 600,
+                          letterSpacing: "0.08em",
+                          padding: "10px 14px",
+                          textAlign: h.align,
+                          background: "#fafbfc",
+                          color: "#64748b",
+                          borderBottom: "1px solid #e2e8f0",
+                          whiteSpace: "nowrap"
+                        }}
+                      >
+                        {h.label}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {months.length === 0 ? (
+                    <tr>
+                      <td
+                        colSpan={8}
+                        style={{
+                          padding: 24,
+                          textAlign: "center",
+                          color: "#94a3b8",
+                          borderBottom: "none"
+                        }}
+                      >
+                        No data at this threshold
+                      </td>
+                    </tr>
+                  ) : (
+                    <>
+                      {months.map((m) => {
+                        const bets = m.wins + m.losses;
+                        const units = m.wins * 0.91 - m.losses;
+                        const roi =
+                          bets > 0 ? (units / bets) * 100 : 0;
+                        const winPct =
+                          bets > 0 ? (m.wins / bets) * 100 : null;
+                        const mae =
+                          m.errors.length > 0
+                            ? m.errors.reduce((s, e) => s + e, 0) /
+                              m.errors.length
+                            : null;
+                        const sc =
+                          m.sigmaZs.length > 0
+                            ? m.sigmaZs.reduce((s, e) => s + e, 0) /
+                              m.sigmaZs.length
+                            : null;
+                        const bd = "1px solid #f1f5f9";
+
+                        return (
+                          <tr key={m.month}>
+                            <td
+                              style={{
+                                padding: "10px 14px",
+                                textAlign: "left",
+                                fontSize: 14,
+                                fontWeight: 600,
+                                color: "#0f172a",
+                                borderBottom: bd
+                              }}
+                            >
+                              {m.month}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 14,
+                                fontWeight: 700,
+                                color: "#0f172a",
+                                borderBottom: bd
+                              }}
+                            >
+                              {bets > 0
+                                ? `${m.wins}-${m.losses}`
+                                : "—"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                color: "#64748b",
+                                borderBottom: bd
+                              }}
+                            >
+                              {bets || "—"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                fontWeight: 600,
+                                color: winPctColor(winPct),
+                                borderBottom: bd
+                              }}
+                            >
+                              {winPct !== null
+                                ? `${winPct.toFixed(1)}%`
+                                : "—"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                fontWeight: 700,
+                                color:
+                                  units >= 0 ? "#16a34a" : "#dc2626",
+                                borderBottom: bd
+                              }}
+                            >
+                              {bets > 0
+                                ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u`
+                                : "—"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                fontWeight: 700,
+                                color:
+                                  roi >= 0 ? "#16a34a" : "#dc2626",
+                                borderBottom: bd
+                              }}
+                            >
+                              {bets > 0
+                                ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%`
+                                : "—"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                fontWeight: 600,
+                                color: "#0f172a",
+                                borderBottom: bd
+                              }}
+                            >
+                              {mae !== null ? mae.toFixed(2) : "—"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                fontWeight: 600,
+                                color: "#0f172a",
+                                borderBottom: bd
+                              }}
+                            >
+                              {sc !== null ? sc.toFixed(2) : "—"}
+                            </td>
+                          </tr>
+                        );
+                      })}
+
+                      {/* Total row */}
+                      <tr>
+                        <td
+                          style={{
+                            padding: "10px 14px",
+                            textAlign: "left",
+                            fontSize: 14,
+                            fontWeight: 800,
+                            color: "#0f172a",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          Total
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 14,
+                            fontWeight: 800,
+                            color: "#0f172a",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.bets > 0
+                            ? `${total.wins}-${total.losses}`
+                            : "—"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color: "#0f172a",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.bets || "—"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color: winPctColor(total.winPct),
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.winPct !== null
+                            ? `${total.winPct.toFixed(1)}%`
+                            : "—"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color:
+                              total.units >= 0
+                                ? "#16a34a"
+                                : "#dc2626",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.bets > 0
+                            ? `${total.units >= 0 ? "+" : ""}${total.units.toFixed(1)}u`
+                            : "—"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color:
+                              total.roi >= 0
+                                ? "#16a34a"
+                                : "#dc2626",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.bets > 0
+                            ? `${total.roi >= 0 ? "+" : ""}${total.roi.toFixed(1)}%`
+                            : "—"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color: "#0f172a",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.mae !== null
+                            ? total.mae.toFixed(2)
+                            : "—"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color: "#0f172a",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.sigmaCal !== null
+                            ? total.sigmaCal.toFixed(2)
+                            : "—"}
+                        </td>
+                      </tr>
+                    </>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
 
-function average(values: number[]): number {
-  return values.reduce((sum, value) => sum + value, 0) / values.length;
-}
-
-function formatNumber(value: number | null): string {
-  if (value === null || Number.isNaN(value)) {
-    return "-";
-  }
-  return value.toFixed(3);
-}
-
-function formatPercent(value: number | null): string {
-  if (value === null || Number.isNaN(value)) {
-    return "-";
-  }
-  return `${(value * 100).toFixed(1)}%`;
-}
-
-function formatRecordWithPercent(record: string | null, pct: number | null): string {
-  const recordText = record ?? "-";
-  const pctText = formatPercent(pct);
-  if (recordText === "-" && pctText === "-") {
-    return "-";
-  }
-  if (recordText === "-") {
-    return pctText;
-  }
-  if (pctText === "-") {
-    return recordText;
-  }
-  return `${recordText} (${pctText})`;
-}
-
-function getModelSpread(row: PredictionRow): number | null {
-  const modelValue = row.model_mu_home ?? row.modelMuHome ?? row.model_home_spread;
-  if (typeof modelValue === "number") {
-    return Number(modelValue.toFixed(2));
-  }
-  if (typeof modelValue === "string" && modelValue.trim() !== "") {
-    const parsed = Number(modelValue);
-    if (!Number.isNaN(parsed)) {
-      return Number(parsed.toFixed(2));
-    }
-  }
-  return null;
-}
-
-function getActualSpread(row: PredictionRow): number | null {
-  const homeScore = row.score_home ?? row.home_score ?? row.homeScore ?? row.scoreHome;
-  const awayScore = row.score_away ?? row.away_score ?? row.scoreAway ?? row.awayScore;
-  if (typeof homeScore === "number" && typeof awayScore === "number") {
-    return awayScore - homeScore;
-  }
-  if (typeof homeScore === "string" && typeof awayScore === "string") {
-    const home = Number(homeScore);
-    const away = Number(awayScore);
-    if (!Number.isNaN(home) && !Number.isNaN(away)) {
-      return away - home;
-    }
-  }
-  return null;
-}
-
-function getMarketSpreadHome(row: PredictionRow): number | null {
-  const direct = parseNumeric(row.market_spread_home);
-  if (direct !== null) {
-    return direct;
-  }
-  const fallback = parseNumeric(row.home_spread_num ?? row.spread_home);
-  if (fallback !== null) {
-    return fallback;
-  }
-  return null;
-}
-
-function getPickSide(row: PredictionRow): string | null {
-  const value = row.pick_side ?? row.pickSide;
-  if (typeof value === "string" && value.trim() !== "") {
-    return value.toUpperCase();
-  }
-  return null;
-}
-
-function getPickProbEdge(row: PredictionRow): number | null {
-  const direct = parseNumeric(row.pick_prob_edge ?? row.pickProbEdge);
-  if (direct !== null) {
-    return direct;
-  }
-  const cover = parseNumeric(row.pick_cover_prob ?? row.pickCoverProb);
-  const breakeven = parseNumeric(
-    row.pick_breakeven_prob ?? row.pickBreakevenProb ?? row.pick_breakeven
-  );
-  if (cover !== null && breakeven !== null) {
-    return cover - breakeven;
-  }
-  return null;
-}
-
-function getAtsResult(
-  row: PredictionRow,
-  actualMargin: number
-): "win" | "loss" | "push" | null {
-  const pickSide = getPickSide(row);
-  const marketSpread = getMarketSpreadHome(row);
-  if (!pickSide || marketSpread === null) {
-    return null;
-  }
-
-  const cover = actualMargin + marketSpread;
-  if (cover === 0) {
-    return "push";
-  }
-  const coverSide = cover > 0 ? "HOME" : "AWAY";
-  return pickSide === coverSide ? "win" : "loss";
-}
-
-function parseNumeric(value: unknown): number | null {
-  if (typeof value === "number") {
-    return Number.isFinite(value) ? value : null;
-  }
-  if (typeof value === "string" && value.trim() !== "") {
-    const parsed = Number(value);
-    return Number.isNaN(parsed) ? null : parsed;
-  }
-  return null;
-}
-
-function buildResultLookup(rows: PredictionRow[]): Map<string, PredictionRow> {
-  const lookup = new Map<string, PredictionRow>();
-  for (const row of rows) {
-    const gameId = getGameId(row);
-    if (gameId) {
-      lookup.set(gameId, row);
-    }
-    const key = getTeamKey(row);
-    if (key) {
-      lookup.set(key, row);
-    }
-  }
-  return lookup;
-}
-
-function findResultRow(
-  row: PredictionRow,
-  lookup: Map<string, PredictionRow>
-): PredictionRow | null {
-  const gameId = getGameId(row);
-  if (gameId && lookup.has(gameId)) {
-    return lookup.get(gameId) ?? null;
-  }
-  const teamKey = getTeamKey(row);
-  if (teamKey && lookup.has(teamKey)) {
-    return lookup.get(teamKey) ?? null;
-  }
-  return null;
-}
-
-function getGameId(row: PredictionRow): string | null {
-  const gameId = row.game_id ?? row.gameId;
-  if (typeof gameId === "string" && gameId.trim() !== "") {
-    return gameId;
-  }
-  const dateValue =
-    (row.date as string | undefined) ||
-    (row.game_date as string | undefined) ||
-    (row.gameDate as string | undefined);
-  const teams = getTeams(row);
-  if (dateValue && teams.away && teams.home) {
-    return slugify(`${dateValue}_${teams.away}_${teams.home}`);
-  }
-  return null;
-}
-
-function getTeamKey(row: PredictionRow): string | null {
-  const teams = getTeams(row);
-  if (!teams.home || !teams.away) {
-    return null;
-  }
-  return `${normalizeTeam(teams.home)}__${normalizeTeam(teams.away)}`;
-}
-
-function slugify(text: string): string {
-  const lowered = (text || "").toLowerCase();
-  return lowered.replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+function winPctColor(pct: number | null): string {
+  if (pct === null) return "#94a3b8";
+  if (pct >= 55) return "#16a34a";
+  if (pct >= 50) return "#0f172a";
+  return "#dc2626";
 }

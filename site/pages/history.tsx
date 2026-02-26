@@ -1,435 +1,915 @@
 import { GetServerSideProps } from "next";
-import { useRouter } from "next/router";
-import { useMemo } from "react";
+import Link from "next/link";
+import { CSSProperties, useMemo, useState } from "react";
 import Layout from "../components/Layout";
-import {
-  PredictionRow,
-  getTeams,
-  normalizeTeam,
-  pickColumns
-} from "../lib/data";
-import {
-  getLatestPredictionFile,
-  getPredictionRowsByDate,
-  listFinalScoreFiles,
-  listPredictionFiles,
-  readJsonFile
-} from "../lib/server-data";
+import { normalizeRows } from "../lib/data";
+import { listFinalScoreFiles, readJsonFile } from "../lib/server-data";
+
+/* ── types ── */
+
+type HistoryGame = {
+  away_team: string;
+  home_team: string;
+  away_score: number | null;
+  home_score: number | null;
+  pick_side: string;
+  pick_team: string;
+  market_spread_home: number | null;
+  model_mu_home: number | null;
+  pick_prob_edge: number;
+  ats_result: "win" | "loss" | "push" | null;
+  has_book: boolean;
+};
 
 type HistoryProps = {
   date: string | null;
-  rows: PredictionRow[];
-  columns: string[];
-  availableDates: string[];
+  games: HistoryGame[];
+  prevDate: string | null;
+  nextDate: string | null;
 };
+
+type SortKey =
+  | "matchup"
+  | "score"
+  | "pick"
+  | "book"
+  | "model"
+  | "ats"
+  | "edge";
+
+type SortState = { key: SortKey; dir: "asc" | "desc" };
+
+/* ── server ── */
 
 export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
   context
 ) => {
-  const queryDate = typeof context.query.date === "string" ? context.query.date : null;
-  const today = formatDate(new Date());
-  const availableDates = listPredictionFiles()
-    .map((file) => file.date)
-    .filter((date) => date !== today)
-    .sort((a, b) => (a < b ? 1 : -1));
-  const latest = getLatestPredictionFile();
-  const fallbackDate =
-    latest && latest.date !== today ? latest.date : availableDates[0] ?? null;
-  const date = queryDate || fallbackDate || null;
-  const rows = date ? getPredictionRowsByDate(date) : [];
-  const finalScores = date ? getFinalScoresByDate(date) : [];
-  const rowsWithScores = attachFinalScores(rows, finalScores);
-  const columns = pickColumns(rowsWithScores).filter(
-    (column) => column !== "neutral_site"
-  );
-  if (!columns.includes("final_score")) {
-    columns.splice(2, 0, "final_score");
-  }
-  if (!columns.includes("model_error")) {
-    columns.splice(3, 0, "model_error");
+  const queryDate =
+    typeof context.query.date === "string" ? context.query.date : null;
+
+  const finalFiles = listFinalScoreFiles();
+  const availableDates = finalFiles.map((f) => f.date).sort();
+
+  if (!availableDates.length) {
+    return {
+      props: { date: null, games: [], prevDate: null, nextDate: null }
+    };
   }
 
-  return {
-    props: {
-      date,
-      rows: rowsWithScores,
-      columns,
-      availableDates
+  const date =
+    queryDate && availableDates.includes(queryDate)
+      ? queryDate
+      : availableDates[availableDates.length - 1];
+
+  const idx = availableDates.indexOf(date);
+  const prevDate = idx > 0 ? availableDates[idx - 1] : null;
+  const nextDate =
+    idx < availableDates.length - 1 ? availableDates[idx + 1] : null;
+
+  const predRows = normalizeRows(
+    readJsonFile(`predictions_${date}.json`)
+  );
+  const finalRows = normalizeRows(
+    readJsonFile(`final_scores_${date}.json`)
+  );
+
+  const finalLookup = new Map<string, Record<string, unknown>>();
+  for (const r of finalRows) {
+    const gid = r.game_id;
+    if (typeof gid === "string") finalLookup.set(gid, r);
+  }
+
+  const games: HistoryGame[] = predRows.map((pred) => {
+    const gid = typeof pred.game_id === "string" ? pred.game_id : "";
+    const fin = finalLookup.get(gid);
+
+    const away_team = s(pred.away_team);
+    const home_team = s(pred.home_team);
+    const pick_side = s(pred.pick_side).toUpperCase();
+    const pick_team = pick_side === "HOME" ? home_team : away_team;
+
+    const market_spread_home = pn(pred.market_spread_home);
+    const model_mu_home = pn(pred.model_mu_home);
+    const pick_prob_edge = pn(pred.pick_prob_edge) ?? 0;
+    const has_book = market_spread_home !== null;
+
+    const away_score = fin ? pn(fin.away_score) : null;
+    const home_score = fin ? pn(fin.home_score) : null;
+
+    let ats_result: HistoryGame["ats_result"] = null;
+    if (
+      away_score !== null &&
+      home_score !== null &&
+      market_spread_home !== null &&
+      pick_side
+    ) {
+      const cover = home_score - away_score + market_spread_home;
+      if (cover === 0) {
+        ats_result = "push";
+      } else if (pick_side === "HOME") {
+        ats_result = cover > 0 ? "win" : "loss";
+      } else {
+        ats_result = cover < 0 ? "win" : "loss";
+      }
     }
-  };
+
+    return {
+      away_team,
+      home_team,
+      away_score,
+      home_score,
+      pick_side,
+      pick_team,
+      market_spread_home,
+      model_mu_home,
+      pick_prob_edge,
+      ats_result,
+      has_book
+    };
+  });
+
+  return { props: { date, games, prevDate, nextDate } };
 };
 
-export default function History({ date, rows, columns, availableDates }: HistoryProps) {
-  const router = useRouter();
-  const availableSet = useMemo(() => new Set(availableDates), [availableDates]);
-  const summary = useMemo(() => buildDailySummary(rows), [rows]);
+function s(v: unknown): string {
+  return typeof v === "string" ? v : String(v ?? "");
+}
 
-  function handleDateChange(nextDate: string) {
-    if (!nextDate) {
-      return;
-    }
-    router.push({ pathname: "/history", query: { date: nextDate } });
+function pn(v: unknown): number | null {
+  if (typeof v === "number" && Number.isFinite(v)) return v;
+  if (typeof v === "string" && v.trim()) {
+    const n = Number(v);
+    return Number.isNaN(n) ? null : n;
   }
+  return null;
+}
+
+/* ── helpers ── */
+
+const mono: CSSProperties = {
+  fontFamily: "'IBM Plex Mono', monospace"
+};
+
+function sp(v: number): string {
+  return v > 0 ? `+${v.toFixed(1)}` : v.toFixed(1);
+}
+
+function fmtDate(d: string): string {
+  const [yr, mo, dy] = d.split("-");
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ];
+  return `${months[Number(mo) - 1]} ${Number(dy)}, ${yr}`;
+}
+
+/* sort helpers */
+
+function atsOrd(r: "win" | "loss" | "push" | null): number {
+  if (r === "win") return 2;
+  if (r === "push") return 1;
+  if (r === "loss") return 0;
+  return -1;
+}
+
+function sortVal(g: HistoryGame, key: SortKey): string | number {
+  switch (key) {
+    case "matchup":
+      return `${g.away_team} @ ${g.home_team}`;
+    case "score":
+      return g.home_score !== null && g.away_score !== null
+        ? g.home_score - g.away_score
+        : -Infinity;
+    case "pick":
+      return g.pick_team;
+    case "book":
+      return g.market_spread_home ?? -Infinity;
+    case "model":
+      return g.model_mu_home ?? -Infinity;
+    case "ats":
+      return atsOrd(g.ats_result);
+    case "edge":
+      return g.pick_prob_edge;
+  }
+}
+
+/* ── column definitions ── */
+
+const columns: { key: SortKey; label: string; align: "left" | "center" }[] = [
+  { key: "matchup", label: "MATCHUP", align: "left" },
+  { key: "score", label: "SCORE", align: "center" },
+  { key: "pick", label: "PICK", align: "center" },
+  { key: "book", label: "BOOK LINE", align: "center" },
+  { key: "model", label: "MODEL", align: "center" },
+  { key: "ats", label: "ATS", align: "center" },
+  { key: "edge", label: "EDGE", align: "center" }
+];
+
+/* ── component ── */
+
+export default function History({
+  date,
+  games,
+  prevDate,
+  nextDate
+}: HistoryProps) {
+  const [search, setSearch] = useState("");
+  const [edgeMin, setEdgeMin] = useState(0);
+  const [resultFilter, setResultFilter] = useState<
+    "all" | "wins" | "losses"
+  >("all");
+  const [sort, setSort] = useState<SortState>({
+    key: "edge",
+    dir: "desc"
+  });
+
+  const maxEdge = useMemo(() => {
+    if (!games.length) return 30;
+    return Math.ceil(
+      Math.max(...games.map((g) => g.pick_prob_edge * 100))
+    );
+  }, [games]);
+
+  /* compute daily stats from games above threshold */
+  const stats = useMemo(() => {
+    const above = games.filter(
+      (g) =>
+        g.has_book &&
+        g.pick_prob_edge * 100 >= edgeMin &&
+        g.ats_result !== null
+    );
+    const wins = above.filter((g) => g.ats_result === "win").length;
+    const losses = above.filter((g) => g.ats_result === "loss").length;
+    const bets = wins + losses;
+    const units = wins * 0.91 - losses;
+    const roi = bets > 0 ? (units / bets) * 100 : 0;
+    const winRate = bets > 0 ? (wins / bets) * 100 : 0;
+    return {
+      record: bets > 0 ? `${wins}-${losses}` : "—",
+      winRate: bets > 0 ? `${winRate.toFixed(1)}%` : "—",
+      units: bets > 0 ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u` : "—",
+      roi: bets > 0 ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%` : "—",
+      bets: String(bets),
+      unitsNum: units,
+      roiNum: roi
+    };
+  }, [games, edgeMin]);
+
+  /* filtered + sorted rows */
+  const tableRows = useMemo(() => {
+    let list = [...games];
+
+    if (search.trim()) {
+      const q = search.trim().toLowerCase();
+      list = list.filter(
+        (g) =>
+          g.away_team.toLowerCase().includes(q) ||
+          g.home_team.toLowerCase().includes(q) ||
+          g.pick_team.toLowerCase().includes(q)
+      );
+    }
+
+    if (resultFilter === "wins") {
+      list = list.filter((g) => g.ats_result === "win");
+    } else if (resultFilter === "losses") {
+      list = list.filter((g) => g.ats_result === "loss");
+    }
+
+    list.sort((a, b) => {
+      const aHas = a.has_book;
+      const bHas = b.has_book;
+      if (aHas !== bHas) return aHas ? -1 : 1;
+
+      const av = sortVal(a, sort.key);
+      const bv = sortVal(b, sort.key);
+      if (typeof av === "number" && typeof bv === "number") {
+        return sort.dir === "asc" ? av - bv : bv - av;
+      }
+      const cmp = String(av).localeCompare(String(bv));
+      return sort.dir === "asc" ? cmp : -cmp;
+    });
+
+    return list;
+  }, [games, search, resultFilter, sort]);
+
+  function handleSort(key: SortKey) {
+    setSort((prev) =>
+      prev.key === key
+        ? { key, dir: prev.dir === "desc" ? "asc" : "desc" }
+        : { key, dir: "desc" }
+    );
+  }
+
+  if (!date) {
+    return (
+      <Layout>
+        <div style={{ padding: 24, color: "#94a3b8", textAlign: "center" }}>
+          No historical data available.
+        </div>
+      </Layout>
+    );
+  }
+
+  const edgeThreshold = edgeMin / 100;
 
   return (
     <Layout>
-      {!date ? (
-        <div className="empty">No prediction files found.</div>
-      ) : !availableSet.has(date) ? (
-        <div className="empty">No file found for {date}. Try another date.</div>
-      ) : !rows.length ? (
-        <div className="empty">File is empty for {date}.</div>
-      ) : (
-        <div className="data-panel">
-          <section className="controls">
-            <label className="control">
-              <span>Date</span>
-              <div className="date-row">
-                <input
-                  type="date"
-                  value={date ?? ""}
-                  onChange={(event) => handleDateChange(event.target.value)}
-                  list="available-dates"
-                />
-                <span className="date-summary">{rows.length} games</span>
+      <div>
+        {/* ── Title + Date Nav ── */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: 24
+          }}
+        >
+          <h1
+            style={{
+              fontSize: 24,
+              fontWeight: 700,
+              letterSpacing: "-0.02em",
+              margin: 0,
+              color: "#0f172a"
+            }}
+          >
+            History
+          </h1>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            {prevDate ? (
+              <Link
+                href={`/history?date=${prevDate}`}
+                style={{
+                  width: 32,
+                  height: 32,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "#fff",
+                  border: "1px solid #e2e8f0",
+                  borderRadius: 6,
+                  color: "#334155",
+                  fontSize: 16,
+                  textDecoration: "none"
+                }}
+              >
+                ←
+              </Link>
+            ) : (
+              <span
+                style={{
+                  width: 32,
+                  height: 32,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "#fff",
+                  border: "1px solid #e2e8f0",
+                  borderRadius: 6,
+                  color: "#e2e8f0",
+                  fontSize: 16
+                }}
+              >
+                ←
+              </span>
+            )}
+
+            <span
+              style={{
+                ...mono,
+                fontSize: 14,
+                fontWeight: 600,
+                background: "#fff",
+                border: "1px solid #e2e8f0",
+                borderRadius: 6,
+                padding: "6px 14px",
+                color: "#0f172a"
+              }}
+            >
+              {fmtDate(date)}
+            </span>
+
+            {nextDate ? (
+              <Link
+                href={`/history?date=${nextDate}`}
+                style={{
+                  width: 32,
+                  height: 32,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "#fff",
+                  border: "1px solid #e2e8f0",
+                  borderRadius: 6,
+                  color: "#334155",
+                  fontSize: 16,
+                  textDecoration: "none"
+                }}
+              >
+                →
+              </Link>
+            ) : (
+              <span
+                style={{
+                  width: 32,
+                  height: 32,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "#fff",
+                  border: "1px solid #e2e8f0",
+                  borderRadius: 6,
+                  color: "#e2e8f0",
+                  fontSize: 16
+                }}
+              >
+                →
+              </span>
+            )}
+          </div>
+        </div>
+
+        {/* ── Daily Stats Strip ── */}
+        <div
+          style={{
+            display: "flex",
+            gap: 1,
+            borderRadius: 8,
+            overflow: "hidden",
+            background: "#e2e8f0",
+            marginBottom: 20
+          }}
+        >
+          {[
+            {
+              label: "RECORD",
+              value: stats.record,
+              color: "#0f172a"
+            },
+            {
+              label: "WIN RATE",
+              value: stats.winRate,
+              color: "#0f172a"
+            },
+            {
+              label: "UNITS",
+              value: stats.units,
+              color: stats.unitsNum >= 0 ? "#16a34a" : "#dc2626"
+            },
+            {
+              label: "ROI",
+              value: stats.roi,
+              color: stats.roiNum >= 0 ? "#16a34a" : "#dc2626"
+            },
+            {
+              label: "BETS",
+              value: stats.bets,
+              color: "#0f172a"
+            }
+          ].map((c) => (
+            <div
+              key={c.label}
+              style={{
+                flex: 1,
+                background: "#fff",
+                padding: "12px 8px",
+                textAlign: "center"
+              }}
+            >
+              <div
+                style={{
+                  ...mono,
+                  fontSize: 9,
+                  fontWeight: 500,
+                  letterSpacing: "0.1em",
+                  color: "#64748b",
+                  marginBottom: 4
+                }}
+              >
+                {c.label}
               </div>
-              <datalist id="available-dates">
-                {availableDates.map((value) => (
-                  <option key={value} value={value} />
-                ))}
-              </datalist>
-            </label>
-          </section>
-          {summary && (
-            <section className="metrics-grid">
-              <div className="metric-card">
-                <span className="label">ATS Record</span>
-                <span className="value">{summary.atsCount}</span>
+              <div
+                style={{
+                  ...mono,
+                  fontSize: 16,
+                  fontWeight: 700,
+                  lineHeight: 1,
+                  color: c.color
+                }}
+              >
+                {c.value}
               </div>
-              <div className="metric-card">
-                <span className="label">ATS Record (Prob Edge &gt; 10%)</span>
-                <span className="value">{summary.atsEdgeCount}</span>
-              </div>
-              <div className="metric-card">
-                <span className="label">MAE</span>
-                <span className="value">{summary.mae}</span>
-              </div>
-              <div className="metric-card">
-                <span className="label">MSE</span>
-                <span className="value">{summary.mse}</span>
-              </div>
-            </section>
-          )}
-          <div className="table-wrap">
-            <table>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Controls Row ── */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: 10,
+            flexWrap: "wrap",
+            gap: 8
+          }}
+        >
+          {/* Left: count + search */}
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: 13, color: "#64748b" }}>
+              {games.length} games
+            </span>
+            <input
+              type="text"
+              placeholder="Search team..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              style={{
+                ...mono,
+                width: 140,
+                padding: "6px 10px",
+                border: "1px solid #e2e8f0",
+                borderRadius: 6,
+                fontSize: 12,
+                outline: "none",
+                background: "#fff",
+                color: "#334155"
+              }}
+            />
+          </div>
+
+          {/* Center: edge slider */}
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <span
+              style={{
+                ...mono,
+                fontSize: 10,
+                color: "#94a3b8",
+                fontWeight: 500
+              }}
+            >
+              EDGE
+            </span>
+            <input
+              type="range"
+              min={0}
+              max={maxEdge}
+              step={1}
+              value={edgeMin}
+              onChange={(e) => setEdgeMin(Number(e.target.value))}
+              style={{ width: 140, accentColor: "#0f172a" }}
+            />
+            <span
+              style={{
+                ...mono,
+                fontSize: 12,
+                fontWeight: 700,
+                color: "#0f172a",
+                minWidth: 30
+              }}
+            >
+              {edgeMin}%
+            </span>
+          </div>
+
+          {/* Right: filter buttons */}
+          <div style={{ display: "flex", gap: 6 }}>
+            {(["all", "wins", "losses"] as const).map((f) => (
+              <button
+                key={f}
+                type="button"
+                onClick={() => setResultFilter(f)}
+                style={{
+                  ...mono,
+                  fontSize: 12,
+                  fontWeight: 500,
+                  padding: "5px 12px",
+                  borderRadius: 6,
+                  border: `1px solid ${
+                    resultFilter === f ? "#0f172a" : "#e2e8f0"
+                  }`,
+                  background: resultFilter === f ? "#0f172a" : "#fff",
+                  color: resultFilter === f ? "#fff" : "#64748b",
+                  cursor: "pointer",
+                  textTransform: "capitalize"
+                }}
+              >
+                {f === "all" ? "All" : f === "wins" ? "Wins" : "Losses"}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* ── Table ── */}
+        <div
+          style={{
+            background: "#fff",
+            border: "1px solid #e2e8f0",
+            borderRadius: 10,
+            overflow: "hidden",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.04)"
+          }}
+        >
+          <div style={{ overflowX: "auto" }}>
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                fontVariantNumeric: "tabular-nums"
+              }}
+            >
               <thead>
                 <tr>
-                  {columns.map((column) => (
-                    <th key={column}>{columnLabels[column] ?? column}</th>
-                  ))}
+                  {columns.map((col) => {
+                    const active = sort.key === col.key;
+                    return (
+                      <th
+                        key={col.key}
+                        onClick={() => handleSort(col.key)}
+                        style={{
+                          ...mono,
+                          fontSize: 10,
+                          fontWeight: 600,
+                          letterSpacing: "0.08em",
+                          padding: "10px 14px",
+                          textAlign: col.align,
+                          background: "#fafbfc",
+                          color: active ? "#0f172a" : "#64748b",
+                          borderBottom: "1px solid #e2e8f0",
+                          cursor: "pointer",
+                          userSelect: "none",
+                          whiteSpace: "nowrap",
+                          ...(col.key === "matchup" ? { width: "1%" } : {})
+                        }}
+                      >
+                        {col.label}
+                        {active && (
+                          <span style={{ marginLeft: 4 }}>
+                            {sort.dir === "desc" ? "↓" : "↑"}
+                          </span>
+                        )}
+                      </th>
+                    );
+                  })}
                 </tr>
               </thead>
               <tbody>
-                {rows.map((row, index) => (
-                  <tr key={index}>
-                    {columns.map((column) => (
-                      <td key={column} className={getCellClass(row, column)}>
-                        {formatCell(row[column], column)}
-                      </td>
-                    ))}
+                {tableRows.length === 0 ? (
+                  <tr>
+                    <td
+                      colSpan={columns.length}
+                      style={{
+                        padding: 24,
+                        textAlign: "center",
+                        color: "#94a3b8",
+                        borderBottom: "none"
+                      }}
+                    >
+                      No games found
+                    </td>
                   </tr>
-                ))}
+                ) : (
+                  tableRows.map((g, i) => {
+                    const aboveThreshold =
+                      g.has_book && g.pick_prob_edge >= edgeThreshold;
+                    const dimmed = !aboveThreshold;
+                    const bd = "1px solid #f1f5f9";
+
+                    return (
+                      <tr
+                        key={`${g.away_team}-${g.home_team}-${i}`}
+                        style={{
+                          animation: `fadeIn 0.3s ease ${i * 0.02}s both`
+                        }}
+                      >
+                        {/* MATCHUP */}
+                        <td
+                          style={{
+                            padding: "10px 14px",
+                            textAlign: "left",
+                            fontSize: 14,
+                            color: "#334155",
+                            whiteSpace: "nowrap",
+                            width: "1%",
+                            borderBottom: bd,
+                            opacity: dimmed ? 0.4 : 1
+                          }}
+                        >
+                          {g.away_team} @ {g.home_team}
+                        </td>
+
+                        {/* SCORE */}
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            color: "#334155",
+                            borderBottom: bd,
+                            opacity: dimmed ? 0.4 : 1
+                          }}
+                        >
+                          {g.away_score !== null && g.home_score !== null
+                            ? `${g.away_score}-${g.home_score}`
+                            : "—"}
+                        </td>
+
+                        {/* PICK */}
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 700,
+                            color: "#0f172a",
+                            borderBottom: bd,
+                            opacity: dimmed ? 0.4 : 1
+                          }}
+                        >
+                          {g.pick_team}
+                        </td>
+
+                        {/* BOOK LINE */}
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            color: "#334155",
+                            borderBottom: bd,
+                            opacity: dimmed ? 0.4 : 1
+                          }}
+                        >
+                          {g.has_book && g.market_spread_home !== null
+                            ? sp(g.market_spread_home)
+                            : "—"}
+                        </td>
+
+                        {/* MODEL */}
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 14,
+                            fontWeight: 700,
+                            color: "#0f172a",
+                            borderBottom: bd,
+                            opacity: dimmed ? 0.4 : 1
+                          }}
+                        >
+                          {g.model_mu_home !== null
+                            ? sp(g.model_mu_home)
+                            : "—"}
+                        </td>
+
+                        {/* ATS — never dimmed */}
+                        <td
+                          style={{
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            borderBottom: bd
+                          }}
+                        >
+                          {!g.has_book ? (
+                            <span
+                              style={{
+                                ...mono,
+                                fontSize: 11,
+                                fontWeight: 600,
+                                color: "#94a3b8"
+                              }}
+                            >
+                              —
+                            </span>
+                          ) : !aboveThreshold ? (
+                            <span
+                              style={{
+                                ...mono,
+                                display: "inline-block",
+                                fontSize: 11,
+                                fontWeight: 600,
+                                color: "#94a3b8",
+                                background: "#f1f5f9",
+                                padding: "3px 8px",
+                                borderRadius: 5
+                              }}
+                            >
+                              NO BET
+                            </span>
+                          ) : (
+                            <AtsBadge result={g.ats_result} />
+                          )}
+                        </td>
+
+                        {/* EDGE */}
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 700,
+                            color: g.has_book
+                              ? g.pick_prob_edge >= 0
+                                ? "#16a34a"
+                                : "#dc2626"
+                              : "#94a3b8",
+                            borderBottom: bd,
+                            opacity: dimmed ? 0.4 : 1
+                          }}
+                        >
+                          {g.has_book
+                            ? `${g.pick_prob_edge >= 0 ? "+" : ""}${(
+                                g.pick_prob_edge * 100
+                              ).toFixed(1)}%`
+                            : "—"}
+                        </td>
+                      </tr>
+                    );
+                  })
+                )}
               </tbody>
             </table>
           </div>
         </div>
-      )}
+      </div>
     </Layout>
   );
 }
 
-function formatCell(value: unknown, column?: string): string {
-  if (column === "market_spread_home" && (value === null || value === undefined)) {
-    return "No Data";
+/* ── ATS badge sub-component ── */
+
+function AtsBadge({
+  result
+}: {
+  result: "win" | "loss" | "push" | null;
+}) {
+  if (!result) {
+    return (
+      <span
+        style={{
+          ...mono,
+          fontSize: 11,
+          fontWeight: 600,
+          color: "#94a3b8"
+        }}
+      >
+        —
+      </span>
+    );
   }
-  if (value === null || value === undefined) {
-    return "";
-  }
-  if (typeof value === "number") {
-    return formatNumberByColumn(value, column);
-  }
-  if (typeof value === "string") {
-    if (column === "market_spread_home" && value.trim() === "") {
-      return "No Data";
+
+  const config = {
+    win: {
+      label: "✓ WIN",
+      color: "#16a34a",
+      bg: "#16a34a0d",
+      border: "#16a34a20"
+    },
+    loss: {
+      label: "✗ LOSS",
+      color: "#dc2626",
+      bg: "#dc26260d",
+      border: "#dc262620"
+    },
+    push: {
+      label: "PUSH",
+      color: "#64748b",
+      bg: "#f1f5f9",
+      border: "#e2e8f0"
     }
-    const numeric = Number(value);
-    if (!Number.isNaN(numeric)) {
-      return formatNumberByColumn(numeric, column);
-    }
-    return value;
-  }
-  return JSON.stringify(value);
-}
+  }[result];
 
-function formatNumberByColumn(value: number, column?: string): string {
-  const showPlus = column === "model_mu_home" || column === "market_spread_home";
-  const adjusted = column === "edge_home_points" ? Math.abs(value) : value;
-  if (column === "model_error") {
-    return adjusted.toFixed(2);
-  }
-  const formatted = Number.isInteger(adjusted)
-    ? adjusted.toString()
-    : adjusted.toFixed(2);
-  if (showPlus && adjusted > 0) {
-    return `+${formatted}`;
-  }
-  return formatted;
-}
-
-const columnLabels: Record<string, string> = {
-  away_team: "Away",
-  home_team: "Home",
-  final_score: "Final",
-  model_error: "Error",
-  pick_prob_edge: "Prob Edge",
-  model_mu_home: "Model Spread (Home)",
-  market_spread_home: "Book Spread (Home)",
-  edge_home_points: "Point Edge",
-  pred_sigma: "Sigma",
-  pick_ev_per_1: "EV per $1"
-};
-
-function getFinalScoresByDate(date: string): PredictionRow[] {
-  const filename = `final_scores_${date}.json`;
-  const payload = readJsonFile(filename);
-  return Array.isArray(payload)
-    ? (payload as PredictionRow[])
-    : ((payload as { games?: PredictionRow[] } | null)?.games ?? []);
-}
-
-function attachFinalScores(
-  rows: PredictionRow[],
-  finalRows: PredictionRow[]
-): PredictionRow[] {
-  if (!rows.length || !finalRows.length) {
-    return rows;
-  }
-  const lookup = buildFinalScoreLookup(finalRows);
-  return rows.map((row) => {
-    const key = getRowKey(row);
-    const finalRow = key ? lookup.get(key) : null;
-    if (!finalRow) {
-      return row;
-    }
-    const awayScore = parseNumeric(finalRow.away_score ?? finalRow.score_away);
-    const homeScore = parseNumeric(finalRow.home_score ?? finalRow.score_home);
-    const scoreText =
-      awayScore !== null && homeScore !== null ? `${awayScore}-${homeScore}` : null;
-    const modelError =
-      awayScore !== null && homeScore !== null
-        ? getModelError(row, homeScore, awayScore)
-        : null;
-    return {
-      ...row,
-      final_score: scoreText,
-      away_score: awayScore,
-      home_score: homeScore,
-      model_error: modelError
-    };
-  });
-}
-
-function buildFinalScoreLookup(rows: PredictionRow[]): Map<string, PredictionRow> {
-  const lookup = new Map<string, PredictionRow>();
-  for (const row of rows) {
-    const gameId = getGameId(row);
-    if (gameId) {
-      lookup.set(gameId, row);
-    }
-    const teamKey = getTeamKey(row);
-    if (teamKey) {
-      lookup.set(teamKey, row);
-    }
-  }
-  return lookup;
-}
-
-function getRowKey(row: PredictionRow): string | null {
-  return getGameId(row) ?? getTeamKey(row);
-}
-
-function getGameId(row: PredictionRow): string | null {
-  const gameId = row.game_id ?? row.gameId;
-  if (typeof gameId === "string" && gameId.trim() !== "") {
-    return gameId;
-  }
-  return null;
-}
-
-function getTeamKey(row: PredictionRow): string | null {
-  const teams = getTeams(row);
-  if (!teams.home || !teams.away) {
-    return null;
-  }
-  return `${normalizeTeam(teams.home)}__${normalizeTeam(teams.away)}`;
-}
-
-function getCellClass(row: PredictionRow, column: string): string {
-  if (column !== "final_score") {
-    return "";
-  }
-  const ats = getAtsResult(row);
-  if (ats === "win") {
-    return "final-score final-score--win";
-  }
-  if (ats === "loss") {
-    return "final-score final-score--loss";
-  }
-  return "final-score";
-}
-
-function buildDailySummary(rows: PredictionRow[]): {
-  atsCount: string;
-  atsEdgeCount: string;
-  mae: string;
-  mse: string;
-} | null {
-  if (!rows.length) {
-    return null;
-  }
-
-  let atsWins = 0;
-  let atsLosses = 0;
-  let atsPushes = 0;
-  let atsEdgeWins = 0;
-  let atsEdgeLosses = 0;
-  let errorCount = 0;
-  let absErrorSum = 0;
-  let sqErrorSum = 0;
-
-  for (const row of rows) {
-    const ats = getAtsResult(row);
-    if (ats === "win") {
-      atsWins += 1;
-    } else if (ats === "loss") {
-      atsLosses += 1;
-    } else if (ats === "push") {
-      atsPushes += 1;
-    }
-    if (ats === "win" || ats === "loss") {
-      const probEdge = parseNumeric(row.pick_prob_edge ?? row.pickProbEdge);
-      if (probEdge !== null && probEdge > 0.1) {
-        if (ats === "win") {
-          atsEdgeWins += 1;
-        } else {
-          atsEdgeLosses += 1;
-        }
-      }
-    }
-
-    const actualSpread = getActualSpreadFromRow(row);
-    const modelSpread = getModelSpreadFromRow(row);
-    if (actualSpread !== null && modelSpread !== null) {
-      const err = modelSpread - actualSpread;
-      absErrorSum += Math.abs(err);
-      sqErrorSum += err * err;
-      errorCount += 1;
-    }
-  }
-
-  const atsTotal = atsWins + atsLosses;
-  const atsCount = atsTotal > 0 ? `${atsWins}-${atsLosses}` : "No ATS";
-  const atsEdgeTotal = atsEdgeWins + atsEdgeLosses;
-  const atsEdgeCount = atsEdgeTotal > 0 ? `${atsEdgeWins}-${atsEdgeLosses}` : "No ATS";
-
-  const mae = errorCount > 0 ? (absErrorSum / errorCount).toFixed(2) : "—";
-  const mse = errorCount > 0 ? (sqErrorSum / errorCount).toFixed(2) : "—";
-
-  return {
-    atsCount,
-    atsEdgeCount,
-    mae,
-    mse
-  };
-}
-
-function getAtsResult(row: PredictionRow): "win" | "loss" | "push" | null {
-  const actualSpread = getActualSpreadFromRow(row);
-  const margin = actualSpread === null ? null : -actualSpread;
-  const spread = parseNumeric(row.market_spread_home ?? row.home_spread_num);
-  const pickSideRaw = row.pick_side ?? row.pickSide;
-  if (margin === null || spread === null || typeof pickSideRaw !== "string") {
-    return null;
-  }
-
-  const pickSide = pickSideRaw.trim().toUpperCase();
-  if (pickSide !== "HOME" && pickSide !== "AWAY") {
-    return null;
-  }
-
-  const cover = margin + spread;
-  if (cover === 0) {
-    return "push";
-  }
-  const coverSide = cover > 0 ? "HOME" : "AWAY";
-  return pickSide === coverSide ? "win" : "loss";
-}
-
-function getModelError(
-  row: PredictionRow,
-  homeScore: number,
-  awayScore: number
-): number | null {
-  const modelSpread = getModelSpreadFromRow(row);
-  if (modelSpread === null) {
-    return null;
-  }
-  const actualSpread = awayScore - homeScore;
-  return modelSpread - actualSpread;
-}
-
-function getModelSpreadFromRow(row: PredictionRow): number | null {
-  const candidates = [row.model_mu_home, row.model_home_spread];
-  for (const value of candidates) {
-    const parsed = parseNumeric(value);
-    if (parsed !== null) {
-      return Number(parsed.toFixed(2));
-    }
-  }
-  return null;
-}
-
-function getActualSpreadFromRow(row: PredictionRow): number | null {
-  const homeScore = parseNumeric(
-    row.home_score ?? row.score_home ?? row.homeScore ?? row.scoreHome
+  return (
+    <span
+      style={{
+        ...mono,
+        display: "inline-block",
+        fontSize: 11,
+        fontWeight: 600,
+        color: config.color,
+        background: config.bg,
+        border: `1px solid ${config.border}`,
+        padding: "3px 8px",
+        borderRadius: 5
+      }}
+    >
+      {config.label}
+    </span>
   );
-  const awayScore = parseNumeric(
-    row.away_score ?? row.score_away ?? row.awayScore ?? row.scoreAway
-  );
-  if (homeScore === null || awayScore === null) {
-    return null;
-  }
-  return awayScore - homeScore;
-}
-
-function parseNumeric(value: unknown): number | null {
-  if (typeof value === "number") {
-    return Number.isFinite(value) ? value : null;
-  }
-  if (typeof value === "string") {
-    const trimmed = value.trim();
-    if (trimmed === "") {
-      return null;
-    }
-    const parsed = Number(trimmed);
-    return Number.isNaN(parsed) ? null : parsed;
-  }
-  return null;
-}
-
-function formatDate(value: Date): string {
-  const year = value.getFullYear();
-  const month = `${value.getMonth() + 1}`.padStart(2, "0");
-  const day = `${value.getDate()}`.padStart(2, "0");
-  return `${year}-${month}-${day}`;
 }
