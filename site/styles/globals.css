@@ -1,17 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
 
 :root {
-  --bg: #f2f4f7;
+  --bg: #f8fafc;
   --paper: #ffffff;
-  --ink: #0b0f19;
-  --muted: #5f6675;
-  --accent: #d62828;
+  --ink: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --text-muted: #94a3b8;
+  --positive: #16a34a;
+  --negative: #dc2626;
+  --border: #e2e8f0;
+  --table-header-bg: #fafbfc;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --radius: 10px;
+  --max: 960px;
+  /* Legacy aliases for history/metrics pages */
+  --muted: #64748b;
+  --accent: #0f172a;
   --accent-2: #111827;
   --accent-3: #1f2937;
-  --border: #d6dde7;
-  --shadow: 0 20px 52px rgba(11, 15, 25, 0.08);
-  --radius: 16px;
-  --max: 1200px;
 }
 
 * {
@@ -20,20 +28,9 @@
 
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Inter", -apple-system, sans-serif;
   color: var(--ink);
-  background: linear-gradient(155deg, #ffffff 0%, var(--bg) 55%, #e9edf3 100%) fixed;
-  background-image:
-    radial-gradient(circle at 8% 12%, rgba(214, 40, 40, 0.18), transparent 42%),
-    radial-gradient(circle at 90% 0%, rgba(17, 24, 39, 0.16), transparent 45%),
-    radial-gradient(circle at 86% 88%, rgba(31, 41, 55, 0.12), transparent 48%),
-    repeating-linear-gradient(
-      140deg,
-      rgba(11, 15, 25, 0.02),
-      rgba(11, 15, 25, 0.02) 2px,
-      transparent 2px,
-      transparent 60px
-    );
+  background: var(--bg);
 }
 
 a {
@@ -41,143 +38,122 @@ a {
   text-decoration: none;
 }
 
+/* ========== Layout ========== */
+
 .page {
   min-height: 100vh;
-  padding: 12px 24px 64px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-header {
   max-width: var(--max);
-  margin: 0 auto 8px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 0;
   display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  position: relative;
-}
-
-
-.site-logo {
-  width: 1200px;
-  height: 360px;
-  object-fit: contain;
-  object-position: left top;
-  display: block;
-  margin-left: -120px;
-  margin-top: -75px;
-  margin-bottom: -120px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
 }
 
 .brand {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-start;
-  padding-left: 0;
+  align-items: center;
+  gap: 10px;
 }
 
-.brand-title {
-  font-size: 34px;
+.brand-name {
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.3px;
-}
-
-.brand-subtitle {
-  font-size: 15px;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: -0.02em;
+  color: #0f172a;
 }
 
 .nav {
   display: flex;
-  gap: 18px;
-  font-weight: 600;
-  font-size: 20px;
-  padding-right: 28px;
-  position: absolute;
-  top: 40px;
-  right: 0;
+  gap: 24px;
+  font-size: 14px;
 }
 
 .nav a {
-  padding: 2px 0;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  padding: 4px 0;
+  color: #64748b;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
 }
 
 .nav a.active {
-  border-color: var(--accent);
+  color: #0f172a;
+  font-weight: 600;
+  border-bottom-color: #0f172a;
 }
 
 .nav a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  color: #0f172a;
 }
 
 .content {
   max-width: var(--max);
+  width: 100%;
   margin: 0 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding-top: 24px;
+  padding: 24px 0 40px;
 }
 
-.hero {
+.site-footer {
+  max-width: var(--max);
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
-  gap: 24px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  animation: rise-in 0.4s ease both;
-}
-
-.hero h1 {
-  font-size: 32px;
-  margin: 0 0 8px;
-  color: var(--ink);
-}
-
-.eyebrow {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0 0 6px;
-  color: var(--accent-2);
-}
-
-.muted {
-  margin: 0;
-  color: var(--muted);
-}
-
-.page-title {
-  font-size: 36px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin: 0 0 18px;
-  color: var(--ink);
-}
-
-.pill {
-  background: var(--accent);
-  color: #fff;
-  border-radius: 999px;
-  padding: 8px 12px;
-  font-weight: 600;
-  align-self: center;
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: #94a3b8;
 }
+
+/* ========== Animations ========== */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== Shared form / control styles (history page) ========== */
 
 .controls {
   display: flex;
@@ -249,7 +225,18 @@ input:focus,
 select:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(240, 90, 40, 0.16);
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.1);
+}
+
+/* ========== Data panel / table styles (shared) ========== */
+
+.data-panel {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 16px 6px;
+  box-shadow: var(--shadow);
+  animation: rise-in 0.5s ease both;
 }
 
 .table-wrap {
@@ -306,6 +293,15 @@ tbody tr:hover {
   background: rgba(19, 181, 123, 0.08);
 }
 
+thead th {
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 1;
+}
+
+/* ========== History page styles ========== */
+
 td.final-score {
   font-weight: 600;
 }
@@ -320,28 +316,6 @@ td.final-score--loss {
   background: rgba(180, 35, 24, 0.12);
 }
 
-thead th {
-  position: sticky;
-  top: 0;
-  background: var(--paper);
-  z-index: 1;
-}
-
-.empty {
-  padding: 24px;
-  border-radius: var(--radius);
-  background: var(--paper);
-  border: 1px dashed var(--border);
-  color: var(--muted);
-}
-
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
 .date-row {
   display: flex;
   align-items: center;
@@ -353,6 +327,15 @@ thead th {
   font-weight: 600;
   color: var(--accent-2);
   white-space: nowrap;
+}
+
+/* ========== Metrics page styles ========== */
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 8px;
 }
 
 .metric-card {
@@ -372,32 +355,49 @@ thead th {
   font-size: 24px;
 }
 
-.data-panel {
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 16px 6px;
-  box-shadow: var(--shadow);
-  animation: rise-in 0.5s ease both;
+/* ========== Misc shared styles ========== */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  animation: rise-in 0.4s ease both;
 }
 
-@keyframes rise-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.hero h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  color: var(--ink);
 }
+
+.page-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+.empty {
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--paper);
+  border: 1px dashed var(--border);
+  color: var(--muted);
+}
+
+/* ========== Responsive ========== */
 
 @media (max-width: 720px) {
   .hero h1 {
     font-size: 28px;
   }
   .site-header {
-    flex-direction: column;
-    align-items: flex-start;
+    gap: 12px;
+  }
+  .nav {
+    gap: 16px;
   }
 }
