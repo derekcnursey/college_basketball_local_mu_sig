@@ -114,14 +114,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "Northeastern",
-      "game_id": "2025_12_03_northeastern_holy_cross",
-      "home_score": 76,
-      "home_team": "Holy Cross",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Gardner Webb",
       "game_id": "2025_12_03_gardner_webb_queens",
@@ -330,11 +322,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Northern Colorado",
-      "game_id": "2025_12_03_northern_colorado_nebraska_omaha",
-      "home_score": 70,
-      "home_team": "Nebraska Omaha",
+      "away_score": 59,
+      "away_team": "Northeastern",
+      "game_id": "2025_12_03_northeastern_holy_cross",
+      "home_score": 76,
+      "home_team": "Holy Cross",
       "neutral_site": 0
     },
     {
@@ -415,6 +407,14 @@
       "game_id": "2025_12_03_ball_st_evansville",
       "home_score": 64,
       "home_team": "Evansville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Northern Colorado",
+      "game_id": "2025_12_03_northern_colorado_nebraska_omaha",
+      "home_score": 70,
+      "home_team": "Nebraska Omaha",
       "neutral_site": 0
     },
     {
@@ -554,5 +554,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.013103Z"
+  "generated_at": "2026-02-26T18:08:44.477670Z"
 }

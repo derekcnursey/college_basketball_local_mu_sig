@@ -226,6 +226,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "UC Davis",
+      "game_id": "2025_12_13_uc_davis_oregon",
+      "home_score": 104,
+      "home_team": "Oregon",
+      "neutral_site": 0
+    },
+    {
       "away_score": 65,
       "away_team": "Sacred Heart",
       "game_id": "2025_12_13_sacred_heart_njit",
@@ -506,14 +514,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "UC Davis",
-      "game_id": "2025_12_13_uc_davis_oregon",
-      "home_score": 104,
-      "home_team": "Oregon",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "Memphis",
       "game_id": "2025_12_13_memphis_louisville",
@@ -746,5 +746,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.052229Z"
+  "generated_at": "2026-02-26T18:08:44.511023Z"
 }

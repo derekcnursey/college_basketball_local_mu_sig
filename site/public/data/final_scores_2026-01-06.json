@@ -18,6 +18,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Eastern Michigan",
+      "game_id": "2026_01_06_eastern_michigan_ball_st",
+      "home_score": 52,
+      "home_team": "Ball St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "N.C. State",
       "game_id": "2026_01_06_n_c_state_boston_college",
@@ -31,6 +39,14 @@
       "game_id": "2026_01_06_duke_louisville",
       "home_score": 73,
       "home_team": "Louisville",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "Bowling Green",
+      "game_id": "2026_01_06_bowling_green_kent_st",
+      "home_score": 96,
+      "home_team": "Kent St.",
       "neutral_site": 0
     },
     {
@@ -71,14 +87,6 @@
       "game_id": "2026_01_06_unlv_wyoming",
       "home_score": 98,
       "home_team": "Wyoming",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 93,
-      "away_team": "Bowling Green",
-      "game_id": "2026_01_06_bowling_green_kent_st",
-      "home_score": 96,
-      "home_team": "Kent St.",
       "neutral_site": 0
     },
     {
@@ -162,14 +170,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Eastern Michigan",
-      "game_id": "2026_01_06_eastern_michigan_ball_st",
-      "home_score": 52,
-      "home_team": "Ball St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "San Diego St.",
       "game_id": "2026_01_06_san_diego_st_nevada",
@@ -234,5 +234,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.144012Z"
+  "generated_at": "2026-02-26T18:08:44.584817Z"
 }

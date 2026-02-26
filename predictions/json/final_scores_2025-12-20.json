@@ -114,6 +114,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 78,
+      "away_team": "Kentucky",
+      "game_id": "2025_12_20_kentucky_st_john_s",
+      "home_score": 66,
+      "home_team": "St. John's",
+      "neutral_site": 1
+    },
+    {
       "away_score": 58,
       "away_team": "Colorado St.",
       "game_id": "2025_12_20_colorado_st_utah_st",
@@ -434,14 +442,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Kentucky",
-      "game_id": "2025_12_20_kentucky_st_john_s",
-      "home_score": 66,
-      "home_team": "St. John's",
-      "neutral_site": 1
-    },
-    {
       "away_score": 61,
       "away_team": "Butler",
       "game_id": "2025_12_20_butler_northwestern",
@@ -506,5 +506,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.080166Z"
+  "generated_at": "2026-02-26T18:08:44.534683Z"
 }

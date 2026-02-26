@@ -11,14 +11,6 @@
     },
     {
       "away_score": 91,
-      "away_team": "Colorado St.",
-      "game_id": "2026_02_10_colorado_st_air_force",
-      "home_score": 74,
-      "home_team": "Air Force",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 91,
       "away_team": "Arkansas",
       "game_id": "2026_02_10_arkansas_lsu",
       "home_score": 62,
@@ -95,6 +87,14 @@
       "game_id": "2026_02_10_byu_baylor",
       "home_score": 94,
       "home_team": "Baylor",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "Colorado St.",
+      "game_id": "2026_02_10_colorado_st_air_force",
+      "home_score": 74,
+      "home_team": "Air Force",
       "neutral_site": 0
     },
     {
@@ -178,5 +178,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.306141Z"
+  "generated_at": "2026-02-26T18:08:44.735791Z"
 }

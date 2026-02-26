@@ -98,6 +98,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 63,
+      "away_team": "Rice",
+      "game_id": "2025_11_25_rice_florida_gulf_coast",
+      "home_score": 78,
+      "home_team": "Florida Gulf Coast",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Houston",
       "game_id": "2025_11_25_houston_tennessee",
@@ -106,12 +114,12 @@
       "neutral_site": 1
     },
     {
-      "away_score": 95,
-      "away_team": "Oakland",
-      "game_id": "2025_11_25_oakland_montana",
-      "home_score": 87,
-      "home_team": "Montana",
-      "neutral_site": 0
+      "away_score": 72,
+      "away_team": "Auburn",
+      "game_id": "2025_11_25_auburn_michigan",
+      "home_score": 102,
+      "home_team": "Michigan",
+      "neutral_site": 1
     },
     {
       "away_score": 77,
@@ -370,14 +378,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 63,
-      "away_team": "Rice",
-      "game_id": "2025_11_25_rice_florida_gulf_coast",
-      "home_score": 78,
-      "home_team": "Florida Gulf Coast",
-      "neutral_site": 0
-    },
-    {
       "away_score": 81,
       "away_team": "Baylor",
       "game_id": "2025_11_25_baylor_st_john_s",
@@ -450,19 +450,19 @@
       "neutral_site": 1
     },
     {
+      "away_score": 95,
+      "away_team": "Oakland",
+      "game_id": "2025_11_25_oakland_montana",
+      "home_score": 87,
+      "home_team": "Montana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 88,
       "away_team": "James Madison",
       "game_id": "2025_11_25_james_madison_nebraska_omaha",
       "home_score": 77,
       "home_team": "Nebraska Omaha",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 72,
-      "away_team": "Auburn",
-      "game_id": "2025_11_25_auburn_michigan",
-      "home_score": 102,
-      "home_team": "Michigan",
       "neutral_site": 1
     },
     {
@@ -530,5 +530,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-25T19:14:46.977208Z"
+  "generated_at": "2026-02-26T18:08:44.446016Z"
 }

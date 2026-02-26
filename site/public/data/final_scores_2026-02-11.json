@@ -138,14 +138,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 91,
-      "away_team": "Eastern Michigan",
-      "game_id": "2026_02_11_eastern_michigan_kent_st",
-      "home_score": 95,
-      "home_team": "Kent St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "VCU",
       "game_id": "2026_02_11_vcu_la_salle",
@@ -223,6 +215,14 @@
       "game_id": "2026_02_11_furman_mercer",
       "home_score": 69,
       "home_team": "Mercer",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 91,
+      "away_team": "Eastern Michigan",
+      "game_id": "2026_02_11_eastern_michigan_kent_st",
+      "home_score": 95,
+      "home_team": "Kent St.",
       "neutral_site": 0
     },
     {
@@ -434,5 +434,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.311239Z"
+  "generated_at": "2026-02-26T18:08:44.740486Z"
 }

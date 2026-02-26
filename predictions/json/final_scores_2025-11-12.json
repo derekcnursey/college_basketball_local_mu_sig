@@ -74,14 +74,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 56,
-      "away_team": "Mississippi Valley St.",
-      "game_id": "2025_11_12_mississippi_valley_st_hawaii",
-      "home_score": 88,
-      "home_team": "Hawaii",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "Eastern Kentucky",
       "game_id": "2025_11_12_eastern_kentucky_vanderbilt",
@@ -306,6 +298,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 56,
+      "away_team": "Mississippi Valley St.",
+      "game_id": "2025_11_12_mississippi_valley_st_hawaii",
+      "home_score": 88,
+      "home_team": "Hawaii",
+      "neutral_site": 0
+    },
+    {
       "away_score": 78,
       "away_team": "Tennessee Martin",
       "game_id": "2025_11_12_tennessee_martin_bradley",
@@ -346,5 +346,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:46.919312Z"
+  "generated_at": "2026-02-26T18:08:44.391516Z"
 }

@@ -34,14 +34,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 97,
-      "away_team": "Fairfield",
-      "game_id": "2025_11_22_fairfield_le_moyne",
-      "home_score": 83,
-      "home_team": "Le Moyne",
-      "neutral_site": 0
-    },
-    {
       "away_score": 71,
       "away_team": "Cleveland St.",
       "game_id": "2025_11_22_cleveland_st_kent_st",
@@ -55,6 +47,14 @@
       "game_id": "2025_11_22_north_alabama_chattanooga",
       "home_score": 71,
       "home_team": "Chattanooga",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 97,
+      "away_team": "Fairfield",
+      "game_id": "2025_11_22_fairfield_le_moyne",
+      "home_score": 83,
+      "home_team": "Le Moyne",
       "neutral_site": 0
     },
     {
@@ -186,6 +186,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Howard",
+      "game_id": "2025_11_22_howard_niagara",
+      "home_score": 70,
+      "home_team": "Niagara",
+      "neutral_site": 1
+    },
+    {
       "away_score": 84,
       "away_team": "Illinois Chicago",
       "game_id": "2025_11_22_illinois_chicago_southern_indiana",
@@ -290,14 +298,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "Howard",
-      "game_id": "2025_11_22_howard_niagara",
-      "home_score": 70,
-      "home_team": "Niagara",
-      "neutral_site": 1
-    },
-    {
       "away_score": 81,
       "away_team": "Nicholls St.",
       "game_id": "2025_11_22_nicholls_st_oklahoma_st",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:46.961721Z"
+  "generated_at": "2026-02-26T18:08:44.430805Z"
 }

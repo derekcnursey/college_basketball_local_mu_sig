@@ -114,14 +114,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "North Florida",
-      "game_id": "2026_01_03_north_florida_lipscomb",
-      "home_score": 82,
-      "home_team": "Lipscomb",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Ohio",
       "game_id": "2026_01_03_ohio_eastern_michigan",
@@ -519,6 +511,14 @@
       "game_id": "2026_01_03_morgan_st_maryland_eastern_shore",
       "home_score": 66,
       "home_team": "Maryland Eastern Shore",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "North Florida",
+      "game_id": "2026_01_03_north_florida_lipscomb",
+      "home_score": 82,
+      "home_team": "Lipscomb",
       "neutral_site": 0
     },
     {
@@ -954,5 +954,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.130917Z"
+  "generated_at": "2026-02-26T18:08:44.574999Z"
 }

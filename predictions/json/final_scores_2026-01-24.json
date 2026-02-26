@@ -90,6 +90,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 76,
+      "away_team": "Kent St.",
+      "game_id": "2026_01_24_kent_st_eastern_michigan",
+      "home_score": 75,
+      "home_team": "Eastern Michigan",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "Virginia Tech",
       "game_id": "2026_01_24_virginia_tech_louisville",
@@ -570,14 +578,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Kent St.",
-      "game_id": "2026_01_24_kent_st_eastern_michigan",
-      "home_score": 75,
-      "home_team": "Eastern Michigan",
-      "neutral_site": 0
-    },
-    {
       "away_score": 71,
       "away_team": "Utah Valley",
       "game_id": "2026_01_24_utah_valley_cal_baptist",
@@ -1010,6 +1010,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Rider",
+      "game_id": "2026_01_24_rider_mount_st_mary_s",
+      "home_score": 71,
+      "home_team": "Mount St. Mary's",
+      "neutral_site": 0
+    },
+    {
       "away_score": 87,
       "away_team": "Tulsa",
       "game_id": "2026_01_24_tulsa_rice",
@@ -1064,15 +1072,7 @@
       "home_score": 91,
       "home_team": "Michigan St.",
       "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Rider",
-      "game_id": "2026_01_24_rider_mount_st_mary_s",
-      "home_score": 71,
-      "home_team": "Mount St. Mary's",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.237292Z"
+  "generated_at": "2026-02-26T18:08:44.665927Z"
 }

@@ -290,6 +290,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 60,
+      "away_team": "Colgate",
+      "game_id": "2025_12_21_colgate_florida",
+      "home_score": 90,
+      "home_team": "Florida",
+      "neutral_site": 0
+    },
+    {
       "away_score": 56,
       "away_team": "Columbia",
       "game_id": "2025_12_21_columbia_california",
@@ -386,14 +394,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 60,
-      "away_team": "Colgate",
-      "game_id": "2025_12_21_colgate_florida",
-      "home_score": 90,
-      "home_team": "Florida",
-      "neutral_site": 0
-    },
-    {
       "away_score": 82,
       "away_team": "Nicholls St.",
       "game_id": "2025_12_21_nicholls_st_pacific",
@@ -418,5 +418,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.085323Z"
+  "generated_at": "2026-02-26T18:08:44.539445Z"
 }

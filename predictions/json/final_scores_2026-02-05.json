@@ -74,14 +74,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "Northeastern",
-      "game_id": "2026_02_05_northeastern_hofstra",
-      "home_score": 80,
-      "home_team": "Hofstra",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "The Citadel",
       "game_id": "2026_02_05_the_citadel_samford",
@@ -95,6 +87,14 @@
       "game_id": "2026_02_05_northern_colorado_weber_st",
       "home_score": 74,
       "home_team": "Weber St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Cal St. Bakersfield",
+      "game_id": "2026_02_05_cal_st_bakersfield_uc_irvine",
+      "home_score": 78,
+      "home_team": "UC Irvine",
       "neutral_site": 0
     },
     {
@@ -159,6 +159,14 @@
       "game_id": "2026_02_05_cal_st_northridge_cal_poly",
       "home_score": 96,
       "home_team": "Cal Poly",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Vermont",
+      "game_id": "2026_02_05_vermont_maine",
+      "home_score": 76,
+      "home_team": "Maine",
       "neutral_site": 0
     },
     {
@@ -234,6 +242,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Northeastern",
+      "game_id": "2026_02_05_northeastern_hofstra",
+      "home_score": 80,
+      "home_team": "Hofstra",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "Jacksonville St.",
       "game_id": "2026_02_05_jacksonville_st_western_kentucky",
@@ -279,14 +295,6 @@
       "game_id": "2026_02_05_north_florida_west_georgia",
       "home_score": 73,
       "home_team": "West Georgia",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 70,
-      "away_team": "Vermont",
-      "game_id": "2026_02_05_vermont_maine",
-      "home_score": 76,
-      "home_team": "Maine",
       "neutral_site": 0
     },
     {
@@ -378,14 +386,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Cal St. Bakersfield",
-      "game_id": "2026_02_05_cal_st_bakersfield_uc_irvine",
-      "home_score": 78,
-      "home_team": "UC Irvine",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Jacksonville",
       "game_id": "2026_02_05_jacksonville_queens",
@@ -402,5 +402,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-25T19:14:47.285598Z"
+  "generated_at": "2026-02-26T18:08:44.715149Z"
 }

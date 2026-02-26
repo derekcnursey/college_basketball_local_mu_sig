@@ -2,6 +2,14 @@
   "date": "2025-11-23",
   "games": [
     {
+      "away_score": 59,
+      "away_team": "Delaware",
+      "game_id": "2025_11_23_delaware_southern_illinois",
+      "home_score": 79,
+      "home_team": "Southern Illinois",
+      "neutral_site": 1
+    },
+    {
       "away_score": 53,
       "away_team": "Alcorn St.",
       "game_id": "2025_11_23_alcorn_st_oklahoma",
@@ -282,14 +290,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "Delaware",
-      "game_id": "2025_11_23_delaware_southern_illinois",
-      "home_score": 79,
-      "home_team": "Southern Illinois",
-      "neutral_site": 1
-    },
-    {
       "away_score": 63,
       "away_team": "Charleston",
       "game_id": "2025_11_23_charleston_yale",
@@ -338,5 +338,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-02-25T19:14:46.965663Z"
+  "generated_at": "2026-02-26T18:08:44.434629Z"
 }
