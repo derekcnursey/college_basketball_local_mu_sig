@@ -60,6 +60,12 @@ export default function Layout({ children }: { children: ReactNode }) {
             History
           </Link>
           <Link
+            href="/rankings"
+            className={router.pathname === "/rankings" ? "active" : ""}
+          >
+            Rankings
+          </Link>
+          <Link
             href="/metrics"
             className={router.pathname === "/metrics" ? "active" : ""}
           >

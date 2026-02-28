@@ -1,27 +1,156 @@
 import { GetServerSideProps } from "next";
 import { CSSProperties, useMemo, useState } from "react";
 import Layout from "../components/Layout";
-import { PredictionRow } from "../lib/data";
+import { PredictionRow, normalizeRows } from "../lib/data";
 import {
   getLatestPredictionFile,
-  getPredictionRowsByFilename
+  getPredictionRowsByFilename,
+  listPredictionFiles,
+  listFinalScoreFiles,
+  readJsonFile,
+  todayET
 } from "../lib/server-data";
+
+type SeasonStats = {
+  wins: number;
+  losses: number;
+  pushes: number;
+  units: number;
+  roi: number;
+  last30Wins: number;
+  last30Losses: number;
+  streak: string;
+};
 
 type HomeProps = {
   date: string | null;
   rows: PredictionRow[];
+  stats: SeasonStats;
 };
+
+function pn(v: unknown): number | null {
+  if (typeof v === "number" && Number.isFinite(v)) return v;
+  if (typeof v === "string" && v.trim() !== "") {
+    const n = Number(v);
+    return Number.isNaN(n) ? null : n;
+  }
+  return null;
+}
+
+function computeSeasonStats(): SeasonStats {
+  const predFiles = listPredictionFiles();
+  const finalFiles = listFinalScoreFiles();
+  const finalByDate = new Map(finalFiles.map((f) => [f.date, f.filename]));
+
+  type Result = { date: string; outcome: "win" | "loss" | "push" };
+  const results: Result[] = [];
+
+  for (const pf of predFiles) {
+    const ff = finalByDate.get(pf.date);
+    if (!ff) continue;
+
+    const predRows = normalizeRows(readJsonFile(pf.filename));
+    const finalRows = normalizeRows(readJsonFile(ff));
+
+    const finalMap = new Map<string, PredictionRow>();
+    for (const fr of finalRows) {
+      const gid = typeof fr.game_id === "string" ? fr.game_id : "";
+      if (gid) finalMap.set(gid, fr);
+    }
+
+    for (const pred of predRows) {
+      const marketSpread = pn(pred.market_spread_home);
+      if (marketSpread === null) continue; // no book line = skip
+
+      const hasBk = pred.has_book;
+      if (hasBk === false || hasBk === "false" || hasBk === 0) continue;
+
+      const pickSide = String(pred.pick_side || "").toUpperCase();
+      if (!pickSide) continue;
+
+      const gid = typeof pred.game_id === "string" ? pred.game_id : "";
+      const fin = finalMap.get(gid);
+      if (!fin) continue;
+
+      const homeScore = pn(fin.home_score);
+      const awayScore = pn(fin.away_score);
+      if (homeScore === null || awayScore === null) continue;
+
+      const cover = homeScore - awayScore + marketSpread;
+      let outcome: "win" | "loss" | "push";
+      if (cover === 0) {
+        outcome = "push";
+      } else if (pickSide === "HOME") {
+        outcome = cover > 0 ? "win" : "loss";
+      } else {
+        outcome = cover < 0 ? "win" : "loss";
+      }
+
+      results.push({ date: pf.date, outcome });
+    }
+  }
+
+  // Sort by date for streak and last-30 calc
+  results.sort((a, b) => (a.date < b.date ? -1 : 1));
+
+  let wins = 0;
+  let losses = 0;
+  let pushes = 0;
+  let units = 0;
+  for (const r of results) {
+    if (r.outcome === "win") { wins++; units += 0.91; }
+    else if (r.outcome === "loss") { losses++; units -= 1.0; }
+    else { pushes++; }
+  }
+
+  const totalBets = wins + losses;
+  const roi = totalBets > 0 ? (units / totalBets) * 100 : 0;
+
+  // Last 30 days
+  const todayStr = todayET();
+  const todayDate = new Date(todayStr + "T12:00:00");
+  const thirtyDaysAgo = new Date(todayDate);
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+  const cutoff = thirtyDaysAgo.toISOString().slice(0, 10);
+
+  let last30Wins = 0;
+  let last30Losses = 0;
+  for (const r of results) {
+    if (r.date >= cutoff) {
+      if (r.outcome === "win") last30Wins++;
+      else if (r.outcome === "loss") last30Losses++;
+    }
+  }
+
+  // Streak (from most recent backwards)
+  let streak = "";
+  if (results.length > 0) {
+    const wlResults = results.filter((r) => r.outcome !== "push");
+    if (wlResults.length > 0) {
+      const lastOutcome = wlResults[wlResults.length - 1].outcome;
+      let count = 0;
+      for (let i = wlResults.length - 1; i >= 0; i--) {
+        if (wlResults[i].outcome === lastOutcome) count++;
+        else break;
+      }
+      streak = `${lastOutcome === "win" ? "W" : "L"}${count}`;
+    }
+  }
+
+  return { wins, losses, pushes, units, roi, last30Wins, last30Losses, streak };
+}
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
   const latest = getLatestPredictionFile();
+  const stats = computeSeasonStats();
   if (!latest) {
-    return { props: { date: null, rows: [] } };
+    return { props: { date: null, rows: [], stats } };
   }
   const rows = getPredictionRowsByFilename(latest.filename);
-  return { props: { date: latest.date, rows } };
+  return { props: { date: latest.date, rows, stats } };
 };
 
-/* ── helpers ── */
+/* -- helpers -- */
 
 const mono: CSSProperties = {
   fontFamily: "'IBM Plex Mono', monospace"
@@ -67,7 +196,8 @@ function bookSpread(row: PredictionRow): number | null {
 }
 
 function modelSpread(row: PredictionRow): number | null {
-  return num(row.model_mu_home);
+  const v = num(row.model_mu_home);
+  return v !== null ? -v : null; // Negate: model_mu_home is home-away, display as book convention
 }
 
 function sigma(row: PredictionRow): number | null {
@@ -91,7 +221,7 @@ function pickSpread(row: PredictionRow): number | null {
   return str(row.pick_side).toUpperCase() === "HOME" ? b : -b;
 }
 
-/* ── sort ── */
+/* -- sort -- */
 
 type SortKey = "matchup" | "book" | "pick" | "model" | "sigma" | "diff" | "edge";
 
@@ -116,7 +246,7 @@ function sortVal(row: PredictionRow, key: SortKey): string | number {
   }
 }
 
-/* ── column defs ── */
+/* -- column defs -- */
 
 const columns: { key: SortKey; label: string; align: "left" | "center" }[] = [
   { key: "matchup", label: "MATCHUP", align: "left" },
@@ -128,9 +258,9 @@ const columns: { key: SortKey; label: string; align: "left" | "center" }[] = [
   { key: "edge", label: "EDGE", align: "center" }
 ];
 
-/* ── component ── */
+/* -- component -- */
 
-export default function Home({ date, rows }: HomeProps) {
+export default function Home({ date, rows, stats }: HomeProps) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<"all" | "edge8">("all");
   const [sort, setSort] = useState<SortState>({ key: "edge", dir: "desc" });
@@ -197,7 +327,7 @@ export default function Home({ date, rows }: HomeProps) {
     <Layout>
       {/* single wrapper so .content gap doesn't add extra spacing */}
       <div>
-        {/* ── Title Row ── */}
+        {/* -- Title Row -- */}
         <div
           style={{
             display: "flex",
@@ -222,7 +352,7 @@ export default function Home({ date, rows }: HomeProps) {
           </span>
         </div>
 
-        {/* ── Season Stats Strip ── */}
+        {/* -- Season Stats Strip -- */}
         <div
           style={{
             display: "flex",
@@ -234,11 +364,11 @@ export default function Home({ date, rows }: HomeProps) {
           }}
         >
           {[
-            { label: "SEASON", value: "94-73", color: "#0f172a" },
-            { label: "UNITS", value: "+18.4u", color: "#16a34a" },
-            { label: "ROI", value: "+11.5%", color: "#16a34a" },
-            { label: "LAST 30D", value: "22-14", color: "#0f172a" },
-            { label: "STREAK", value: "W4", color: "#16a34a" }
+            { label: "SEASON", value: `${stats.wins}-${stats.losses}`, color: "#0f172a" },
+            { label: "UNITS", value: `${stats.units >= 0 ? "+" : ""}${stats.units.toFixed(1)}u`, color: stats.units >= 0 ? "#16a34a" : "#dc2626" },
+            { label: "ROI", value: `${stats.roi >= 0 ? "+" : ""}${stats.roi.toFixed(1)}%`, color: stats.roi >= 0 ? "#16a34a" : "#dc2626" },
+            { label: "LAST 30D", value: `${stats.last30Wins}-${stats.last30Losses}`, color: "#0f172a" },
+            { label: "STREAK", value: stats.streak || "—", color: stats.streak.startsWith("W") ? "#16a34a" : "#dc2626" }
           ].map((s) => (
             <div
               key={s.label}
@@ -276,7 +406,7 @@ export default function Home({ date, rows }: HomeProps) {
           ))}
         </div>
 
-        {/* ── Featured "BEST VALUE" Cards ── */}
+        {/* -- Featured "BEST VALUE" Cards -- */}
         {featured.length > 0 && (
           <div style={{ marginBottom: 28 }}>
             <div
@@ -349,7 +479,7 @@ export default function Home({ date, rows }: HomeProps) {
           </div>
         )}
 
-        {/* ── All Games Table ── */}
+        {/* -- All Games Table -- */}
         <div>
           {/* Controls row */}
           <div
@@ -400,7 +530,7 @@ export default function Home({ date, rows }: HomeProps) {
                     cursor: "pointer"
                   }}
                 >
-                  {f === "all" ? "All" : "Edge ≥ 8%"}
+                  {f === "all" ? "All" : "Edge \u2265 8%"}
                 </button>
               ))}
             </div>
@@ -451,7 +581,7 @@ export default function Home({ date, rows }: HomeProps) {
                           {col.label}
                           {active && (
                             <span style={{ marginLeft: 4 }}>
-                              {sort.dir === "desc" ? "↓" : "↑"}
+                              {sort.dir === "desc" ? "\u2193" : "\u2191"}
                             </span>
                           )}
                         </th>
@@ -517,7 +647,7 @@ export default function Home({ date, rows }: HomeProps) {
                               borderBottom: "1px solid #f1f5f9"
                             }}
                           >
-                            {hb && bk !== null ? formatSpread(bk) : "—"}
+                            {hb && bk !== null ? formatSpread(bk) : "\u2014"}
                           </td>
 
                           {/* PICK */}
@@ -547,7 +677,7 @@ export default function Home({ date, rows }: HomeProps) {
                               borderBottom: "1px solid #f1f5f9"
                             }}
                           >
-                            {md !== null ? formatSpread(md) : "—"}
+                            {md !== null ? formatSpread(md) : "\u2014"}
                           </td>
 
                           {/* SIGMA */}
@@ -561,7 +691,7 @@ export default function Home({ date, rows }: HomeProps) {
                               borderBottom: "1px solid #f1f5f9"
                             }}
                           >
-                            {sg !== null ? sg.toFixed(1) : "—"}
+                            {sg !== null ? sg.toFixed(1) : "\u2014"}
                           </td>
 
                           {/* DIFF */}
@@ -576,7 +706,7 @@ export default function Home({ date, rows }: HomeProps) {
                               borderBottom: "1px solid #f1f5f9"
                             }}
                           >
-                            {hb && df !== null ? df.toFixed(1) : "—"}
+                            {hb && df !== null ? df.toFixed(1) : "\u2014"}
                           </td>
 
                           {/* EDGE */}
@@ -597,7 +727,7 @@ export default function Home({ date, rows }: HomeProps) {
                           >
                             {hb
                               ? `${eg >= 0 ? "+" : ""}${(eg * 100).toFixed(1)}%`
-                              : "—"}
+                              : "\u2014"}
                           </td>
                         </tr>
                       );

@@ -14,7 +14,7 @@ const CumulativeChart = dynamic(
   { ssr: false }
 );
 
-/* ── types ── */
+/* -- types -- */
 
 type GameResult = {
   date: string;
@@ -32,7 +32,7 @@ type PerformanceProps = {
   seasonLabel: string;
 };
 
-/* ── server ── */
+/* -- server -- */
 
 export const getServerSideProps: GetServerSideProps<
   PerformanceProps
@@ -183,29 +183,36 @@ function monthSortKey(dateStr: string): number {
   return yr * 12 + mo;
 }
 
-/* ── helpers ── */
+/* -- helpers -- */
 
 const mono: CSSProperties = {
   fontFamily: "'IBM Plex Mono', monospace"
 };
 
-/* ── component ── */
+/* -- component -- */
 
 export default function Performance({
   games,
   seasonLabel
 }: PerformanceProps) {
   const [edgeMin, setEdgeMin] = useState(0);
+  const [startDate, setStartDate] = useState("");
 
   const maxEdge = useMemo(() => {
     if (!games.length) return 30;
     return Math.ceil(Math.max(...games.map((g) => g.edge)));
   }, [games]);
 
+  const minDate = games.length ? games[0].date : "";
+  const maxDate = games.length ? games[games.length - 1].date : "";
+
   /* filtered games */
   const filtered = useMemo(
-    () => games.filter((g) => g.edge >= edgeMin),
-    [games, edgeMin]
+    () =>
+      games
+        .filter((g) => !startDate || g.date >= startDate)
+        .filter((g) => g.edge >= edgeMin),
+    [games, startDate, edgeMin]
   );
 
   /* stats */
@@ -227,20 +234,20 @@ export default function Performance({
         : null;
 
     return {
-      record: bets > 0 ? `${wins}-${losses}` : "—",
-      bets: String(bets || "—"),
+      record: bets > 0 ? `${wins}-${losses}` : "\u2014",
+      bets: String(bets || "\u2014"),
       units:
         bets > 0
           ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u`
-          : "—",
+          : "\u2014",
       unitsNum: units,
       roi:
         bets > 0
           ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%`
-          : "—",
+          : "\u2014",
       roiNum: roi,
-      mae: mae !== null ? mae.toFixed(2) : "—",
-      sigmaCal: sigmaCal !== null ? sigmaCal.toFixed(2) : "—"
+      mae: mae !== null ? mae.toFixed(2) : "\u2014",
+      sigmaCal: sigmaCal !== null ? sigmaCal.toFixed(2) : "\u2014"
     };
   }, [filtered]);
 
@@ -329,7 +336,7 @@ export default function Performance({
   return (
     <Layout>
       <div>
-        {/* ── Title + Edge Slider ── */}
+        {/* -- Title + Edge Slider -- */}
         <div
           style={{
             display: "flex",
@@ -341,7 +348,7 @@ export default function Performance({
           }}
         >
           <div
-            style={{ display: "flex", alignItems: "baseline", gap: 12 }}
+            style={{ display: "flex", alignItems: "center", gap: 12 }}
           >
             <h1
               style={{
@@ -357,6 +364,38 @@ export default function Performance({
             <span style={{ ...mono, fontSize: 13, color: "#64748b" }}>
               {seasonLabel}
             </span>
+            {minDate && (
+              <div
+                style={{ display: "flex", alignItems: "center", gap: 6 }}
+              >
+                <span
+                  style={{
+                    ...mono,
+                    fontSize: 11,
+                    fontWeight: 600,
+                    color: "#64748b"
+                  }}
+                >
+                  FROM
+                </span>
+                <input
+                  type="date"
+                  min={minDate}
+                  max={maxDate}
+                  value={startDate}
+                  onChange={(e) => setStartDate(e.target.value)}
+                  style={{
+                    ...mono,
+                    fontSize: 13,
+                    padding: "2px 6px",
+                    border: "1px solid #cbd5e1",
+                    borderRadius: 4,
+                    color: "#0f172a",
+                    background: "#fff"
+                  }}
+                />
+              </div>
+            )}
           </div>
 
           <div
@@ -395,7 +434,7 @@ export default function Performance({
           </div>
         </div>
 
-        {/* ── Stats Grid 3x2 ── */}
+        {/* -- Stats Grid 3x2 -- */}
         <div
           style={{
             display: "grid",
@@ -435,7 +474,7 @@ export default function Performance({
               color: "#0f172a"
             },
             {
-              label: "σ CALIBRATION",
+              label: "\u03c3 CALIBRATION",
               value: stats.sigmaCal,
               color: "#0f172a"
             }
@@ -475,7 +514,7 @@ export default function Performance({
           ))}
         </div>
 
-        {/* ── Cumulative Units Chart ── */}
+        {/* -- Cumulative Units Chart -- */}
         <div style={{ marginBottom: 24 }}>
           <div
             style={{
@@ -518,7 +557,7 @@ export default function Performance({
           </div>
         </div>
 
-        {/* ── Monthly Breakdown Table ── */}
+        {/* -- Monthly Breakdown Table -- */}
         <div>
           <div
             style={{
@@ -559,7 +598,7 @@ export default function Performance({
                       { label: "UNITS", align: "center" as const },
                       { label: "ROI", align: "center" as const },
                       { label: "MAE", align: "center" as const },
-                      { label: "σ CAL", align: "center" as const }
+                      { label: "\u03c3 CAL", align: "center" as const }
                     ].map((h) => (
                       <th
                         key={h.label}
@@ -644,7 +683,7 @@ export default function Performance({
                             >
                               {bets > 0
                                 ? `${m.wins}-${m.losses}`
-                                : "—"}
+                                : "\u2014"}
                             </td>
                             <td
                               style={{
@@ -656,7 +695,7 @@ export default function Performance({
                                 borderBottom: bd
                               }}
                             >
-                              {bets || "—"}
+                              {bets || "\u2014"}
                             </td>
                             <td
                               style={{
@@ -671,7 +710,7 @@ export default function Performance({
                             >
                               {winPct !== null
                                 ? `${winPct.toFixed(1)}%`
-                                : "—"}
+                                : "\u2014"}
                             </td>
                             <td
                               style={{
@@ -687,7 +726,7 @@ export default function Performance({
                             >
                               {bets > 0
                                 ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u`
-                                : "—"}
+                                : "\u2014"}
                             </td>
                             <td
                               style={{
@@ -703,7 +742,7 @@ export default function Performance({
                             >
                               {bets > 0
                                 ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%`
-                                : "—"}
+                                : "\u2014"}
                             </td>
                             <td
                               style={{
@@ -716,7 +755,7 @@ export default function Performance({
                                 borderBottom: bd
                               }}
                             >
-                              {mae !== null ? mae.toFixed(2) : "—"}
+                              {mae !== null ? mae.toFixed(2) : "\u2014"}
                             </td>
                             <td
                               style={{
@@ -729,7 +768,7 @@ export default function Performance({
                                 borderBottom: bd
                               }}
                             >
-                              {sc !== null ? sc.toFixed(2) : "—"}
+                              {sc !== null ? sc.toFixed(2) : "\u2014"}
                             </td>
                           </tr>
                         );
@@ -764,7 +803,7 @@ export default function Performance({
                         >
                           {total.bets > 0
                             ? `${total.wins}-${total.losses}`
-                            : "—"}
+                            : "\u2014"}
                         </td>
                         <td
                           style={{
@@ -778,7 +817,7 @@ export default function Performance({
                             background: "#fafbfc"
                           }}
                         >
-                          {total.bets || "—"}
+                          {total.bets || "\u2014"}
                         </td>
                         <td
                           style={{
@@ -794,7 +833,7 @@ export default function Performance({
                         >
                           {total.winPct !== null
                             ? `${total.winPct.toFixed(1)}%`
-                            : "—"}
+                            : "\u2014"}
                         </td>
                         <td
                           style={{
@@ -813,7 +852,7 @@ export default function Performance({
                         >
                           {total.bets > 0
                             ? `${total.units >= 0 ? "+" : ""}${total.units.toFixed(1)}u`
-                            : "—"}
+                            : "\u2014"}
                         </td>
                         <td
                           style={{
@@ -832,7 +871,7 @@ export default function Performance({
                         >
                           {total.bets > 0
                             ? `${total.roi >= 0 ? "+" : ""}${total.roi.toFixed(1)}%`
-                            : "—"}
+                            : "\u2014"}
                         </td>
                         <td
                           style={{
@@ -848,7 +887,7 @@ export default function Performance({
                         >
                           {total.mae !== null
                             ? total.mae.toFixed(2)
-                            : "—"}
+                            : "\u2014"}
                         </td>
                         <td
                           style={{
@@ -864,7 +903,7 @@ export default function Performance({
                         >
                           {total.sigmaCal !== null
                             ? total.sigmaCal.toFixed(2)
-                            : "—"}
+                            : "\u2014"}
                         </td>
                       </tr>
                     </>

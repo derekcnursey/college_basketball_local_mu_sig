@@ -3,9 +3,9 @@ import Link from "next/link";
 import { CSSProperties, useMemo, useState } from "react";
 import Layout from "../components/Layout";
 import { normalizeRows } from "../lib/data";
-import { listFinalScoreFiles, readJsonFile } from "../lib/server-data";
+import { listFinalScoreFiles, readJsonFile, todayET } from "../lib/server-data";
 
-/* ── types ── */
+/* -- types -- */
 
 type HistoryGame = {
   away_team: string;
@@ -39,7 +39,7 @@ type SortKey =
 
 type SortState = { key: SortKey; dir: "asc" | "desc" };
 
-/* ── server ── */
+/* -- server -- */
 
 export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
   context
@@ -48,7 +48,8 @@ export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
     typeof context.query.date === "string" ? context.query.date : null;
 
   const finalFiles = listFinalScoreFiles();
-  const availableDates = finalFiles.map((f) => f.date).sort();
+  const today = todayET();
+  const availableDates = finalFiles.map((f) => f.date).filter((d) => d < today).sort();
 
   if (!availableDates.length) {
     return {
@@ -89,7 +90,8 @@ export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
     const pick_team = pick_side === "HOME" ? home_team : away_team;
 
     const market_spread_home = pn(pred.market_spread_home);
-    const model_mu_home = pn(pred.model_mu_home);
+    const rawMu = pn(pred.model_mu_home);
+    const model_mu_home = rawMu !== null ? -rawMu : null; // Negate to book convention for display
     const pick_prob_edge = pn(pred.pick_prob_edge) ?? 0;
     const has_book = market_spread_home !== null;
 
@@ -144,7 +146,7 @@ function pn(v: unknown): number | null {
   return null;
 }
 
-/* ── helpers ── */
+/* -- helpers -- */
 
 const mono: CSSProperties = {
   fontFamily: "'IBM Plex Mono', monospace"
@@ -203,7 +205,7 @@ function sortVal(g: HistoryGame, key: SortKey): string | number {
   }
 }
 
-/* ── column definitions ── */
+/* -- column definitions -- */
 
 const columns: { key: SortKey; label: string; align: "left" | "center" }[] = [
   { key: "matchup", label: "MATCHUP", align: "left" },
@@ -215,7 +217,7 @@ const columns: { key: SortKey; label: string; align: "left" | "center" }[] = [
   { key: "edge", label: "EDGE", align: "center" }
 ];
 
-/* ── component ── */
+/* -- component -- */
 
 export default function History({
   date,
@@ -255,10 +257,10 @@ export default function History({
     const roi = bets > 0 ? (units / bets) * 100 : 0;
     const winRate = bets > 0 ? (wins / bets) * 100 : 0;
     return {
-      record: bets > 0 ? `${wins}-${losses}` : "—",
-      winRate: bets > 0 ? `${winRate.toFixed(1)}%` : "—",
-      units: bets > 0 ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u` : "—",
-      roi: bets > 0 ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%` : "—",
+      record: bets > 0 ? `${wins}-${losses}` : "\u2014",
+      winRate: bets > 0 ? `${winRate.toFixed(1)}%` : "\u2014",
+      units: bets > 0 ? `${units >= 0 ? "+" : ""}${units.toFixed(1)}u` : "\u2014",
+      roi: bets > 0 ? `${roi >= 0 ? "+" : ""}${roi.toFixed(1)}%` : "\u2014",
       bets: String(bets),
       unitsNum: units,
       roiNum: roi
@@ -325,7 +327,7 @@ export default function History({
   return (
     <Layout>
       <div>
-        {/* ── Title + Date Nav ── */}
+        {/* -- Title + Date Nav -- */}
         <div
           style={{
             display: "flex",
@@ -364,7 +366,7 @@ export default function History({
                   textDecoration: "none"
                 }}
               >
-                ←
+                \u2190
               </Link>
             ) : (
               <span
@@ -381,7 +383,7 @@ export default function History({
                   fontSize: 16
                 }}
               >
-                ←
+                \u2190
               </span>
             )}
 
@@ -417,7 +419,7 @@ export default function History({
                   textDecoration: "none"
                 }}
               >
-                →
+                \u2192
               </Link>
             ) : (
               <span
@@ -434,13 +436,13 @@ export default function History({
                   fontSize: 16
                 }}
               >
-                →
+                \u2192
               </span>
             )}
           </div>
         </div>
 
-        {/* ── Daily Stats Strip ── */}
+        {/* -- Daily Stats Strip -- */}
         <div
           style={{
             display: "flex",
@@ -514,7 +516,7 @@ export default function History({
           ))}
         </div>
 
-        {/* ── Controls Row ── */}
+        {/* -- Controls Row -- */}
         <div
           style={{
             display: "flex",
@@ -611,7 +613,7 @@ export default function History({
           </div>
         </div>
 
-        {/* ── Table ── */}
+        {/* -- Table -- */}
         <div
           style={{
             background: "#fff",
@@ -656,7 +658,7 @@ export default function History({
                         {col.label}
                         {active && (
                           <span style={{ marginLeft: 4 }}>
-                            {sort.dir === "desc" ? "↓" : "↑"}
+                            {sort.dir === "desc" ? "\u2193" : "\u2191"}
                           </span>
                         )}
                       </th>
@@ -723,7 +725,7 @@ export default function History({
                         >
                           {g.away_score !== null && g.home_score !== null
                             ? `${g.away_score}-${g.home_score}`
-                            : "—"}
+                            : "\u2014"}
                         </td>
 
                         {/* PICK */}
@@ -756,7 +758,7 @@ export default function History({
                         >
                           {g.has_book && g.market_spread_home !== null
                             ? sp(g.market_spread_home)
-                            : "—"}
+                            : "\u2014"}
                         </td>
 
                         {/* MODEL */}
@@ -774,10 +776,10 @@ export default function History({
                         >
                           {g.model_mu_home !== null
                             ? sp(g.model_mu_home)
-                            : "—"}
+                            : "\u2014"}
                         </td>
 
-                        {/* ATS — never dimmed */}
+                        {/* ATS -- never dimmed */}
                         <td
                           style={{
                             padding: "10px 14px",
@@ -794,7 +796,7 @@ export default function History({
                                 color: "#94a3b8"
                               }}
                             >
-                              —
+                              \u2014
                             </span>
                           ) : !aboveThreshold ? (
                             <span
@@ -837,7 +839,7 @@ export default function History({
                             ? `${g.pick_prob_edge >= 0 ? "+" : ""}${(
                                 g.pick_prob_edge * 100
                               ).toFixed(1)}%`
-                            : "—"}
+                            : "\u2014"}
                         </td>
                       </tr>
                     );
@@ -852,7 +854,7 @@ export default function History({
   );
 }
 
-/* ── ATS badge sub-component ── */
+/* -- ATS badge sub-component -- */
 
 function AtsBadge({
   result
@@ -869,20 +871,20 @@ function AtsBadge({
           color: "#94a3b8"
         }}
       >
-        —
+        \u2014
       </span>
     );
   }
 
   const config = {
     win: {
-      label: "✓ WIN",
+      label: "\u2713 WIN",
       color: "#16a34a",
       bg: "#16a34a0d",
       border: "#16a34a20"
     },
     loss: {
-      label: "✗ LOSS",
+      label: "\u2717 LOSS",
       color: "#dc2626",
       bg: "#dc26260d",
       border: "#dc262620"
