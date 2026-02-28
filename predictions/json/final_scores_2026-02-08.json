@@ -10,6 +10,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 67,
+      "away_team": "Maryland",
+      "game_id": "2026_02_08_maryland_minnesota",
+      "home_score": 62,
+      "home_team": "Minnesota",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "UCF",
       "game_id": "2026_02_08_ucf_cincinnati",
@@ -23,14 +31,6 @@
       "game_id": "2026_02_08_rice_uab",
       "home_score": 71,
       "home_team": "UAB",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 67,
-      "away_team": "Maryland",
-      "game_id": "2026_02_08_maryland_minnesota",
-      "home_score": 62,
-      "home_team": "Minnesota",
       "neutral_site": 0
     },
     {
@@ -90,5 +90,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.730664Z"
+  "generated_at": "2026-02-28T14:35:06.132047Z"
 }

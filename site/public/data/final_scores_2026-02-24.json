@@ -50,6 +50,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Saint Louis",
+      "game_id": "2026_02_24_saint_louis_dayton",
+      "home_score": 77,
+      "home_team": "Dayton",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Southern Indiana",
       "game_id": "2026_02_24_southern_indiana_morehead_st",
@@ -235,14 +243,6 @@
     },
     {
       "away_score": 62,
-      "away_team": "Saint Louis",
-      "game_id": "2026_02_24_saint_louis_dayton",
-      "home_score": 77,
-      "home_team": "Dayton",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 62,
       "away_team": "Wyoming",
       "game_id": "2026_02_24_wyoming_boise_st",
       "home_score": 72,
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.801409Z"
+  "generated_at": "2026-02-28T14:35:06.210441Z"
 }

@@ -42,14 +42,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Syracuse",
-      "game_id": "2026_01_27_syracuse_n_c_state",
-      "home_score": 88,
-      "home_team": "N.C. State",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Alabama A&M",
       "game_id": "2026_01_27_alabama_a_m_prairie_view_a_m",
@@ -71,6 +63,14 @@
       "game_id": "2026_01_27_kentucky_vanderbilt",
       "home_score": 80,
       "home_team": "Vanderbilt",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Syracuse",
+      "game_id": "2026_01_27_syracuse_n_c_state",
+      "home_score": 88,
+      "home_team": "N.C. State",
       "neutral_site": 0
     },
     {
@@ -154,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 61,
-      "away_team": "East Texas A&M",
-      "game_id": "2026_01_27_east_texas_a_m_lamar",
-      "home_score": 82,
-      "home_team": "Lamar",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "Richmond",
       "game_id": "2026_01_27_richmond_vcu",
@@ -234,6 +226,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "East Texas A&M",
+      "game_id": "2026_01_27_east_texas_a_m_lamar",
+      "home_score": 82,
+      "home_team": "Lamar",
+      "neutral_site": 0
+    },
+    {
       "away_score": 100,
       "away_team": "Virginia",
       "game_id": "2026_01_27_virginia_notre_dame",
@@ -282,5 +282,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.673345Z"
+  "generated_at": "2026-02-28T14:35:06.066070Z"
 }

@@ -170,6 +170,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 90,
+      "away_team": "Texas A&M",
+      "game_id": "2026_01_06_texas_a_m_auburn",
+      "home_score": 88,
+      "home_team": "Auburn",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "San Diego St.",
       "game_id": "2026_01_06_san_diego_st_nevada",
@@ -224,15 +232,7 @@
       "home_score": 68,
       "home_team": "LSU",
       "neutral_site": 0
-    },
-    {
-      "away_score": 90,
-      "away_team": "Texas A&M",
-      "game_id": "2026_01_06_texas_a_m_auburn",
-      "home_score": 88,
-      "home_team": "Auburn",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.584817Z"
+  "generated_at": "2026-02-28T14:35:05.958622Z"
 }

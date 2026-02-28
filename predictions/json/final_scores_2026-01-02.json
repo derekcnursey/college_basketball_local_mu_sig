@@ -26,14 +26,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "Portland",
-      "game_id": "2026_01_02_portland_saint_mary_s",
-      "home_score": 78,
-      "home_team": "Saint Mary's",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Pepperdine",
       "game_id": "2026_01_02_pepperdine_santa_clara",
@@ -90,14 +82,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "Oregon",
-      "game_id": "2026_01_02_oregon_maryland",
-      "home_score": 54,
-      "home_team": "Maryland",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Le Moyne",
       "game_id": "2026_01_02_le_moyne_saint_francis",
@@ -114,11 +98,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 79,
-      "away_team": "Wagner",
-      "game_id": "2026_01_02_wagner_chicago_st",
-      "home_score": 72,
-      "home_team": "Chicago St.",
+      "away_score": 57,
+      "away_team": "Portland",
+      "game_id": "2026_01_02_portland_saint_mary_s",
+      "home_score": 78,
+      "home_team": "Saint Mary's",
       "neutral_site": 0
     },
     {
@@ -178,6 +162,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "Oregon",
+      "game_id": "2026_01_02_oregon_maryland",
+      "home_score": 54,
+      "home_team": "Maryland",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Siena",
       "game_id": "2026_01_02_siena_iona",
@@ -226,6 +218,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 79,
+      "away_team": "Wagner",
+      "game_id": "2026_01_02_wagner_chicago_st",
+      "home_score": 72,
+      "home_team": "Chicago St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 56,
       "away_team": "Michigan St.",
       "game_id": "2026_01_02_michigan_st_nebraska",
@@ -250,5 +250,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.566976Z"
+  "generated_at": "2026-02-28T14:35:05.938286Z"
 }

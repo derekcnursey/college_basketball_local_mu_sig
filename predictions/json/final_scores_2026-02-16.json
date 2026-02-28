@@ -18,6 +18,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 65,
+      "away_team": "Lamar",
+      "game_id": "2026_02_16_lamar_ut_rio_grande_valley",
+      "home_score": 70,
+      "home_team": "UT Rio Grande Valley",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "Arkansas Pine Bluff",
       "game_id": "2026_02_16_arkansas_pine_bluff_alabama_a_m",
@@ -55,14 +63,6 @@
       "game_id": "2026_02_16_syracuse_duke",
       "home_score": 101,
       "home_team": "Duke",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 73,
-      "away_team": "Southern",
-      "game_id": "2026_02_16_southern_texas_southern",
-      "home_score": 74,
-      "home_team": "Texas Southern",
       "neutral_site": 0
     },
     {
@@ -106,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 65,
-      "away_team": "Lamar",
-      "game_id": "2026_02_16_lamar_ut_rio_grande_valley",
-      "home_score": 70,
-      "home_team": "UT Rio Grande Valley",
-      "neutral_site": 0
-    },
-    {
       "away_score": 59,
       "away_team": "Coppin St.",
       "game_id": "2026_02_16_coppin_st_south_carolina_st",
@@ -154,6 +146,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 73,
+      "away_team": "Southern",
+      "game_id": "2026_02_16_southern_texas_southern",
+      "home_score": 74,
+      "home_team": "Texas Southern",
+      "neutral_site": 0
+    },
+    {
       "away_score": 76,
       "away_team": "Morgan St.",
       "game_id": "2026_02_16_morgan_st_north_carolina_central",
@@ -186,5 +186,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.764205Z"
+  "generated_at": "2026-02-28T14:35:06.170476Z"
 }

@@ -90,19 +90,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Stanford",
-      "game_id": "2026_01_28_stanford_miami_fl",
-      "home_score": 79,
-      "home_team": "Miami FL",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Sam Houston St.",
       "game_id": "2026_01_28_sam_houston_st_missouri_st",
       "home_score": 71,
       "home_team": "Missouri St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 83,
+      "away_team": "UAB",
+      "game_id": "2026_01_28_uab_utsa",
+      "home_score": 73,
+      "home_team": "UTSA",
       "neutral_site": 0
     },
     {
@@ -175,6 +175,22 @@
       "game_id": "2026_01_28_davidson_george_mason",
       "home_score": 60,
       "home_team": "George Mason",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Stanford",
+      "game_id": "2026_01_28_stanford_miami_fl",
+      "home_score": 79,
+      "home_team": "Miami FL",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Denver",
+      "game_id": "2026_01_28_denver_umkc",
+      "home_score": 61,
+      "home_team": "UMKC",
       "neutral_site": 0
     },
     {
@@ -266,14 +282,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 83,
-      "away_team": "UAB",
-      "game_id": "2026_01_28_uab_utsa",
-      "home_score": 73,
-      "home_team": "UTSA",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Minnesota",
       "game_id": "2026_01_28_minnesota_wisconsin",
@@ -319,6 +327,22 @@
       "game_id": "2026_01_28_iu_indy_robert_morris",
       "home_score": 74,
       "home_team": "Robert Morris",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 74,
+      "away_team": "Holy Cross",
+      "game_id": "2026_01_28_holy_cross_colgate",
+      "home_score": 79,
+      "home_team": "Colgate",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Texas",
+      "game_id": "2026_01_28_texas_auburn",
+      "home_score": 88,
+      "home_team": "Auburn",
       "neutral_site": 0
     },
     {
@@ -370,14 +394,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "Denver",
-      "game_id": "2026_01_28_denver_umkc",
-      "home_score": 61,
-      "home_team": "UMKC",
-      "neutral_site": 0
-    },
-    {
       "away_score": 90,
       "away_team": "Austin Peay",
       "game_id": "2026_01_28_austin_peay_eastern_kentucky",
@@ -402,22 +418,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Holy Cross",
-      "game_id": "2026_01_28_holy_cross_colgate",
-      "home_score": 79,
-      "home_team": "Colgate",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 82,
-      "away_team": "Texas",
-      "game_id": "2026_01_28_texas_auburn",
-      "home_score": 88,
-      "home_team": "Auburn",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "North Texas",
       "game_id": "2026_01_28_north_texas_tulsa",
@@ -426,5 +426,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.678269Z"
+  "generated_at": "2026-02-28T14:35:06.071963Z"
 }

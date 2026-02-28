@@ -106,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 79,
-      "away_team": "Georgia St.",
-      "game_id": "2026_02_12_georgia_st_james_madison",
-      "home_score": 81,
-      "home_team": "James Madison",
-      "neutral_site": 0
-    },
-    {
       "away_score": 78,
       "away_team": "UMBC",
       "game_id": "2026_02_12_umbc_maine",
@@ -127,14 +119,6 @@
       "game_id": "2026_02_12_ut_arlington_abilene_christian",
       "home_score": 67,
       "home_team": "Abilene Christian",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 90,
-      "away_team": "Oregon St.",
-      "game_id": "2026_02_12_oregon_st_san_francisco",
-      "home_score": 63,
-      "home_team": "San Francisco",
       "neutral_site": 0
     },
     {
@@ -218,14 +202,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "Bryant",
-      "game_id": "2026_02_12_bryant_umass_lowell",
-      "home_score": 88,
-      "home_team": "UMass Lowell",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Tennessee Martin",
       "game_id": "2026_02_12_tennessee_martin_lindenwood",
@@ -271,6 +247,14 @@
       "game_id": "2026_02_12_cal_baptist_southern_utah",
       "home_score": 66,
       "home_team": "Southern Utah",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Oregon St.",
+      "game_id": "2026_02_12_oregon_st_san_francisco",
+      "home_score": 63,
+      "home_team": "San Francisco",
       "neutral_site": 0
     },
     {
@@ -394,6 +378,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 73,
+      "away_team": "Tennessee St.",
+      "game_id": "2026_02_12_tennessee_st_southern_indiana",
+      "home_score": 71,
+      "home_team": "Southern Indiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 86,
       "away_team": "Cal St. Fullerton",
       "game_id": "2026_02_12_cal_st_fullerton_long_beach_st",
@@ -418,6 +410,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 69,
+      "away_team": "Bryant",
+      "game_id": "2026_02_12_bryant_umass_lowell",
+      "home_score": 88,
+      "home_team": "UMass Lowell",
+      "neutral_site": 0
+    },
+    {
       "away_score": 83,
       "away_team": "Weber St.",
       "game_id": "2026_02_12_weber_st_idaho",
@@ -426,11 +426,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 73,
-      "away_team": "Tennessee St.",
-      "game_id": "2026_02_12_tennessee_st_southern_indiana",
-      "home_score": 71,
-      "home_team": "Southern Indiana",
+      "away_score": 79,
+      "away_team": "Georgia St.",
+      "game_id": "2026_02_12_georgia_st_james_madison",
+      "home_score": 81,
+      "home_team": "James Madison",
       "neutral_site": 0
     },
     {
@@ -442,5 +442,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.745512Z"
+  "generated_at": "2026-02-28T14:35:06.149431Z"
 }

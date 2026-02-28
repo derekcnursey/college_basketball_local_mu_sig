@@ -10,14 +10,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "Loyola Marymount",
-      "game_id": "2026_01_21_loyola_marymount_seattle",
-      "home_score": 69,
-      "home_team": "Seattle",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "Utah Tech",
       "game_id": "2026_01_21_utah_tech_cal_baptist",
@@ -47,6 +39,14 @@
       "game_id": "2026_01_21_texas_kentucky",
       "home_score": 85,
       "home_team": "Kentucky",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "Loyola Marymount",
+      "game_id": "2026_01_21_loyola_marymount_seattle",
+      "home_score": 69,
+      "home_team": "Seattle",
       "neutral_site": 0
     },
     {
@@ -95,6 +95,14 @@
       "game_id": "2026_01_21_north_alabama_queens",
       "home_score": 87,
       "home_team": "Queens",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 54,
+      "away_team": "Northern Iowa",
+      "game_id": "2026_01_21_northern_iowa_illinois_st",
+      "home_score": 59,
+      "home_team": "Illinois St.",
       "neutral_site": 0
     },
     {
@@ -290,14 +298,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "San Diego St.",
-      "game_id": "2026_01_21_san_diego_st_grand_canyon",
-      "home_score": 70,
-      "home_team": "Grand Canyon",
-      "neutral_site": 0
-    },
-    {
       "away_score": 93,
       "away_team": "Xavier",
       "game_id": "2026_01_21_xavier_creighton",
@@ -314,14 +314,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 54,
-      "away_team": "Northern Iowa",
-      "game_id": "2026_01_21_northern_iowa_illinois_st",
-      "home_score": 59,
-      "home_team": "Illinois St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 76,
       "away_team": "Virginia Tech",
       "game_id": "2026_01_21_virginia_tech_syracuse",
@@ -335,6 +327,14 @@
       "game_id": "2026_01_21_georgetown_villanova",
       "home_score": 66,
       "home_team": "Villanova",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "San Diego St.",
+      "game_id": "2026_01_21_san_diego_st_grand_canyon",
+      "home_score": 70,
+      "home_team": "Grand Canyon",
       "neutral_site": 0
     },
     {
@@ -434,5 +434,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.649533Z"
+  "generated_at": "2026-02-28T14:35:06.036752Z"
 }

@@ -26,11 +26,27 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "The Citadel",
+      "game_id": "2026_02_05_the_citadel_samford",
+      "home_score": 78,
+      "home_team": "Samford",
+      "neutral_site": 0
+    },
+    {
       "away_score": 60,
       "away_team": "Canisius",
       "game_id": "2026_02_05_canisius_quinnipiac",
       "home_score": 75,
       "home_team": "Quinnipiac",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Ohio St.",
+      "game_id": "2026_02_05_ohio_st_maryland",
+      "home_score": 62,
+      "home_team": "Maryland",
       "neutral_site": 0
     },
     {
@@ -42,27 +58,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 55,
-      "away_team": "New Haven",
-      "game_id": "2026_02_05_new_haven_liu",
-      "home_score": 60,
-      "home_team": "LIU",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 79,
-      "away_team": "Northern Arizona",
-      "game_id": "2026_02_05_northern_arizona_idaho_st",
-      "home_score": 73,
-      "home_team": "Idaho St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Florida Gulf Coast",
       "game_id": "2026_02_05_florida_gulf_coast_eastern_kentucky",
       "home_score": 76,
       "home_team": "Eastern Kentucky",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 55,
+      "away_team": "New Haven",
+      "game_id": "2026_02_05_new_haven_liu",
+      "home_score": 60,
+      "home_team": "LIU",
       "neutral_site": 0
     },
     {
@@ -74,11 +82,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "The Citadel",
-      "game_id": "2026_02_05_the_citadel_samford",
-      "home_score": 78,
-      "home_team": "Samford",
+      "away_score": 63,
+      "away_team": "Northeastern",
+      "game_id": "2026_02_05_northeastern_hofstra",
+      "home_score": 80,
+      "home_team": "Hofstra",
       "neutral_site": 0
     },
     {
@@ -98,6 +106,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 78,
+      "away_team": "Le Moyne",
+      "game_id": "2026_02_05_le_moyne_wagner",
+      "home_score": 79,
+      "home_team": "Wagner",
+      "neutral_site": 0
+    },
+    {
       "away_score": 82,
       "away_team": "Eastern Washington",
       "game_id": "2026_02_05_eastern_washington_montana",
@@ -111,14 +127,6 @@
       "game_id": "2026_02_05_abilene_christian_utah_valley",
       "home_score": 68,
       "home_team": "Utah Valley",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 82,
-      "away_team": "Ohio St.",
-      "game_id": "2026_02_05_ohio_st_maryland",
-      "home_score": 62,
-      "home_team": "Maryland",
       "neutral_site": 0
     },
     {
@@ -143,6 +151,22 @@
       "game_id": "2026_02_05_elon_hampton",
       "home_score": 87,
       "home_team": "Hampton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Northern Arizona",
+      "game_id": "2026_02_05_northern_arizona_idaho_st",
+      "home_score": 73,
+      "home_team": "Idaho St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 78,
+      "away_team": "Denver",
+      "game_id": "2026_02_05_denver_north_dakota_st",
+      "home_score": 71,
+      "home_team": "North Dakota St.",
       "neutral_site": 0
     },
     {
@@ -202,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Le Moyne",
-      "game_id": "2026_02_05_le_moyne_wagner",
-      "home_score": 79,
-      "home_team": "Wagner",
-      "neutral_site": 0
-    },
-    {
       "away_score": 79,
       "away_team": "Lindenwood",
       "game_id": "2026_02_05_lindenwood_little_rock",
@@ -239,14 +255,6 @@
       "game_id": "2026_02_05_stetson_bellarmine",
       "home_score": 92,
       "home_team": "Bellarmine",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Northeastern",
-      "game_id": "2026_02_05_northeastern_hofstra",
-      "home_score": 80,
-      "home_team": "Hofstra",
       "neutral_site": 0
     },
     {
@@ -330,14 +338,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 54,
-      "away_team": "Southern Indiana",
-      "game_id": "2026_02_05_southern_indiana_tennessee_martin",
-      "home_score": 76,
-      "home_team": "Tennessee Martin",
-      "neutral_site": 0
-    },
-    {
       "away_score": 72,
       "away_team": "UC Riverside",
       "game_id": "2026_02_05_uc_riverside_cal_st_fullerton",
@@ -359,14 +359,6 @@
       "game_id": "2026_02_05_nebraska_omaha_north_dakota",
       "home_score": 76,
       "home_team": "North Dakota",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 78,
-      "away_team": "Denver",
-      "game_id": "2026_02_05_denver_north_dakota_st",
-      "home_score": 71,
-      "home_team": "North Dakota St.",
       "neutral_site": 0
     },
     {
@@ -394,6 +386,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 54,
+      "away_team": "Southern Indiana",
+      "game_id": "2026_02_05_southern_indiana_tennessee_martin",
+      "home_score": 76,
+      "home_team": "Tennessee Martin",
+      "neutral_site": 0
+    },
+    {
       "away_score": 89,
       "away_team": "Saint Francis",
       "game_id": "2026_02_05_saint_francis_mercyhurst",
@@ -402,5 +402,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.715149Z"
+  "generated_at": "2026-02-28T14:35:06.114004Z"
 }

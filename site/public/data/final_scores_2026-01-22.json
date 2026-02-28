@@ -18,30 +18,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "UC Irvine",
-      "game_id": "2026_01_22_uc_irvine_uc_riverside",
-      "home_score": 66,
-      "home_team": "UC Riverside",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 74,
-      "away_team": "NJIT",
-      "game_id": "2026_01_22_njit_umbc",
-      "home_score": 87,
-      "home_team": "UMBC",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 71,
-      "away_team": "Cal St. Bakersfield",
-      "game_id": "2026_01_22_cal_st_bakersfield_hawaii",
-      "home_score": 98,
-      "home_team": "Hawaii",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "South Dakota St.",
       "game_id": "2026_01_22_south_dakota_st_st_thomas",
@@ -98,6 +74,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "UC Irvine",
+      "game_id": "2026_01_22_uc_irvine_uc_riverside",
+      "home_score": 66,
+      "home_team": "UC Riverside",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Florida Gulf Coast",
       "game_id": "2026_01_22_florida_gulf_coast_austin_peay",
@@ -122,6 +106,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "NJIT",
+      "game_id": "2026_01_22_njit_umbc",
+      "home_score": 87,
+      "home_team": "UMBC",
+      "neutral_site": 0
+    },
+    {
       "away_score": 61,
       "away_team": "Long Beach St.",
       "game_id": "2026_01_22_long_beach_st_cal_st_fullerton",
@@ -135,6 +127,14 @@
       "game_id": "2026_01_22_weber_st_montana",
       "home_score": 81,
       "home_team": "Montana",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Canisius",
+      "game_id": "2026_01_22_canisius_sacred_heart",
+      "home_score": 69,
+      "home_team": "Sacred Heart",
       "neutral_site": 0
     },
     {
@@ -167,14 +167,6 @@
       "game_id": "2026_01_22_little_rock_southeast_missouri_st",
       "home_score": 70,
       "home_team": "Southeast Missouri St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 66,
-      "away_team": "Canisius",
-      "game_id": "2026_01_22_canisius_sacred_heart",
-      "home_score": 69,
-      "home_team": "Sacred Heart",
       "neutral_site": 0
     },
     {
@@ -314,6 +306,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "Cal St. Bakersfield",
+      "game_id": "2026_01_22_cal_st_bakersfield_hawaii",
+      "home_score": 98,
+      "home_team": "Hawaii",
+      "neutral_site": 0
+    },
+    {
       "away_score": 58,
       "away_team": "Louisiana",
       "game_id": "2026_01_22_louisiana_appalachian_st",
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.654122Z"
+  "generated_at": "2026-02-28T14:35:06.043324Z"
 }

@@ -2,14 +2,6 @@
   "date": "2025-12-23",
   "games": [
     {
-      "away_score": 65,
-      "away_team": "UC Riverside",
-      "game_id": "2025_12_23_uc_riverside_ucla",
-      "home_score": 97,
-      "home_team": "UCLA",
-      "neutral_site": 0
-    },
-    {
       "away_score": 59,
       "away_team": "Harvard",
       "game_id": "2025_12_23_harvard_st_john_s",
@@ -23,6 +15,14 @@
       "game_id": "2025_12_23_green_bay_campbell",
       "home_score": 102,
       "home_team": "Campbell",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "UC Riverside",
+      "game_id": "2025_12_23_uc_riverside_ucla",
+      "home_score": 97,
+      "home_team": "UCLA",
       "neutral_site": 0
     },
     {
@@ -90,5 +90,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-26T18:08:44.545283Z"
+  "generated_at": "2026-02-28T14:35:05.912074Z"
 }
