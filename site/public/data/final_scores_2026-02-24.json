@@ -50,14 +50,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Saint Louis",
-      "game_id": "2026_02_24_saint_louis_dayton",
-      "home_score": 77,
-      "home_team": "Dayton",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Southern Indiana",
       "game_id": "2026_02_24_southern_indiana_morehead_st",
@@ -170,14 +162,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 87,
-      "away_team": "Arizona",
-      "game_id": "2026_02_24_arizona_baylor",
-      "home_score": 80,
-      "home_team": "Baylor",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Miami OH",
       "game_id": "2026_02_24_miami_oh_eastern_michigan",
@@ -226,6 +210,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 87,
+      "away_team": "Arizona",
+      "game_id": "2026_02_24_arizona_baylor",
+      "home_score": 80,
+      "home_team": "Baylor",
+      "neutral_site": 0
+    },
+    {
       "away_score": 97,
       "away_team": "UCF",
       "game_id": "2026_02_24_ucf_byu",
@@ -239,6 +231,14 @@
       "game_id": "2026_02_24_miami_fl_florida_st",
       "home_score": 73,
       "home_team": "Florida St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Saint Louis",
+      "game_id": "2026_02_24_saint_louis_dayton",
+      "home_score": 77,
+      "home_team": "Dayton",
       "neutral_site": 0
     },
     {
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-28T14:35:06.210441Z"
+  "generated_at": "2026-03-01T14:29:20.311079Z"
 }

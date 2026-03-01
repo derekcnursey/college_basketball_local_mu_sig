@@ -50,6 +50,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Notre Dame",
+      "game_id": "2025_11_16_notre_dame_ohio_st",
+      "home_score": 64,
+      "home_team": "Ohio St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 108,
       "away_team": "South Florida",
       "game_id": "2025_11_16_south_florida_kennesaw_st",
@@ -71,14 +79,6 @@
       "game_id": "2025_11_16_bryant_valparaiso",
       "home_score": 68,
       "home_team": "Valparaiso",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Notre Dame",
-      "game_id": "2025_11_16_notre_dame_ohio_st",
-      "home_score": 64,
-      "home_team": "Ohio St.",
       "neutral_site": 0
     },
     {
@@ -242,5 +242,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-02-28T14:35:05.745810Z"
+  "generated_at": "2026-03-01T14:29:19.829666Z"
 }
