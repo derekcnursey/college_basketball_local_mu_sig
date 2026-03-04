@@ -58,6 +58,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Louisiana",
+      "game_id": "2026_01_22_louisiana_appalachian_st",
+      "home_score": 72,
+      "home_team": "Appalachian St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 85,
       "away_team": "Eastern Kentucky",
       "game_id": "2026_01_22_eastern_kentucky_north_florida",
@@ -314,14 +322,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Louisiana",
-      "game_id": "2026_01_22_louisiana_appalachian_st",
-      "home_score": 72,
-      "home_team": "Appalachian St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 95,
       "away_team": "Stony Brook",
       "game_id": "2026_01_22_stony_brook_northeastern",
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.134729Z"
+  "generated_at": "2026-03-04T15:45:35.371097Z"
 }

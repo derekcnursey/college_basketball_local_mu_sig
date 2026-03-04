@@ -314,6 +314,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Auburn",
+      "game_id": "2025_11_24_auburn_oregon",
+      "home_score": 73,
+      "home_team": "Oregon",
+      "neutral_site": 1
+    },
+    {
       "away_score": 88,
       "away_team": "Bradley",
       "game_id": "2025_11_24_bradley_princeton",
@@ -351,14 +359,6 @@
       "game_id": "2025_11_24_alabama_gonzaga",
       "home_score": 95,
       "home_team": "Gonzaga",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 84,
-      "away_team": "Auburn",
-      "game_id": "2025_11_24_auburn_oregon",
-      "home_score": 73,
-      "home_team": "Oregon",
       "neutral_site": 1
     },
     {
@@ -450,5 +450,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.867058Z"
+  "generated_at": "2026-03-04T15:45:35.138968Z"
 }

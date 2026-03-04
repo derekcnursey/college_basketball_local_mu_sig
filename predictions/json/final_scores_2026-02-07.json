@@ -18,14 +18,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 81,
-      "away_team": "Temple",
-      "game_id": "2026_02_07_temple_east_carolina",
-      "home_score": 73,
-      "home_team": "East Carolina",
-      "neutral_site": 0
-    },
-    {
       "away_score": 86,
       "away_team": "SMU",
       "game_id": "2026_02_07_smu_pittsburgh",
@@ -186,6 +178,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 78,
+      "away_team": "Missouri",
+      "game_id": "2026_02_07_missouri_south_carolina",
+      "home_score": 59,
+      "home_team": "South Carolina",
+      "neutral_site": 0
+    },
+    {
       "away_score": 86,
       "away_team": "Central Arkansas",
       "game_id": "2026_02_07_central_arkansas_lipscomb",
@@ -295,14 +295,6 @@
       "game_id": "2026_02_07_western_michigan_texas_st",
       "home_score": 77,
       "home_team": "Texas St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 78,
-      "away_team": "Missouri",
-      "game_id": "2026_02_07_missouri_south_carolina",
-      "home_score": 59,
-      "home_team": "South Carolina",
       "neutral_site": 0
     },
     {
@@ -946,14 +938,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Clemson",
-      "game_id": "2026_02_07_clemson_california",
-      "home_score": 55,
-      "home_team": "California",
-      "neutral_site": 0
-    },
-    {
       "away_score": 85,
       "away_team": "Utah St.",
       "game_id": "2026_02_07_utah_st_wyoming",
@@ -994,6 +978,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Clemson",
+      "game_id": "2026_02_07_clemson_california",
+      "home_score": 55,
+      "home_team": "California",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Eastern Washington",
       "game_id": "2026_02_07_eastern_washington_montana_st",
@@ -1015,6 +1007,14 @@
       "game_id": "2026_02_07_cal_st_bakersfield_cal_st_fullerton",
       "home_score": 82,
       "home_team": "Cal St. Fullerton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 81,
+      "away_team": "Temple",
+      "game_id": "2026_02_07_temple_east_carolina",
+      "home_score": 73,
+      "home_team": "East Carolina",
       "neutral_site": 0
     },
     {
@@ -1226,5 +1226,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.224825Z"
+  "generated_at": "2026-03-04T15:45:35.449038Z"
 }

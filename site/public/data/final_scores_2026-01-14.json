@@ -18,6 +18,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Utah",
+      "game_id": "2026_01_14_utah_texas_tech",
+      "home_score": 88,
+      "home_team": "Texas Tech",
+      "neutral_site": 0
+    },
+    {
       "away_score": 64,
       "away_team": "Vanderbilt",
       "game_id": "2026_01_14_vanderbilt_texas",
@@ -95,14 +103,6 @@
       "game_id": "2026_01_14_middle_tennessee_louisiana_tech",
       "home_score": 59,
       "home_team": "Louisiana Tech",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 74,
-      "away_team": "Utah",
-      "game_id": "2026_01_14_utah_texas_tech",
-      "home_score": 88,
-      "home_team": "Texas Tech",
       "neutral_site": 0
     },
     {
@@ -386,14 +386,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Chattanooga",
-      "game_id": "2026_01_14_chattanooga_wofford",
-      "home_score": 67,
-      "home_team": "Wofford",
-      "neutral_site": 0
-    },
-    {
       "away_score": 89,
       "away_team": "Radford",
       "game_id": "2026_01_14_radford_gardner_webb",
@@ -407,6 +399,14 @@
       "game_id": "2026_01_14_la_salle_richmond",
       "home_score": 74,
       "home_team": "Richmond",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Chattanooga",
+      "game_id": "2026_01_14_chattanooga_wofford",
+      "home_score": 67,
+      "home_team": "Wofford",
       "neutral_site": 0
     },
     {
@@ -490,5 +490,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.091789Z"
+  "generated_at": "2026-03-04T15:45:35.333659Z"
 }

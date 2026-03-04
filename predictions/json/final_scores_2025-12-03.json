@@ -419,14 +419,6 @@
     },
     {
       "away_score": 80,
-      "away_team": "Louisville",
-      "game_id": "2025_12_03_louisville_arkansas",
-      "home_score": 89,
-      "home_team": "Arkansas",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 80,
       "away_team": "Pacific",
       "game_id": "2025_12_03_pacific_air_force",
       "home_score": 65,
@@ -498,6 +490,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Louisville",
+      "game_id": "2025_12_03_louisville_arkansas",
+      "home_score": 89,
+      "home_team": "Arkansas",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "Austin Peay",
       "game_id": "2025_12_03_austin_peay_kent_st",
@@ -554,5 +554,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.912648Z"
+  "generated_at": "2026-03-04T15:45:35.177573Z"
 }

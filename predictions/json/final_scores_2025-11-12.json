@@ -154,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Southern Indiana",
-      "game_id": "2025_11_12_southern_indiana_south_dakota",
-      "home_score": 89,
-      "home_team": "South Dakota",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "Montana St.",
       "game_id": "2025_11_12_montana_st_stanford",
@@ -306,6 +298,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Southern Indiana",
+      "game_id": "2025_11_12_southern_indiana_south_dakota",
+      "home_score": 89,
+      "home_team": "South Dakota",
+      "neutral_site": 0
+    },
+    {
       "away_score": 78,
       "away_team": "Tennessee Martin",
       "game_id": "2025_11_12_tennessee_martin_bradley",
@@ -346,5 +346,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.811672Z"
+  "generated_at": "2026-03-04T15:45:35.089730Z"
 }

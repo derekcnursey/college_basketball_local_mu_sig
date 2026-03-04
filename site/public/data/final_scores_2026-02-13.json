@@ -66,14 +66,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 74,
-      "away_team": "Ohio",
-      "game_id": "2026_02_13_ohio_miami_oh",
-      "home_score": 90,
-      "home_team": "Miami OH",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "Iona",
       "game_id": "2026_02_13_iona_canisius",
@@ -122,6 +114,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 74,
+      "away_team": "Ohio",
+      "game_id": "2026_02_13_ohio_miami_oh",
+      "home_score": 90,
+      "home_team": "Miami OH",
+      "neutral_site": 0
+    },
+    {
       "away_score": 70,
       "away_team": "Hampton",
       "game_id": "2026_02_13_hampton_north_carolina_a_t",
@@ -130,5 +130,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.251419Z"
+  "generated_at": "2026-03-04T15:45:35.470842Z"
 }

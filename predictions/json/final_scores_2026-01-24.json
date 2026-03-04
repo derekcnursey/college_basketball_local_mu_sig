@@ -882,14 +882,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Eastern Illinois",
-      "game_id": "2026_01_24_eastern_illinois_morehead_st",
-      "home_score": 73,
-      "home_team": "Morehead St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 95,
       "away_team": "Alabama St.",
       "game_id": "2026_01_24_alabama_st_prairie_view_a_m",
@@ -919,6 +911,14 @@
       "game_id": "2026_01_24_uc_irvine_uc_san_diego",
       "home_score": 59,
       "home_team": "UC San Diego",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Eastern Illinois",
+      "game_id": "2026_01_24_eastern_illinois_morehead_st",
+      "home_score": 73,
+      "home_team": "Morehead St.",
       "neutral_site": 0
     },
     {
@@ -1074,5 +1074,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.148940Z"
+  "generated_at": "2026-03-04T15:45:35.383401Z"
 }

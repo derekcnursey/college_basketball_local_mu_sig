@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 56,
+      "away_team": "Gardner Webb",
+      "game_id": "2026_01_21_gardner_webb_longwood",
+      "home_score": 91,
+      "home_team": "Longwood",
+      "neutral_site": 0
+    },
+    {
       "away_score": 83,
       "away_team": "Charleston Southern",
       "game_id": "2026_01_21_charleston_southern_presbyterian",
@@ -394,14 +402,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 56,
-      "away_team": "Gardner Webb",
-      "game_id": "2026_01_21_gardner_webb_longwood",
-      "home_score": 91,
-      "home_team": "Longwood",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "UNC Asheville",
       "game_id": "2026_01_21_unc_asheville_usc_upstate",
@@ -434,5 +434,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.129186Z"
+  "generated_at": "2026-03-04T15:45:35.366013Z"
 }

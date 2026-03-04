@@ -314,6 +314,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Arkansas",
+      "game_id": "2026_02_28_arkansas_florida",
+      "home_score": 111,
+      "home_team": "Florida",
+      "neutral_site": 0
+    },
+    {
       "away_score": 90,
       "away_team": "N.C. State",
       "game_id": "2026_02_28_n_c_state_notre_dame",
@@ -930,6 +938,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Air Force",
+      "game_id": "2026_02_28_air_force_wyoming",
+      "home_score": 66,
+      "home_team": "Wyoming",
+      "neutral_site": 0
+    },
+    {
       "away_score": 66,
       "away_team": "Florida A&M",
       "game_id": "2026_02_28_florida_a_m_grambling_st",
@@ -954,14 +970,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Air Force",
-      "game_id": "2026_02_28_air_force_wyoming",
-      "home_score": 66,
-      "home_team": "Wyoming",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "Stephen F. Austin",
       "game_id": "2026_02_28_stephen_f_austin_houston_christian",
@@ -975,14 +983,6 @@
       "game_id": "2026_02_28_boise_st_fresno_st",
       "home_score": 53,
       "home_team": "Fresno St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 77,
-      "away_team": "Arkansas",
-      "game_id": "2026_02_28_arkansas_florida",
-      "home_score": 111,
-      "home_team": "Florida",
       "neutral_site": 0
     },
     {
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.337225Z"
+  "generated_at": "2026-03-04T15:45:35.549787Z"
 }

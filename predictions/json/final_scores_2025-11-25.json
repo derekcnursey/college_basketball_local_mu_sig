@@ -58,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 71,
-      "away_team": "Eastern Washington",
-      "game_id": "2025_11_25_eastern_washington_north_texas",
-      "home_score": 79,
-      "home_team": "North Texas",
-      "neutral_site": 0
-    },
-    {
       "away_score": 100,
       "away_team": "Arizona St.",
       "game_id": "2025_11_25_arizona_st_washington_st",
@@ -450,6 +442,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "Eastern Washington",
+      "game_id": "2025_11_25_eastern_washington_north_texas",
+      "home_score": 79,
+      "home_team": "North Texas",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Iowa",
       "game_id": "2025_11_25_iowa_mississippi",
@@ -530,5 +530,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.873555Z"
+  "generated_at": "2026-03-04T15:45:35.145009Z"
 }

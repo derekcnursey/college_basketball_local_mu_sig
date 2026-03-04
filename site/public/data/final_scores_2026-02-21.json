@@ -106,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 91,
-      "away_team": "UNLV",
-      "game_id": "2026_02_21_unlv_air_force",
-      "home_score": 66,
-      "home_team": "Air Force",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Southeast Missouri St.",
       "game_id": "2026_02_21_southeast_missouri_st_little_rock",
@@ -1026,6 +1018,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 91,
+      "away_team": "UNLV",
+      "game_id": "2026_02_21_unlv_air_force",
+      "home_score": 66,
+      "home_team": "Air Force",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "San Jose St.",
       "game_id": "2026_02_21_san_jose_st_boise_st",
@@ -1170,5 +1170,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.299631Z"
+  "generated_at": "2026-03-04T15:45:35.515400Z"
 }

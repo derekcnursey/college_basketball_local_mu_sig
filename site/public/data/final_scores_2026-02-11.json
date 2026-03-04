@@ -282,14 +282,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Virginia Tech",
-      "game_id": "2026_02_11_virginia_tech_clemson",
-      "home_score": 66,
-      "home_team": "Clemson",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Wofford",
       "game_id": "2026_02_11_wofford_samford",
@@ -303,6 +295,14 @@
       "game_id": "2026_02_11_alabama_mississippi",
       "home_score": 74,
       "home_team": "Mississippi",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Virginia Tech",
+      "game_id": "2026_02_11_virginia_tech_clemson",
+      "home_score": 66,
+      "home_team": "Clemson",
       "neutral_site": 0
     },
     {
@@ -434,5 +434,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:20.242013Z"
+  "generated_at": "2026-03-04T15:45:35.462751Z"
 }

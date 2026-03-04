@@ -42,14 +42,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 45,
-      "away_team": "Samford",
-      "game_id": "2025_11_26_samford_utah_valley",
-      "home_score": 89,
-      "home_team": "Utah Valley",
-      "neutral_site": 1
-    },
-    {
       "away_score": 64,
       "away_team": "Cal St. Northridge",
       "game_id": "2025_11_26_cal_st_northridge_idaho",
@@ -79,14 +71,6 @@
       "game_id": "2025_11_26_seton_hall_washington_st",
       "home_score": 61,
       "home_team": "Washington St.",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 51,
-      "away_team": "Gardner Webb",
-      "game_id": "2025_11_26_gardner_webb_navy",
-      "home_score": 84,
-      "home_team": "Navy",
       "neutral_site": 1
     },
     {
@@ -136,14 +120,6 @@
       "home_score": 63,
       "home_team": "Tulsa",
       "neutral_site": 1
-    },
-    {
-      "away_score": 59,
-      "away_team": "Denver",
-      "game_id": "2025_11_26_denver_wyoming",
-      "home_score": 101,
-      "home_team": "Wyoming",
-      "neutral_site": 0
     },
     {
       "away_score": 71,
@@ -242,6 +218,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 45,
+      "away_team": "Samford",
+      "game_id": "2025_11_26_samford_utah_valley",
+      "home_score": 89,
+      "home_team": "Utah Valley",
+      "neutral_site": 1
+    },
+    {
       "away_score": 90,
       "away_team": "Lipscomb",
       "game_id": "2025_11_26_lipscomb_marshall",
@@ -328,6 +312,14 @@
       "home_score": 93,
       "home_team": "Northern Kentucky",
       "neutral_site": 0
+    },
+    {
+      "away_score": 51,
+      "away_team": "Gardner Webb",
+      "game_id": "2025_11_26_gardner_webb_navy",
+      "home_score": 84,
+      "home_team": "Navy",
+      "neutral_site": 1
     },
     {
       "away_score": 47,
@@ -450,6 +442,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 59,
+      "away_team": "Denver",
+      "game_id": "2025_11_26_denver_wyoming",
+      "home_score": 101,
+      "home_team": "Wyoming",
+      "neutral_site": 0
+    },
+    {
       "away_score": 54,
       "away_team": "Tennessee Tech",
       "game_id": "2025_11_26_tennessee_tech_kentucky",
@@ -490,5 +490,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.879838Z"
+  "generated_at": "2026-03-04T15:45:35.150608Z"
 }

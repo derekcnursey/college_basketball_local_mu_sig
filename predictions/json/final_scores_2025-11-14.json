@@ -66,14 +66,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Michigan",
-      "game_id": "2025_11_14_michigan_tcu",
-      "home_score": 63,
-      "home_team": "TCU",
-      "neutral_site": 0
-    },
-    {
       "away_score": 61,
       "away_team": "Albany",
       "game_id": "2025_11_14_albany_rhode_island",
@@ -258,6 +250,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 67,
+      "away_team": "Michigan",
+      "game_id": "2025_11_14_michigan_tcu",
+      "home_score": 63,
+      "home_team": "TCU",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "Troy",
       "game_id": "2025_11_14_troy_loyola_marymount",
@@ -362,5 +362,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.819437Z"
+  "generated_at": "2026-03-04T15:45:35.096277Z"
 }

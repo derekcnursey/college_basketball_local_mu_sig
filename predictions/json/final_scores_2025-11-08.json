@@ -18,6 +18,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 105,
+      "away_team": "Vanderbilt",
+      "game_id": "2025_11_08_vanderbilt_ucf",
+      "home_score": 93,
+      "home_team": "UCF",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "East Carolina",
       "game_id": "2025_11_08_east_carolina_richmond",
@@ -175,14 +183,6 @@
       "game_id": "2025_11_08_prairie_view_a_m_wichita_st",
       "home_score": 105,
       "home_team": "Wichita St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 105,
-      "away_team": "Vanderbilt",
-      "game_id": "2025_11_08_vanderbilt_ucf",
-      "home_score": 93,
-      "home_team": "UCF",
       "neutral_site": 0
     },
     {
@@ -474,5 +474,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-01T14:29:19.790938Z"
+  "generated_at": "2026-03-04T15:45:35.072691Z"
 }
