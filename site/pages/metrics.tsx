@@ -90,7 +90,7 @@ export const getServerSideProps: GetServerSideProps<
       }
 
       const model_error =
-        mmh !== null ? Math.abs(actualMargin - mmh) : 0;
+        mmh !== null ? Math.abs(actualMargin + mmh) : 0;
       const sigma_z = sig !== null && sig > 0 ? model_error / sig : null;
 
       games.push({
