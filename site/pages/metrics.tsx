@@ -384,7 +384,14 @@ export default function Performance({
       diffGames.length > 0
         ? diffGames.reduce((s, g) => s + g.diff!, 0) / diffGames.length
         : null;
-    return { wins, losses, bets, units, roi, winPct, mae, sigmaCal, meanDiff };
+    const sdDiff =
+      diffGames.length > 1 && meanDiff !== null
+        ? Math.sqrt(
+            diffGames.reduce((s, g) => s + (g.diff! - meanDiff) ** 2, 0) /
+              diffGames.length
+          )
+        : null;
+    return { wins, losses, bets, units, roi, winPct, mae, sigmaCal, meanDiff, sdDiff };
   }, [filtered]);
 
   return (
@@ -720,6 +727,7 @@ export default function Performance({
                       { label: "UNITS", align: "center" as const },
                       { label: "ROI", align: "center" as const },
                       { label: "DIFF", align: "center" as const },
+                      { label: "DIFF SD", align: "center" as const },
                       { label: "MAE", align: "center" as const },
                       { label: "\u03c3 CAL", align: "center" as const }
                     ].map((h) => (
@@ -747,7 +755,7 @@ export default function Performance({
                   {months.length === 0 ? (
                     <tr>
                       <td
-                        colSpan={9}
+                        colSpan={10}
                         style={{
                           padding: 24,
                           textAlign: "center",
@@ -771,6 +779,13 @@ export default function Performance({
                           m.diffs.length > 0
                             ? m.diffs.reduce((s, e) => s + e, 0) /
                               m.diffs.length
+                            : null;
+                        const sdDiff =
+                          m.diffs.length > 1 && meanDiff !== null
+                            ? Math.sqrt(
+                                m.diffs.reduce((s, e) => s + (e - meanDiff) ** 2, 0) /
+                                  m.diffs.length
+                              )
                             : null;
                         const mae =
                           m.errors.length > 0
@@ -884,6 +899,19 @@ export default function Performance({
                               }}
                             >
                               {meanDiff !== null ? meanDiff.toFixed(1) : "\u2014"}
+                            </td>
+                            <td
+                              style={{
+                                ...mono,
+                                padding: "10px 14px",
+                                textAlign: "center",
+                                fontSize: 13,
+                                fontWeight: 600,
+                                color: "#64748b",
+                                borderBottom: bd
+                              }}
+                            >
+                              {sdDiff !== null ? sdDiff.toFixed(1) : "\u2014"}
                             </td>
                             <td
                               style={{
@@ -1028,6 +1056,22 @@ export default function Performance({
                         >
                           {total.meanDiff !== null
                             ? total.meanDiff.toFixed(1)
+                            : "\u2014"}
+                        </td>
+                        <td
+                          style={{
+                            ...mono,
+                            padding: "10px 14px",
+                            textAlign: "center",
+                            fontSize: 13,
+                            fontWeight: 800,
+                            color: "#64748b",
+                            borderTop: "2px solid #e2e8f0",
+                            background: "#fafbfc"
+                          }}
+                        >
+                          {total.sdDiff !== null
+                            ? total.sdDiff.toFixed(1)
                             : "\u2014"}
                         </td>
                         <td
