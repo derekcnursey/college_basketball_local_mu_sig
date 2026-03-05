@@ -74,6 +74,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "Chattanooga",
+      "game_id": "2026_02_01_chattanooga_furman",
+      "home_score": 75,
+      "home_team": "Furman",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "Iowa",
       "game_id": "2026_02_01_iowa_oregon",
@@ -146,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "Chattanooga",
-      "game_id": "2026_02_01_chattanooga_furman",
-      "home_score": 75,
-      "home_team": "Furman",
-      "neutral_site": 0
-    },
-    {
       "away_score": 88,
       "away_team": "Samford",
       "game_id": "2026_02_01_samford_western_carolina",
@@ -202,5 +202,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-04T15:45:35.420687Z"
+  "generated_at": "2026-03-05T18:20:24.997365Z"
 }

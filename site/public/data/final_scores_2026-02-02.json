@@ -10,6 +10,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 72,
+      "away_team": "Boston University",
+      "game_id": "2026_02_02_boston_university_holy_cross",
+      "home_score": 64,
+      "home_team": "Holy Cross",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Grambling St.",
       "game_id": "2026_02_02_grambling_st_alcorn_st",
@@ -55,14 +63,6 @@
       "game_id": "2026_02_02_syracuse_north_carolina",
       "home_score": 87,
       "home_team": "North Carolina",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 72,
-      "away_team": "Boston University",
-      "game_id": "2026_02_02_boston_university_holy_cross",
-      "home_score": 64,
-      "home_team": "Holy Cross",
       "neutral_site": 0
     },
     {
@@ -138,5 +138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-04T15:45:35.422974Z"
+  "generated_at": "2026-03-05T18:20:24.999657Z"
 }

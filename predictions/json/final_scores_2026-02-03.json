@@ -58,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "VCU",
-      "game_id": "2026_02_03_vcu_fordham",
-      "home_score": 59,
-      "home_team": "Fordham",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "Akron",
       "game_id": "2026_02_03_akron_eastern_michigan",
@@ -226,6 +218,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "VCU",
+      "game_id": "2026_02_03_vcu_fordham",
+      "home_score": 59,
+      "home_team": "Fordham",
+      "neutral_site": 0
+    },
+    {
       "away_score": 68,
       "away_team": "St. John's",
       "game_id": "2026_02_03_st_john_s_depaul",
@@ -250,5 +250,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-04T15:45:35.425849Z"
+  "generated_at": "2026-03-05T18:20:25.002725Z"
 }
