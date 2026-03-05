@@ -222,6 +222,7 @@ export default function Performance({
 }: PerformanceProps) {
   const [edgeMin, setEdgeMin] = useState(0);
   const [edgeMax, setEdgeMax] = useState(50);
+  const [diffMin, setDiffMin] = useState(0);
   const [startMonth, setStartMonth] = useState<number | "">("");
 
   const availableSeasons = useMemo(() => {
@@ -249,14 +250,24 @@ export default function Performance({
     return Math.ceil(Math.max(...games.map((g) => g.edge)));
   }, [games]);
 
+  const maxDiff = useMemo(() => {
+    if (!games.length) return 20;
+    let mx = 0;
+    for (const g of games) {
+      if (g.diff !== null && g.diff > mx) mx = g.diff;
+    }
+    return Math.ceil(mx) || 20;
+  }, [games]);
+
   /* filtered games */
   const filtered = useMemo(
     () =>
       games
         .filter((g) => seasonFilter === "all" || getSeasonFromDate(g.date) === seasonFilter)
         .filter((g) => startMonth === "" || seasonMonthOrd(Number(g.date.slice(5, 7))) >= seasonMonthOrd(startMonth as number))
-        .filter((g) => g.edge >= edgeMin && g.edge <= edgeMax),
-    [games, seasonFilter, startMonth, edgeMin, edgeMax]
+        .filter((g) => g.edge >= edgeMin && g.edge <= edgeMax)
+        .filter((g) => diffMin === 0 || (g.diff !== null && g.diff >= diffMin)),
+    [games, seasonFilter, startMonth, edgeMin, edgeMax, diffMin]
   );
 
   /* stats */
@@ -558,6 +569,38 @@ export default function Performance({
                 }}
               >
                 {edgeMax}%
+              </span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <span
+                style={{
+                  ...mono,
+                  fontSize: 11,
+                  fontWeight: 600,
+                  color: "#64748b"
+                }}
+              >
+                DIFF
+              </span>
+              <input
+                type="range"
+                min={0}
+                max={maxDiff}
+                step={1}
+                value={diffMin}
+                onChange={(e) => setDiffMin(Number(e.target.value))}
+                style={{ width: 100, accentColor: "#0f172a" }}
+              />
+              <span
+                style={{
+                  ...mono,
+                  fontSize: 13,
+                  fontWeight: 700,
+                  color: "#0f172a",
+                  minWidth: 24
+                }}
+              >
+                {diffMin}
               </span>
             </div>
           </div>

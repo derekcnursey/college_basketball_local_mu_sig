@@ -146,7 +146,18 @@ const columns: { key: SortKey; label: string; align: "left" | "center" }[] = [
 export default function Home({ date, rows }: HomeProps) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<"all" | "edge10">("all");
+  const [diffMin, setDiffMin] = useState(0);
   const [sort, setSort] = useState<SortState>({ key: "edge", dir: "desc" });
+
+  const maxDiff = useMemo(() => {
+    if (!rows.length) return 20;
+    let mx = 0;
+    for (const r of rows) {
+      const d = diff(r);
+      if (d !== null && d > mx) mx = d;
+    }
+    return Math.ceil(mx) || 20;
+  }, [rows]);
 
   const tableRows = useMemo(() => {
     let list = [...rows];
@@ -165,6 +176,13 @@ export default function Home({ date, rows }: HomeProps) {
       list = list.filter((r) => hasBook(r) && edge(r) >= 0.10);
     }
 
+    if (diffMin > 0) {
+      list = list.filter((r) => {
+        const d = diff(r);
+        return d !== null && d >= diffMin;
+      });
+    }
+
     list.sort((a, b) => {
       const aHas = hasBook(a);
       const bHas = hasBook(b);
@@ -180,7 +198,7 @@ export default function Home({ date, rows }: HomeProps) {
     });
 
     return list;
-  }, [rows, search, filter, sort]);
+  }, [rows, search, filter, diffMin, sort]);
 
   function handleSort(key: SortKey) {
     setSort((prev) =>
@@ -261,6 +279,22 @@ export default function Home({ date, rows }: HomeProps) {
                 color: "#334155"
               }}
             />
+
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <span style={{ ...mono, fontSize: 10, color: "#94a3b8", fontWeight: 500 }}>DIFF</span>
+              <input
+                type="range"
+                min={0}
+                max={maxDiff}
+                step={1}
+                value={diffMin}
+                onChange={(e) => setDiffMin(Number(e.target.value))}
+                style={{ width: 100, accentColor: "#0f172a" }}
+              />
+              <span style={{ ...mono, fontSize: 12, fontWeight: 700, color: "#0f172a", minWidth: 24 }}>
+                {diffMin}
+              </span>
+            </div>
 
             <div style={{ display: "flex", gap: 6 }}>
               {(["all", "edge10"] as const).map((f) => (

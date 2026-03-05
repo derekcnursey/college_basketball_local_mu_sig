@@ -228,6 +228,7 @@ export default function History({
 }: HistoryProps) {
   const [search, setSearch] = useState("");
   const [edgeMin, setEdgeMin] = useState(0);
+  const [diffMin, setDiffMin] = useState(0);
   const [resultFilter, setResultFilter] = useState<
     "all" | "wins" | "losses"
   >("all");
@@ -250,13 +251,29 @@ export default function History({
     );
   }, [games]);
 
+  const maxDiff = useMemo(() => {
+    if (!games.length) return 20;
+    let mx = 0;
+    for (const g of games) {
+      if (g.model_mu_home !== null && g.market_spread_home !== null) {
+        const d = Math.abs(g.model_mu_home - g.market_spread_home);
+        if (d > mx) mx = d;
+      }
+    }
+    return Math.ceil(mx) || 20;
+  }, [games]);
+
   /* compute daily stats from games above threshold */
   const stats = useMemo(() => {
     const above = games.filter(
-      (g) =>
-        g.has_book &&
-        g.pick_prob_edge * 100 >= edgeMin &&
-        g.ats_result !== null
+      (g) => {
+        if (!g.has_book || g.ats_result === null) return false;
+        if (g.pick_prob_edge * 100 < edgeMin) return false;
+        if (diffMin > 0 && g.model_mu_home !== null && g.market_spread_home !== null) {
+          if (Math.abs(g.model_mu_home - g.market_spread_home) < diffMin) return false;
+        }
+        return true;
+      }
     );
     const wins = above.filter((g) => g.ats_result === "win").length;
     const losses = above.filter((g) => g.ats_result === "loss").length;
@@ -273,7 +290,7 @@ export default function History({
       unitsNum: units,
       roiNum: roi
     };
-  }, [games, edgeMin]);
+  }, [games, edgeMin, diffMin]);
 
   /* filtered + sorted rows */
   const tableRows = useMemo(() => {
@@ -559,38 +576,72 @@ export default function History({
             />
           </div>
 
-          {/* Center: edge slider */}
-          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <span
-              style={{
-                ...mono,
-                fontSize: 10,
-                color: "#94a3b8",
-                fontWeight: 500
-              }}
-            >
-              EDGE
-            </span>
-            <input
-              type="range"
-              min={minEdge}
-              max={maxEdge}
-              step={1}
-              value={edgeMin}
-              onChange={(e) => setEdgeMin(Number(e.target.value))}
-              style={{ width: 140, accentColor: "#0f172a" }}
-            />
-            <span
-              style={{
-                ...mono,
-                fontSize: 12,
-                fontWeight: 700,
-                color: "#0f172a",
-                minWidth: 30
-              }}
-            >
-              {edgeMin}%
-            </span>
+          {/* Center: edge + diff sliders */}
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <span
+                style={{
+                  ...mono,
+                  fontSize: 10,
+                  color: "#94a3b8",
+                  fontWeight: 500
+                }}
+              >
+                EDGE
+              </span>
+              <input
+                type="range"
+                min={minEdge}
+                max={maxEdge}
+                step={1}
+                value={edgeMin}
+                onChange={(e) => setEdgeMin(Number(e.target.value))}
+                style={{ width: 100, accentColor: "#0f172a" }}
+              />
+              <span
+                style={{
+                  ...mono,
+                  fontSize: 12,
+                  fontWeight: 700,
+                  color: "#0f172a",
+                  minWidth: 30
+                }}
+              >
+                {edgeMin}%
+              </span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <span
+                style={{
+                  ...mono,
+                  fontSize: 10,
+                  color: "#94a3b8",
+                  fontWeight: 500
+                }}
+              >
+                DIFF
+              </span>
+              <input
+                type="range"
+                min={0}
+                max={maxDiff}
+                step={1}
+                value={diffMin}
+                onChange={(e) => setDiffMin(Number(e.target.value))}
+                style={{ width: 100, accentColor: "#0f172a" }}
+              />
+              <span
+                style={{
+                  ...mono,
+                  fontSize: 12,
+                  fontWeight: 700,
+                  color: "#0f172a",
+                  minWidth: 24
+                }}
+              >
+                {diffMin}
+              </span>
+            </div>
           </div>
 
           {/* Right: filter buttons */}
@@ -691,8 +742,10 @@ export default function History({
                   </tr>
                 ) : (
                   tableRows.map((g, i) => {
+                    const gameDiff = g.model_mu_home !== null && g.market_spread_home !== null
+                      ? Math.abs(g.model_mu_home - g.market_spread_home) : 0;
                     const aboveThreshold =
-                      g.has_book && g.pick_prob_edge >= edgeThreshold;
+                      g.has_book && g.pick_prob_edge >= edgeThreshold && gameDiff >= diffMin;
                     const dimmed = !aboveThreshold;
                     const bd = "1px solid #f1f5f9";
 
