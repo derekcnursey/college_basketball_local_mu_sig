@@ -104,6 +104,23 @@
       "pred_sigma": 9.122704
     },
     {
+      "away_team": "Howard",
+      "edge_home_points": -3.12971616,
+      "game_id": "2025_12_09_howard_north_carolina_a_t",
+      "home_team": "North Carolina A&T",
+      "market_spread_home": -2.5,
+      "model_mu_home": 0.62971616,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6213752906007368,
+      "pick_ev_per_1": 0.1862619184195885,
+      "pick_fair_odds": -164.0,
+      "pick_prob_edge": 0.09756576679121298,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4752051355036404,
+      "pred_sigma": 10.125425
+    },
+    {
       "away_team": "USC",
       "edge_home_points": 3.1650980000000004,
       "game_id": "2025_12_09_usc_san_diego",
@@ -121,6 +138,23 @@
       "pred_sigma": 11.070908
     },
     {
+      "away_team": "BYU",
+      "edge_home_points": -3.1268477,
+      "game_id": "2025_12_09_byu_clemson",
+      "home_team": "Clemson",
+      "market_spread_home": 4.5,
+      "model_mu_home": 7.6268477,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6116537661157618,
+      "pick_ev_per_1": 0.167702644402818,
+      "pick_fair_odds": -158.0,
+      "pick_prob_edge": 0.087844242306238,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.2445250102694027,
+      "pred_sigma": 11.024315
+    },
+    {
       "away_team": "Villanova",
       "edge_home_points": -2.9186560000000004,
       "game_id": "2025_12_09_villanova_michigan",
@@ -136,6 +170,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9093784318071958,
       "pred_sigma": 10.906528
+    },
+    {
+      "away_team": "Connecticut",
+      "edge_home_points": 2.408577,
+      "game_id": "2025_12_09_connecticut_florida",
+      "home_team": "Florida",
+      "market_spread_home": 4.5,
+      "model_mu_home": 2.091423,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5823683957978201,
+      "pick_ev_per_1": 0.11179421015947466,
+      "pick_fair_odds": -139.0,
+      "pick_prob_edge": 0.058558871988296235,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4283513261594821,
+      "pred_sigma": 11.582139
     },
     {
       "away_team": "South Dakota St.",
@@ -325,23 +376,6 @@
       "pred_sigma": 11.774239
     },
     {
-      "away_team": "Howard",
-      "edge_home_points": null,
-      "game_id": "2025_12_09_howard_north_carolina_a_t",
-      "home_team": "North Carolina A&T",
-      "market_spread_home": null,
-      "model_mu_home": 0.62971616,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4752051355036404,
-      "pred_sigma": 10.125425
-    },
-    {
       "away_team": "Buffalo",
       "edge_home_points": null,
       "game_id": "2025_12_09_buffalo_umbc",
@@ -357,41 +391,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.4950703045216068,
       "pred_sigma": 10.448346
-    },
-    {
-      "away_team": "BYU",
-      "edge_home_points": null,
-      "game_id": "2025_12_09_byu_clemson",
-      "home_team": "Clemson",
-      "market_spread_home": null,
-      "model_mu_home": 7.6268477,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.2445250102694027,
-      "pred_sigma": 11.024315
-    },
-    {
-      "away_team": "Connecticut",
-      "edge_home_points": null,
-      "game_id": "2025_12_09_connecticut_florida",
-      "home_team": "Florida",
-      "market_spread_home": null,
-      "model_mu_home": 2.091423,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4283513261594821,
-      "pred_sigma": 11.582139
     }
   ],
-  "generated_at": "2026-03-05T20:05:58.319420Z"
+  "generated_at": "2026-03-05T21:09:33.302540Z"
 }

@@ -53,6 +53,23 @@
       "pred_sigma": 13.272237
     },
     {
+      "away_team": "Utah St.",
+      "edge_home_points": 8.775461700000001,
+      "game_id": "2025_11_07_utah_st_vcu",
+      "home_team": "VCU",
+      "market_spread_home": 3.5,
+      "model_mu_home": -5.2754617,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.7929879926142511,
+      "pick_ev_per_1": 0.5138861677181158,
+      "pick_fair_odds": -383.0,
+      "pick_prob_edge": 0.2691784688047273,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.688303627292418,
+      "pred_sigma": 10.7432785
+    },
+    {
       "away_team": "Valparaiso",
       "edge_home_points": -8.951319999999999,
       "game_id": "2025_11_07_valparaiso_kentucky",
@@ -187,6 +204,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.8301202258605134,
       "pred_sigma": 10.881144
+    },
+    {
+      "away_team": "Rhode Island",
+      "edge_home_points": 5.7592928,
+      "game_id": "2025_11_07_rhode_island_tulsa",
+      "home_team": "Tulsa",
+      "market_spread_home": 3.5,
+      "model_mu_home": -2.2592928,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.7057051444489676,
+      "pick_ev_per_1": 0.34725527576621085,
+      "pick_fair_odds": -240.0,
+      "pick_prob_edge": 0.18189562063944376,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5840167935513686,
+      "pred_sigma": 10.647988
     },
     {
       "away_team": "Sam Houston St.",
@@ -918,41 +952,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9078005151355676,
       "pred_sigma": 10.966722
-    },
-    {
-      "away_team": "Utah St.",
-      "edge_home_points": null,
-      "game_id": "2025_11_07_utah_st_vcu",
-      "home_team": "VCU",
-      "market_spread_home": null,
-      "model_mu_home": -5.2754617,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.688303627292418,
-      "pred_sigma": 10.7432785
-    },
-    {
-      "away_team": "Rhode Island",
-      "edge_home_points": null,
-      "game_id": "2025_11_07_rhode_island_tulsa",
-      "home_team": "Tulsa",
-      "market_spread_home": null,
-      "model_mu_home": -2.2592928,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5840167935513686,
-      "pred_sigma": 10.647988
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.094565Z"
+  "generated_at": "2026-03-05T21:09:31.936489Z"
 }

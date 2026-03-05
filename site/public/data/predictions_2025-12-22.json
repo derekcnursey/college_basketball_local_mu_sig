@@ -291,6 +291,23 @@
       "pred_sigma": 8.975966
     },
     {
+      "away_team": "Norfolk St.",
+      "edge_home_points": -2.6633134,
+      "game_id": "2025_12_22_norfolk_st_uc_irvine",
+      "home_team": "UC Irvine",
+      "market_spread_home": -10.5,
+      "model_mu_home": -7.8366866,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.610697030475144,
+      "pick_ev_per_1": 0.16587614908891124,
+      "pick_fair_odds": -157.0,
+      "pick_prob_edge": 0.08688750666562017,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.7959470314299746,
+      "pred_sigma": 9.473392
+    },
+    {
       "away_team": "Davidson",
       "edge_home_points": -2.4295170000000006,
       "game_id": "2025_12_22_davidson_kansas",
@@ -306,6 +323,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9217736494759788,
       "pred_sigma": 9.22338
+    },
+    {
+      "away_team": "Illinois",
+      "edge_home_points": 2.989174,
+      "game_id": "2025_12_22_illinois_missouri",
+      "home_team": "Missouri",
+      "market_spread_home": 9.5,
+      "model_mu_home": 6.510826,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.603865276573689,
+      "pick_ev_per_1": 0.15283370982249722,
+      "pick_fair_odds": -152.0,
+      "pick_prob_edge": 0.08005575276416521,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.2831043204288629,
+      "pred_sigma": 11.349939
     },
     {
       "away_team": "Rider",
@@ -663,41 +697,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9446849413666722,
       "pred_sigma": 12.181633
-    },
-    {
-      "away_team": "Illinois",
-      "edge_home_points": null,
-      "game_id": "2025_12_22_illinois_missouri",
-      "home_team": "Missouri",
-      "market_spread_home": null,
-      "model_mu_home": 6.510826,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.2831043204288629,
-      "pred_sigma": 11.349939
-    },
-    {
-      "away_team": "Norfolk St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_22_norfolk_st_uc_irvine",
-      "home_team": "UC Irvine",
-      "market_spread_home": null,
-      "model_mu_home": -7.8366866,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.7959470314299746,
-      "pred_sigma": 9.473392
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.764431Z"
+  "generated_at": "2026-03-05T21:09:32.713348Z"
 }

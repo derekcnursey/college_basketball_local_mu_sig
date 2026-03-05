@@ -53,6 +53,23 @@
       "pred_sigma": 11.206644
     },
     {
+      "away_team": "Iowa St.",
+      "edge_home_points": 5.436809845,
+      "game_id": "2025_11_10_iowa_st_mississippi_st",
+      "home_team": "Mississippi St.",
+      "market_spread_home": 5.5,
+      "model_mu_home": 0.063190155,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6746285673530391,
+      "pick_ev_per_1": 0.28792726494671106,
+      "pick_fair_odds": -207.0,
+      "pick_prob_edge": 0.15081904354351527,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.497900803847194,
+      "pred_sigma": 12.008934
+    },
+    {
       "away_team": "Stetson",
       "edge_home_points": -6.5321180000000005,
       "game_id": "2025_11_10_stetson_miami_fl",
@@ -425,24 +442,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9538671898549448,
       "pred_sigma": 12.662068
-    },
-    {
-      "away_team": "Iowa St.",
-      "edge_home_points": null,
-      "game_id": "2025_11_10_iowa_st_mississippi_st",
-      "home_team": "Mississippi St.",
-      "market_spread_home": null,
-      "model_mu_home": 0.063190155,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.497900803847194,
-      "pred_sigma": 12.008934
     }
   ],
-  "generated_at": "2026-03-05T20:05:56.041488Z"
+  "generated_at": "2026-03-05T21:09:30.684719Z"
 }

@@ -70,6 +70,23 @@
       "pred_sigma": 10.501069
     },
     {
+      "away_team": "South Dakota St.",
+      "edge_home_points": -1.9423782,
+      "game_id": "2025_12_15_south_dakota_st_wyoming",
+      "home_team": "Wyoming",
+      "market_spread_home": -3.5,
+      "model_mu_home": -1.5576218,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5768702890719484,
+      "pick_ev_per_1": 0.1012978245919014,
+      "pick_fair_odds": -136.0,
+      "pick_prob_edge": 0.053060765262424536,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5617808725304901,
+      "pred_sigma": 10.017768
+    },
+    {
       "away_team": "North Alabama",
       "edge_home_points": 0.6546907000000002,
       "game_id": "2025_12_15_north_alabama_alabama_a_m",
@@ -102,24 +119,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.6799763452931175,
       "pred_sigma": 9.064833
-    },
-    {
-      "away_team": "South Dakota St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_15_south_dakota_st_wyoming",
-      "home_team": "Wyoming",
-      "market_spread_home": null,
-      "model_mu_home": -1.5576218,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5617808725304901,
-      "pred_sigma": 10.017768
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.428096Z"
+  "generated_at": "2026-03-05T21:09:32.309191Z"
 }

@@ -36,6 +36,23 @@
       "pred_sigma": 9.211546
     },
     {
+      "away_team": "SMU",
+      "edge_home_points": 6.352232,
+      "game_id": "2025_12_07_smu_texas_a_m",
+      "home_team": "Texas A&M",
+      "market_spread_home": 1.5,
+      "model_mu_home": -4.852232,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.7124673694702673,
+      "pick_ev_per_1": 0.36016497807960124,
+      "pick_fair_odds": -248.0,
+      "pick_prob_edge": 0.1886578456607435,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.6657570392231141,
+      "pred_sigma": 11.330983
+    },
+    {
       "away_team": "LSU",
       "edge_home_points": 5.522584211,
       "game_id": "2025_12_07_lsu_texas_tech",
@@ -119,6 +136,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.4661410847646913,
       "pred_sigma": 10.388518
+    },
+    {
+      "away_team": "Mississippi St.",
+      "edge_home_points": 3.1706097,
+      "game_id": "2025_12_07_mississippi_st_san_francisco",
+      "home_team": "San Francisco",
+      "market_spread_home": 4.5,
+      "model_mu_home": 1.3293903,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6268273685248018,
+      "pick_ev_per_1": 0.19667043082007618,
+      "pick_fair_odds": -168.0,
+      "pick_prob_edge": 0.10301784471527797,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4460596797068114,
+      "pred_sigma": 9.802104
     },
     {
       "away_team": "Niagara",
@@ -629,41 +663,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7575847026108056,
       "pred_sigma": 9.279851
-    },
-    {
-      "away_team": "SMU",
-      "edge_home_points": null,
-      "game_id": "2025_12_07_smu_texas_a_m",
-      "home_team": "Texas A&M",
-      "market_spread_home": null,
-      "model_mu_home": -4.852232,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.6657570392231141,
-      "pred_sigma": 11.330983
-    },
-    {
-      "away_team": "Mississippi St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_07_mississippi_st_san_francisco",
-      "home_team": "San Francisco",
-      "market_spread_home": null,
-      "model_mu_home": 1.3293903,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4460596797068114,
-      "pred_sigma": 9.802104
     }
   ],
-  "generated_at": "2026-03-05T20:05:58.241414Z"
+  "generated_at": "2026-03-05T21:09:33.228518Z"
 }

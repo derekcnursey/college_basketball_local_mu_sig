@@ -2,6 +2,23 @@
   "date": "2025-11-14",
   "games": [
     {
+      "away_team": "Mississippi Valley St.",
+      "edge_home_points": 43.137007,
+      "game_id": "2025_11_14_mississippi_valley_st_utah_tech",
+      "home_team": "Utah Tech",
+      "market_spread_home": 26.5,
+      "model_mu_home": -16.637007,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.9998834625060067,
+      "pick_ev_per_1": 0.9088684284205581,
+      "pick_fair_odds": -857993.0,
+      "pick_prob_edge": 0.47607393869648285,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.9221034055757508,
+      "pred_sigma": 11.721459
+    },
+    {
       "away_team": "The Citadel",
       "edge_home_points": -8.2807834,
       "game_id": "2025_11_14_the_citadel_west_georgia",
@@ -221,6 +238,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9188488400412094,
       "pred_sigma": 8.486493
+    },
+    {
+      "away_team": "Charleston Southern",
+      "edge_home_points": -3.6102843,
+      "game_id": "2025_11_14_charleston_southern_lindenwood",
+      "home_team": "Lindenwood",
+      "market_spread_home": -2.5,
+      "model_mu_home": 1.1102843,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6549769580696221,
+      "pick_ev_per_1": 0.2504105563147331,
+      "pick_fair_odds": -190.0,
+      "pick_prob_edge": 0.13116743426009825,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4511952285255227,
+      "pred_sigma": 9.053039
     },
     {
       "away_team": "Troy",
@@ -731,41 +765,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7769124875230743,
       "pred_sigma": 8.238289
-    },
-    {
-      "away_team": "Charleston Southern",
-      "edge_home_points": null,
-      "game_id": "2025_11_14_charleston_southern_lindenwood",
-      "home_team": "Lindenwood",
-      "market_spread_home": null,
-      "model_mu_home": 1.1102843,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4511952285255227,
-      "pred_sigma": 9.053039
-    },
-    {
-      "away_team": "Mississippi Valley St.",
-      "edge_home_points": null,
-      "game_id": "2025_11_14_mississippi_valley_st_utah_tech",
-      "home_team": "Utah Tech",
-      "market_spread_home": null,
-      "model_mu_home": -16.637007,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.9221034055757508,
-      "pred_sigma": 11.721459
     }
   ],
-  "generated_at": "2026-03-05T20:05:56.206431Z"
+  "generated_at": "2026-03-05T21:09:30.865050Z"
 }

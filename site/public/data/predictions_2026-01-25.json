@@ -87,6 +87,40 @@
       "pred_sigma": 9.657789
     },
     {
+      "away_team": "Wagner",
+      "edge_home_points": -0.6971900000000009,
+      "game_id": "2026_01_25_wagner_liu",
+      "home_team": "LIU",
+      "market_spread_home": -10.5,
+      "model_mu_home": -9.80281,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5287335811696856,
+      "pick_ev_per_1": 0.009400473142127053,
+      "pick_fair_odds": -112.0,
+      "pick_prob_edge": 0.004924057360161771,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.8446067638598798,
+      "pred_sigma": 9.671536
+    },
+    {
+      "away_team": "Le Moyne",
+      "edge_home_points": 0.2729994,
+      "game_id": "2026_01_25_le_moyne_fairleigh_dickinson",
+      "home_team": "Fairleigh Dickinson",
+      "market_spread_home": 1.5,
+      "model_mu_home": 1.2270006,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5100749141985984,
+      "pick_ev_per_1": -0.02622061834813033,
+      "pick_fair_odds": -104.0,
+      "pick_prob_edge": -0.01373460961092543,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4548103790033997,
+      "pred_sigma": 10.808968
+    },
+    {
       "away_team": "Saint Francis",
       "edge_home_points": null,
       "game_id": "2026_01_25_saint_francis_new_haven",
@@ -119,41 +153,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7020203671183436,
       "pred_sigma": 7.7344537
-    },
-    {
-      "away_team": "Le Moyne",
-      "edge_home_points": null,
-      "game_id": "2026_01_25_le_moyne_fairleigh_dickinson",
-      "home_team": "Fairleigh Dickinson",
-      "market_spread_home": null,
-      "model_mu_home": 1.2270006,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4548103790033997,
-      "pred_sigma": 10.808968
-    },
-    {
-      "away_team": "Wagner",
-      "edge_home_points": null,
-      "game_id": "2026_01_25_wagner_liu",
-      "home_team": "LIU",
-      "market_spread_home": null,
-      "model_mu_home": -9.80281,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.8446067638598798,
-      "pred_sigma": 9.671536
     }
   ],
-  "generated_at": "2026-03-05T20:05:59.030506Z"
+  "generated_at": "2026-03-05T21:09:34.007585Z"
 }

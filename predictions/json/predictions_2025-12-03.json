@@ -104,6 +104,23 @@
       "pred_sigma": 9.460224
     },
     {
+      "away_team": "BYU",
+      "edge_home_points": 4.407083500000001,
+      "game_id": "2025_12_03_byu_cal_baptist",
+      "home_team": "Cal Baptist",
+      "market_spread_home": 19.5,
+      "model_mu_home": 15.0929165,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6454300457943632,
+      "pick_ev_per_1": 0.232184632880148,
+      "pick_fair_odds": -182.0,
+      "pick_prob_edge": 0.12162052198483941,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.1007216201335255,
+      "pred_sigma": 11.814874
+    },
+    {
       "away_team": "Purdue Fort Wayne",
       "edge_home_points": 3.1344899999999996,
       "game_id": "2025_12_03_purdue_fort_wayne_oakland",
@@ -1156,24 +1173,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7550674006256568,
       "pred_sigma": 9.484698
-    },
-    {
-      "away_team": "BYU",
-      "edge_home_points": null,
-      "game_id": "2025_12_03_byu_cal_baptist",
-      "home_team": "Cal Baptist",
-      "market_spread_home": null,
-      "model_mu_home": 15.0929165,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.1007216201335255,
-      "pred_sigma": 11.814874
     }
   ],
-  "generated_at": "2026-03-05T20:05:58.081201Z"
+  "generated_at": "2026-03-05T21:09:33.059773Z"
 }

@@ -410,6 +410,23 @@
       "pred_sigma": 8.342918
     },
     {
+      "away_team": "Mississippi Valley St.",
+      "edge_home_points": -1.8388540000000013,
+      "game_id": "2026_01_27_mississippi_valley_st_southern",
+      "home_team": "Southern",
+      "market_spread_home": -20.5,
+      "model_mu_home": -18.661146,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5652112983498945,
+      "pick_ev_per_1": 0.0790397513952531,
+      "pick_fair_odds": -130.0,
+      "pick_prob_edge": 0.04140177454037064,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.9521726177929912,
+      "pred_sigma": 11.199188
+    },
+    {
       "away_team": "Buffalo",
       "edge_home_points": -1.1666720000000002,
       "game_id": "2026_01_27_buffalo_bowling_green",
@@ -612,24 +629,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.837965549213805,
       "pred_sigma": 9.147315
-    },
-    {
-      "away_team": "Mississippi Valley St.",
-      "edge_home_points": null,
-      "game_id": "2026_01_27_mississippi_valley_st_southern",
-      "home_team": "Southern",
-      "market_spread_home": null,
-      "model_mu_home": -18.661146,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.9521726177929912,
-      "pred_sigma": 11.199188
     }
   ],
-  "generated_at": "2026-03-05T20:05:59.109264Z"
+  "generated_at": "2026-03-05T21:09:34.097107Z"
 }

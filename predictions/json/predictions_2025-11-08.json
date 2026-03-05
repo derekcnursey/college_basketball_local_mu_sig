@@ -172,6 +172,23 @@
       "pred_sigma": 9.604384
     },
     {
+      "away_team": "Charleston",
+      "edge_home_points": -5.15854838,
+      "game_id": "2025_11_08_charleston_florida_atlantic",
+      "home_team": "Florida Atlantic",
+      "market_spread_home": -5.5,
+      "model_mu_home": -0.34145162,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6897384357405326,
+      "pick_ev_per_1": 0.31677337732283495,
+      "pick_fair_odds": -222.0,
+      "pick_prob_edge": 0.16592891193100878,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5130717846109457,
+      "pred_sigma": 10.419014
+    },
+    {
       "away_team": "Western Carolina",
       "edge_home_points": -6.896540000000002,
       "game_id": "2025_11_08_western_carolina_duke",
@@ -869,6 +886,23 @@
       "pred_sigma": 11.447365
     },
     {
+      "away_team": "George Washington",
+      "edge_home_points": -0.53117186,
+      "game_id": "2025_11_08_george_washington_south_florida",
+      "home_team": "South Florida",
+      "market_spread_home": -1.5,
+      "model_mu_home": -0.96882814,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5193597250952401,
+      "pick_ev_per_1": -0.008495070272723504,
+      "pick_fair_odds": -108.0,
+      "pick_prob_edge": -0.004449798714283748,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5352788335946953,
+      "pred_sigma": 10.9414625
+    },
+    {
       "away_team": "Cal Poly",
       "edge_home_points": 0.41493499999999983,
       "game_id": "2025_11_08_cal_poly_seattle",
@@ -969,41 +1003,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.6395816640759705,
       "pred_sigma": 9.668426
-    },
-    {
-      "away_team": "George Washington",
-      "edge_home_points": null,
-      "game_id": "2025_11_08_george_washington_south_florida",
-      "home_team": "South Florida",
-      "market_spread_home": null,
-      "model_mu_home": -0.96882814,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5352788335946953,
-      "pred_sigma": 10.9414625
-    },
-    {
-      "away_team": "Charleston",
-      "edge_home_points": null,
-      "game_id": "2025_11_08_charleston_florida_atlantic",
-      "home_team": "Florida Atlantic",
-      "market_spread_home": null,
-      "model_mu_home": -0.34145162,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5130717846109457,
-      "pred_sigma": 10.419014
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.135732Z"
+  "generated_at": "2026-03-05T21:09:31.990906Z"
 }

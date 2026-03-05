@@ -172,6 +172,23 @@
       "pred_sigma": 10.357772
     },
     {
+      "away_team": "Loyola Chicago",
+      "edge_home_points": 2.5013259999999997,
+      "game_id": "2025_11_09_loyola_chicago_north_texas",
+      "home_team": "North Texas",
+      "market_spread_home": 1.5,
+      "model_mu_home": -1.001326,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6048449807614638,
+      "pick_ev_per_1": 0.1547040541809762,
+      "pick_fair_odds": -153.0,
+      "pick_prob_edge": 0.08103545695193992,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5423864600417563,
+      "pred_sigma": 9.4067335
+    },
+    {
       "away_team": "Marist",
       "edge_home_points": -2.41585124,
       "game_id": "2025_11_09_marist_dartmouth",
@@ -342,6 +359,23 @@
       "pred_sigma": 11.846298
     },
     {
+      "away_team": "East Texas A&M",
+      "edge_home_points": -3.3039929999999984,
+      "game_id": "2025_11_09_east_texas_a_m_hawaii",
+      "home_team": "Hawaii",
+      "market_spread_home": -20.5,
+      "model_mu_home": -17.196007,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5526522044795584,
+      "pick_ev_per_1": 0.05506329946097521,
+      "pick_fair_odds": -124.0,
+      "pick_prob_edge": 0.028842680670034593,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.7545596384656419,
+      "pred_sigma": 24.961227
+    },
+    {
       "away_team": "Cal St. Northridge",
       "edge_home_points": 1.350772,
       "game_id": "2025_11_09_cal_st_northridge_north_dakota",
@@ -459,41 +493,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7809584116558844,
       "pred_sigma": 9.597524
-    },
-    {
-      "away_team": "Loyola Chicago",
-      "edge_home_points": null,
-      "game_id": "2025_11_09_loyola_chicago_north_texas",
-      "home_team": "North Texas",
-      "market_spread_home": null,
-      "model_mu_home": -1.001326,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5423864600417563,
-      "pred_sigma": 9.4067335
-    },
-    {
-      "away_team": "East Texas A&M",
-      "edge_home_points": null,
-      "game_id": "2025_11_09_east_texas_a_m_hawaii",
-      "home_team": "Hawaii",
-      "market_spread_home": null,
-      "model_mu_home": -17.196007,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.7545596384656419,
-      "pred_sigma": 24.961227
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.177175Z"
+  "generated_at": "2026-03-05T21:09:32.033617Z"
 }

@@ -1464,6 +1464,23 @@
       "pred_sigma": 9.095684
     },
     {
+      "away_team": "Duke",
+      "edge_home_points": -1.5757562,
+      "game_id": "2026_02_21_duke_michigan",
+      "home_team": "Michigan",
+      "market_spread_home": -3.5,
+      "model_mu_home": -1.9242438,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5527913644183393,
+      "pick_ev_per_1": 0.05532896843501145,
+      "pick_fair_odds": -124.0,
+      "pick_prob_edge": 0.02898184060881548,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5643738546170377,
+      "pred_sigma": 11.873063
+    },
+    {
       "away_team": "Washington",
       "edge_home_points": -1.2424790000000003,
       "game_id": "2026_02_21_washington_maryland",
@@ -2465,24 +2482,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.2858838117703642,
       "pred_sigma": 11.494372
-    },
-    {
-      "away_team": "Duke",
-      "edge_home_points": null,
-      "game_id": "2026_02_21_duke_michigan",
-      "home_team": "Michigan",
-      "market_spread_home": null,
-      "model_mu_home": -1.9242438,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5643738546170377,
-      "pred_sigma": 11.873063
     }
   ],
-  "generated_at": "2026-03-05T20:06:00.187167Z"
+  "generated_at": "2026-03-05T21:09:35.154204Z"
 }

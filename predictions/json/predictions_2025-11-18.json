@@ -240,6 +240,23 @@
       "pred_sigma": 9.255589
     },
     {
+      "away_team": "Duke",
+      "edge_home_points": 5.351171,
+      "game_id": "2025_11_18_duke_kansas",
+      "home_team": "Kansas",
+      "market_spread_home": 10.5,
+      "model_mu_home": 5.148829,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6755157329624639,
+      "pick_ev_per_1": 0.289620944746522,
+      "pick_fair_odds": -208.0,
+      "pick_prob_edge": 0.15170620915294009,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.3306991483100542,
+      "pred_sigma": 11.755762
+    },
+    {
       "away_team": "Louisiana",
       "edge_home_points": -4.222394999999999,
       "game_id": "2025_11_18_louisiana_stanford",
@@ -903,6 +920,23 @@
       "pred_sigma": 10.012989
     },
     {
+      "away_team": "Kentucky",
+      "edge_home_points": 0.03960510000000017,
+      "game_id": "2025_11_18_kentucky_michigan_st",
+      "home_team": "Michigan St.",
+      "market_spread_home": 3.5,
+      "model_mu_home": 3.4603949,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5013419339138091,
+      "pick_ev_per_1": -0.042892671619091716,
+      "pick_fair_odds": -101.0,
+      "pick_prob_edge": -0.022467589895714735,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.3844179791533444,
+      "pred_sigma": 11.774141
+    },
+    {
       "away_team": "Old Dominion",
       "edge_home_points": 0.026569000000000287,
       "game_id": "2025_11_18_old_dominion_xavier",
@@ -918,41 +952,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.8626887750256352,
       "pred_sigma": 9.635486
-    },
-    {
-      "away_team": "Duke",
-      "edge_home_points": null,
-      "game_id": "2025_11_18_duke_kansas",
-      "home_team": "Kansas",
-      "market_spread_home": null,
-      "model_mu_home": 5.148829,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.3306991483100542,
-      "pred_sigma": 11.755762
-    },
-    {
-      "away_team": "Kentucky",
-      "edge_home_points": null,
-      "game_id": "2025_11_18_kentucky_michigan_st",
-      "home_team": "Michigan St.",
-      "market_spread_home": null,
-      "model_mu_home": 3.4603949,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.3844179791533444,
-      "pred_sigma": 11.774141
     }
   ],
-  "generated_at": "2026-03-05T20:05:56.369161Z"
+  "generated_at": "2026-03-05T21:09:31.061528Z"
 }

@@ -189,6 +189,23 @@
       "pred_sigma": 11.917198
     },
     {
+      "away_team": "Kansas St.",
+      "edge_home_points": 4.7223945,
+      "game_id": "2025_11_20_kansas_st_mississippi_st",
+      "home_team": "Mississippi St.",
+      "market_spread_home": -2.5,
+      "model_mu_home": -7.2223945,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6580638409133227,
+      "pick_ev_per_1": 0.25630369628907057,
+      "pick_fair_odds": -192.0,
+      "pick_prob_edge": 0.13425431710379887,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.7332740351874965,
+      "pred_sigma": 11.597671
+    },
+    {
       "away_team": "Troy",
       "edge_home_points": -4.593408,
       "game_id": "2025_11_20_troy_usc",
@@ -223,6 +240,23 @@
       "pred_sigma": 10.517588
     },
     {
+      "away_team": "Incarnate Word",
+      "edge_home_points": 3.4870124000000002,
+      "game_id": "2025_11_20_incarnate_word_southern_indiana",
+      "home_team": "Southern Indiana",
+      "market_spread_home": 9.5,
+      "model_mu_home": 6.0129876,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6308631815337847,
+      "pick_ev_per_1": 0.20437516474631634,
+      "pick_fair_odds": -171.0,
+      "pick_prob_edge": 0.1070536577242609,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.2822433582652195,
+      "pred_sigma": 10.435771
+    },
+    {
       "away_team": "Arkansas Pine Bluff",
       "edge_home_points": -3.5933020000000013,
       "game_id": "2025_11_20_arkansas_pine_bluff_marshall",
@@ -238,6 +272,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9385805116182202,
       "pred_sigma": 10.957271
+    },
+    {
+      "away_team": "Texas Tech",
+      "edge_home_points": 3.0575384999999997,
+      "game_id": "2025_11_20_texas_tech_wake_forest",
+      "home_team": "Wake Forest",
+      "market_spread_home": 9.5,
+      "model_mu_home": 6.4424615,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.6071352691515114,
+      "pick_ev_per_1": 0.15907642292561264,
+      "pick_fair_odds": -155.0,
+      "pick_prob_edge": 0.08332574534198756,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.283379952658143,
+      "pred_sigma": 11.246728
     },
     {
       "away_team": "Pittsburgh",
@@ -510,58 +561,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.9644970262377648,
       "pred_sigma": 14.18602
-    },
-    {
-      "away_team": "Kansas St.",
-      "edge_home_points": null,
-      "game_id": "2025_11_20_kansas_st_mississippi_st",
-      "home_team": "Mississippi St.",
-      "market_spread_home": null,
-      "model_mu_home": -7.2223945,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.7332740351874965,
-      "pred_sigma": 11.597671
-    },
-    {
-      "away_team": "Incarnate Word",
-      "edge_home_points": null,
-      "game_id": "2025_11_20_incarnate_word_southern_indiana",
-      "home_team": "Southern Indiana",
-      "market_spread_home": null,
-      "model_mu_home": 6.0129876,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.2822433582652195,
-      "pred_sigma": 10.435771
-    },
-    {
-      "away_team": "Texas Tech",
-      "edge_home_points": null,
-      "game_id": "2025_11_20_texas_tech_wake_forest",
-      "home_team": "Wake Forest",
-      "market_spread_home": null,
-      "model_mu_home": 6.4424615,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.283379952658143,
-      "pred_sigma": 11.246728
     }
   ],
-  "generated_at": "2026-03-05T20:05:56.460586Z"
+  "generated_at": "2026-03-05T21:09:31.155624Z"
 }

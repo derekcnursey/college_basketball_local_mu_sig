@@ -2,6 +2,23 @@
   "date": "2026-01-26",
   "games": [
     {
+      "away_team": "Northwestern St.",
+      "edge_home_points": 4.860365000000002,
+      "game_id": "2026_01_26_northwestern_st_stephen_f_austin",
+      "home_team": "Stephen F. Austin",
+      "market_spread_home": -13.5,
+      "model_mu_home": -18.360365,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.6805374372170151,
+      "pick_ev_per_1": 0.29920783468702883,
+      "pick_fair_odds": -213.0,
+      "pick_prob_edge": 0.15672791340749126,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.9618395381185462,
+      "pred_sigma": 10.358786
+    },
+    {
       "away_team": "Delaware St.",
       "edge_home_points": -2.7474876999999998,
       "game_id": "2026_01_26_delaware_st_south_carolina_st",
@@ -70,6 +87,23 @@
       "pred_sigma": 9.617009
     },
     {
+      "away_team": "East Texas A&M",
+      "edge_home_points": -2.2660150000000003,
+      "game_id": "2026_01_26_east_texas_a_m_lamar",
+      "home_team": "Lamar",
+      "market_spread_home": -6.5,
+      "model_mu_home": -4.233985,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5984776415857271,
+      "pick_ev_per_1": 0.14254822484547902,
+      "pick_fair_odds": -149.0,
+      "pick_prob_edge": 0.0746681177762033,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.679396882745123,
+      "pred_sigma": 9.085552
+    },
+    {
       "away_team": "Abilene Christian",
       "edge_home_points": 1.7746069999999996,
       "game_id": "2026_01_26_abilene_christian_tarleton_st",
@@ -85,6 +119,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7960067496230733,
       "pred_sigma": 7.583137
+    },
+    {
+      "away_team": "Alabama A&M",
+      "edge_home_points": -1.7097036,
+      "game_id": "2026_01_26_alabama_a_m_prairie_view_a_m",
+      "home_team": "Prairie View A&M",
+      "market_spread_home": -2.5,
+      "model_mu_home": -0.7902964,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.585276496620357,
+      "pick_ev_per_1": 0.11734603900249962,
+      "pick_fair_odds": -141.0,
+      "pick_prob_edge": 0.06146697281083313,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5396578944145738,
+      "pred_sigma": 7.9369426
     },
     {
       "away_team": "Arizona",
@@ -119,6 +170,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.844595896710447,
       "pred_sigma": 9.672292
+    },
+    {
+      "away_team": "Incarnate Word",
+      "edge_home_points": 0.631519,
+      "game_id": "2026_01_26_incarnate_word_houston_christian",
+      "home_team": "Houston Christian",
+      "market_spread_home": 1.5,
+      "model_mu_home": 0.868481,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.5260597116104127,
+      "pick_ev_per_1": 0.004295813074424115,
+      "pick_fair_odds": -111.0,
+      "pick_prob_edge": 0.0022501878008888143,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4641847435140941,
+      "pred_sigma": 9.660902
     },
     {
       "away_team": "UT Rio Grande Valley",
@@ -187,75 +255,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.4553448937345882,
       "pred_sigma": 10.801329
-    },
-    {
-      "away_team": "Northwestern St.",
-      "edge_home_points": null,
-      "game_id": "2026_01_26_northwestern_st_stephen_f_austin",
-      "home_team": "Stephen F. Austin",
-      "market_spread_home": null,
-      "model_mu_home": -18.360365,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.9618395381185462,
-      "pred_sigma": 10.358786
-    },
-    {
-      "away_team": "Alabama A&M",
-      "edge_home_points": null,
-      "game_id": "2026_01_26_alabama_a_m_prairie_view_a_m",
-      "home_team": "Prairie View A&M",
-      "market_spread_home": null,
-      "model_mu_home": -0.7902964,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5396578944145738,
-      "pred_sigma": 7.9369426
-    },
-    {
-      "away_team": "East Texas A&M",
-      "edge_home_points": null,
-      "game_id": "2026_01_26_east_texas_a_m_lamar",
-      "home_team": "Lamar",
-      "market_spread_home": null,
-      "model_mu_home": -4.233985,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.679396882745123,
-      "pred_sigma": 9.085552
-    },
-    {
-      "away_team": "Incarnate Word",
-      "edge_home_points": null,
-      "game_id": "2026_01_26_incarnate_word_houston_christian",
-      "home_team": "Houston Christian",
-      "market_spread_home": null,
-      "model_mu_home": 0.868481,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4641847435140941,
-      "pred_sigma": 9.660902
     }
   ],
-  "generated_at": "2026-03-05T20:05:59.068527Z"
+  "generated_at": "2026-03-05T21:09:34.055406Z"
 }

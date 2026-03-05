@@ -240,6 +240,23 @@
       "pred_sigma": 7.774537
     },
     {
+      "away_team": "Grambling St.",
+      "edge_home_points": -1.38634885,
+      "game_id": "2025_12_18_grambling_st_norfolk_st",
+      "home_team": "Norfolk St.",
+      "market_spread_home": -1.5,
+      "model_mu_home": -0.11365115,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.571155029945096,
+      "pick_ev_per_1": 0.09038687534972878,
+      "pick_fair_odds": -133.0,
+      "pick_prob_edge": 0.0473455061355722,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5058642661721823,
+      "pred_sigma": 7.7313366
+    },
+    {
       "away_team": "Georgia St.",
       "edge_home_points": 1.488849,
       "game_id": "2025_12_18_georgia_st_georgia_southern",
@@ -442,24 +459,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.6468985054513225,
       "pred_sigma": 9.163522
-    },
-    {
-      "away_team": "Grambling St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_18_grambling_st_norfolk_st",
-      "home_team": "Norfolk St.",
-      "market_spread_home": null,
-      "model_mu_home": -0.11365115,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5058642661721823,
-      "pred_sigma": 7.7313366
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.558350Z"
+  "generated_at": "2026-03-05T21:09:32.452024Z"
 }

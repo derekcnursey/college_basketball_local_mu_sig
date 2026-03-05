@@ -36,6 +36,23 @@
       "pred_sigma": 10.01408
     },
     {
+      "away_team": "Xavier",
+      "edge_home_points": 3.0205339999999996,
+      "game_id": "2026_02_24_xavier_providence",
+      "home_team": "Providence",
+      "market_spread_home": -5.5,
+      "model_mu_home": -8.520534,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.6373508342677896,
+      "pick_ev_per_1": 0.21676068360214373,
+      "pick_fair_odds": -176.0,
+      "pick_prob_edge": 0.11354131045826577,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.839209926431639,
+      "pred_sigma": 8.596042
+    },
+    {
       "away_team": "Wyoming",
       "edge_home_points": -2.3050847,
       "game_id": "2026_02_24_wyoming_boise_st",
@@ -136,6 +153,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.8722012599717146,
       "pred_sigma": 8.875385
+    },
+    {
+      "away_team": "Wake Forest",
+      "edge_home_points": -2.6565960000000004,
+      "game_id": "2026_02_24_wake_forest_boston_college",
+      "home_team": "Boston College",
+      "market_spread_home": 3.5,
+      "model_mu_home": 6.156596,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.6066295705030307,
+      "pick_ev_per_1": 0.15811099823305852,
+      "pick_fair_odds": -154.0,
+      "pick_prob_edge": 0.08282004669350684,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.2653355680408019,
+      "pred_sigma": 9.819417
     },
     {
       "away_team": "Minnesota",
@@ -612,41 +646,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.2128554832538989,
       "pred_sigma": 10.790734
-    },
-    {
-      "away_team": "Xavier",
-      "edge_home_points": null,
-      "game_id": "2026_02_24_xavier_providence",
-      "home_team": "Providence",
-      "market_spread_home": null,
-      "model_mu_home": -8.520534,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.839209926431639,
-      "pred_sigma": 8.596042
-    },
-    {
-      "away_team": "Wake Forest",
-      "edge_home_points": null,
-      "game_id": "2026_02_24_wake_forest_boston_college",
-      "home_team": "Boston College",
-      "market_spread_home": null,
-      "model_mu_home": 6.156596,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.2653355680408019,
-      "pred_sigma": 9.819417
     }
   ],
-  "generated_at": "2026-03-05T20:06:00.320039Z"
+  "generated_at": "2026-03-05T21:09:35.334099Z"
 }

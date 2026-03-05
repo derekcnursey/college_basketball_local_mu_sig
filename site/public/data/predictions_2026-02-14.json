@@ -1515,6 +1515,40 @@
       "pred_sigma": 8.131905
     },
     {
+      "away_team": "Ohio St.",
+      "edge_home_points": -0.8692994,
+      "game_id": "2026_02_14_ohio_st_virginia",
+      "home_team": "Virginia",
+      "market_spread_home": -4.5,
+      "model_mu_home": -3.6307006,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5332881712331463,
+      "pick_ev_per_1": 0.01809559962691565,
+      "pick_fair_odds": -114.0,
+      "pick_prob_edge": 0.009478647423622477,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.636419267877241,
+      "pred_sigma": 10.406019
+    },
+    {
+      "away_team": "Baylor",
+      "edge_home_points": 0.9196829999999991,
+      "game_id": "2026_02_14_baylor_louisville",
+      "home_team": "Louisville",
+      "market_spread_home": -7.5,
+      "model_mu_home": -8.419683,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.532399616234242,
+      "pick_ev_per_1": 0.016399267356280223,
+      "pick_fair_odds": -114.0,
+      "pick_prob_edge": 0.008590092424718199,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.7716616412809119,
+      "pred_sigma": 11.311758
+    },
+    {
       "away_team": "St. Thomas",
       "edge_home_points": -0.8884930000000004,
       "game_id": "2026_02_14_st_thomas_umkc",
@@ -2159,41 +2193,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.1819485353496457,
       "pred_sigma": 12.641669
-    },
-    {
-      "away_team": "Ohio St.",
-      "edge_home_points": null,
-      "game_id": "2026_02_14_ohio_st_virginia",
-      "home_team": "Virginia",
-      "market_spread_home": null,
-      "model_mu_home": -3.6307006,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.636419267877241,
-      "pred_sigma": 10.406019
-    },
-    {
-      "away_team": "Baylor",
-      "edge_home_points": null,
-      "game_id": "2026_02_14_baylor_louisville",
-      "home_team": "Louisville",
-      "market_spread_home": null,
-      "model_mu_home": -8.419683,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.7716616412809119,
-      "pred_sigma": 11.311758
     }
   ],
-  "generated_at": "2026-03-05T20:05:59.849876Z"
+  "generated_at": "2026-03-05T21:09:34.818408Z"
 }

@@ -342,6 +342,23 @@
       "pred_sigma": 9.124533
     },
     {
+      "away_team": "Boston College",
+      "edge_home_points": -1.333873,
+      "game_id": "2025_12_10_boston_college_massachusetts",
+      "home_team": "Massachusetts",
+      "market_spread_home": 1.5,
+      "model_mu_home": 2.833873,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5558398506254099,
+      "pick_ev_per_1": 0.06114880573941883,
+      "pick_fair_odds": -125.0,
+      "pick_prob_edge": 0.03203032681588602,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.382718131484581,
+      "pred_sigma": 9.498494
+    },
+    {
       "away_team": "Fresno St.",
       "edge_home_points": 1.1088852,
       "game_id": "2025_12_10_fresno_st_cal_st_northridge",
@@ -476,24 +493,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.8187356528732677,
       "pred_sigma": 9.640357
-    },
-    {
-      "away_team": "Boston College",
-      "edge_home_points": null,
-      "game_id": "2025_12_10_boston_college_massachusetts",
-      "home_team": "Massachusetts",
-      "market_spread_home": null,
-      "model_mu_home": 2.833873,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.382718131484581,
-      "pred_sigma": 9.498494
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.217620Z"
+  "generated_at": "2026-03-05T21:09:32.086506Z"
 }

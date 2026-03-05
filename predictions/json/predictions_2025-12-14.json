@@ -172,6 +172,40 @@
       "pred_sigma": 11.712415
     },
     {
+      "away_team": "Boise St.",
+      "edge_home_points": -2.41654203,
+      "game_id": "2025_12_14_boise_st_saint_mary_s",
+      "home_team": "Saint Mary's",
+      "market_spread_home": -2.5,
+      "model_mu_home": -0.08345797,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5962752155597904,
+      "pick_ev_per_1": 0.13834359334141788,
+      "pick_fair_odds": -148.0,
+      "pick_prob_edge": 0.07246569175026651,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.5033578805740223,
+      "pred_sigma": 9.915338
+    },
+    {
+      "away_team": "Appalachian St.",
+      "edge_home_points": 2.2492900000000002,
+      "game_id": "2025_12_14_appalachian_st_high_point",
+      "home_team": "High Point",
+      "market_spread_home": -11.5,
+      "model_mu_home": -13.74929,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5843579908854228,
+      "pick_ev_per_1": 0.11559252805398901,
+      "pick_fair_odds": -141.0,
+      "pick_prob_edge": 0.060548467075899004,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.9036010942669016,
+      "pred_sigma": 10.557318
+    },
+    {
       "away_team": "Buffalo",
       "edge_home_points": -1.53359053,
       "game_id": "2025_12_14_buffalo_east_carolina",
@@ -357,41 +391,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.7485675957560929,
       "pred_sigma": 9.687902
-    },
-    {
-      "away_team": "Boise St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_14_boise_st_saint_mary_s",
-      "home_team": "Saint Mary's",
-      "market_spread_home": null,
-      "model_mu_home": -0.08345797,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.5033578805740223,
-      "pred_sigma": 9.915338
-    },
-    {
-      "away_team": "Appalachian St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_14_appalachian_st_high_point",
-      "home_team": "High Point",
-      "market_spread_home": null,
-      "model_mu_home": -13.74929,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.9036010942669016,
-      "pred_sigma": 10.557318
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.384251Z"
+  "generated_at": "2026-03-05T21:09:32.266661Z"
 }

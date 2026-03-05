@@ -444,7 +444,18 @@ def main() -> int:
             if cols_to_drop:
                 df = df.drop(columns=cols_to_drop)
 
-            # Match lines by team name
+            # Build adjacent date strings for ±1 day fallback
+            _d = _dt.datetime.strptime(date_str, "%Y-%m-%d")
+            adjacent_dates = [
+                (_d + _dt.timedelta(days=delta)).strftime("%Y-%m-%d")
+                for delta in [-1, 1]
+            ]
+
+            # Match lines by team name with fallbacks:
+            # 1. Exact (home, away, date)
+            # 2. Flipped (away, home, date) — negate spread
+            # 3. Exact on ±1 day
+            # 4. Flipped on ±1 day — negate spread
             spreads = []
             spread_odds_home = []
             spread_odds_away = []
@@ -454,9 +465,38 @@ def main() -> int:
                 away_s3 = to_s3_name(away_local)
                 home_s3 = to_s3_name(home_local)
 
+                matched_line = None
+                flipped = False
+
+                # Try exact match on same date
                 line = lines_lookup.get((home_s3, away_s3, date_str))
                 if line is not None and pd.notna(line.get("spread")):
-                    spreads.append(float(line["spread"]))
+                    matched_line = line
+                else:
+                    # Try flipped home/away on same date
+                    line = lines_lookup.get((away_s3, home_s3, date_str))
+                    if line is not None and pd.notna(line.get("spread")):
+                        matched_line = line
+                        flipped = True
+                    else:
+                        # Try ±1 day
+                        for adj_date in adjacent_dates:
+                            line = lines_lookup.get((home_s3, away_s3, adj_date))
+                            if line is not None and pd.notna(line.get("spread")):
+                                matched_line = line
+                                break
+                            line = lines_lookup.get((away_s3, home_s3, adj_date))
+                            if line is not None and pd.notna(line.get("spread")):
+                                matched_line = line
+                                flipped = True
+                                break
+
+                if matched_line is not None:
+                    sp = float(matched_line["spread"])
+                    # If home/away flipped, negate the spread
+                    if flipped:
+                        sp = -sp
+                    spreads.append(sp)
                     spread_odds_home.append(-110.0)
                     spread_odds_away.append(-110.0)
                 else:

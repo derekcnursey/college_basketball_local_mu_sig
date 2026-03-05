@@ -359,6 +359,23 @@
       "pred_sigma": 9.338642
     },
     {
+      "away_team": "Alabama",
+      "edge_home_points": 3.427727000000001,
+      "game_id": "2025_12_21_alabama_kennesaw_st",
+      "home_team": "Kennesaw St.",
+      "market_spread_home": 20.5,
+      "model_mu_home": 17.072273,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5992030773700339,
+      "pick_ev_per_1": 0.1439331477064283,
+      "pick_fair_odds": -150.0,
+      "pick_prob_edge": 0.07539355356051003,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.1053651962926118,
+      "pred_sigma": 13.6407995
+    },
+    {
       "away_team": "Gonzaga",
       "edge_home_points": 2.814458,
       "game_id": "2025_12_21_gonzaga_oregon",
@@ -580,6 +597,23 @@
       "pred_sigma": 11.150725
     },
     {
+      "away_team": "North Dakota St.",
+      "edge_home_points": 0.9767026,
+      "game_id": "2025_12_21_north_dakota_st_uc_irvine",
+      "home_team": "UC Irvine",
+      "market_spread_home": 1.5,
+      "model_mu_home": 0.5232974,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.543990128005864,
+      "pick_ev_per_1": 0.038526608011194896,
+      "pick_fair_odds": -119.0,
+      "pick_prob_edge": 0.020180604196340157,
+      "pick_side": "HOME",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4763968032538214,
+      "pred_sigma": 8.839633
+    },
+    {
       "away_team": "Cornell",
       "edge_home_points": 1.1426889999999998,
       "game_id": "2025_12_21_cornell_albany",
@@ -629,6 +663,23 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.929179778615378,
       "pred_sigma": 8.61881
+    },
+    {
+      "away_team": "Penn St.",
+      "edge_home_points": -0.9367825999999999,
+      "game_id": "2025_12_21_penn_st_pittsburgh",
+      "home_team": "Pittsburgh",
+      "market_spread_home": 1.5,
+      "model_mu_home": 2.4367826,
+      "neutral_site": 1,
+      "pick_cover_prob": 0.5380093631117397,
+      "pick_ev_per_1": 0.027108784122412244,
+      "pick_fair_odds": -116.0,
+      "pick_prob_edge": 0.01419983930221591,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.401986437744822,
+      "pred_sigma": 9.8174715
     },
     {
       "away_team": "UMBC",
@@ -833,58 +884,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.5704931456146981,
       "pred_sigma": 8.204192
-    },
-    {
-      "away_team": "Penn St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_21_penn_st_pittsburgh",
-      "home_team": "Pittsburgh",
-      "market_spread_home": null,
-      "model_mu_home": 2.4367826,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.401986437744822,
-      "pred_sigma": 9.8174715
-    },
-    {
-      "away_team": "North Dakota St.",
-      "edge_home_points": null,
-      "game_id": "2025_12_21_north_dakota_st_uc_irvine",
-      "home_team": "UC Irvine",
-      "market_spread_home": null,
-      "model_mu_home": 0.5232974,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4763968032538214,
-      "pred_sigma": 8.839633
-    },
-    {
-      "away_team": "Alabama",
-      "edge_home_points": null,
-      "game_id": "2025_12_21_alabama_kennesaw_st",
-      "home_team": "Kennesaw St.",
-      "market_spread_home": null,
-      "model_mu_home": 17.072273,
-      "neutral_site": 1,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.1053651962926118,
-      "pred_sigma": 13.6407995
     }
   ],
-  "generated_at": "2026-03-05T20:05:57.724939Z"
+  "generated_at": "2026-03-05T21:09:32.653900Z"
 }

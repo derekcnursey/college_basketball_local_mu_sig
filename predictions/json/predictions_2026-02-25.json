@@ -19,6 +19,23 @@
       "pred_sigma": 8.3258295
     },
     {
+      "away_team": "Rhode Island",
+      "edge_home_points": -4.2131224,
+      "game_id": "2026_02_25_rhode_island_st_bonaventure",
+      "home_team": "St. Bonaventure",
+      "market_spread_home": -2.5,
+      "model_mu_home": 1.7131224,
+      "neutral_site": 0,
+      "pick_cover_prob": 0.6877775327034884,
+      "pick_ev_per_1": 0.3130298351612051,
+      "pick_fair_odds": -220.0,
+      "pick_prob_edge": 0.16396800889396457,
+      "pick_side": "AWAY",
+      "pick_spread_odds": -110.0,
+      "pred_home_win_prob": 0.4211067119135134,
+      "pred_sigma": 8.605928
+    },
+    {
       "away_team": "North Texas",
       "edge_home_points": 2.9991449,
       "game_id": "2026_02_25_north_texas_charlotte",
@@ -901,24 +918,7 @@
       "pick_spread_odds": -110.0,
       "pred_home_win_prob": 0.808346863267581,
       "pred_sigma": 8.607804
-    },
-    {
-      "away_team": "Rhode Island",
-      "edge_home_points": null,
-      "game_id": "2026_02_25_rhode_island_st_bonaventure",
-      "home_team": "St. Bonaventure",
-      "market_spread_home": null,
-      "model_mu_home": 1.7131224,
-      "neutral_site": 0,
-      "pick_cover_prob": null,
-      "pick_ev_per_1": null,
-      "pick_fair_odds": null,
-      "pick_prob_edge": null,
-      "pick_side": "AWAY",
-      "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.4211067119135134,
-      "pred_sigma": 8.605928
     }
   ],
-  "generated_at": "2026-03-05T20:06:00.369764Z"
+  "generated_at": "2026-03-05T21:09:35.415698Z"
 }
