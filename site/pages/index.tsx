@@ -83,8 +83,7 @@ function bookSpread(row: PredictionRow): number | null {
 }
 
 function modelSpread(row: PredictionRow): number | null {
-  const v = num(row.model_mu_home);
-  return v !== null ? -v : null; // Negate: model_mu_home is home-away, display as book convention
+  return num(row.model_mu_home);
 }
 
 function sigma(row: PredictionRow): number | null {

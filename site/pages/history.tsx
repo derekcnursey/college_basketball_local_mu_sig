@@ -89,8 +89,7 @@ export const getServerSideProps: GetServerSideProps<HistoryProps> = async (
     const pick_team = pick_side === "HOME" ? home_team : away_team;
 
     const market_spread_home = pn(pred.market_spread_home);
-    const rawMu = pn(pred.model_mu_home);
-    const model_mu_home = rawMu !== null ? -rawMu : null; // Negate to book convention for display
+    const model_mu_home = pn(pred.model_mu_home);
     const pick_prob_edge = pn(pred.pick_prob_edge) ?? 0;
     const has_book = market_spread_home !== null;
 
