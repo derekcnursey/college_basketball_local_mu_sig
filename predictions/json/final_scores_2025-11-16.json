@@ -74,14 +74,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 50,
-      "away_team": "Bryant",
-      "game_id": "2025_11_16_bryant_valparaiso",
-      "home_score": 68,
-      "home_team": "Valparaiso",
-      "neutral_site": 0
-    },
-    {
       "away_score": 75,
       "away_team": "UMass Lowell",
       "game_id": "2025_11_16_umass_lowell_wake_forest",
@@ -160,6 +152,14 @@
       "home_score": 72,
       "home_team": "Wright St.",
       "neutral_site": 1
+    },
+    {
+      "away_score": 50,
+      "away_team": "Bryant",
+      "game_id": "2025_11_16_bryant_valparaiso",
+      "home_score": 68,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
     },
     {
       "away_score": 70,
@@ -242,5 +242,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.695458Z"
+  "generated_at": "2026-03-06T15:54:08.180031Z"
 }

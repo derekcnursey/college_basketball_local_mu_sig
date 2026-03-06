@@ -258,6 +258,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Georgetown",
+      "game_id": "2026_02_14_georgetown_connecticut",
+      "home_score": 79,
+      "home_team": "Connecticut",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Liberty",
       "game_id": "2026_02_14_liberty_utep",
@@ -810,14 +818,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Georgetown",
-      "game_id": "2026_02_14_georgetown_connecticut",
-      "home_score": 79,
-      "home_team": "Connecticut",
-      "neutral_site": 0
-    },
-    {
       "away_score": 81,
       "away_team": "Elon",
       "game_id": "2026_02_14_elon_william_mary",
@@ -1034,5 +1034,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:25.054708Z"
+  "generated_at": "2026-03-06T15:54:08.603289Z"
 }

@@ -882,14 +882,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 86,
-      "away_team": "California",
-      "game_id": "2026_01_31_california_miami_fl",
-      "home_score": 85,
-      "home_team": "Miami FL",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "Norfolk St.",
       "game_id": "2026_01_31_norfolk_st_howard",
@@ -943,6 +935,14 @@
       "game_id": "2026_01_31_south_florida_temple",
       "home_score": 79,
       "home_team": "Temple",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 86,
+      "away_team": "California",
+      "game_id": "2026_01_31_california_miami_fl",
+      "home_score": 85,
+      "home_team": "Miami FL",
       "neutral_site": 0
     },
     {
@@ -1090,5 +1090,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.992646Z"
+  "generated_at": "2026-03-06T15:54:08.531006Z"
 }

@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Incarnate Word",
+      "game_id": "2026_02_09_incarnate_word_southeastern_louisiana",
+      "home_score": 74,
+      "home_team": "Southeastern Louisiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Alcorn St.",
       "game_id": "2026_02_09_alcorn_st_mississippi_valley_st",
@@ -194,14 +202,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "Incarnate Word",
-      "game_id": "2026_02_09_incarnate_word_southeastern_louisiana",
-      "home_score": 74,
-      "home_team": "Southeastern Louisiana",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "Houston Christian",
       "game_id": "2026_02_09_houston_christian_mcneese_st",
@@ -218,5 +218,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:25.030446Z"
+  "generated_at": "2026-03-06T15:54:08.574486Z"
 }

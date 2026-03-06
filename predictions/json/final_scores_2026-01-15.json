@@ -98,6 +98,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "San Diego",
+      "game_id": "2026_01_15_san_diego_seattle",
+      "home_score": 75,
+      "home_team": "Seattle",
+      "neutral_site": 0
+    },
+    {
       "away_score": 77,
       "away_team": "Mercer",
       "game_id": "2026_01_15_mercer_vmi",
@@ -282,14 +290,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "San Diego",
-      "game_id": "2026_01_15_san_diego_seattle",
-      "home_score": 75,
-      "home_team": "Seattle",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "The Citadel",
       "game_id": "2026_01_15_the_citadel_unc_greensboro",
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.915051Z"
+  "generated_at": "2026-03-06T15:54:08.444781Z"
 }

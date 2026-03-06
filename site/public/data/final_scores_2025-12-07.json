@@ -274,19 +274,19 @@
       "neutral_site": 1
     },
     {
-      "away_score": 65,
-      "away_team": "Central Michigan",
-      "game_id": "2025_12_07_central_michigan_saint_louis",
-      "home_score": 107,
-      "home_team": "Saint Louis",
-      "neutral_site": 0
-    },
-    {
       "away_score": 56,
       "away_team": "Air Force",
       "game_id": "2025_12_07_air_force_navy",
       "home_score": 61,
       "home_team": "Navy",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Central Michigan",
+      "game_id": "2025_12_07_central_michigan_saint_louis",
+      "home_score": 107,
+      "home_team": "Saint Louis",
       "neutral_site": 0
     },
     {
@@ -314,5 +314,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.780834Z"
+  "generated_at": "2026-03-06T15:54:08.299027Z"
 }

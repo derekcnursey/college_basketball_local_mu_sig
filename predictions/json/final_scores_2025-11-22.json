@@ -58,6 +58,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 80,
+      "away_team": "Howard",
+      "game_id": "2025_11_22_howard_niagara",
+      "home_score": 70,
+      "home_team": "Niagara",
+      "neutral_site": 1
+    },
+    {
       "away_score": 52,
       "away_team": "Binghamton",
       "game_id": "2025_11_22_binghamton_maryland_eastern_shore",
@@ -186,14 +194,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "Howard",
-      "game_id": "2025_11_22_howard_niagara",
-      "home_score": 70,
-      "home_team": "Niagara",
-      "neutral_site": 1
-    },
-    {
       "away_score": 84,
       "away_team": "Illinois Chicago",
       "game_id": "2025_11_22_illinois_chicago_southern_indiana",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.718962Z"
+  "generated_at": "2026-03-06T15:54:08.208715Z"
 }

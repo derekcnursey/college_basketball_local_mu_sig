@@ -170,6 +170,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Dartmouth",
+      "game_id": "2026_02_28_dartmouth_princeton",
+      "home_score": 82,
+      "home_team": "Princeton",
+      "neutral_site": 0
+    },
+    {
       "away_score": 83,
       "away_team": "Nevada",
       "game_id": "2026_02_28_nevada_unlv",
@@ -250,6 +258,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Arkansas",
+      "game_id": "2026_02_28_arkansas_florida",
+      "home_score": 111,
+      "home_team": "Florida",
+      "neutral_site": 0
+    },
+    {
       "away_score": 76,
       "away_team": "Duquesne",
       "game_id": "2026_02_28_duquesne_saint_louis",
@@ -311,14 +327,6 @@
       "game_id": "2026_02_28_north_carolina_central_delaware_st",
       "home_score": 60,
       "home_team": "Delaware St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 77,
-      "away_team": "Arkansas",
-      "game_id": "2026_02_28_arkansas_florida",
-      "home_score": 111,
-      "home_team": "Florida",
       "neutral_site": 0
     },
     {
@@ -551,14 +559,6 @@
       "game_id": "2026_02_28_south_carolina_georgia",
       "home_score": 87,
       "home_team": "Georgia",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 61,
-      "away_team": "Dartmouth",
-      "game_id": "2026_02_28_dartmouth_princeton",
-      "home_score": 82,
-      "home_team": "Princeton",
       "neutral_site": 0
     },
     {
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:25.121307Z"
+  "generated_at": "2026-03-06T15:54:08.686557Z"
 }

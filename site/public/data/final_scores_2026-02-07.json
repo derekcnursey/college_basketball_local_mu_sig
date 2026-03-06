@@ -938,6 +938,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 57,
+      "away_team": "New Hampshire",
+      "game_id": "2026_02_07_new_hampshire_vermont",
+      "home_score": 80,
+      "home_team": "Vermont",
+      "neutral_site": 0
+    },
+    {
       "away_score": 85,
       "away_team": "Utah St.",
       "game_id": "2026_02_07_utah_st_wyoming",
@@ -1146,14 +1154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "New Hampshire",
-      "game_id": "2026_02_07_new_hampshire_vermont",
-      "home_score": 80,
-      "home_team": "Vermont",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "Eastern Illinois",
       "game_id": "2026_02_07_eastern_illinois_tennessee_tech",
@@ -1226,5 +1226,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:25.024617Z"
+  "generated_at": "2026-03-06T15:54:08.567124Z"
 }

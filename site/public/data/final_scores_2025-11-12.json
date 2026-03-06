@@ -58,6 +58,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Nicholls St.",
+      "game_id": "2025_11_12_nicholls_st_valparaiso",
+      "home_score": 68,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
       "away_score": 67,
       "away_team": "American",
       "game_id": "2025_11_12_american_george_washington",
@@ -111,14 +119,6 @@
       "game_id": "2025_11_12_long_beach_st_pacific",
       "home_score": 69,
       "home_team": "Pacific",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 63,
-      "away_team": "Nicholls St.",
-      "game_id": "2025_11_12_nicholls_st_valparaiso",
-      "home_score": 68,
-      "home_team": "Valparaiso",
       "neutral_site": 0
     },
     {
@@ -346,5 +346,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.680103Z"
+  "generated_at": "2026-03-06T15:54:08.161386Z"
 }

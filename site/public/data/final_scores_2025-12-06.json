@@ -658,6 +658,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 69,
+      "away_team": "New Mexico St.",
+      "game_id": "2025_12_06_new_mexico_st_abilene_christian",
+      "home_score": 77,
+      "home_team": "Abilene Christian",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "Evansville",
       "game_id": "2025_12_06_evansville_western_kentucky",
@@ -727,14 +735,6 @@
       "game_id": "2025_12_06_delaware_delaware_st",
       "home_score": 75,
       "home_team": "Delaware St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 69,
-      "away_team": "New Mexico St.",
-      "game_id": "2025_12_06_new_mexico_st_abilene_christian",
-      "home_score": 77,
-      "home_team": "Abilene Christian",
       "neutral_site": 0
     },
     {
@@ -842,5 +842,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-05T18:20:24.775232Z"
+  "generated_at": "2026-03-06T15:54:08.294098Z"
 }
