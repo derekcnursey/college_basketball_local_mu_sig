@@ -17,7 +17,7 @@ from bball.models.infer import load_regressor, predict_margin_dist
 from bball.models.trainer import fit_classifier, fit_regressor
 from bball.models.tuner import tune
 import predict_games as predict_games_mod
-from predict_games import attach_hard_rock_lines, build_today_feature_frame
+from predict_games import attach_hard_rock_lines, attach_s3_lines, build_today_feature_frame
 
 load_dotenv()
 
@@ -288,7 +288,7 @@ def predict_season(season_year: int, out: str):
     df_out["pred_home_win_prob"] = p_home
 
     # 6️⃣ Attach lines + edges (optional)
-    df_out = attach_hard_rock_lines(df_out, pred_col="pred_margin", target_date=target_date)
+    df_out = attach_s3_lines(df_out, pred_col="pred_margin", target_date=target_date)
 
     # 7️⃣  persist
     Path(out).parent.mkdir(exist_ok=True)
@@ -344,8 +344,8 @@ def predict_today_impl(
     df_out["pred_sigma"] = sigma
     df_out["pred_home_win_prob"] = p_home
 
-    # 6️⃣ Attach Hard Rock lines and compute edges
-    df_out = attach_hard_rock_lines(df_out, pred_col="pred_margin")
+    # 6️⃣ Attach S3 lines and compute edges
+    df_out = attach_s3_lines(df_out, pred_col="pred_margin", target_date=target_date)
 
     # ✅ Cover probabilities (only possible after lines are attached)
     # Home covers if (margin + home_spread_num) > 0
