@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Southern Illinois",
+      "game_id": "2025_11_26_southern_illinois_memphis",
+      "home_score": 74,
+      "home_team": "Memphis",
+      "neutral_site": 0
+    },
+    {
       "away_score": 64,
       "away_team": "Cal St. Northridge",
       "game_id": "2025_11_26_cal_st_northridge_idaho",
@@ -178,35 +186,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Southern Illinois",
-      "game_id": "2025_11_26_southern_illinois_memphis",
-      "home_score": 74,
-      "home_team": "Memphis",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 103,
-      "away_team": "Wagner",
-      "game_id": "2025_11_26_wagner_manhattan",
-      "home_score": 101,
-      "home_team": "Manhattan",
-      "neutral_site": 0
-    },
-    {
       "away_score": 67,
       "away_team": "Appalachian St.",
       "game_id": "2025_11_26_appalachian_st_mercer",
       "home_score": 75,
       "home_team": "Mercer",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 59,
-      "away_team": "Denver",
-      "game_id": "2025_11_26_denver_wyoming",
-      "home_score": 101,
-      "home_team": "Wyoming",
       "neutral_site": 0
     },
     {
@@ -224,6 +208,22 @@
       "home_score": 88,
       "home_team": "Robert Morris",
       "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "Belmont",
+      "game_id": "2025_11_26_belmont_toledo",
+      "home_score": 72,
+      "home_team": "Toledo",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 64,
+      "away_team": "Saint Francis",
+      "game_id": "2025_11_26_saint_francis_troy",
+      "home_score": 74,
+      "home_team": "Troy",
+      "neutral_site": 1
     },
     {
       "away_score": 45,
@@ -266,20 +266,12 @@
       "neutral_site": 0
     },
     {
-      "away_score": 87,
-      "away_team": "Belmont",
-      "game_id": "2025_11_26_belmont_toledo",
-      "home_score": 72,
-      "home_team": "Toledo",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 64,
-      "away_team": "Saint Francis",
-      "game_id": "2025_11_26_saint_francis_troy",
-      "home_score": 74,
-      "home_team": "Troy",
-      "neutral_site": 1
+      "away_score": 103,
+      "away_team": "Wagner",
+      "game_id": "2025_11_26_wagner_manhattan",
+      "home_score": 101,
+      "home_team": "Manhattan",
+      "neutral_site": 0
     },
     {
       "away_score": 73,
@@ -450,6 +442,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 59,
+      "away_team": "Denver",
+      "game_id": "2025_11_26_denver_wyoming",
+      "home_score": 101,
+      "home_team": "Wyoming",
+      "neutral_site": 0
+    },
+    {
       "away_score": 54,
       "away_team": "Tennessee Tech",
       "game_id": "2025_11_26_tennessee_tech_kentucky",
@@ -490,5 +490,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.734959Z"
+  "generated_at": "2026-03-07T14:55:39.012316Z"
 }

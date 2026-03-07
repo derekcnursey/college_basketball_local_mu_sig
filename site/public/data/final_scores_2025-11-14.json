@@ -66,14 +66,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 61,
-      "away_team": "Albany",
-      "game_id": "2025_11_14_albany_rhode_island",
-      "home_score": 80,
-      "home_team": "Rhode Island",
-      "neutral_site": 0
-    },
-    {
       "away_score": 75,
       "away_team": "Samford",
       "game_id": "2025_11_14_samford_arkansas",
@@ -103,6 +95,14 @@
       "game_id": "2025_11_14_washington_washington_st",
       "home_score": 69,
       "home_team": "Washington St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "Albany",
+      "game_id": "2025_11_14_albany_rhode_island",
+      "home_score": 80,
+      "home_team": "Rhode Island",
       "neutral_site": 0
     },
     {
@@ -290,14 +290,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 56,
-      "away_team": "Manhattan",
-      "game_id": "2025_11_14_manhattan_hawaii",
-      "home_score": 86,
-      "home_team": "Hawaii",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "Gonzaga",
       "game_id": "2025_11_14_gonzaga_arizona_st",
@@ -327,6 +319,14 @@
       "game_id": "2025_11_14_xavier_iowa",
       "home_score": 81,
       "home_team": "Iowa",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "Manhattan",
+      "game_id": "2025_11_14_manhattan_hawaii",
+      "home_score": 86,
+      "home_team": "Hawaii",
       "neutral_site": 0
     },
     {
@@ -362,5 +362,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.681007Z"
+  "generated_at": "2026-03-07T14:55:38.955189Z"
 }

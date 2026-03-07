@@ -2,14 +2,6 @@
   "date": "2025-12-19",
   "games": [
     {
-      "away_score": 88,
-      "away_team": "Milwaukee",
-      "game_id": "2025_12_19_milwaukee_south_dakota_st",
-      "home_score": 87,
-      "home_team": "South Dakota St.",
-      "neutral_site": 1
-    },
-    {
       "away_score": 50,
       "away_team": "Morgan St.",
       "game_id": "2025_12_19_morgan_st_california",
@@ -32,6 +24,14 @@
       "home_score": 108,
       "home_team": "UCLA",
       "neutral_site": 0
+    },
+    {
+      "away_score": 88,
+      "away_team": "Milwaukee",
+      "game_id": "2025_12_19_milwaukee_south_dakota_st",
+      "home_score": 87,
+      "home_team": "South Dakota St.",
+      "neutral_site": 1
     },
     {
       "away_score": 56,
@@ -186,5 +186,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.823268Z"
+  "generated_at": "2026-03-07T14:55:39.095955Z"
 }

@@ -18,19 +18,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "IU Indy",
-      "game_id": "2026_01_09_iu_indy_green_bay",
-      "home_score": 75,
-      "home_team": "Green Bay",
-      "neutral_site": 0
-    },
-    {
       "away_score": 85,
       "away_team": "Northern Kentucky",
       "game_id": "2026_01_09_northern_kentucky_milwaukee",
       "home_score": 67,
       "home_team": "Milwaukee",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "IU Indy",
+      "game_id": "2026_01_09_iu_indy_green_bay",
+      "home_score": 75,
+      "home_team": "Green Bay",
       "neutral_site": 0
     },
     {
@@ -114,5 +114,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.907306Z"
+  "generated_at": "2026-03-07T14:55:39.168525Z"
 }

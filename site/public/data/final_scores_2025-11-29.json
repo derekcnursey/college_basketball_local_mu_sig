@@ -74,6 +74,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 37,
+      "away_team": "Ball St.",
+      "game_id": "2025_11_29_ball_st_lafayette",
+      "home_score": 55,
+      "home_team": "Lafayette",
+      "neutral_site": 0
+    },
+    {
       "away_score": 57,
       "away_team": "VMI",
       "game_id": "2025_11_29_vmi_ucf",
@@ -162,12 +170,12 @@
       "neutral_site": 1
     },
     {
-      "away_score": 37,
-      "away_team": "Ball St.",
-      "game_id": "2025_11_29_ball_st_lafayette",
-      "home_score": 55,
-      "home_team": "Lafayette",
-      "neutral_site": 0
+      "away_score": 65,
+      "away_team": "Longwood",
+      "game_id": "2025_11_29_longwood_maine",
+      "home_score": 61,
+      "home_team": "Maine",
+      "neutral_site": 1
     },
     {
       "away_score": 75,
@@ -330,6 +338,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "USC Upstate",
+      "game_id": "2025_11_29_usc_upstate_nebraska",
+      "home_score": 72,
+      "home_team": "Nebraska",
+      "neutral_site": 0
+    },
+    {
       "away_score": 81,
       "away_team": "Milwaukee",
       "game_id": "2025_11_29_milwaukee_akron",
@@ -346,28 +362,12 @@
       "neutral_site": 1
     },
     {
-      "away_score": 63,
-      "away_team": "USC Upstate",
-      "game_id": "2025_11_29_usc_upstate_nebraska",
-      "home_score": 72,
-      "home_team": "Nebraska",
-      "neutral_site": 0
-    },
-    {
       "away_score": 57,
       "away_team": "Central Arkansas",
       "game_id": "2025_11_29_central_arkansas_east_tennessee_st",
       "home_score": 80,
       "home_team": "East Tennessee St.",
       "neutral_site": 0
-    },
-    {
-      "away_score": 65,
-      "away_team": "Longwood",
-      "game_id": "2025_11_29_longwood_maine",
-      "home_score": 61,
-      "home_team": "Maine",
-      "neutral_site": 1
     },
     {
       "away_score": 66,
@@ -402,5 +402,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.748247Z"
+  "generated_at": "2026-03-07T14:55:39.024885Z"
 }

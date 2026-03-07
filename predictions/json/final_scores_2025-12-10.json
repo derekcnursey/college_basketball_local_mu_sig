@@ -34,19 +34,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "Bryant",
-      "game_id": "2025_12_10_bryant_iona",
-      "home_score": 69,
-      "home_team": "Iona",
-      "neutral_site": 0
-    },
-    {
       "away_score": 60,
       "away_team": "Wisconsin",
       "game_id": "2025_12_10_wisconsin_nebraska",
       "home_score": 90,
       "home_team": "Nebraska",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "Bryant",
+      "game_id": "2025_12_10_bryant_iona",
+      "home_score": 69,
+      "home_team": "Iona",
       "neutral_site": 0
     },
     {
@@ -106,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Colgate",
-      "game_id": "2025_12_10_colgate_st_bonaventure",
-      "home_score": 85,
-      "home_team": "St. Bonaventure",
-      "neutral_site": 0
-    },
-    {
       "away_score": 75,
       "away_team": "Charleston",
       "game_id": "2025_12_10_charleston_south_florida",
@@ -151,6 +143,14 @@
       "game_id": "2025_12_10_norfolk_st_baylor",
       "home_score": 97,
       "home_team": "Baylor",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Colgate",
+      "game_id": "2025_12_10_colgate_st_bonaventure",
+      "home_score": 85,
+      "home_team": "St. Bonaventure",
       "neutral_site": 0
     },
     {
@@ -234,5 +234,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.790407Z"
+  "generated_at": "2026-03-07T14:55:39.064999Z"
 }

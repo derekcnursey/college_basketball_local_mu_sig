@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 73,
+      "away_team": "Texas A&M Corpus Chris",
+      "game_id": "2026_02_23_texas_a_m_corpus_chris_southeastern_louisiana",
+      "home_score": 68,
+      "home_team": "Southeastern Louisiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 77,
       "away_team": "New Orleans",
       "game_id": "2026_02_23_new_orleans_stephen_f_austin",
@@ -64,15 +72,7 @@
       "home_score": 69,
       "home_team": "Kansas",
       "neutral_site": 0
-    },
-    {
-      "away_score": 73,
-      "away_team": "Texas A&M Corpus Chris",
-      "game_id": "2026_02_23_texas_a_m_corpus_chris_southeastern_louisiana",
-      "home_score": 68,
-      "home_team": "Southeastern Louisiana",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:03.134890Z"
+  "generated_at": "2026-03-07T14:55:39.386982Z"
 }

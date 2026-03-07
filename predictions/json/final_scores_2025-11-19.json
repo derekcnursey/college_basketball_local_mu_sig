@@ -26,19 +26,19 @@
       "neutral_site": 0
     },
     {
+      "away_score": 90,
+      "away_team": "Valparaiso",
+      "game_id": "2025_11_19_valparaiso_cleveland_st",
+      "home_score": 75,
+      "home_team": "Cleveland St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 80,
       "away_team": "Harvard",
       "game_id": "2025_11_19_harvard_penn_st",
       "home_score": 84,
       "home_team": "Penn St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 64,
-      "away_team": "Alabama St.",
-      "game_id": "2025_11_19_alabama_st_air_force",
-      "home_score": 66,
-      "home_team": "Air Force",
       "neutral_site": 0
     },
     {
@@ -250,14 +250,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Valparaiso",
-      "game_id": "2025_11_19_valparaiso_cleveland_st",
-      "home_score": 75,
-      "home_team": "Cleveland St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 54,
       "away_team": "VMI",
       "game_id": "2025_11_19_vmi_richmond",
@@ -271,6 +263,14 @@
       "game_id": "2025_11_19_florida_gulf_coast_samford",
       "home_score": 62,
       "home_team": "Samford",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "Alabama St.",
+      "game_id": "2025_11_19_alabama_st_air_force",
+      "home_score": 66,
+      "home_team": "Air Force",
       "neutral_site": 0
     },
     {
@@ -298,5 +298,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.702782Z"
+  "generated_at": "2026-03-07T14:55:38.976401Z"
 }

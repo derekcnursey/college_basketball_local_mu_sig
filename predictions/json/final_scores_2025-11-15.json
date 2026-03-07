@@ -58,14 +58,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 79,
-      "away_team": "James Madison",
-      "game_id": "2025_11_15_james_madison_liu",
-      "home_score": 88,
-      "home_team": "LIU",
-      "neutral_site": 0
-    },
-    {
       "away_score": 91,
       "away_team": "Merrimack",
       "game_id": "2025_11_15_merrimack_boston_university",
@@ -274,14 +266,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 50,
-      "away_team": "Drexel",
-      "game_id": "2025_11_15_drexel_syracuse",
-      "home_score": 80,
-      "home_team": "Syracuse",
-      "neutral_site": 1
-    },
-    {
       "away_score": 79,
       "away_team": "Nicholls St.",
       "game_id": "2025_11_15_nicholls_st_murray_st",
@@ -418,6 +402,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 79,
+      "away_team": "James Madison",
+      "game_id": "2025_11_15_james_madison_liu",
+      "home_score": 88,
+      "home_team": "LIU",
+      "neutral_site": 0
+    },
+    {
       "away_score": 77,
       "away_team": "Duquesne",
       "game_id": "2025_11_15_duquesne_villanova",
@@ -472,6 +464,14 @@
       "home_score": 104,
       "home_team": "Virginia",
       "neutral_site": 0
+    },
+    {
+      "away_score": 50,
+      "away_team": "Drexel",
+      "game_id": "2025_11_15_drexel_syracuse",
+      "home_score": 80,
+      "home_team": "Syracuse",
+      "neutral_site": 1
     },
     {
       "away_score": 69,
@@ -570,5 +570,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-06T16:09:02.686529Z"
+  "generated_at": "2026-03-07T14:55:38.960809Z"
 }
