@@ -194,14 +194,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 85,
-      "away_team": "Kent St.",
-      "game_id": "2026_01_10_kent_st_central_michigan",
-      "home_score": 87,
-      "home_team": "Central Michigan",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "Wyoming",
       "game_id": "2026_01_10_wyoming_nevada",
@@ -794,6 +786,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "William & Mary",
+      "game_id": "2026_01_10_william_mary_drexel",
+      "home_score": 64,
+      "home_team": "Drexel",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "Lipscomb",
       "game_id": "2026_01_10_lipscomb_florida_gulf_coast",
@@ -962,6 +962,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 85,
+      "away_team": "Kent St.",
+      "game_id": "2026_01_10_kent_st_central_michigan",
+      "home_score": 87,
+      "home_team": "Central Michigan",
+      "neutral_site": 0
+    },
+    {
       "away_score": 48,
       "away_team": "VMI",
       "game_id": "2026_01_10_vmi_furman",
@@ -1122,14 +1130,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "William & Mary",
-      "game_id": "2026_01_10_william_mary_drexel",
-      "home_score": 64,
-      "home_team": "Drexel",
-      "neutral_site": 0
-    },
-    {
       "away_score": 83,
       "away_team": "Syracuse",
       "game_id": "2026_01_10_syracuse_pittsburgh",
@@ -1178,5 +1178,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-07T14:55:39.178176Z"
+  "generated_at": "2026-03-08T14:49:13.966067Z"
 }

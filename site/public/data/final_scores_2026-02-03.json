@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 96,
+      "away_team": "UNLV",
+      "game_id": "2026_02_03_unlv_fresno_st",
+      "home_score": 98,
+      "home_team": "Fresno St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "N.C. State",
       "game_id": "2026_02_03_n_c_state_smu",
@@ -138,14 +146,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 96,
-      "away_team": "UNLV",
-      "game_id": "2026_02_03_unlv_fresno_st",
-      "home_score": 98,
-      "home_team": "Fresno St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 89,
       "away_team": "Central Michigan",
       "game_id": "2026_02_03_central_michigan_massachusetts",
@@ -250,5 +250,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-07T14:55:39.286386Z"
+  "generated_at": "2026-03-08T14:49:14.067488Z"
 }

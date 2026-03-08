@@ -394,6 +394,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Arizona",
+      "game_id": "2026_01_17_arizona_ucf",
+      "home_score": 77,
+      "home_team": "UCF",
+      "neutral_site": 0
+    },
+    {
       "away_score": 87,
       "away_team": "Rutgers",
       "game_id": "2026_01_17_rutgers_wisconsin",
@@ -746,14 +754,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 71,
-      "away_team": "Quinnipiac",
-      "game_id": "2026_01_17_quinnipiac_merrimack",
-      "home_score": 83,
-      "home_team": "Merrimack",
-      "neutral_site": 0
-    },
-    {
       "away_score": 52,
       "away_team": "Northern Arizona",
       "game_id": "2026_01_17_northern_arizona_portland_st",
@@ -938,6 +938,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "Quinnipiac",
+      "game_id": "2026_01_17_quinnipiac_merrimack",
+      "home_score": 83,
+      "home_team": "Merrimack",
+      "neutral_site": 0
+    },
+    {
       "away_score": 102,
       "away_team": "Mercer",
       "game_id": "2026_01_17_mercer_unc_greensboro",
@@ -1066,14 +1074,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 84,
-      "away_team": "Arizona",
-      "game_id": "2026_01_17_arizona_ucf",
-      "home_score": 77,
-      "home_team": "UCF",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Utah St.",
       "game_id": "2026_01_17_utah_st_grand_canyon",
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-07T14:55:39.211898Z"
+  "generated_at": "2026-03-08T14:49:13.997200Z"
 }

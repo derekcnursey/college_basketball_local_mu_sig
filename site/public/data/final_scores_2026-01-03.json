@@ -226,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Toledo",
-      "game_id": "2026_01_03_toledo_central_michigan",
-      "home_score": 75,
-      "home_team": "Central Michigan",
-      "neutral_site": 0
-    },
-    {
       "away_score": 87,
       "away_team": "South Dakota St.",
       "game_id": "2026_01_03_south_dakota_st_north_dakota",
@@ -778,6 +770,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 78,
+      "away_team": "Toledo",
+      "game_id": "2026_01_03_toledo_central_michigan",
+      "home_score": 75,
+      "home_team": "Central Michigan",
+      "neutral_site": 0
+    },
+    {
       "away_score": 82,
       "away_team": "Samford",
       "game_id": "2026_01_03_samford_unc_greensboro",
@@ -954,5 +954,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-07T14:55:39.146494Z"
+  "generated_at": "2026-03-08T14:49:13.934497Z"
 }

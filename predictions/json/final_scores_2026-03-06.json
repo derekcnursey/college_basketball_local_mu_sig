@@ -2,14 +2,6 @@
   "date": "2026-03-06",
   "games": [
     {
-      "away_score": 56,
-      "away_team": "San Diego",
-      "game_id": "2026_03_06_san_diego_seattle",
-      "home_score": 58,
-      "home_team": "Seattle",
-      "neutral_site": 1
-    },
-    {
       "away_score": 66,
       "away_team": "Morehead St.",
       "game_id": "2026_03_06_morehead_st_southeast_missouri_st",
@@ -24,6 +16,14 @@
       "home_score": 68,
       "home_team": "Tennessee St.",
       "neutral_site": 1
+    },
+    {
+      "away_score": 82,
+      "away_team": "Penn",
+      "game_id": "2026_03_06_penn_brown",
+      "home_score": 61,
+      "home_team": "Brown",
+      "neutral_site": 0
     },
     {
       "away_score": 62,
@@ -66,10 +66,10 @@
       "neutral_site": 1
     },
     {
-      "away_score": 94,
+      "away_score": 92,
       "away_team": "Illinois Chicago",
       "game_id": "2026_03_06_illinois_chicago_murray_st",
-      "home_score": 80,
+      "home_score": 79,
       "home_team": "Murray St.",
       "neutral_site": 1
     },
@@ -96,14 +96,6 @@
       "home_score": 88,
       "home_team": "The Citadel",
       "neutral_site": 1
-    },
-    {
-      "away_score": 82,
-      "away_team": "Penn",
-      "game_id": "2026_03_06_penn_brown",
-      "home_score": 61,
-      "home_team": "Brown",
-      "neutral_site": 0
     },
     {
       "away_score": 81,
@@ -160,6 +152,14 @@
       "home_score": 99,
       "home_team": "Toledo",
       "neutral_site": 0
+    },
+    {
+      "away_score": 56,
+      "away_team": "San Diego",
+      "game_id": "2026_03_06_san_diego_seattle",
+      "home_score": 58,
+      "home_team": "Seattle",
+      "neutral_site": 1
     },
     {
       "away_score": 74,
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-07T14:55:39.435348Z"
+  "generated_at": "2026-03-08T14:49:14.207234Z"
 }

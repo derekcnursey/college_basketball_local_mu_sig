@@ -274,6 +274,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 51,
+      "away_team": "Alabama St.",
+      "game_id": "2025_12_17_alabama_st_cincinnati",
+      "home_score": 88,
+      "home_team": "Cincinnati",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "Albany",
       "game_id": "2025_12_17_albany_stony_brook",
@@ -330,14 +338,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 51,
-      "away_team": "Alabama St.",
-      "game_id": "2025_12_17_alabama_st_cincinnati",
-      "home_score": 88,
-      "home_team": "Cincinnati",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Eastern Washington",
       "game_id": "2025_12_17_eastern_washington_washington_st",
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-07T14:55:39.088682Z"
+  "generated_at": "2026-03-08T14:49:13.879424Z"
 }
