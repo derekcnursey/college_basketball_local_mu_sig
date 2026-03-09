@@ -18,12 +18,12 @@
       "neutral_site": 1
     },
     {
-      "away_score": 82,
-      "away_team": "Penn",
-      "game_id": "2026_03_06_penn_brown",
-      "home_score": 61,
-      "home_team": "Brown",
-      "neutral_site": 0
+      "away_score": 56,
+      "away_team": "San Diego",
+      "game_id": "2026_03_06_san_diego_seattle",
+      "home_score": 58,
+      "home_team": "Seattle",
+      "neutral_site": 1
     },
     {
       "away_score": 62,
@@ -90,12 +90,20 @@
       "neutral_site": 1
     },
     {
-      "away_score": 85,
-      "away_team": "Chattanooga",
-      "game_id": "2026_03_06_chattanooga_the_citadel",
-      "home_score": 88,
-      "home_team": "The Citadel",
-      "neutral_site": 1
+      "away_score": 72,
+      "away_team": "St. John's",
+      "game_id": "2026_03_06_st_john_s_seton_hall",
+      "home_score": 65,
+      "home_team": "Seton Hall",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Penn",
+      "game_id": "2026_03_06_penn_brown",
+      "home_score": 61,
+      "home_team": "Brown",
+      "neutral_site": 0
     },
     {
       "away_score": 81,
@@ -111,6 +119,14 @@
       "game_id": "2026_03_06_longwood_unc_asheville",
       "home_score": 85,
       "home_team": "UNC Asheville",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 85,
+      "away_team": "Chattanooga",
+      "game_id": "2026_03_06_chattanooga_the_citadel",
+      "home_score": 88,
+      "home_team": "The Citadel",
       "neutral_site": 1
     },
     {
@@ -152,14 +168,6 @@
       "home_score": 99,
       "home_team": "Toledo",
       "neutral_site": 0
-    },
-    {
-      "away_score": 56,
-      "away_team": "San Diego",
-      "game_id": "2026_03_06_san_diego_seattle",
-      "home_score": 58,
-      "home_team": "Seattle",
-      "neutral_site": 1
     },
     {
       "away_score": 74,
@@ -250,14 +258,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 72,
-      "away_team": "St. John's",
-      "game_id": "2026_03_06_st_john_s_seton_hall",
-      "home_score": 65,
-      "home_team": "Seton Hall",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "Bellarmine",
       "game_id": "2026_03_06_bellarmine_central_arkansas",
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-08T14:49:14.207234Z"
+  "generated_at": "2026-03-09T14:15:43.685911Z"
 }

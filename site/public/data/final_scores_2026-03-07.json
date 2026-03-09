@@ -122,6 +122,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 59,
+      "away_team": "Air Force",
+      "game_id": "2026_03_07_air_force_nevada",
+      "home_score": 74,
+      "home_team": "Nevada",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Virginia Tech",
       "game_id": "2026_03_07_virginia_tech_virginia",
@@ -175,6 +183,14 @@
       "game_id": "2026_03_07_east_tennessee_st_the_citadel",
       "home_score": 76,
       "home_team": "The Citadel",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 73,
+      "away_team": "Mercer",
+      "game_id": "2026_03_07_mercer_western_carolina",
+      "home_score": 77,
+      "home_team": "Western Carolina",
       "neutral_site": 1
     },
     {
@@ -255,14 +271,6 @@
       "game_id": "2026_03_07_drexel_northeastern",
       "home_score": 77,
       "home_team": "Northeastern",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 62,
-      "away_team": "Elon",
-      "game_id": "2026_03_07_elon_william_mary",
-      "home_score": 72,
-      "home_team": "William & Mary",
       "neutral_site": 1
     },
     {
@@ -394,6 +402,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 62,
+      "away_team": "Elon",
+      "game_id": "2026_03_07_elon_william_mary",
+      "home_score": 72,
+      "home_team": "William & Mary",
+      "neutral_site": 1
+    },
+    {
       "away_score": 56,
       "away_team": "Wagner",
       "game_id": "2026_03_07_wagner_liu",
@@ -474,14 +490,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "Air Force",
-      "game_id": "2026_03_07_air_force_nevada",
-      "home_score": 74,
-      "home_team": "Nevada",
-      "neutral_site": 0
-    },
-    {
       "away_score": 72,
       "away_team": "Coastal Carolina",
       "game_id": "2026_03_07_coastal_carolina_georgia_southern",
@@ -546,6 +554,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Florida",
+      "game_id": "2026_03_07_florida_kentucky",
+      "home_score": 77,
+      "home_team": "Kentucky",
+      "neutral_site": 0
+    },
+    {
       "away_score": 86,
       "away_team": "Furman",
       "game_id": "2026_03_07_furman_samford",
@@ -559,14 +575,6 @@
       "game_id": "2026_03_07_unc_greensboro_wofford",
       "home_score": 72,
       "home_team": "Wofford",
-      "neutral_site": 1
-    },
-    {
-      "away_score": 73,
-      "away_team": "Mercer",
-      "game_id": "2026_03_07_mercer_western_carolina",
-      "home_score": 77,
-      "home_team": "Western Carolina",
       "neutral_site": 1
     },
     {
@@ -591,6 +599,14 @@
       "game_id": "2026_03_07_la_salle_saint_joseph_s",
       "home_score": 88,
       "home_team": "Saint Joseph's",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "Richmond",
+      "game_id": "2026_03_07_richmond_duquesne",
+      "home_score": 79,
+      "home_team": "Duquesne",
       "neutral_site": 0
     },
     {
@@ -674,14 +690,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 84,
-      "away_team": "Florida",
-      "game_id": "2026_03_07_florida_kentucky",
-      "home_score": 77,
-      "home_team": "Kentucky",
-      "neutral_site": 0
-    },
-    {
       "away_score": 90,
       "away_team": "Cal St. Fullerton",
       "game_id": "2026_03_07_cal_st_fullerton_cal_st_northridge",
@@ -720,15 +728,7 @@
       "home_score": 61,
       "home_team": "Fordham",
       "neutral_site": 0
-    },
-    {
-      "away_score": 77,
-      "away_team": "Richmond",
-      "game_id": "2026_03_07_richmond_duquesne",
-      "home_score": 79,
-      "home_team": "Duquesne",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-08T14:49:14.214469Z"
+  "generated_at": "2026-03-09T14:15:43.692827Z"
 }

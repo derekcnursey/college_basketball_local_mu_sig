@@ -34,14 +34,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 62,
-      "away_team": "North Texas",
-      "game_id": "2026_03_01_north_texas_uab",
-      "home_score": 58,
-      "home_team": "UAB",
-      "neutral_site": 0
-    },
-    {
       "away_score": 64,
       "away_team": "La Salle",
       "game_id": "2026_03_01_la_salle_davidson",
@@ -79,6 +71,14 @@
       "game_id": "2026_03_01_illinois_chicago_indiana_st",
       "home_score": 79,
       "home_team": "Indiana St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 69,
+      "away_team": "Rutgers",
+      "game_id": "2026_03_01_rutgers_maryland",
+      "home_score": 65,
+      "home_team": "Maryland",
       "neutral_site": 0
     },
     {
@@ -178,13 +178,13 @@
       "neutral_site": 0
     },
     {
-      "away_score": 69,
-      "away_team": "Rutgers",
-      "game_id": "2026_03_01_rutgers_maryland",
-      "home_score": 65,
-      "home_team": "Maryland",
+      "away_score": 62,
+      "away_team": "North Texas",
+      "game_id": "2026_03_01_north_texas_uab",
+      "home_score": 58,
+      "home_team": "UAB",
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-08T14:49:14.193501Z"
+  "generated_at": "2026-03-09T14:15:43.671453Z"
 }

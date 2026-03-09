@@ -50,6 +50,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 65,
+      "away_team": "Texas Tech",
+      "game_id": "2026_01_06_texas_tech_houston",
+      "home_score": 69,
+      "home_team": "Houston",
+      "neutral_site": 0
+    },
+    {
       "away_score": 76,
       "away_team": "Western Michigan",
       "game_id": "2026_01_06_western_michigan_miami_oh",
@@ -79,14 +87,6 @@
       "game_id": "2026_01_06_unlv_wyoming",
       "home_score": 98,
       "home_team": "Wyoming",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 65,
-      "away_team": "Texas Tech",
-      "game_id": "2026_01_06_texas_tech_houston",
-      "home_score": 69,
-      "home_team": "Houston",
       "neutral_site": 0
     },
     {
@@ -170,14 +170,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 90,
-      "away_team": "Texas A&M",
-      "game_id": "2026_01_06_texas_a_m_auburn",
-      "home_score": 88,
-      "home_team": "Auburn",
-      "neutral_site": 0
-    },
-    {
       "away_score": 73,
       "away_team": "San Diego St.",
       "game_id": "2026_01_06_san_diego_st_nevada",
@@ -232,7 +224,15 @@
       "home_score": 68,
       "home_team": "LSU",
       "neutral_site": 0
+    },
+    {
+      "away_score": 90,
+      "away_team": "Texas A&M",
+      "game_id": "2026_01_06_texas_a_m_auburn",
+      "home_score": 88,
+      "home_team": "Auburn",
+      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-08T14:49:13.944140Z"
+  "generated_at": "2026-03-09T14:15:43.425922Z"
 }

@@ -18,19 +18,27 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "N.C. State",
-      "game_id": "2026_01_20_n_c_state_clemson",
-      "home_score": 76,
-      "home_team": "Clemson",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "Minnesota",
       "game_id": "2026_01_20_minnesota_ohio_st",
       "home_score": 82,
       "home_team": "Ohio St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 68,
+      "away_team": "Ball St.",
+      "game_id": "2026_01_20_ball_st_central_michigan",
+      "home_score": 67,
+      "home_team": "Central Michigan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 80,
+      "away_team": "N.C. State",
+      "game_id": "2026_01_20_n_c_state_clemson",
+      "home_score": 76,
+      "home_team": "Clemson",
       "neutral_site": 0
     },
     {
@@ -218,14 +226,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Ball St.",
-      "game_id": "2026_01_20_ball_st_central_michigan",
-      "home_score": 67,
-      "home_team": "Central Michigan",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "DePaul",
       "game_id": "2026_01_20_depaul_butler",
@@ -274,5 +274,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-08T14:49:14.007152Z"
+  "generated_at": "2026-03-09T14:15:43.489483Z"
 }
