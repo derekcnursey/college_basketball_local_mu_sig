@@ -130,6 +130,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 73,
+      "away_team": "UCLA",
+      "game_id": "2026_02_28_ucla_minnesota",
+      "home_score": 78,
+      "home_team": "Minnesota",
+      "neutral_site": 0
+    },
+    {
       "away_score": 66,
       "away_team": "Richmond",
       "game_id": "2026_02_28_richmond_loyola_chicago",
@@ -258,14 +266,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 75,
-      "away_team": "Norfolk St.",
-      "game_id": "2026_02_28_norfolk_st_coppin_st",
-      "home_score": 69,
-      "home_team": "Coppin St.",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Brown",
       "game_id": "2026_02_28_brown_cornell",
@@ -351,6 +351,14 @@
       "game_id": "2026_02_28_the_citadel_wofford",
       "home_score": 90,
       "home_team": "Wofford",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 79,
+      "away_team": "Toledo",
+      "game_id": "2026_02_28_toledo_ohio",
+      "home_score": 67,
+      "home_team": "Ohio",
       "neutral_site": 0
     },
     {
@@ -490,6 +498,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "Cleveland St.",
+      "game_id": "2026_02_28_cleveland_st_robert_morris",
+      "home_score": 83,
+      "home_team": "Robert Morris",
+      "neutral_site": 0
+    },
+    {
       "away_score": 55,
       "away_team": "East Texas A&M",
       "game_id": "2026_02_28_east_texas_a_m_ut_rio_grande_valley",
@@ -511,6 +527,14 @@
       "game_id": "2026_02_28_hawaii_cal_st_fullerton",
       "home_score": 85,
       "home_team": "Cal St. Fullerton",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "Norfolk St.",
+      "game_id": "2026_02_28_norfolk_st_coppin_st",
+      "home_score": 69,
+      "home_team": "Coppin St.",
       "neutral_site": 0
     },
     {
@@ -575,14 +599,6 @@
       "game_id": "2026_02_28_cal_st_northridge_uc_riverside",
       "home_score": 95,
       "home_team": "UC Riverside",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 73,
-      "away_team": "UCLA",
-      "game_id": "2026_02_28_ucla_minnesota",
-      "home_score": 78,
-      "home_team": "Minnesota",
       "neutral_site": 0
     },
     {
@@ -922,6 +938,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "Lipscomb",
+      "game_id": "2026_02_28_lipscomb_eastern_kentucky",
+      "home_score": 77,
+      "home_team": "Eastern Kentucky",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "Colgate",
       "game_id": "2026_02_28_colgate_navy",
@@ -1002,14 +1026,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 79,
-      "away_team": "Toledo",
-      "game_id": "2026_02_28_toledo_ohio",
-      "home_score": 67,
-      "home_team": "Ohio",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "Iowa",
       "game_id": "2026_02_28_iowa_penn_st",
@@ -1018,27 +1034,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "Cleveland St.",
-      "game_id": "2026_02_28_cleveland_st_robert_morris",
-      "home_score": 83,
-      "home_team": "Robert Morris",
-      "neutral_site": 0
-    },
-    {
       "away_score": 58,
       "away_team": "St. Bonaventure",
       "game_id": "2026_02_28_st_bonaventure_george_mason",
       "home_score": 71,
       "home_team": "George Mason",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 88,
-      "away_team": "Missouri",
-      "game_id": "2026_02_28_missouri_mississippi_st",
-      "home_score": 64,
-      "home_team": "Mississippi St.",
       "neutral_site": 0
     },
     {
@@ -1074,6 +1074,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 88,
+      "away_team": "Missouri",
+      "game_id": "2026_02_28_missouri_mississippi_st",
+      "home_score": 64,
+      "home_team": "Mississippi St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 95,
       "away_team": "Detroit Mercy",
       "game_id": "2026_02_28_detroit_mercy_oakland",
@@ -1082,19 +1090,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 67,
-      "away_team": "Campbell",
-      "game_id": "2026_02_28_campbell_towson",
-      "home_score": 71,
-      "home_team": "Towson",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 80,
-      "away_team": "Lipscomb",
-      "game_id": "2026_02_28_lipscomb_eastern_kentucky",
-      "home_score": 77,
-      "home_team": "Eastern Kentucky",
+      "away_score": 72,
+      "away_team": "Oregon St.",
+      "game_id": "2026_02_28_oregon_st_santa_clara",
+      "home_score": 93,
+      "home_team": "Santa Clara",
       "neutral_site": 0
     },
     {
@@ -1122,11 +1122,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 72,
-      "away_team": "Oregon St.",
-      "game_id": "2026_02_28_oregon_st_santa_clara",
-      "home_score": 93,
-      "home_team": "Santa Clara",
+      "away_score": 67,
+      "away_team": "Campbell",
+      "game_id": "2026_02_28_campbell_towson",
+      "home_score": 71,
+      "home_team": "Towson",
       "neutral_site": 0
     },
     {
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-09T14:15:43.667612Z"
+  "generated_at": "2026-03-10T14:31:22.956494Z"
 }

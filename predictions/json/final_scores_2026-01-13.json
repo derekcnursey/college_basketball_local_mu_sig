@@ -26,14 +26,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 61,
-      "away_team": "Central Michigan",
-      "game_id": "2026_01_13_central_michigan_miami_oh",
-      "home_score": 100,
-      "home_team": "Miami OH",
-      "neutral_site": 0
-    },
-    {
       "away_score": 97,
       "away_team": "Alabama",
       "game_id": "2026_01_13_alabama_mississippi_st",
@@ -242,6 +234,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 61,
+      "away_team": "Central Michigan",
+      "game_id": "2026_01_13_central_michigan_miami_oh",
+      "home_score": 100,
+      "home_team": "Miami OH",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "Maryland",
       "game_id": "2026_01_13_maryland_usc",
@@ -282,5 +282,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-09T14:15:43.458326Z"
+  "generated_at": "2026-03-10T14:31:22.751561Z"
 }

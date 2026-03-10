@@ -42,14 +42,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "Alabama St.",
-      "game_id": "2025_11_19_alabama_st_air_force",
-      "home_score": 66,
-      "home_team": "Air Force",
-      "neutral_site": 0
-    },
-    {
       "away_score": 78,
       "away_team": "Chattanooga",
       "game_id": "2025_11_19_chattanooga_south_carolina_st",
@@ -274,6 +266,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "Alabama St.",
+      "game_id": "2025_11_19_alabama_st_air_force",
+      "home_score": 66,
+      "home_team": "Air Force",
+      "neutral_site": 0
+    },
+    {
       "away_score": 60,
       "away_team": "North Dakota",
       "game_id": "2025_11_19_north_dakota_creighton",
@@ -298,5 +298,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-09T14:15:43.256261Z"
+  "generated_at": "2026-03-10T14:31:22.553251Z"
 }

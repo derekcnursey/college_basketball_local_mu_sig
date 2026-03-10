@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 68,
+      "away_team": "Alabama St.",
+      "game_id": "2026_02_09_alabama_st_southern",
+      "home_score": 69,
+      "home_team": "Southern",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Alcorn St.",
       "game_id": "2026_02_09_alcorn_st_mississippi_valley_st",
@@ -98,27 +106,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 68,
-      "away_team": "Alabama St.",
-      "game_id": "2026_02_09_alabama_st_southern",
-      "home_score": 69,
-      "home_team": "Southern",
-      "neutral_site": 0
-    },
-    {
       "away_score": 89,
       "away_team": "Northern Iowa",
       "game_id": "2026_02_09_northern_iowa_murray_st",
       "home_score": 60,
       "home_team": "Murray St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 75,
-      "away_team": "Saint Francis",
-      "game_id": "2026_02_09_saint_francis_chicago_st",
-      "home_score": 80,
-      "home_team": "Chicago St.",
       "neutral_site": 0
     },
     {
@@ -162,14 +154,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 76,
-      "away_team": "Navy",
-      "game_id": "2026_02_09_navy_bucknell",
-      "home_score": 60,
-      "home_team": "Bucknell",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "Texas Southern",
       "game_id": "2026_02_09_texas_southern_bethune_cookman",
@@ -202,6 +186,22 @@
       "neutral_site": 0
     },
     {
+      "away_score": 75,
+      "away_team": "Saint Francis",
+      "game_id": "2026_02_09_saint_francis_chicago_st",
+      "home_score": 80,
+      "home_team": "Chicago St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Navy",
+      "game_id": "2026_02_09_navy_bucknell",
+      "home_score": 60,
+      "home_team": "Bucknell",
+      "neutral_site": 0
+    },
+    {
       "away_score": 69,
       "away_team": "Houston Christian",
       "game_id": "2026_02_09_houston_christian_mcneese_st",
@@ -218,5 +218,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-09T14:15:43.579108Z"
+  "generated_at": "2026-03-10T14:31:22.869580Z"
 }

@@ -18,6 +18,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 78,
+      "away_team": "Illinois",
+      "game_id": "2026_02_01_illinois_nebraska",
+      "home_score": 69,
+      "home_team": "Nebraska",
+      "neutral_site": 0
+    },
+    {
       "away_score": 58,
       "away_team": "Marist",
       "game_id": "2026_02_01_marist_niagara",
@@ -34,11 +42,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 78,
-      "away_team": "Illinois",
-      "game_id": "2026_02_01_illinois_nebraska",
-      "home_score": 69,
-      "home_team": "Nebraska",
+      "away_score": 75,
+      "away_team": "Minnesota",
+      "game_id": "2026_02_01_minnesota_penn_st",
+      "home_score": 77,
+      "home_team": "Penn St.",
       "neutral_site": 0
     },
     {
@@ -95,14 +103,6 @@
       "game_id": "2026_02_01_purdue_maryland",
       "home_score": 63,
       "home_team": "Maryland",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 75,
-      "away_team": "Minnesota",
-      "game_id": "2026_02_01_minnesota_penn_st",
-      "home_score": 77,
-      "home_team": "Penn St.",
       "neutral_site": 0
     },
     {
@@ -202,5 +202,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-09T14:15:43.544580Z"
+  "generated_at": "2026-03-10T14:31:22.835649Z"
 }

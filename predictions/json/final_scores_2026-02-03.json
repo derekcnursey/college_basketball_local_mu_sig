@@ -42,6 +42,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 70,
+      "away_team": "St. Bonaventure",
+      "game_id": "2026_02_03_st_bonaventure_dayton",
+      "home_score": 72,
+      "home_team": "Dayton",
+      "neutral_site": 0
+    },
+    {
       "away_score": 74,
       "away_team": "Illinois Chicago",
       "game_id": "2026_02_03_illinois_chicago_murray_st",
@@ -50,11 +58,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 66,
-      "away_team": "Akron",
-      "game_id": "2026_02_03_akron_eastern_michigan",
-      "home_score": 64,
-      "home_team": "Eastern Michigan",
+      "away_score": 63,
+      "away_team": "VCU",
+      "game_id": "2026_02_03_vcu_fordham",
+      "home_score": 59,
+      "home_team": "Fordham",
       "neutral_site": 0
     },
     {
@@ -98,19 +106,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 70,
-      "away_team": "St. Bonaventure",
-      "game_id": "2026_02_03_st_bonaventure_dayton",
-      "home_score": 72,
-      "home_team": "Dayton",
-      "neutral_site": 0
-    },
-    {
       "away_score": 52,
       "away_team": "Little Rock",
       "game_id": "2026_02_03_little_rock_tennessee_martin",
       "home_score": 55,
       "home_team": "Tennessee Martin",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Akron",
+      "game_id": "2026_02_03_akron_eastern_michigan",
+      "home_score": 64,
+      "home_team": "Eastern Michigan",
       "neutral_site": 0
     },
     {
@@ -127,6 +135,14 @@
       "game_id": "2026_02_03_xavier_connecticut",
       "home_score": 92,
       "home_team": "Connecticut",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 96,
+      "away_team": "UNLV",
+      "game_id": "2026_02_03_unlv_fresno_st",
+      "home_score": 98,
+      "home_team": "Fresno St.",
       "neutral_site": 0
     },
     {
@@ -218,14 +234,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "VCU",
-      "game_id": "2026_02_03_vcu_fordham",
-      "home_score": 59,
-      "home_team": "Fordham",
-      "neutral_site": 0
-    },
-    {
       "away_score": 68,
       "away_team": "St. John's",
       "game_id": "2026_02_03_st_john_s_depaul",
@@ -240,15 +248,7 @@
       "home_score": 91,
       "home_team": "Boise St.",
       "neutral_site": 0
-    },
-    {
-      "away_score": 96,
-      "away_team": "UNLV",
-      "game_id": "2026_02_03_unlv_fresno_st",
-      "home_score": 98,
-      "home_team": "Fresno St.",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-09T14:15:43.550065Z"
+  "generated_at": "2026-03-10T14:31:22.840908Z"
 }
