@@ -938,6 +938,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "Quinnipiac",
+      "game_id": "2026_01_17_quinnipiac_merrimack",
+      "home_score": 83,
+      "home_team": "Merrimack",
+      "neutral_site": 0
+    },
+    {
       "away_score": 102,
       "away_team": "Mercer",
       "game_id": "2026_01_17_mercer_unc_greensboro",
@@ -967,14 +975,6 @@
       "game_id": "2026_01_17_bradley_illinois_st",
       "home_score": 88,
       "home_team": "Illinois St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 71,
-      "away_team": "Quinnipiac",
-      "game_id": "2026_01_17_quinnipiac_merrimack",
-      "home_score": 83,
-      "home_team": "Merrimack",
       "neutral_site": 0
     },
     {
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T16:02:05.733012Z"
+  "generated_at": "2026-03-11T17:18:33.263774Z"
 }

@@ -378,6 +378,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 85,
+      "away_team": "UNC Greensboro",
+      "game_id": "2026_02_26_unc_greensboro_chattanooga",
+      "home_score": 80,
+      "home_team": "Chattanooga",
+      "neutral_site": 0
+    },
+    {
       "away_score": 60,
       "away_team": "Campbell",
       "game_id": "2026_02_26_campbell_drexel",
@@ -407,14 +415,6 @@
       "game_id": "2026_02_26_bryant_umbc",
       "home_score": 70,
       "home_team": "UMBC",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 85,
-      "away_team": "UNC Greensboro",
-      "game_id": "2026_02_26_unc_greensboro_chattanooga",
-      "home_score": 80,
-      "home_team": "Chattanooga",
       "neutral_site": 0
     },
     {
@@ -450,5 +450,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T16:02:05.914087Z"
+  "generated_at": "2026-03-11T17:18:33.454491Z"
 }

@@ -82,6 +82,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 96,
+      "away_team": "UT Rio Grande Valley",
+      "game_id": "2026_02_21_ut_rio_grande_valley_southeastern_louisiana",
+      "home_score": 75,
+      "home_team": "Southeastern Louisiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "Harvard",
       "game_id": "2026_02_21_harvard_cornell",
@@ -986,14 +994,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 96,
-      "away_team": "UT Rio Grande Valley",
-      "game_id": "2026_02_21_ut_rio_grande_valley_southeastern_louisiana",
-      "home_score": 75,
-      "home_team": "Southeastern Louisiana",
-      "neutral_site": 0
-    },
-    {
       "away_score": 52,
       "away_team": "Creighton",
       "game_id": "2026_02_21_creighton_st_john_s",
@@ -1170,5 +1170,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T16:02:05.895818Z"
+  "generated_at": "2026-03-11T17:18:33.432097Z"
 }

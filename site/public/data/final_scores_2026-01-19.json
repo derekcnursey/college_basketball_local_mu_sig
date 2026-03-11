@@ -194,14 +194,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 58,
-      "away_team": "Drexel",
-      "game_id": "2026_01_19_drexel_towson",
-      "home_score": 59,
-      "home_team": "Towson",
-      "neutral_site": 0
-    },
-    {
       "away_score": 62,
       "away_team": "New Haven",
       "game_id": "2026_01_19_new_haven_chicago_st",
@@ -266,6 +258,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Drexel",
+      "game_id": "2026_01_19_drexel_towson",
+      "home_score": 59,
+      "home_team": "Towson",
+      "neutral_site": 0
+    },
+    {
       "away_score": 72,
       "away_team": "Saint Joseph's",
       "game_id": "2026_01_19_saint_joseph_s_vcu",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T16:02:05.739501Z"
+  "generated_at": "2026-03-11T17:18:33.270604Z"
 }
