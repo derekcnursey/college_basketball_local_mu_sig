@@ -754,14 +754,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 71,
-      "away_team": "Quinnipiac",
-      "game_id": "2026_01_17_quinnipiac_merrimack",
-      "home_score": 83,
-      "home_team": "Merrimack",
-      "neutral_site": 0
-    },
-    {
       "away_score": 52,
       "away_team": "Northern Arizona",
       "game_id": "2026_01_17_northern_arizona_portland_st",
@@ -978,6 +970,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 71,
+      "away_team": "Quinnipiac",
+      "game_id": "2026_01_17_quinnipiac_merrimack",
+      "home_score": 83,
+      "home_team": "Merrimack",
+      "neutral_site": 0
+    },
+    {
       "away_score": 75,
       "away_team": "Old Dominion",
       "game_id": "2026_01_17_old_dominion_appalachian_st",
@@ -1138,5 +1138,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:04.987349Z"
+  "generated_at": "2026-03-11T16:02:05.733012Z"
 }

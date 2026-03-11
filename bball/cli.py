@@ -12,7 +12,8 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
-from bball.data.loaders import load_season_data, load_training_dataframe, train_val_split
+from bball.data.loaders import load_season_data, load_training_dataframe, split_X_y
+from bball.data.augment import augment_home_away
 from bball.models.infer import load_regressor, predict_margin_dist
 from bball.models.trainer import fit_classifier, fit_regressor
 from bball.models.tuner import tune
@@ -223,10 +224,20 @@ def train_cmd(season_year: int, epochs: int):
 
     Saves artifacts to ./artifacts by default (see bball.models.trainer).
     """
-    df = load_training_dataframe(season_year=season_year)
-    train_df, val_df = train_val_split(df)
-    fit_regressor(train_df, val_df, epochs=epochs)
-    fit_classifier(train_df, val_df, epochs=epochs)
+    from sklearn.model_selection import train_test_split as tts
+
+    df = load_training_dataframe()
+    train_df, val_df = tts(
+        df, test_size=0.2, random_state=42, stratify=df[TARGET_CLS],
+    )
+    train_df = augment_home_away(train_df)
+
+    X_train, y_reg_train, y_cls_train = split_X_y(train_df, TARGET_REG, TARGET_CLS)
+    X_val, y_reg_val, y_cls_val = split_X_y(val_df, TARGET_REG, TARGET_CLS)
+
+    cfg = {"epochs": epochs}
+    fit_regressor(X_train, y_reg_train, cfg)
+    fit_classifier(X_train, y_cls_train, cfg)
     print("✓ training complete")
 
 

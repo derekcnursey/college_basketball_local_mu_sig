@@ -714,19 +714,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 57,
-      "away_team": "Texas A&M Corpus Chris",
-      "game_id": "2025_12_06_texas_a_m_corpus_chris_lamar",
-      "home_score": 49,
-      "home_team": "Lamar",
-      "neutral_site": 0
-    },
-    {
       "away_score": 69,
       "away_team": "New Mexico St.",
       "game_id": "2025_12_06_new_mexico_st_abilene_christian",
       "home_score": 77,
       "home_team": "Abilene Christian",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Texas A&M Corpus Chris",
+      "game_id": "2025_12_06_texas_a_m_corpus_chris_lamar",
+      "home_score": 49,
+      "home_team": "Lamar",
       "neutral_site": 0
     },
     {
@@ -842,5 +842,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:04.838772Z"
+  "generated_at": "2026-03-11T16:02:05.579525Z"
 }

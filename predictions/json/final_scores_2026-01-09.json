@@ -34,19 +34,19 @@
       "neutral_site": 0
     },
     {
-      "away_score": 87,
-      "away_team": "Miami OH",
-      "game_id": "2026_01_09_miami_oh_toledo",
-      "home_score": 73,
-      "home_team": "Toledo",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "Canisius",
       "game_id": "2026_01_09_canisius_manhattan",
       "home_score": 64,
       "home_team": "Manhattan",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 87,
+      "away_team": "Miami OH",
+      "game_id": "2026_01_09_miami_oh_toledo",
+      "home_score": 73,
+      "home_team": "Toledo",
       "neutral_site": 0
     },
     {
@@ -114,5 +114,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:04.947446Z"
+  "generated_at": "2026-03-11T16:02:05.692097Z"
 }

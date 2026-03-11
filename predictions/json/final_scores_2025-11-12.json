@@ -106,14 +106,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 63,
-      "away_team": "Nicholls St.",
-      "game_id": "2025_11_12_nicholls_st_valparaiso",
-      "home_score": 68,
-      "home_team": "Valparaiso",
-      "neutral_site": 0
-    },
-    {
       "away_score": 75,
       "away_team": "Dartmouth",
       "game_id": "2025_11_12_dartmouth_bryant",
@@ -290,6 +282,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Nicholls St.",
+      "game_id": "2025_11_12_nicholls_st_valparaiso",
+      "home_score": 68,
+      "home_team": "Valparaiso",
+      "neutral_site": 0
+    },
+    {
       "away_score": 56,
       "away_team": "Mississippi Valley St.",
       "game_id": "2025_11_12_mississippi_valley_st_hawaii",
@@ -346,5 +346,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:04.741144Z"
+  "generated_at": "2026-03-11T16:02:05.469660Z"
 }

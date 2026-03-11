@@ -290,14 +290,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 64,
-      "away_team": "San Diego",
-      "game_id": "2026_01_15_san_diego_seattle",
-      "home_score": 75,
-      "home_team": "Seattle",
-      "neutral_site": 0
-    },
-    {
       "away_score": 66,
       "away_team": "The Citadel",
       "game_id": "2026_01_15_the_citadel_unc_greensboro",
@@ -319,6 +311,14 @@
       "game_id": "2026_01_15_james_madison_appalachian_st",
       "home_score": 80,
       "home_team": "Appalachian St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 64,
+      "away_team": "San Diego",
+      "game_id": "2026_01_15_san_diego_seattle",
+      "home_score": 75,
+      "home_team": "Seattle",
       "neutral_site": 0
     },
     {
@@ -386,5 +386,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:04.975551Z"
+  "generated_at": "2026-03-11T16:02:05.721687Z"
 }

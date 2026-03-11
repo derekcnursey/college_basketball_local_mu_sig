@@ -18,6 +18,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 82,
+      "away_team": "Penn",
+      "game_id": "2026_03_06_penn_brown",
+      "home_score": 61,
+      "home_team": "Brown",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "UCF",
       "game_id": "2026_03_06_ucf_west_virginia",
@@ -88,14 +96,6 @@
       "home_score": 88,
       "home_team": "The Citadel",
       "neutral_site": 1
-    },
-    {
-      "away_score": 82,
-      "away_team": "Penn",
-      "game_id": "2026_03_06_penn_brown",
-      "home_score": 61,
-      "home_team": "Brown",
-      "neutral_site": 0
     },
     {
       "away_score": 81,
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:05.191488Z"
+  "generated_at": "2026-03-11T16:02:05.945012Z"
 }

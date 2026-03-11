@@ -802,6 +802,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 86,
+      "away_team": "California",
+      "game_id": "2026_01_31_california_miami_fl",
+      "home_score": 85,
+      "home_team": "Miami FL",
+      "neutral_site": 0
+    },
+    {
       "away_score": 71,
       "away_team": "High Point",
       "game_id": "2026_01_31_high_point_longwood",
@@ -855,14 +863,6 @@
       "game_id": "2026_01_31_saint_joseph_s_la_salle",
       "home_score": 58,
       "home_team": "La Salle",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 86,
-      "away_team": "California",
-      "game_id": "2026_01_31_california_miami_fl",
-      "home_score": 85,
-      "home_team": "Miami FL",
       "neutral_site": 0
     },
     {
@@ -1090,5 +1090,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T14:09:05.048166Z"
+  "generated_at": "2026-03-11T16:02:05.793960Z"
 }
