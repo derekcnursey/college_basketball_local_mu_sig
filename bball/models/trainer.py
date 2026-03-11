@@ -79,6 +79,27 @@ def _train_loop(model, loader, criterion, optimizer, device, scaler, task: str):
     return running / len(loader)
 
 
+@torch.no_grad()
+def _val_loop(model, loader, criterion, device, task: str):
+    """Evaluate on validation set (no gradients)."""
+    model.eval()
+    running = 0.0
+
+    for xb, yb in loader:
+        xb = xb.to(device, non_blocking=True)
+        yb = yb.to(device, non_blocking=True).view(-1)
+
+        preds = model(xb)
+        if task == "reg":
+            loss = criterion(preds, yb)
+        else:
+            loss = criterion(preds.squeeze(), yb)
+
+        running += loss.item()
+
+    return running / len(loader)
+
+
 # -----------------------------------------------------------------------------
 # Core fit routine (shared by regressor / classifier)
 # -----------------------------------------------------------------------------
@@ -87,18 +108,31 @@ def _fit(
     model_cls,
     X_train,
     y_train,
+    X_val,
+    y_val,
     cfg: dict,
     loss_fn,
     checkpoint_name: str,
     task: str,
 ) -> Path:
     """Fit `model_cls` on the given data and return the checkpoint path."""
-    ds = BasketballDataset(X_train, y_train)
+    ds_train = BasketballDataset(X_train, y_train)
     workers = cfg.get("num_workers", 4)
-    loader = DataLoader(
-        ds,
+    train_loader = DataLoader(
+        ds_train,
         batch_size=cfg.get("batch_size", 4096),
         shuffle=True,
+        num_workers=workers,
+        pin_memory=True,
+        persistent_workers=(workers > 0),
+        prefetch_factor=4,
+    )
+
+    ds_val = BasketballDataset(X_val, y_val)
+    val_loader = DataLoader(
+        ds_val,
+        batch_size=cfg.get("batch_size", 4096),
+        shuffle=False,
         num_workers=workers,
         pin_memory=True,
         persistent_workers=(workers > 0),
@@ -122,15 +156,29 @@ def _fit(
     criterion = loss_fn
     scaler = GradScaler(enabled=torch.cuda.is_available())
 
-    best_state, best_loss = None, float("inf")
+    patience = cfg.get("patience", 10)
+    best_state, best_val_loss = None, float("inf")
+    epochs_no_improve = 0
+    total_epochs = cfg.get("epochs", 50)
 
-    for _ in range(cfg.get("epochs", 50)):
-        epoch_loss = _train_loop(model, loader, criterion, optimizer, device, scaler, task=task)
-        if epoch_loss < best_loss:
-            best_loss = epoch_loss
-            # unwrap torch.compile OptimizedModule for a clean state_dict
+    for epoch in range(total_epochs):
+        train_loss = _train_loop(model, train_loader, criterion, optimizer, device, scaler, task=task)
+        val_loss = _val_loop(model, val_loader, criterion, device, task=task)
+
+        if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            epochs_no_improve = 0
             core = model._orig_mod if hasattr(model, "_orig_mod") else model
             best_state = core.state_dict()
+        else:
+            epochs_no_improve += 1
+
+        if epochs_no_improve >= patience:
+            print(f"  early stop at epoch {epoch+1} (patience={patience}, best_val={best_val_loss:.4f})")
+            break
+
+    if epochs_no_improve < patience:
+        print(f"  completed {total_epochs} epochs (best_val={best_val_loss:.4f})")
 
     wrapper = {
         "state_dict": best_state,              # tensors only
@@ -150,12 +198,14 @@ def _fit(
 # Public entry points
 # -----------------------------------------------------------------------------
 
-def fit_regressor(X_train, y_train, cfg: dict | None = None) -> Path:
+def fit_regressor(X_train, y_train, X_val, y_val, cfg: dict | None = None) -> Path:
     cfg = cfg or {}
     return _fit(
         MLPRegressor,
         X_train,
         y_train,
+        X_val,
+        y_val,
         cfg,
         gaussian_nll,
         "mlp_regressor.pth",
@@ -163,12 +213,14 @@ def fit_regressor(X_train, y_train, cfg: dict | None = None) -> Path:
     )
 
 
-def fit_classifier(X_train, y_train, cfg: dict | None = None) -> Path:
+def fit_classifier(X_train, y_train, X_val, y_val, cfg: dict | None = None) -> Path:
     cfg = cfg or {}
     return _fit(
         MLPClassifier,
         X_train,
         y_train.astype("float32"),
+        X_val,
+        y_val.astype("float32"),
         cfg,
         nn.BCEWithLogitsLoss(),
         "mlp_classifier.pth",

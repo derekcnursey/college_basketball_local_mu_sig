@@ -214,7 +214,7 @@ def build_features(season_year: int, out: str):
 )
 @click.option(
     "--epochs",
-    default=50,
+    default=500,
     show_default=True,
     help="Torch epochs",
 )
@@ -244,11 +244,12 @@ def train_cmd(season_year: int, epochs: int):
     scaler = StandardScaler().fit(X_train)
     joblib.dump(scaler, ARTS / "scaler.pkl")
     X_train = pd.DataFrame(scaler.transform(X_train), columns=X_train.columns, index=X_train.index)
+    X_val = pd.DataFrame(scaler.transform(X_val), columns=X_val.columns, index=X_val.index)
     print("✓ fitted & saved StandardScaler")
 
     cfg = {"epochs": epochs}
-    fit_regressor(X_train, y_reg_train, cfg)
-    fit_classifier(X_train, y_cls_train, cfg)
+    fit_regressor(X_train, y_reg_train, X_val, y_reg_val, cfg)
+    fit_classifier(X_train, y_cls_train, X_val, y_cls_val, cfg)
     print("✓ training complete")
 
 
