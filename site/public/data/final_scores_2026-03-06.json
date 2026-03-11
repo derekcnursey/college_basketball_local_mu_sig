@@ -2,14 +2,6 @@
   "date": "2026-03-06",
   "games": [
     {
-      "away_score": 56,
-      "away_team": "San Diego",
-      "game_id": "2026_03_06_san_diego_seattle",
-      "home_score": 58,
-      "home_team": "Seattle",
-      "neutral_site": 1
-    },
-    {
       "away_score": 66,
       "away_team": "Morehead St.",
       "game_id": "2026_03_06_morehead_st_southeast_missouri_st",
@@ -162,6 +154,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 56,
+      "away_team": "San Diego",
+      "game_id": "2026_03_06_san_diego_seattle",
+      "home_score": 58,
+      "home_team": "Seattle",
+      "neutral_site": 1
+    },
+    {
       "away_score": 74,
       "away_team": "Portland",
       "game_id": "2026_03_06_portland_washington_st",
@@ -290,5 +290,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.971942Z"
+  "generated_at": "2026-03-11T14:09:05.191488Z"
 }

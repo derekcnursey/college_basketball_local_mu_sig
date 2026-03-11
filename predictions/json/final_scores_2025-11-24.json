@@ -82,6 +82,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 70,
+      "away_team": "East Texas A&M",
+      "game_id": "2025_11_24_east_texas_a_m_fairleigh_dickinson",
+      "home_score": 65,
+      "home_team": "Fairleigh Dickinson",
+      "neutral_site": 0
+    },
+    {
       "away_score": 63,
       "away_team": "UTEP",
       "game_id": "2025_11_24_utep_william_mary",
@@ -274,14 +282,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 70,
-      "away_team": "East Texas A&M",
-      "game_id": "2025_11_24_east_texas_a_m_fairleigh_dickinson",
-      "home_score": 65,
-      "home_team": "Fairleigh Dickinson",
-      "neutral_site": 0
-    },
-    {
       "away_score": 86,
       "away_team": "Pacific",
       "game_id": "2025_11_24_pacific_stony_brook",
@@ -450,5 +450,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.573894Z"
+  "generated_at": "2026-03-11T14:09:04.790236Z"
 }

@@ -2,6 +2,14 @@
   "date": "2026-01-25",
   "games": [
     {
+      "away_score": 59,
+      "away_team": "Chicago St.",
+      "game_id": "2026_01_25_chicago_st_mercyhurst",
+      "home_score": 61,
+      "home_team": "Mercyhurst",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "USC",
       "game_id": "2026_01_25_usc_wisconsin",
@@ -24,15 +32,7 @@
       "home_score": 89,
       "home_team": "South Florida",
       "neutral_site": 0
-    },
-    {
-      "away_score": 59,
-      "away_team": "Chicago St.",
-      "game_id": "2026_01_25_chicago_st_mercyhurst",
-      "home_score": 61,
-      "home_team": "Mercyhurst",
-      "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.805648Z"
+  "generated_at": "2026-03-11T14:09:05.021660Z"
 }

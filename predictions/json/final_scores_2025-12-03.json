@@ -10,6 +10,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 59,
+      "away_team": "Northeastern",
+      "game_id": "2025_12_03_northeastern_holy_cross",
+      "home_score": 76,
+      "home_team": "Holy Cross",
+      "neutral_site": 0
+    },
+    {
       "away_score": 57,
       "away_team": "Maine",
       "game_id": "2025_12_03_maine_ohio",
@@ -322,14 +330,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "Northeastern",
-      "game_id": "2025_12_03_northeastern_holy_cross",
-      "home_score": 76,
-      "home_team": "Holy Cross",
-      "neutral_site": 0
-    },
-    {
       "away_score": 80,
       "away_team": "Cornell",
       "game_id": "2025_12_03_cornell_towson",
@@ -554,5 +554,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.611467Z"
+  "generated_at": "2026-03-11T14:09:04.827318Z"
 }

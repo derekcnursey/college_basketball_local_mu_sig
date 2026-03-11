@@ -98,6 +98,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 62,
+      "away_team": "Cal St. Bakersfield",
+      "game_id": "2026_02_05_cal_st_bakersfield_uc_irvine",
+      "home_score": 78,
+      "home_team": "UC Irvine",
+      "neutral_site": 0
+    },
+    {
       "away_score": 78,
       "away_team": "Le Moyne",
       "game_id": "2026_02_05_le_moyne_wagner",
@@ -215,14 +223,6 @@
       "game_id": "2026_02_05_rider_marist",
       "home_score": 81,
       "home_team": "Marist",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 62,
-      "away_team": "Cal St. Bakersfield",
-      "game_id": "2026_02_05_cal_st_bakersfield_uc_irvine",
-      "home_score": 78,
-      "home_team": "UC Irvine",
       "neutral_site": 0
     },
     {
@@ -402,5 +402,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.851198Z"
+  "generated_at": "2026-03-11T14:09:05.067411Z"
 }

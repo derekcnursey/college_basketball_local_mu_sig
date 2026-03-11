@@ -154,6 +154,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 76,
+      "away_team": "Eastern Kentucky",
+      "game_id": "2026_03_04_eastern_kentucky_stetson",
+      "home_score": 92,
+      "home_team": "Stetson",
+      "neutral_site": 1
+    },
+    {
       "away_score": 82,
       "away_team": "Bellarmine",
       "game_id": "2026_03_04_bellarmine_jacksonville",
@@ -208,14 +216,6 @@
       "home_score": 77,
       "home_team": "Houston",
       "neutral_site": 0
-    },
-    {
-      "away_score": 76,
-      "away_team": "Eastern Kentucky",
-      "game_id": "2026_03_04_eastern_kentucky_stetson",
-      "home_score": 92,
-      "home_team": "Stetson",
-      "neutral_site": 1
     },
     {
       "away_score": 69,
@@ -314,5 +314,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.963803Z"
+  "generated_at": "2026-03-11T14:09:05.183010Z"
 }

@@ -82,14 +82,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 95,
-      "away_team": "Mercer",
-      "game_id": "2025_11_22_mercer_eastern_kentucky",
-      "home_score": 83,
-      "home_team": "Eastern Kentucky",
-      "neutral_site": 0
-    },
-    {
       "away_score": 58,
       "away_team": "Coppin St.",
       "game_id": "2025_11_22_coppin_st_vcu",
@@ -242,6 +234,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 95,
+      "away_team": "Mercer",
+      "game_id": "2025_11_22_mercer_eastern_kentucky",
+      "home_score": 83,
+      "home_team": "Eastern Kentucky",
+      "neutral_site": 0
+    },
+    {
       "away_score": 86,
       "away_team": "Northern Colorado",
       "game_id": "2025_11_22_northern_colorado_portland",
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-10T14:31:22.565754Z"
+  "generated_at": "2026-03-11T14:09:04.781921Z"
 }
