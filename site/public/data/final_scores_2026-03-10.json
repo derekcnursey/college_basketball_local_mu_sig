@@ -50,14 +50,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 54,
-      "away_team": "Merrimack",
-      "game_id": "2026_03_10_merrimack_siena",
-      "home_score": 64,
-      "home_team": "Siena",
-      "neutral_site": 1
-    },
-    {
       "away_score": 79,
       "away_team": "Gonzaga",
       "game_id": "2026_03_10_gonzaga_santa_clara",
@@ -95,6 +87,14 @@
       "game_id": "2026_03_10_eastern_washington_idaho",
       "home_score": 81,
       "home_team": "Idaho",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 54,
+      "away_team": "Merrimack",
+      "game_id": "2026_03_10_merrimack_siena",
+      "home_score": 64,
+      "home_team": "Siena",
       "neutral_site": 1
     },
     {
@@ -178,5 +178,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-11T17:43:27.917585Z"
+  "generated_at": "2026-03-11T18:01:01.782971Z"
 }

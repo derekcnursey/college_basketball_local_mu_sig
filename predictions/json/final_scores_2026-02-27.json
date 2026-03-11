@@ -26,6 +26,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 84,
+      "away_team": "Michigan",
+      "game_id": "2026_02_27_michigan_illinois",
+      "home_score": 70,
+      "home_team": "Illinois",
+      "neutral_site": 0
+    },
+    {
       "away_score": 62,
       "away_team": "Brown",
       "game_id": "2026_02_27_brown_columbia",
@@ -55,14 +63,6 @@
       "game_id": "2026_02_27_dayton_george_washington",
       "home_score": 66,
       "home_team": "George Washington",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 84,
-      "away_team": "Michigan",
-      "game_id": "2026_02_27_michigan_illinois",
-      "home_score": 70,
-      "home_team": "Illinois",
       "neutral_site": 0
     },
     {
@@ -162,5 +162,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T17:43:27.872471Z"
+  "generated_at": "2026-03-11T18:01:01.739770Z"
 }

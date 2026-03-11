@@ -50,6 +50,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 80,
+      "away_team": "South Carolina St.",
+      "game_id": "2026_03_05_south_carolina_st_north_carolina_central",
+      "home_score": 64,
+      "home_team": "North Carolina Central",
+      "neutral_site": 0
+    },
+    {
       "away_score": 73,
       "away_team": "American",
       "game_id": "2026_03_05_american_boston_university",
@@ -143,6 +151,14 @@
       "game_id": "2026_03_05_uc_davis_long_beach_st",
       "home_score": 70,
       "home_team": "Long Beach St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 66,
+      "away_team": "Coppin St.",
+      "game_id": "2026_03_05_coppin_st_morgan_st",
+      "home_score": 70,
+      "home_team": "Morgan St.",
       "neutral_site": 0
     },
     {
@@ -250,14 +266,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 80,
-      "away_team": "South Carolina St.",
-      "game_id": "2026_03_05_south_carolina_st_north_carolina_central",
-      "home_score": 64,
-      "home_team": "North Carolina Central",
-      "neutral_site": 0
-    },
-    {
       "away_score": 77,
       "away_team": "Bethune Cookman",
       "game_id": "2026_03_05_bethune_cookman_florida_a_m",
@@ -290,11 +298,11 @@
       "neutral_site": 0
     },
     {
-      "away_score": 66,
-      "away_team": "Coppin St.",
-      "game_id": "2026_03_05_coppin_st_morgan_st",
-      "home_score": 70,
-      "home_team": "Morgan St.",
+      "away_score": 70,
+      "away_team": "Prairie View A&M",
+      "game_id": "2026_03_05_prairie_view_a_m_texas_southern",
+      "home_score": 59,
+      "home_team": "Texas Southern",
       "neutral_site": 0
     },
     {
@@ -354,14 +362,6 @@
       "neutral_site": 1
     },
     {
-      "away_score": 70,
-      "away_team": "Prairie View A&M",
-      "game_id": "2026_03_05_prairie_view_a_m_texas_southern",
-      "home_score": 59,
-      "home_team": "Texas Southern",
-      "neutral_site": 0
-    },
-    {
       "away_score": 74,
       "away_team": "UC Riverside",
       "game_id": "2026_03_05_uc_riverside_hawaii",
@@ -370,5 +370,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T17:43:27.895793Z"
+  "generated_at": "2026-03-11T18:01:01.763120Z"
 }
