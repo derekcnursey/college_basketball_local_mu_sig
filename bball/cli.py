@@ -232,6 +232,7 @@ def train_cmd(season_year: int, epochs: int):
     train_df, val_df = tts(
         df, test_size=0.2, random_state=42, stratify=df[TARGET_CLS],
     )
+    train_df = augment_home_away(train_df)
 
     X_train, y_reg_train, y_cls_train = split_X_y(train_df, TARGET_REG, TARGET_CLS)
     X_val, y_reg_val, y_cls_val = split_X_y(val_df, TARGET_REG, TARGET_CLS)

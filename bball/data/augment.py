@@ -52,34 +52,39 @@ def augment_home_away(
     df: pd.DataFrame,
     target_reg: str = "spread_home",
     target_cls: str = "home_win",
+    flip_frac: float = 0.5,
+    random_state: int = 42,
 ) -> pd.DataFrame:
-    """Double the dataset by appending rows with home/away teams swapped.
+    """Randomly flip home/away for a fraction of rows to remove positional bias.
 
-    For each original row a mirror is created where:
-      * All paired home_/away_ feature columns are swapped
-      * ``spread_home`` is negated
-      * ``home_win`` is flipped (1 → 0, 0 → 1)
-      * ``neutral_site`` stays the same
+    Instead of doubling the dataset, randomly selects ``flip_frac`` of rows
+    and swaps their home/away features in-place.  Keeps the dataset the same
+    size while still breaking the model's ability to exploit the home slot.
 
     Only call this on the **training** split — validation data should stay
     unaugmented so metrics reflect real-world performance.
     """
+    import numpy as np
+
+    rng = np.random.RandomState(random_state)
+    mask = rng.rand(len(df)) < flip_frac
+
     feature_cols = [c for c in df.columns if c not in (target_reg, target_cls)]
     pairs = _build_swap_pairs(feature_cols)
 
-    flipped = df.copy()
+    out = df.copy()
 
-    # Swap paired feature columns (read from original to avoid overwrites)
+    # Swap paired feature columns only for selected rows
     for col_a, col_b in pairs:
-        flipped[col_a] = df[col_b].values
-        flipped[col_b] = df[col_a].values
+        out.loc[mask, col_a] = df.loc[mask, col_b].values
+        out.loc[mask, col_b] = df.loc[mask, col_a].values
 
-    # Negate regression target and flip classification target
-    if target_reg in flipped.columns:
-        flipped[target_reg] = -df[target_reg].values
-    if target_cls in flipped.columns:
-        flipped[target_cls] = (1 - df[target_cls]).values
+    # Negate regression target and flip classification target for swapped rows
+    if target_reg in out.columns:
+        out.loc[mask, target_reg] = -df.loc[mask, target_reg].values
+    if target_cls in out.columns:
+        out.loc[mask, target_cls] = (1 - df.loc[mask, target_cls]).values
 
-    augmented = pd.concat([df, flipped], ignore_index=True)
-    print(f"↕ Augmented {len(df):,} → {len(augmented):,} rows (home/away swap)")
-    return augmented
+    n_flipped = mask.sum()
+    print(f"↕ Flipped {n_flipped:,}/{len(df):,} rows ({100*n_flipped/len(df):.0f}%) home/away swap")
+    return out
