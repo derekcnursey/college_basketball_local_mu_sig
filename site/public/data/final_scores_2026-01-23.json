@@ -58,6 +58,22 @@
       "neutral_site": 0
     },
     {
+      "away_score": 79,
+      "away_team": "Charleston Southern",
+      "game_id": "2026_01_23_charleston_southern_longwood",
+      "home_score": 81,
+      "home_team": "Longwood",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 63,
+      "away_team": "East Carolina",
+      "game_id": "2026_01_23_east_carolina_north_texas",
+      "home_score": 59,
+      "home_team": "North Texas",
+      "neutral_site": 0
+    },
+    {
       "away_score": 89,
       "away_team": "Furman",
       "game_id": "2026_01_23_furman_unc_greensboro",
@@ -90,6 +106,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Middle Tennessee",
+      "game_id": "2026_01_23_middle_tennessee_jacksonville_st",
+      "home_score": 75,
+      "home_team": "Jacksonville St.",
+      "neutral_site": 0
+    },
+    {
       "away_score": 61,
       "away_team": "Mercyhurst",
       "game_id": "2026_01_23_mercyhurst_new_haven",
@@ -111,6 +135,14 @@
       "game_id": "2026_01_23_tulane_charlotte",
       "home_score": 73,
       "home_team": "Charlotte",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "High Point",
+      "game_id": "2026_01_23_high_point_radford",
+      "home_score": 83,
+      "home_team": "Radford",
       "neutral_site": 0
     },
     {
@@ -146,6 +178,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 64,
+      "away_team": "Western Illinois",
+      "game_id": "2026_01_23_western_illinois_southern_indiana",
+      "home_score": 96,
+      "home_team": "Southern Indiana",
+      "neutral_site": 0
+    },
+    {
       "away_score": 86,
       "away_team": "Akron",
       "game_id": "2026_01_23_akron_ohio",
@@ -154,5 +194,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T18:01:01.579755Z"
+  "generated_at": "2026-03-11T23:19:29.305190Z"
 }

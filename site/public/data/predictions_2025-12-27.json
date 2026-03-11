@@ -3,21 +3,21 @@
   "games": [
     {
       "away_team": "Cal St. Northridge",
-      "edge_home_points": -0.08191899999999919,
+      "edge_home_points": 1.1303691864013672,
       "game_id": "2025_12_27_cal_st_northridge_stanford",
       "home_team": "Stanford",
       "market_spread_home": -16.5,
-      "model_mu_home": -16.418081,
+      "model_mu_home": -17.63037,
       "neutral_site": 0,
-      "pick_cover_prob": 0.5030797868139227,
-      "pick_ev_per_1": -0.039574952446147504,
-      "pick_fair_odds": -101.0,
-      "pick_prob_edge": -0.0207297369956011,
-      "pick_side": "AWAY",
+      "pick_cover_prob": 0.5389435428373407,
+      "pick_ev_per_1": 0.028892218144014048,
+      "pick_fair_odds": -116.89317749804404,
+      "pick_prob_edge": 0.015134019027816858,
+      "pick_side": "HOME",
       "pick_spread_odds": -110.0,
-      "pred_home_win_prob": 0.9390951495282072,
-      "pred_sigma": 10.611328
+      "pred_home_win_prob": 0.9363652582070475,
+      "pred_sigma": 11.5612135
     }
   ],
-  "generated_at": "2026-03-05T21:09:32.803951Z"
+  "generated_at": "2026-03-11T20:04:00.860624Z"
 }

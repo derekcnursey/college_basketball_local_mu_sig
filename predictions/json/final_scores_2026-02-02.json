@@ -82,6 +82,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 63,
+      "away_team": "Maryland Eastern Shore",
+      "game_id": "2026_02_02_maryland_eastern_shore_north_carolina_central",
+      "home_score": 65,
+      "home_team": "North Carolina Central",
+      "neutral_site": 0
+    },
+    {
       "away_score": 96,
       "away_team": "Southern",
       "game_id": "2026_02_02_southern_jackson_st",
@@ -138,5 +146,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T18:01:01.626943Z"
+  "generated_at": "2026-03-11T23:19:29.354557Z"
 }

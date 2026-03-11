@@ -1,0 +1,150 @@
+{
+  "date": "2026-03-02",
+  "games": [
+    {
+      "away_score": 53,
+      "away_team": "Lamar",
+      "game_id": "2026_03_02_lamar_houston_christian",
+      "home_score": 75,
+      "home_team": "Houston Christian",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 84,
+      "away_team": "Norfolk St.",
+      "game_id": "2026_03_02_norfolk_st_morgan_st",
+      "home_score": 90,
+      "home_team": "Morgan St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "Duke",
+      "game_id": "2026_03_02_duke_n_c_state",
+      "home_score": 64,
+      "home_team": "N.C. State",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 60,
+      "away_team": "Weber St.",
+      "game_id": "2026_03_02_weber_st_portland_st",
+      "home_score": 84,
+      "home_team": "Portland St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 61,
+      "away_team": "South Carolina St.",
+      "game_id": "2026_03_02_south_carolina_st_delaware_st",
+      "home_score": 59,
+      "home_team": "Delaware St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Montana",
+      "game_id": "2026_03_02_montana_northern_colorado",
+      "home_score": 85,
+      "home_team": "Northern Colorado",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 71,
+      "away_team": "East Texas A&M",
+      "game_id": "2026_03_02_east_texas_a_m_texas_a_m_corpus_chris",
+      "home_score": 84,
+      "home_team": "Texas A&M Corpus Chris",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 85,
+      "away_team": "Idaho",
+      "game_id": "2026_03_02_idaho_eastern_washington",
+      "home_score": 81,
+      "home_team": "Eastern Washington",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 62,
+      "away_team": "Northwestern St.",
+      "game_id": "2026_03_02_northwestern_st_ut_rio_grande_valley",
+      "home_score": 74,
+      "home_team": "UT Rio Grande Valley",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 77,
+      "away_team": "North Carolina Central",
+      "game_id": "2026_03_02_north_carolina_central_maryland_eastern_shore",
+      "home_score": 73,
+      "home_team": "Maryland Eastern Shore",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 93,
+      "away_team": "IU Indy",
+      "game_id": "2026_03_02_iu_indy_cleveland_st",
+      "home_score": 101,
+      "home_team": "Cleveland St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 82,
+      "away_team": "Southeastern Louisiana",
+      "game_id": "2026_03_02_southeastern_louisiana_new_orleans",
+      "home_score": 78,
+      "home_team": "New Orleans",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Montana St.",
+      "game_id": "2026_03_02_montana_st_northern_arizona",
+      "home_score": 65,
+      "home_team": "Northern Arizona",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 57,
+      "away_team": "Iowa St.",
+      "game_id": "2026_03_02_iowa_st_arizona",
+      "home_score": 73,
+      "home_team": "Arizona",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 70,
+      "away_team": "Coppin St.",
+      "game_id": "2026_03_02_coppin_st_howard",
+      "home_score": 90,
+      "home_team": "Howard",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 76,
+      "away_team": "Stephen F. Austin",
+      "game_id": "2026_03_02_stephen_f_austin_incarnate_word",
+      "home_score": 68,
+      "home_team": "Incarnate Word",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 65,
+      "away_team": "Idaho St.",
+      "game_id": "2026_03_02_idaho_st_sacramento_st",
+      "home_score": 83,
+      "home_team": "Sacramento St.",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 75,
+      "away_team": "McNeese St.",
+      "game_id": "2026_03_02_mcneese_st_nicholls_st",
+      "home_score": 65,
+      "home_team": "Nicholls St.",
+      "neutral_site": 0
+    }
+  ],
+  "generated_at": "2026-03-11T23:19:29.495136Z"
+}

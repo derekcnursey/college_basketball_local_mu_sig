@@ -50,6 +50,14 @@
       "neutral_site": 1
     },
     {
+      "away_score": 73,
+      "away_team": "Cincinnati",
+      "game_id": "2026_03_10_cincinnati_utah",
+      "home_score": 66,
+      "home_team": "Utah",
+      "neutral_site": 1
+    },
+    {
       "away_score": 79,
       "away_team": "Gonzaga",
       "game_id": "2026_03_10_gonzaga_santa_clara",
@@ -103,6 +111,14 @@
       "game_id": "2026_03_10_alcorn_st_prairie_view_a_m",
       "home_score": 65,
       "home_team": "Prairie View A&M",
+      "neutral_site": 1
+    },
+    {
+      "away_score": 72,
+      "away_team": "FIU",
+      "game_id": "2026_03_10_fiu_missouri_st",
+      "home_score": 75,
+      "home_team": "Missouri St.",
       "neutral_site": 1
     },
     {
@@ -178,5 +194,5 @@
       "neutral_site": 1
     }
   ],
-  "generated_at": "2026-03-11T18:01:01.782971Z"
+  "generated_at": "2026-03-11T23:19:29.530822Z"
 }
