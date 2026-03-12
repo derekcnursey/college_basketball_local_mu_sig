@@ -26,14 +26,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 77,
-      "away_team": "Richmond",
-      "game_id": "2026_03_07_richmond_duquesne",
-      "home_score": 79,
-      "home_team": "Duquesne",
-      "neutral_site": 0
-    },
-    {
       "away_score": 63,
       "away_team": "Cincinnati",
       "game_id": "2026_03_07_cincinnati_tcu",
@@ -610,6 +602,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 77,
+      "away_team": "Richmond",
+      "game_id": "2026_03_07_richmond_duquesne",
+      "home_score": 79,
+      "home_team": "Duquesne",
+      "neutral_site": 0
+    },
+    {
       "away_score": 64,
       "away_team": "UC San Diego",
       "game_id": "2026_03_07_uc_san_diego_uc_santa_barbara",
@@ -730,5 +730,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T23:19:29.522098Z"
+  "generated_at": "2026-03-12T14:24:48.605640Z"
 }

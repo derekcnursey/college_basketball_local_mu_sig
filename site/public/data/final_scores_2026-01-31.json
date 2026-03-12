@@ -50,6 +50,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 76,
+      "away_team": "Colgate",
+      "game_id": "2026_01_31_colgate_lehigh",
+      "home_score": 77,
+      "home_team": "Lehigh",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "NJIT",
       "game_id": "2026_01_31_njit_vermont",
@@ -322,6 +330,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 80,
+      "away_team": "UC Davis",
+      "game_id": "2026_01_31_uc_davis_cal_st_bakersfield",
+      "home_score": 72,
+      "home_team": "Cal St. Bakersfield",
+      "neutral_site": 0
+    },
+    {
       "away_score": 79,
       "away_team": "Fordham",
       "game_id": "2026_01_31_fordham_george_washington",
@@ -522,14 +538,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 80,
-      "away_team": "UC Davis",
-      "game_id": "2026_01_31_uc_davis_cal_st_bakersfield",
-      "home_score": 72,
-      "home_team": "Cal St. Bakersfield",
-      "neutral_site": 0
-    },
-    {
       "away_score": 87,
       "away_team": "Cal Baptist",
       "game_id": "2026_01_31_cal_baptist_ut_arlington",
@@ -647,14 +655,6 @@
       "game_id": "2026_01_31_lipscomb_north_florida",
       "home_score": 94,
       "home_team": "North Florida",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 58,
-      "away_team": "Southeastern Louisiana",
-      "game_id": "2026_01_31_southeastern_louisiana_stephen_f_austin",
-      "home_score": 85,
-      "home_team": "Stephen F. Austin",
       "neutral_site": 0
     },
     {
@@ -783,14 +783,6 @@
       "game_id": "2026_01_31_utah_tech_tarleton_st",
       "home_score": 59,
       "home_team": "Tarleton St.",
-      "neutral_site": 0
-    },
-    {
-      "away_score": 76,
-      "away_team": "Colgate",
-      "game_id": "2026_01_31_colgate_lehigh",
-      "home_score": 77,
-      "home_team": "Lehigh",
       "neutral_site": 0
     },
     {
@@ -1018,6 +1010,14 @@
       "neutral_site": 0
     },
     {
+      "away_score": 58,
+      "away_team": "Southeastern Louisiana",
+      "game_id": "2026_01_31_southeastern_louisiana_stephen_f_austin",
+      "home_score": 85,
+      "home_team": "Stephen F. Austin",
+      "neutral_site": 0
+    },
+    {
       "away_score": 84,
       "away_team": "Tennessee Martin",
       "game_id": "2026_01_31_tennessee_martin_western_illinois",
@@ -1090,5 +1090,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T23:19:29.347721Z"
+  "generated_at": "2026-03-12T14:24:48.449078Z"
 }

@@ -10,14 +10,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 95,
-      "away_team": "Mercer",
-      "game_id": "2025_11_22_mercer_eastern_kentucky",
-      "home_score": 83,
-      "home_team": "Eastern Kentucky",
-      "neutral_site": 0
-    },
-    {
       "away_score": 70,
       "away_team": "NJIT",
       "game_id": "2025_11_22_njit_navy",
@@ -80,6 +72,14 @@
       "home_score": 77,
       "home_team": "Providence",
       "neutral_site": 1
+    },
+    {
+      "away_score": 95,
+      "away_team": "Mercer",
+      "game_id": "2025_11_22_mercer_eastern_kentucky",
+      "home_score": 83,
+      "home_team": "Eastern Kentucky",
+      "neutral_site": 0
     },
     {
       "away_score": 75,
@@ -306,5 +306,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T23:19:29.056262Z"
+  "generated_at": "2026-03-12T14:24:48.178938Z"
 }

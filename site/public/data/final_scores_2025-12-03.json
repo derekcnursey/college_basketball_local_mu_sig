@@ -114,14 +114,6 @@
       "neutral_site": 0
     },
     {
-      "away_score": 59,
-      "away_team": "Northeastern",
-      "game_id": "2025_12_03_northeastern_holy_cross",
-      "home_score": 76,
-      "home_team": "Holy Cross",
-      "neutral_site": 0
-    },
-    {
       "away_score": 84,
       "away_team": "Austin Peay",
       "game_id": "2025_12_03_austin_peay_kent_st",
@@ -335,6 +327,14 @@
       "game_id": "2025_12_03_marshall_unc_wilmington",
       "home_score": 70,
       "home_team": "UNC Wilmington",
+      "neutral_site": 0
+    },
+    {
+      "away_score": 59,
+      "away_team": "Northeastern",
+      "game_id": "2025_12_03_northeastern_holy_cross",
+      "home_score": 76,
+      "home_team": "Holy Cross",
       "neutral_site": 0
     },
     {
@@ -554,5 +554,5 @@
       "neutral_site": 0
     }
   ],
-  "generated_at": "2026-03-11T23:19:29.108067Z"
+  "generated_at": "2026-03-12T14:24:48.225381Z"
 }
